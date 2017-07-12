@@ -1,0 +1,7 @@
+Factory\Browserfactory.class
+Factory\DataFactory.class
+Pages\Loginpage.class
+DataCollection\ExcellDataCollection.class
+testcases\VerifyLogin.class
+DataCollection\Configdata.class
+Utility\Screenshots.class
