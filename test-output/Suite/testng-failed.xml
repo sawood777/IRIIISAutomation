@@ -3,11 +3,42 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="testcases.VerifyLogin">
+      <class name="testcases.VerifyEmail3">
         <methods>
-          <include name="logintoAppln"/>
+          <include name="testMarkAsUnread"/>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
         </methods>
-      </class> <!-- testcases.VerifyLogin -->
+      </class> <!-- testcases.VerifyEmail3 -->
+      <class name="testcases.VerifyEmail">
+        <methods>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- testcases.VerifyEmail -->
+      <class name="testcases.VerifyEmail1">
+        <methods>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- testcases.VerifyEmail1 -->
+      <class name="testcases.VerifyEmail2">
+        <methods>
+          <include name="TestDeleteForever"/>
+          <include name="testBrowser"/>
+          <include name="TestBatchMoveToTrash"/>
+          <include name="testMoveToInboxFromTrashListing"/>
+          <include name="postCondition"/>
+          <include name="testMoveToTrash"/>
+          <include name="TestBatchMovetoInboxOfTrashEmail"/>
+        </methods>
+      </class> <!-- testcases.VerifyEmail2 -->
+      <class name="testcases.VerifyEmail4">
+        <methods>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- testcases.VerifyEmail4 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

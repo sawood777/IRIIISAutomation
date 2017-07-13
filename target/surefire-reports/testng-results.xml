@@ -1,17 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="19" passed="18">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="14341" started-at="2017-07-11T12:32:52Z" finished-at="2017-07-11T12:33:06Z">
+  <suite name="Suite" duration-ms="319685" started-at="2017-07-13T05:50:26Z" finished-at="2017-07-13T05:55:46Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="14341" started-at="2017-07-11T12:32:52Z" finished-at="2017-07-11T12:33:06Z">
-      <class name="testcases.VerifyLogin">
-        <test-method status="PASS" signature="logintoAppln()[pri:0, instance:testcases.VerifyLogin@5594a1b5]" name="logintoAppln" duration-ms="14326" started-at="2017-07-11T18:02:52Z" finished-at="2017-07-11T18:03:06Z">
+    <test name="Test" duration-ms="319685" started-at="2017-07-13T05:50:26Z" finished-at="2017-07-13T05:55:46Z">
+      <class name="testcases.VerifyEmail1">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:testcases.VerifyEmail1@1a407d53]" name="testBrowser" is-config="true" duration-ms="14287" started-at="2017-07-13T11:22:12Z" finished-at="2017-07-13T11:22:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logintoAppln -->
-      </class> <!-- testcases.VerifyLogin -->
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testMoveToSpam()[pri:0, instance:testcases.VerifyEmail1@1a407d53]" name="testMoveToSpam" duration-ms="5385" started-at="2017-07-13T11:22:26Z" finished-at="2017-07-13T11:22:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMoveToSpam -->
+        <test-method status="PASS" signature="testMarkAsNotSpam()[pri:0, instance:testcases.VerifyEmail1@1a407d53]" name="testMarkAsNotSpam" duration-ms="3349" started-at="2017-07-13T11:22:31Z" finished-at="2017-07-13T11:22:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMarkAsNotSpam -->
+        <test-method status="PASS" signature="TestBatchMovetoSpamOfEmail()[pri:0, instance:testcases.VerifyEmail1@1a407d53]" name="TestBatchMovetoSpamOfEmail" duration-ms="11215" started-at="2017-07-13T11:22:35Z" finished-at="2017-07-13T11:22:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestBatchMovetoSpamOfEmail -->
+        <test-method status="PASS" signature="TestBatchMovetoInboxOfSpamEmail()[pri:0, instance:testcases.VerifyEmail1@1a407d53]" name="TestBatchMovetoInboxOfSpamEmail" duration-ms="12631" started-at="2017-07-13T11:22:46Z" finished-at="2017-07-13T11:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestBatchMovetoInboxOfSpamEmail -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:testcases.VerifyEmail1@1a407d53]" name="postCondition" is-config="true" duration-ms="900" started-at="2017-07-13T11:22:59Z" finished-at="2017-07-13T11:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testcases.VerifyEmail1 -->
+      <class name="testcases.VerifyEmail2">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:testcases.VerifyEmail2@79b4d0f]" name="testBrowser" is-config="true" duration-ms="13247" started-at="2017-07-13T11:23:48Z" finished-at="2017-07-13T11:24:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testMoveToTrash()[pri:0, instance:testcases.VerifyEmail2@79b4d0f]" name="testMoveToTrash" duration-ms="5383" started-at="2017-07-13T11:24:01Z" finished-at="2017-07-13T11:24:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMoveToTrash -->
+        <test-method status="PASS" signature="testMoveToInboxFromTrashListing()[pri:0, instance:testcases.VerifyEmail2@79b4d0f]" name="testMoveToInboxFromTrashListing" duration-ms="4489" started-at="2017-07-13T11:24:06Z" finished-at="2017-07-13T11:24:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMoveToInboxFromTrashListing -->
+        <test-method status="PASS" signature="TestBatchMoveToTrash()[pri:0, instance:testcases.VerifyEmail2@79b4d0f]" name="TestBatchMoveToTrash" duration-ms="12237" started-at="2017-07-13T11:24:11Z" finished-at="2017-07-13T11:24:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestBatchMoveToTrash -->
+        <test-method status="PASS" signature="TestBatchMovetoInboxOfTrashEmail()[pri:0, instance:testcases.VerifyEmail2@79b4d0f]" name="TestBatchMovetoInboxOfTrashEmail" duration-ms="12843" started-at="2017-07-13T11:24:23Z" finished-at="2017-07-13T11:24:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestBatchMovetoInboxOfTrashEmail -->
+        <test-method status="FAIL" signature="TestDeleteForever()[pri:0, instance:testcases.VerifyEmail2@79b4d0f]" name="TestDeleteForever" duration-ms="68921" started-at="2017-07-13T11:24:36Z" finished-at="2017-07-13T11:25:45Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of all [] (tried for 20 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-1D78PSH8', ip: '192.168.132.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\Praveen\AppData\Local\Temp\scoped_dir5772_4785}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 8d69b1ca1710d214b59b31e21d7b6f6d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [] (tried for 20 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-1D78PSH8', ip: '192.168.132.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\Praveen\AppData\Local\Temp\scoped_dir5772_4785}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 8d69b1ca1710d214b59b31e21d7b6f6d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at Pages.MailPage.GetemailSubjects(MailPage.java:148)
+	at testcases.VerifyEmail2.TestDeleteForever(VerifyEmail2.java:168)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:293)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestDeleteForever -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:testcases.VerifyEmail2@79b4d0f]" name="postCondition" is-config="true" duration-ms="1145" started-at="2017-07-13T11:25:45Z" finished-at="2017-07-13T11:25:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testcases.VerifyEmail2 -->
+      <class name="testcases.VerifyEmail">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:testcases.VerifyEmail@3fb6a447]" name="testBrowser" is-config="true" duration-ms="17475" started-at="2017-07-13T11:20:26Z" finished-at="2017-07-13T11:20:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testVerifySendingEmail()[pri:0, instance:testcases.VerifyEmail@3fb6a447]" name="testVerifySendingEmail" duration-ms="14083" started-at="2017-07-13T11:20:44Z" finished-at="2017-07-13T11:20:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVerifySendingEmail -->
+        <test-method status="PASS" signature="TestProcessingOfEmail()[pri:0, instance:testcases.VerifyEmail@3fb6a447]" name="TestProcessingOfEmail" duration-ms="4768" started-at="2017-07-13T11:20:58Z" finished-at="2017-07-13T11:21:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestProcessingOfEmail -->
+        <test-method status="PASS" signature="TestUnProcessingOfEmail()[pri:0, instance:testcases.VerifyEmail@3fb6a447]" name="TestUnProcessingOfEmail" duration-ms="4663" started-at="2017-07-13T11:21:03Z" finished-at="2017-07-13T11:21:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestUnProcessingOfEmail -->
+        <test-method status="PASS" signature="TestBatchProcessingOfEmail()[pri:0, instance:testcases.VerifyEmail@3fb6a447]" name="TestBatchProcessingOfEmail" duration-ms="13076" started-at="2017-07-13T11:21:07Z" finished-at="2017-07-13T11:21:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestBatchProcessingOfEmail -->
+        <test-method status="PASS" signature="TestBatchUnProcessingOfEmail()[pri:0, instance:testcases.VerifyEmail@3fb6a447]" name="TestBatchUnProcessingOfEmail" duration-ms="10684" started-at="2017-07-13T11:21:20Z" finished-at="2017-07-13T11:21:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestBatchUnProcessingOfEmail -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:testcases.VerifyEmail@3fb6a447]" name="postCondition" is-config="true" duration-ms="990" started-at="2017-07-13T11:21:31Z" finished-at="2017-07-13T11:21:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testcases.VerifyEmail -->
+      <class name="testcases.VerifyEmail3">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:testcases.VerifyEmail3@7a5d012c]" name="testBrowser" is-config="true" duration-ms="14559" started-at="2017-07-13T11:22:59Z" finished-at="2017-07-13T11:23:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testMarkAsUnread()[pri:0, instance:testcases.VerifyEmail3@7a5d012c]" name="testMarkAsUnread" duration-ms="9549" started-at="2017-07-13T11:23:14Z" finished-at="2017-07-13T11:23:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMarkAsUnread -->
+        <test-method status="PASS" signature="testBatchUnread()[pri:0, instance:testcases.VerifyEmail3@7a5d012c]" name="testBatchUnread" duration-ms="9874" started-at="2017-07-13T11:23:24Z" finished-at="2017-07-13T11:23:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchUnread -->
+        <test-method status="PASS" signature="testBatchRead()[pri:0, instance:testcases.VerifyEmail3@7a5d012c]" name="testBatchRead" duration-ms="13136" started-at="2017-07-13T11:23:33Z" finished-at="2017-07-13T11:23:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchRead -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:testcases.VerifyEmail3@7a5d012c]" name="postCondition" is-config="true" duration-ms="1022" started-at="2017-07-13T11:23:47Z" finished-at="2017-07-13T11:23:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testcases.VerifyEmail3 -->
+      <class name="testcases.VerifyEmail4">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:testcases.VerifyEmail4@6b2fad11]" name="testBrowser" is-config="true" duration-ms="13187" started-at="2017-07-13T11:21:32Z" finished-at="2017-07-13T11:21:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testTagToTopic()[pri:0, instance:testcases.VerifyEmail4@6b2fad11]" name="testTagToTopic" duration-ms="11452" started-at="2017-07-13T11:21:45Z" finished-at="2017-07-13T11:21:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTagToTopic -->
+        <test-method status="PASS" signature="testBatchTagToTopic()[pri:0, instance:testcases.VerifyEmail4@6b2fad11]" name="testBatchTagToTopic" duration-ms="14025" started-at="2017-07-13T11:21:57Z" finished-at="2017-07-13T11:22:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchTagToTopic -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:testcases.VerifyEmail4@6b2fad11]" name="postCondition" is-config="true" duration-ms="1053" started-at="2017-07-13T11:22:11Z" finished-at="2017-07-13T11:22:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testcases.VerifyEmail4 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

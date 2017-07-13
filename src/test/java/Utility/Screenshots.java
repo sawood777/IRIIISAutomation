@@ -16,7 +16,7 @@ public class Screenshots {
 		
 		File src=ts.getScreenshotAs(OutputType.FILE);
 		
-		String destination="C:\\Users\\Sawood Pasha\\workspace\\com.iriiis.product\\ScreenShots\\"+screenshtoName+System.currentTimeMillis()+".png";
+		String destination="C:\\Users\\Praveen\\git\\IRIIISAutomation\\ScreenShots\\"+screenshtoName+System.currentTimeMillis()+".png";
 		
 		try {
 			FileUtils.copyFile(src,new File(destination));

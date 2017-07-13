@@ -1,78 +1,71 @@
 package testcases;
 
-import java.sql.Driver;
+import static org.testng.Assert.assertTrue;
+import static org.testng.Assert.fail;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
+import Pages.LoginPage;
+import Pages.MailPage;
 
-import Factory.Browserfactory;
-import Factory.DataFactory;
-import Pages.Loginpage;
-import Utility.Screenshots;
-
-public class VerifyLogin {
+public class VerifyLogin 
+{
 	
+	@DataProvider
+	public Object[][] getData()
+	{
+	//Rows - Number of times your test has to be repeated.
+	//Columns - Number of parameters in test data.
+	Object[][] data = new Object[4][2];
 
-	ExtentReports report;
-	ExtentTest logger;
-	WebDriver driver;
+	// 1st row
+	data[0][0] ="praveen.kumar21";
+	data[0][1] = "Praveen@1";
+
+	// 2nd row
+	data[1][0] ="praveen.kumar41";
+	data[1][1] = "Praveen@1";
 	
-	@BeforeMethod
-	public void starup(){
-		report=new ExtentReports(".\\Reports\\loginReport.html", true);
-		
-		logger=report.startTest("verifylogin", "To check login");
-		
-		driver=Browserfactory.getbrowser("chrome");
-		
-		driver.get(DataFactory.getconfic().getDevurl());
-		
-		logger.log(LogStatus.INFO, "login page is displayed");
-		
+	// 3rd row
+	data[2][0] ="praveen.kumar88";
+	data[2][1] = "Praveen@1";
+
+	data[3][0] ="praveen.kumar21";
+	data[3][1] = "Praveen@123";
+	
+	return data;
 	}
-	
-	@Test
-	public void logintoAppln(){
+	//@Test(dataProvider="getData")
+	public void testLogin(String uname,String pword,WebDriver driver) 
+	{
+		LoginPage l = new LoginPage(driver);
 		
-		Loginpage login=PageFactory.initElements(driver, Loginpage.class);
-		
-		login.ClickLogin(DataFactory.getdata().getDataByIndex(0, 0, 0), DataFactory.getdata().getDataByIndex(0, 0, 1));
-		
-		logger.log(LogStatus.INFO, logger.addScreenCapture(Screenshots.TakeScreenshot(driver, "myscreenshot")));
-		
-		login.Verifytitle();
-		
-		logger.log(LogStatus.PASS, "Logged in successfully");
-		
-		login.Verifytitle25();
-		
-		//login.singout();
-		
-		logger.log(LogStatus.INFO, "loggedout successfully");
+		l.enterSignInUsername(uname);
+		l.enterSignInPassword(pword);
+		l.clickSignin();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
-	
-	@AfterMethod
-	public void close(ITestResult result){
-		
-		if(result.getStatus()==ITestResult.FAILURE){
+		//@Test
+		public void testLogOut(WebDriver driver) 
+		{
+			LoginPage l1 = new LoginPage(driver);
+		if(driver.getCurrentUrl().equals("https://iriiis.com/#!/auth"))
+		{
 			
-			String path=Screenshots.TakeScreenshot(driver, result.getName());
-			
-			logger.log(LogStatus.FAIL, logger.addScreenCapture(path));
 		}
 		
-		Browserfactory.closebrowser(driver);
-		report.endTest(logger);
-		report.flush();
-	}
-	
+		else
+		{
+			l1.clickProfileIcon();
+			l1.clickSignout();
+		}
+}
 
 }

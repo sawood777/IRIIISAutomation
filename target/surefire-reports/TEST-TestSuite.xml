@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="14.326" tests="1" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="241.789" tests="19" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
-    <property name="java.vm.version" value="25.131-b11"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_101\jre\bin"/>
+    <property name="java.vm.version" value="25.101-b13"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Sawood Pasha\workspace\com.iriiis.product"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Praveen\git\IRIIISAutomation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
     <property name="user.script" value=""/>
-    <property name="user.country" value="US"/>
+    <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\Sawood Pasha\workspace\com.iriiis.product"/>
-    <property name="java.runtime.version" value="1.8.0_131-b11"/>
+    <property name="user.dir" value="C:\Users\Praveen\git\IRIIISAutomation"/>
+    <property name="java.runtime.version" value="1.8.0_101-b13"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\endorsed"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_101\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\SAWOOD~1\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\Users\Praveen\AppData\Local\Temp\"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\Sawood Pasha\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7934908732591628026.tmp"/>
+    <property name="classworlds.conf" value="D:\IRIIIS Automation\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1283024641505959186.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_131/bin/server;C:/Program Files/Java/jre1.8.0_131/bin;C:/Program Files/Java/jre1.8.0_131/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Common Files\lenovo\easyplussdk\bin;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Java\jdk1.8.0_101\bin;D:\Java\jdk1.7.0_15\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Sawood Pasha\AppData\Local\Microsoft\WindowsApps;;C:\Users\Sawood Pasha\AppData\Local\Temp\Rar$EXa0.192\eclipse;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_101\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_101/bin/server;C:/Program Files/Java/jre1.8.0_101/bin;C:/Program Files/Java/jre1.8.0_101/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Common Files\lenovo\easyplussdk\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\nodejs\;C:\Program Files\Amazon\AWSCLI\;C:\Users\Praveen\AppData\Local\Microsoft\WindowsApps;C:\Users\Praveen\AppData\Roaming\npm;C:\Users\Praveen\Desktop\Issues;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
-    <property name="user.home" value="C:\Users\Sawood Pasha"/>
+    <property name="user.home" value="C:\Users\Praveen"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="Cp1252"/>
-    <property name="user.name" value="Sawood Pasha"/>
-    <property name="java.class.path" value="/C:/Users/Sawood Pasha/AppData/Local/Temp/Rar$EXa0.192/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.6.2.20150902-0001/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="user.name" value="Praveen"/>
+    <property name="java.class.path" value="/C:/Users/Praveen/eclipse/java-neon/eclipse/../../../.p2/pool/plugins/org.eclipse.m2e.maven.runtime_1.7.0.20160603-1931/jars/plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_131\jre"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_101\jre"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_131"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_131\jre\classes"/>
+    <property name="java.version" value="1.8.0_101"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_101\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_101\jre\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\Sawood Pasha\workspace\com.iriiis.product\EMBEDDED"/>
+    <property name="maven.home" value="C:\Users\Praveen\git\IRIIISAutomation\EMBEDDED"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -60,5 +60,37 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="logintoAppln" classname="testcases.VerifyLogin" time="14.326"/>
+  <testcase name="testVerifySendingEmail" classname="testcases.VerifyEmail" time="14.083"/>
+  <testcase name="TestProcessingOfEmail" classname="testcases.VerifyEmail" time="4.764"/>
+  <testcase name="TestUnProcessingOfEmail" classname="testcases.VerifyEmail" time="4.664"/>
+  <testcase name="TestBatchProcessingOfEmail" classname="testcases.VerifyEmail" time="13.077"/>
+  <testcase name="TestBatchUnProcessingOfEmail" classname="testcases.VerifyEmail" time="10.685"/>
+  <testcase name="testTagToTopic" classname="testcases.VerifyEmail4" time="11.445"/>
+  <testcase name="testBatchTagToTopic" classname="testcases.VerifyEmail4" time="14.026"/>
+  <testcase name="testMoveToSpam" classname="testcases.VerifyEmail1" time="5.386"/>
+  <testcase name="testMarkAsNotSpam" classname="testcases.VerifyEmail1" time="3.354"/>
+  <testcase name="TestBatchMovetoSpamOfEmail" classname="testcases.VerifyEmail1" time="11.211"/>
+  <testcase name="TestBatchMovetoInboxOfSpamEmail" classname="testcases.VerifyEmail1" time="12.631"/>
+  <testcase name="testMarkAsUnread" classname="testcases.VerifyEmail3" time="9.55"/>
+  <testcase name="testBatchUnread" classname="testcases.VerifyEmail3" time="9.874"/>
+  <testcase name="testBatchRead" classname="testcases.VerifyEmail3" time="13.136"/>
+  <testcase name="testMoveToTrash" classname="testcases.VerifyEmail2" time="5.383"/>
+  <testcase name="testMoveToInboxFromTrashListing" classname="testcases.VerifyEmail2" time="4.489"/>
+  <testcase name="TestBatchMoveToTrash" classname="testcases.VerifyEmail2" time="12.238"/>
+  <testcase name="TestBatchMovetoInboxOfTrashEmail" classname="testcases.VerifyEmail2" time="12.844"/>
+  <testcase name="TestDeleteForever" classname="testcases.VerifyEmail2" time="68.949">
+    <failure message="Expected condition failed: waiting for visibility of all [] (tried for 20 second(s) with 500 MILLISECONDS interval)&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;LAPTOP-1D78PSH8&apos;, ip: &apos;192.168.132.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\Praveen\AppData\Local\Temp\scoped_dir5772_4785}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]&#10;Session ID: 8d69b1ca1710d214b59b31e21d7b6f6d" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [] (tried for 20 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-1D78PSH8', ip: '192.168.132.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\Praveen\AppData\Local\Temp\scoped_dir5772_4785}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 8d69b1ca1710d214b59b31e21d7b6f6d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at Pages.MailPage.GetemailSubjects(MailPage.java:148)
+	at testcases.VerifyEmail2.TestDeleteForever(VerifyEmail2.java:168)
+</failure>
+    <system-out><![CDATA[sfd
+]]></system-out>
+  </testcase>
 </testsuite>
