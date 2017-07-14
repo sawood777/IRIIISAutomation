@@ -3,13 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="testcases.VerifyEmail"/>
-      <class name="testcases.VerifyEmail1"/>
-      <class name="testcases.VerifyEmail3"/>
-      <class name="testcases.VerifyEmail2"/>
-      <class name="testcases.VerifyLogin"/>
-      <class name="testcases.VerifyEmail5"/>
-      <class name="testcases.VerifyEmail4"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

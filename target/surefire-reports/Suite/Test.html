@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>18/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>19/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 13 11:20:26 IST 2017</td>
+<td>Started on:</td><td>Fri Jul 14 12:24:07 IST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>319 seconds (319685 ms)</td>
+<tr><td>Total time:</td><td>274 seconds (274972 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,34 +75,22 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.VerifyEmail2.TestDeleteForever()'><b>TestDeleteForever</b><br>Test class: testcases.VerifyEmail2</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [] (tried for 20 second(s) with 500 MILLISECONDS interval)
-Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;LAPTOP-1D78PSH8&apos;, ip: &apos;192.168.132.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\Praveen\AppData\Local\Temp\scoped_dir5772_4785}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: 8d69b1ca1710d214b59b31e21d7b6f6d
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
-	at Pages.MailPage.GetemailSubjects(MailPage.java:148)
-	at testcases.VerifyEmail2.TestDeleteForever(VerifyEmail2.java:168)
+<td title='testcases.VerifyEmail4.testBatchTagToTopic()'><b>testBatchTagToTopic</b><br>Test class: testcases.VerifyEmail4</td>
+<td><div><pre>java.lang.AssertionError: Batch Tag to Topic got failed expected [true] but found [false]
+	at testcases.VerifyEmail4.testBatchTagToTopic(VerifyEmail4.java:126)
 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:293)
 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:91)
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace263656423", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace263656423'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [] (tried for 20 second(s) with 500 MILLISECONDS interval)
-Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;LAPTOP-1D78PSH8&apos;, ip: &apos;192.168.132.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\Praveen\AppData\Local\Temp\scoped_dir5772_4785}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: 8d69b1ca1710d214b59b31e21d7b6f6d
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
-	at Pages.MailPage.GetemailSubjects(MailPage.java:148)
-	at testcases.VerifyEmail2.TestDeleteForever(VerifyEmail2.java:168)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2110785285", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2110785285'><pre>java.lang.AssertionError: Batch Tag to Topic got failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:286)
+	at testcases.VerifyEmail4.testBatchTagToTopic(VerifyEmail4.java:126)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -131,8 +119,8 @@ Session ID: 8d69b1ca1710d214b59b31e21d7b6f6d
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 </pre></div></td>
-<td>68</td>
-<td>testcases.VerifyEmail2@79b4d0f</td></tr>
+<td>13</td>
+<td>testcases.VerifyEmail4@79b4d0f</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -144,93 +132,98 @@ Session ID: 8d69b1ca1710d214b59b31e21d7b6f6d
 <tr>
 <td title='testcases.VerifyEmail2.TestBatchMoveToTrash()'><b>TestBatchMoveToTrash</b><br>Test class: testcases.VerifyEmail2</td>
 <td></td>
-<td>12</td>
-<td>testcases.VerifyEmail2@79b4d0f</td></tr>
+<td>8</td>
+<td>testcases.VerifyEmail2@79698539</td></tr>
 <tr>
 <td title='testcases.VerifyEmail1.TestBatchMovetoInboxOfSpamEmail()'><b>TestBatchMovetoInboxOfSpamEmail</b><br>Test class: testcases.VerifyEmail1</td>
 <td></td>
-<td>12</td>
-<td>testcases.VerifyEmail1@1a407d53</td></tr>
+<td>8</td>
+<td>testcases.VerifyEmail1@3d8c7aca</td></tr>
 <tr>
 <td title='testcases.VerifyEmail2.TestBatchMovetoInboxOfTrashEmail()'><b>TestBatchMovetoInboxOfTrashEmail</b><br>Test class: testcases.VerifyEmail2</td>
 <td></td>
-<td>12</td>
-<td>testcases.VerifyEmail2@79b4d0f</td></tr>
+<td>8</td>
+<td>testcases.VerifyEmail2@79698539</td></tr>
 <tr>
 <td title='testcases.VerifyEmail1.TestBatchMovetoSpamOfEmail()'><b>TestBatchMovetoSpamOfEmail</b><br>Test class: testcases.VerifyEmail1</td>
 <td></td>
-<td>11</td>
-<td>testcases.VerifyEmail1@1a407d53</td></tr>
+<td>8</td>
+<td>testcases.VerifyEmail1@3d8c7aca</td></tr>
 <tr>
 <td title='testcases.VerifyEmail.TestBatchProcessingOfEmail()'><b>TestBatchProcessingOfEmail</b><br>Test class: testcases.VerifyEmail</td>
 <td></td>
-<td>13</td>
-<td>testcases.VerifyEmail@3fb6a447</td></tr>
+<td>9</td>
+<td>testcases.VerifyEmail@6b2fad11</td></tr>
 <tr>
 <td title='testcases.VerifyEmail.TestBatchUnProcessingOfEmail()'><b>TestBatchUnProcessingOfEmail</b><br>Test class: testcases.VerifyEmail</td>
 <td></td>
-<td>10</td>
-<td>testcases.VerifyEmail@3fb6a447</td></tr>
+<td>8</td>
+<td>testcases.VerifyEmail@6b2fad11</td></tr>
+<tr>
+<td title='testcases.VerifyEmail2.TestDeleteForever()'><b>TestDeleteForever</b><br>Test class: testcases.VerifyEmail2</td>
+<td></td>
+<td>5</td>
+<td>testcases.VerifyEmail2@79698539</td></tr>
 <tr>
 <td title='testcases.VerifyEmail.TestProcessingOfEmail()'><b>TestProcessingOfEmail</b><br>Test class: testcases.VerifyEmail</td>
 <td></td>
 <td>4</td>
-<td>testcases.VerifyEmail@3fb6a447</td></tr>
+<td>testcases.VerifyEmail@6b2fad11</td></tr>
 <tr>
 <td title='testcases.VerifyEmail.TestUnProcessingOfEmail()'><b>TestUnProcessingOfEmail</b><br>Test class: testcases.VerifyEmail</td>
 <td></td>
-<td>4</td>
-<td>testcases.VerifyEmail@3fb6a447</td></tr>
+<td>3</td>
+<td>testcases.VerifyEmail@6b2fad11</td></tr>
 <tr>
 <td title='testcases.VerifyEmail3.testBatchRead()'><b>testBatchRead</b><br>Test class: testcases.VerifyEmail3</td>
 <td></td>
-<td>13</td>
-<td>testcases.VerifyEmail3@7a5d012c</td></tr>
-<tr>
-<td title='testcases.VerifyEmail4.testBatchTagToTopic()'><b>testBatchTagToTopic</b><br>Test class: testcases.VerifyEmail4</td>
-<td></td>
-<td>14</td>
-<td>testcases.VerifyEmail4@6b2fad11</td></tr>
+<td>11</td>
+<td>testcases.VerifyEmail3@3fb6a447</td></tr>
 <tr>
 <td title='testcases.VerifyEmail3.testBatchUnread()'><b>testBatchUnread</b><br>Test class: testcases.VerifyEmail3</td>
 <td></td>
-<td>9</td>
-<td>testcases.VerifyEmail3@7a5d012c</td></tr>
+<td>7</td>
+<td>testcases.VerifyEmail3@3fb6a447</td></tr>
 <tr>
 <td title='testcases.VerifyEmail1.testMarkAsNotSpam()'><b>testMarkAsNotSpam</b><br>Test class: testcases.VerifyEmail1</td>
 <td></td>
-<td>3</td>
-<td>testcases.VerifyEmail1@1a407d53</td></tr>
+<td>2</td>
+<td>testcases.VerifyEmail1@3d8c7aca</td></tr>
 <tr>
 <td title='testcases.VerifyEmail3.testMarkAsUnread()'><b>testMarkAsUnread</b><br>Test class: testcases.VerifyEmail3</td>
 <td></td>
 <td>9</td>
-<td>testcases.VerifyEmail3@7a5d012c</td></tr>
+<td>testcases.VerifyEmail3@3fb6a447</td></tr>
 <tr>
 <td title='testcases.VerifyEmail2.testMoveToInboxFromTrashListing()'><b>testMoveToInboxFromTrashListing</b><br>Test class: testcases.VerifyEmail2</td>
 <td></td>
-<td>4</td>
-<td>testcases.VerifyEmail2@79b4d0f</td></tr>
+<td>3</td>
+<td>testcases.VerifyEmail2@79698539</td></tr>
 <tr>
 <td title='testcases.VerifyEmail1.testMoveToSpam()'><b>testMoveToSpam</b><br>Test class: testcases.VerifyEmail1</td>
 <td></td>
-<td>5</td>
-<td>testcases.VerifyEmail1@1a407d53</td></tr>
+<td>4</td>
+<td>testcases.VerifyEmail1@3d8c7aca</td></tr>
 <tr>
 <td title='testcases.VerifyEmail2.testMoveToTrash()'><b>testMoveToTrash</b><br>Test class: testcases.VerifyEmail2</td>
 <td></td>
-<td>5</td>
-<td>testcases.VerifyEmail2@79b4d0f</td></tr>
+<td>4</td>
+<td>testcases.VerifyEmail2@79698539</td></tr>
+<tr>
+<td title='testcases.VerifyEmail5.testTagToTopic()'><b>testTagToTopic</b><br>Test class: testcases.VerifyEmail5</td>
+<td></td>
+<td>10</td>
+<td>testcases.VerifyEmail5@73f792cf</td></tr>
 <tr>
 <td title='testcases.VerifyEmail4.testTagToTopic()'><b>testTagToTopic</b><br>Test class: testcases.VerifyEmail4</td>
 <td></td>
-<td>11</td>
-<td>testcases.VerifyEmail4@6b2fad11</td></tr>
+<td>10</td>
+<td>testcases.VerifyEmail4@79b4d0f</td></tr>
 <tr>
 <td title='testcases.VerifyEmail.testVerifySendingEmail()'><b>testVerifySendingEmail</b><br>Test class: testcases.VerifyEmail</td>
 <td></td>
-<td>14</td>
-<td>testcases.VerifyEmail@3fb6a447</td></tr>
+<td>12</td>
+<td>testcases.VerifyEmail@6b2fad11</td></tr>
 </table><p>
 </body>
 </html>

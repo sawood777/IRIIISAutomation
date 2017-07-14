@@ -11,6 +11,7 @@ testcases\VerifyEmail.class
 testcases\VerifyEmail1.class
 DataCollection\ExcellDataCollection.class
 testcases\BaseTest.class
+testcases\VerifyEmail5.class
 DataCollection\Configdata.class
 Pages\LoginPage.class
 testcases\VerifyEmail2.class
