@@ -3,7 +3,7 @@
   <groupId>com.iriiis.product</groupId>
   <artifactId>com.iriiis.product</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <description>This is automation framework abc</description>
+  <description>This is automation framework xyz</description>
   
   <dependencies>
     <dependency>
