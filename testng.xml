@@ -8,6 +8,7 @@
       <class name="testcases.VerifyEmail3"/>
       <class name="testcases.VerifyEmail2"/>
       <class name="testcases.VerifyLogin"/>
+      <class name="testcases.VerifyEmail5"/>
       <class name="testcases.VerifyEmail4"/>
     </classes>
   </test> <!-- Test -->

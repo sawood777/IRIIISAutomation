@@ -34,7 +34,7 @@ public class VerifyEmail extends BaseTest {
 		MailPage m= new MailPage(driver);
 		d.clickMailCard();
 		m.clickComposeIcon();
-		m.enterToAddreess("praveen.kumarprod@iriiis.com");
+		m.enterToAddreess("praveen.kirik@iriiisdev.com");
 		m.enterSubject("String1223");
 		try {
 			Thread.sleep(4000);

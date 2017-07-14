@@ -48,6 +48,10 @@ public class VerifyEmail2 extends BaseTest {
 			m.clickFirstEmail();
 			m.clickElipses();
 			m.clickunTrashExpandedView();
+			if(m.checkcloseMailIcon())
+			{
+				m.clickCloseMailIcon();
+			}
 			m.clickMailFilter();
 			m.clickUnProcessedFilter();
 			List<WebElement> sub1=m.GetemailSubjects();

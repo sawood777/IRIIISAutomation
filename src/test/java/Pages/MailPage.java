@@ -42,7 +42,7 @@ public class MailPage {
 	@FindBy(xpath="//md-autocomplete-wrap/input[@type='search']")private WebElement topicField;
 	@FindBy(xpath="//button[contains(text(),'Save')]")private WebElement topicSave;
 	@FindBy(xpath="//span[text()='Macro View']")private WebElement macroview;
-	@FindBy(xpath="//button[@ng-if='actions.share']")private WebElement shareIcon;
+	@FindBy(xpath="//button[@aria-label='share']")private WebElement shareIcon;
 	@FindBy(xpath="//span[@class='subject ng-binding']/../../div[3]/i") private WebElement sharedlabel;
 	@FindBy(xpath="//button[@ng-if='actions.reportSpam']")private WebElement spamIcon;
 	@FindBy(xpath="//button[@type='button']/span[contains(text(),'More')]")private WebElement more;
@@ -64,7 +64,7 @@ public class MailPage {
 	@FindBy(xpath="//md-autocomplete[@md-floating-label='Search a topic']") private WebElement searchBox;
 	@FindAll({@FindBy(xpath="//div[@class='ng-binding']")}) private List<WebElement> searchResult;
 	@FindAll({@FindBy(xpath="//md-checkbox[@type='checkbox']")}) private List<WebElement> checkBox;
-	
+	@FindBy(xpath="//button[@aria-label='close']") private WebElement closeMail;
 	
 	
 	
@@ -262,7 +262,19 @@ public class MailPage {
 	{
 		return (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOfAllElements(checkBox));
 	}
+	public boolean checkcloseMailIcon()
+	{
+		if(closeMail.isDisplayed())
 		
+				return true;
+			else
+				return false;
+		
+	}
+	public void clickCloseMailIcon()
+	{
+		closeMail.click();
+	}
 	
 }
 	

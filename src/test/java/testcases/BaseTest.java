@@ -31,7 +31,7 @@ public class BaseTest {
 		System.out.println("Opening the browser");
 		System.setProperty("webdriver.chrome.driver","C://Chrome Driver//chromedriver.exe");
 		driver=new ChromeDriver();
-		driver.get("https://www.iriiis.com");
+		driver.get("https://www.iriiisdev.com");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
 		VerifyLogin v= new VerifyLogin();
