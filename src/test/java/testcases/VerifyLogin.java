@@ -1,14 +1,8 @@
 package testcases;
 
-import static org.testng.Assert.assertTrue;
-import static org.testng.Assert.fail;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
-
 import Pages.LoginPage;
-import Pages.MailPage;
 
 public class VerifyLogin 
 {

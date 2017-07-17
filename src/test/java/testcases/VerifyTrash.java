@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import Pages.DashboardPage;
 import Pages.MailPage;
 
-public class VerifyEmail2 extends BaseTest {
+public class VerifyTrash extends BaseTest {
 	
 		@Test(priority=10)
 		public void testMoveToTrash()

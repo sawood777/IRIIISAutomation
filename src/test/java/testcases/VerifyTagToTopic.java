@@ -13,7 +13,7 @@ import Pages.DashboardPage;
 import Pages.IriiisLogoPage;
 import Pages.MailPage;
 
-public class VerifyEmail4 extends BaseTest{
+public class VerifyTagToTopic extends BaseTest{
 	
 	@Test(priority=19)
 	public void testTagToTopic()

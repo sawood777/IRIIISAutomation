@@ -11,7 +11,7 @@ import Pages.DashboardPage;
 import Pages.MailPage;
 
 
-public class VerifyEmail3 extends BaseTest {
+public class VerifyReadUnread extends BaseTest {
 	
 	@Test(priority=16)
 	public void testMarkAsUnread()

@@ -10,7 +10,7 @@ import Pages.DashboardPage;
 import Pages.IriiisLogoPage;
 import Pages.MailPage;
 
-public class VerifyEmail5 extends BaseTest{
+public class VerifySharing extends BaseTest{
 	
 	@Test(priority=21)
 	public void testTagToTopic()

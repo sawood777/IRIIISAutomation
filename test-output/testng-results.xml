@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33084" started-at="2017-07-14T06:48:02Z" finished-at="2017-07-14T06:48:35Z">
+  <suite name="Default suite" duration-ms="59231" started-at="2017-07-17T10:49:43Z" finished-at="2017-07-17T10:50:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="33084" started-at="2017-07-14T06:48:02Z" finished-at="2017-07-14T06:48:35Z">
-      <class name="testcases.VerifyEmail5">
-        <test-method status="PASS" signature="testBrowser()[pri:0, instance:testcases.VerifyEmail5@77caeb3e]" name="testBrowser" is-config="true" duration-ms="21177" started-at="2017-07-14T12:18:02Z" finished-at="2017-07-14T12:18:23Z">
+    <test name="Default test" duration-ms="59231" started-at="2017-07-17T10:49:43Z" finished-at="2017-07-17T10:50:42Z">
+      <class name="testcases.VerifySendAndProcessed">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:testcases.VerifySendAndProcessed@3532ec19]" name="testBrowser" is-config="true" duration-ms="22405" started-at="2017-07-17T16:19:43Z" finished-at="2017-07-17T16:20:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBrowser -->
-        <test-method status="PASS" signature="testTagToTopic()[pri:0, instance:testcases.VerifyEmail5@77caeb3e]" name="testTagToTopic" duration-ms="10865" started-at="2017-07-14T12:18:23Z" finished-at="2017-07-14T12:18:34Z">
+        <test-method status="PASS" signature="testVerifySendingEmail()[pri:0, instance:testcases.VerifySendAndProcessed@3532ec19]" name="testVerifySendingEmail" duration-ms="12945" started-at="2017-07-17T16:20:05Z" finished-at="2017-07-17T16:20:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testTagToTopic -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:testcases.VerifyEmail5@77caeb3e]" name="postCondition" is-config="true" duration-ms="1012" started-at="2017-07-14T12:18:34Z" finished-at="2017-07-14T12:18:35Z">
+        </test-method> <!-- testVerifySendingEmail -->
+        <test-method status="PASS" signature="TestProcessingOfEmail()[pri:0, instance:testcases.VerifySendAndProcessed@3532ec19]" name="TestProcessingOfEmail" duration-ms="3823" started-at="2017-07-17T16:20:18Z" finished-at="2017-07-17T16:20:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestProcessingOfEmail -->
+        <test-method status="PASS" signature="TestUnProcessingOfEmail()[pri:0, instance:testcases.VerifySendAndProcessed@3532ec19]" name="TestUnProcessingOfEmail" duration-ms="2870" started-at="2017-07-17T16:20:22Z" finished-at="2017-07-17T16:20:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestUnProcessingOfEmail -->
+        <test-method status="PASS" signature="TestBatchProcessingOfEmail()[pri:0, instance:testcases.VerifySendAndProcessed@3532ec19]" name="TestBatchProcessingOfEmail" duration-ms="8547" started-at="2017-07-17T16:20:25Z" finished-at="2017-07-17T16:20:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestBatchProcessingOfEmail -->
+        <test-method status="PASS" signature="TestBatchUnProcessingOfEmail()[pri:0, instance:testcases.VerifySendAndProcessed@3532ec19]" name="TestBatchUnProcessingOfEmail" duration-ms="7008" started-at="2017-07-17T16:20:33Z" finished-at="2017-07-17T16:20:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestBatchUnProcessingOfEmail -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:testcases.VerifySendAndProcessed@3532ec19]" name="postCondition" is-config="true" duration-ms="1607" started-at="2017-07-17T16:20:40Z" finished-at="2017-07-17T16:20:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-      </class> <!-- testcases.VerifyEmail5 -->
+      </class> <!-- testcases.VerifySendAndProcessed -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

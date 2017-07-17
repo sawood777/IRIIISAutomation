@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import Pages.DashboardPage;
 import Pages.MailPage;
 
-public class VerifyEmail1 extends BaseTest{
+public class VerifySpam extends BaseTest{
 
 		
 		@Test(priority=6)

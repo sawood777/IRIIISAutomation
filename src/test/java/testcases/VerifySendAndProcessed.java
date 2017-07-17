@@ -22,7 +22,7 @@ import Utility.Reporting;
 import Utility.Screenshots;
 
 
-public class VerifyEmail extends BaseTest {
+public class VerifySendAndProcessed extends BaseTest {
 	
 	
 	@Test(priority=1)

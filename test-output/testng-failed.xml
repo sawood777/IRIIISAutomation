@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="testcases.VerifyEmail2">
+      <class name="testcases.VerifySendAndProcessed">
         <methods>
-          <include name="TestDeleteForever"/>
+          <include name="TestBatchProcessingOfEmail"/>
+          <include name="TestUnProcessingOfEmail"/>
+          <include name="testVerifySendingEmail"/>
           <include name="testBrowser"/>
-          <include name="TestBatchMoveToTrash"/>
-          <include name="testMoveToInboxFromTrashListing"/>
-          <include name="postCondition"/>
-          <include name="TestBatchMovetoInboxOfTrashEmail"/>
+          <include name="TestBatchUnProcessingOfEmail"/>
+          <include name="TestProcessingOfEmail"/>
         </methods>
-      </class> <!-- testcases.VerifyEmail2 -->
+      </class> <!-- testcases.VerifySendAndProcessed -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

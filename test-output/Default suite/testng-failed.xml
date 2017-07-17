@@ -3,14 +3,16 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testcases.VerifyEmail">
+      <class name="testcases.VerifySendAndProcessed">
         <methods>
-          <include name="test"/>
+          <include name="TestBatchProcessingOfEmail"/>
+          <include name="TestUnProcessingOfEmail"/>
+          <include name="testVerifySendingEmail"/>
           <include name="testBrowser"/>
-          <include name="beforeTest"/>
-          <include name="postCondition"/>
+          <include name="TestBatchUnProcessingOfEmail"/>
+          <include name="TestProcessingOfEmail"/>
         </methods>
-      </class> <!-- testcases.VerifyEmail -->
+      </class> <!-- testcases.VerifySendAndProcessed -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
