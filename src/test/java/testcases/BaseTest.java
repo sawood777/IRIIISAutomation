@@ -68,7 +68,7 @@ public class BaseTest {
                 //close() - To close all the operation
                // report.close();
     }
-		
+		//This is to check if the Git has been sucessfully updated
 
 	@AfterClass
 	public void postCondition()
