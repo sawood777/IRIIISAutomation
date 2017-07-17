@@ -35,7 +35,7 @@ public class VerifyEmail extends BaseTest {
 		d.clickMailCard();
 		m.clickComposeIcon();
 		m.enterToAddreess("devuser1@iriiisdev.com");
-		m.enterSubject("String1223");
+		m.enterSubject("String12233");
 		try {
 			Thread.sleep(4000);
 		} catch (InterruptedException e) {
