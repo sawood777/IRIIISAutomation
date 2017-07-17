@@ -16,6 +16,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
+import Factory.Browserfactory;
 import Factory.DataFactory;
 import Utility.Reporting;
 import Utility.Screenshots;
@@ -29,17 +30,13 @@ public class BaseTest {
 	public void testBrowser()
 	{
 		System.out.println("Opening the browser");
-		System.setProperty("webdriver.chrome.driver","C://Chrome Driver//chromedriver.exe");
-		driver=new ChromeDriver();
-		driver.get("https://www.iriiisdev.com");
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		
+		driver=Browserfactory.getbrowser("chrome");
+		driver.get(DataFactory.getconfic().getDevurl());
 		VerifyLogin v= new VerifyLogin();
 		v.testLogin(DataFactory.getdata().getDataByIndex(0, 0, 0),DataFactory.getdata().getDataByIndex(0, 0,1 ) ,driver);
 	}
 	
-	//@BeforeTest
-	
+		@BeforeTest
 		public void beforeTest()
 		{
 		report= new ExtentReports("./Reports/mytest.html", true);
@@ -78,5 +75,7 @@ public class BaseTest {
 		//to check update
 		
 		driver.quit();
+		report.endTest(logger);
+		report.flush();
 	}
 }
