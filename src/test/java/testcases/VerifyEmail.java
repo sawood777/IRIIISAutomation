@@ -34,6 +34,7 @@ public class VerifyEmail extends BaseTest {
 		MailPage m= new MailPage(driver);
 		d.clickMailCard();
 		m.clickComposeIcon();
+		logger.log(LogStatus.INFO, "email opened");
 		m.enterToAddreess("devuser1@iriiisdev.com");
 		m.enterSubject("String12233");
 		try {
@@ -44,10 +45,12 @@ public class VerifyEmail extends BaseTest {
 		}
 		m.enterEmailBody("hey how are you");
 		m.clickSendButton();
-		
+		logger.log(LogStatus.INFO, "email send");
 		
 		m.clickMailFilter();
 		m.clickSentFilter();
+		
+		
 		
 		List<WebElement> sub=m.GetemailSubjects();
 		for(int i=0;i<sub.size();i++)
@@ -61,11 +64,11 @@ public class VerifyEmail extends BaseTest {
 		}
 		Assert.assertEquals((flag==true), true, "Email not sent");
 		
-		
+		logger.log(LogStatus.PASS, "email filter is done");
 		
 	}
 	
-//	@Test(priority=2)
+//@Test(priority=2)
 	/*public void test(ITestResult result){
 		if(result.getStatus()==ITestResult.FAILURE){
 			
@@ -86,12 +89,13 @@ public class VerifyEmail extends BaseTest {
 		List<WebElement> sub=m.GetemailSubjects();
 		String subj=sub.get(0).getText();
 		System.out.println(subj);
+		logger.log(LogStatus.INFO, "Unprossedd page");
 		m.clickFirstEmail();
 		m.clickProcessUnProcessedIcon();
 		m.clickMailFilter();
 		m.clickProcessedFilter();
 	
-		
+		logger.log(LogStatus.INFO, "Pprossedd page");
 		List<WebElement> sub1=m.GetemailSubjects();
 		for(int i=0;i<sub1.size();i++)
 		{
@@ -105,6 +109,8 @@ public class VerifyEmail extends BaseTest {
 		}
 	
 		Assert.assertEquals((flag==true), true, "Email processing Failed   "+ subj +"  not found in processed list");
+		
+		logger.log(LogStatus.PASS, "Processing is completed");
 		
 	}
 	
@@ -137,6 +143,7 @@ public class VerifyEmail extends BaseTest {
 		
 		Assert.assertEquals((flag==true), true, "Email Unprocessing Failed   "+ subj +"  not found in processed list");
 		
+		logger.log(LogStatus.PASS, "Unprocessed is completed");
 	}
 	
 	@Test(priority=4)
@@ -157,6 +164,8 @@ public class VerifyEmail extends BaseTest {
 		 Actions action = new Actions(driver); 
 		 action.moveToElement(m.batchSelection()).click().build().perform();
 		m.clickSelectAll();
+		
+		logger.log(LogStatus.INFO, "All emails are selected");
 		m.clickProcessUnProcessedIcon();
 		m.clickMailFilter();
 		m.clickProcessedFilter();
@@ -176,6 +185,7 @@ public class VerifyEmail extends BaseTest {
 		}
 		Assert.assertEquals(((n>0)&&(n<=myStringArray1.length)), true, "Email Batch processing Failed");
 		
+		logger.log(LogStatus.PASS, "batch process is completed");
 	}
 	
 	@Test(priority=5)
@@ -194,6 +204,9 @@ public class VerifyEmail extends BaseTest {
 		Actions action = new Actions(driver); 
 		 action.moveToElement(m.batchSelection()).click().build().perform();
 		 m.clickSelectAll();
+		 
+		 logger.log(LogStatus.INFO, "all mail selected");
+		 
 		m.clickProcessUnProcessedIcon();
 		m.clickMailFilter();
 		m.clickUnProcessedFilter();
@@ -214,6 +227,7 @@ public class VerifyEmail extends BaseTest {
 		
 		Assert.assertEquals(((n>0)&&(n<=myStringArray.length)), true, "Email Batch Unprocessing Failed");
 		
+		logger.log(LogStatus.PASS, "batch Unprocess is completed");
 	}
 
 	}

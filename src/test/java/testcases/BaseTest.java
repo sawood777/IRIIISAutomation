@@ -34,9 +34,11 @@ public class BaseTest {
 		driver.get(DataFactory.getconfic().getDevurl());
 		VerifyLogin v= new VerifyLogin();
 		v.testLogin(DataFactory.getdata().getDataByIndex(0, 0, 0),DataFactory.getdata().getDataByIndex(0, 0,1 ) ,driver);
+		report= new ExtentReports("./Reports/mytest.html", true);
+		logger = report.startTest("BaseTest");
 	}
 	
-		@BeforeTest
+		//@BeforeTest
 		public void beforeTest()
 		{
 		report= new ExtentReports("./Reports/mytest.html", true);
