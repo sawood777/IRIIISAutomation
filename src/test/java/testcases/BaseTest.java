@@ -76,6 +76,7 @@ public class BaseTest {
 		//VerifyLogin v= new VerifyLogin();
 		//v.testLogOut(driver);
 		//to check update
+		//this is from eclips
 		driver.quit();
 	}
 }
