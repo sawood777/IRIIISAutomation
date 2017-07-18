@@ -1,4 +1,4 @@
-package testcases;
+package emailTestCases;
 
 import java.util.List;
 
