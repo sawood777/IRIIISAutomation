@@ -14,6 +14,7 @@ public class DashboardPage {
 	WebDriver driver;;
 	@FindBy(xpath="//div[contains(text(),'Mails')]")private WebElement mailCard;
 	@FindBy(xpath="//div[contains(text(),'Contacts')]")private WebElement contactCard;
+	@FindBy(xpath="//div[contains(text(),'Document')]")private WebElement DocumentCard;
 	
 	public DashboardPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -23,11 +24,12 @@ public class DashboardPage {
 	{
 		mailCard.click();
 	}
-/*	
-	//public void clickDocumentCard()
+	
+
+	public void clickDocumentCard()
 	{
 		DocumentCard.click();
-	}*/
+	}
 	public void clickContactCard()
 	{
 		(new WebDriverWait(driver, 20))
