@@ -31,68 +31,165 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">19</td><td class="numi">19</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">275.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">12</td><td class="numi">6</td><td class="numi">0</td><td class="numi_attn">12</td><td class="numi">0.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr><th colspan="4">Test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">testcases.VerifyEmail4</td><td><a href="#m1"><b>testBatchTagToTopic</b>  </a></td><td class="numi">1</td><td>1500015410661</td><td class="numi">13539</td></tr>
+<tr class="failedodd"><td rowspan="12">contactTestCases.VerifyContactCreation</td><td><a href="#m1"><b>testContactQuickCreate</b>  </a></td><td class="numi">1</td><td>1500372275945</td><td class="numi">7</td></tr><tr class="failedodd"><td><a href="#m2"><b>testCreateContactionBySearch</b>  </a></td><td class="numi">1</td><td>1500372276031</td><td class="numi">2</td></tr><tr class="failedodd"><td><a href="#m3"><b>testCreateContactWithoutProfileSearch</b>  </a></td><td class="numi">1</td><td>1500372276119</td><td class="numi">19</td></tr><tr class="failedodd"><td><a href="#m4"><b>testCreateContactWithoutAnyfields</b>  </a></td><td class="numi">1</td><td>1500372276249</td><td class="numi">2</td></tr><tr class="failedodd"><td><a href="#m5"><b>testUpdateContact</b>  </a></td><td class="numi">1</td><td>1500372276359</td><td class="numi">13</td></tr><tr class="failedodd"><td><a href="#m6"><b>testSingleContactDeletion</b>  </a></td><td class="numi">1</td><td>1500372276445</td><td class="numi">3</td></tr><tr class="failedodd"><td><a href="#m7"><b>testContactQuickCreate</b>  </a></td><td class="numi">1</td><td>1500372275945</td><td class="numi">7</td></tr><tr class="failedodd"><td><a href="#m8"><b>testCreateContactionBySearch</b>  </a></td><td class="numi">1</td><td>1500372276031</td><td class="numi">2</td></tr><tr class="failedodd"><td><a href="#m9"><b>testCreateContactWithoutProfileSearch</b>  </a></td><td class="numi">1</td><td>1500372276119</td><td class="numi">19</td></tr><tr class="failedodd"><td><a href="#m10"><b>testCreateContactWithoutAnyfields</b>  </a></td><td class="numi">1</td><td>1500372276249</td><td class="numi">2</td></tr><tr class="failedodd"><td><a href="#m11"><b>testUpdateContact</b>  </a></td><td class="numi">1</td><td>1500372276359</td><td class="numi">13</td></tr><tr class="failedodd"><td><a href="#m12"><b>testSingleContactDeletion</b>  </a></td><td class="numi">1</td><td>1500372276445</td><td class="numi">3</td></tr>
 <tr><th colspan="4">Test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="5">testcases.VerifyEmail</td><td><a href="#m2"><b>testVerifySendingEmail</b>  </a></td><td class="numi">1</td><td>1500015267712</td><td class="numi">12395</td></tr><tr class="passedodd"><td><a href="#m3"><b>TestProcessingOfEmail</b>  </a></td><td class="numi">1</td><td>1500015280108</td><td class="numi">4189</td></tr><tr class="passedodd"><td><a href="#m4"><b>TestUnProcessingOfEmail</b>  </a></td><td class="numi">1</td><td>1500015284298</td><td class="numi">3242</td></tr><tr class="passedodd"><td><a href="#m5"><b>TestBatchProcessingOfEmail</b>  </a></td><td class="numi">1</td><td>1500015287541</td><td class="numi">9870</td></tr><tr class="passedodd"><td><a href="#m6"><b>TestBatchUnProcessingOfEmail</b>  </a></td><td class="numi">1</td><td>1500015297411</td><td class="numi">8240</td></tr>
-<tr class="passedeven"><td rowspan="1">testcases.VerifyEmail5</td><td><a href="#m7"><b>testTagToTopic</b>  </a></td><td class="numi">1</td><td>1500015325102</td><td class="numi">10593</td></tr>
-<tr class="passedodd"><td rowspan="4">testcases.VerifyEmail1</td><td><a href="#m8"><b>testMoveToSpam</b>  </a></td><td class="numi">1</td><td>1500015355755</td><td class="numi">4289</td></tr><tr class="passedodd"><td><a href="#m9"><b>testMarkAsNotSpam</b>  </a></td><td class="numi">1</td><td>1500015360044</td><td class="numi">2744</td></tr><tr class="passedodd"><td><a href="#m10"><b>TestBatchMovetoSpamOfEmail</b>  </a></td><td class="numi">1</td><td>1500015362788</td><td class="numi">8638</td></tr><tr class="passedodd"><td><a href="#m11"><b>TestBatchMovetoInboxOfSpamEmail</b>  </a></td><td class="numi">1</td><td>1500015371426</td><td class="numi">8976</td></tr>
-<tr class="passedeven"><td rowspan="1">testcases.VerifyEmail4</td><td><a href="#m12"><b>testTagToTopic</b>  </a></td><td class="numi">1</td><td>1500015400324</td><td class="numi">10337</td></tr>
-<tr class="passedodd"><td rowspan="3">testcases.VerifyEmail3</td><td><a href="#m13"><b>testMarkAsUnread</b>  </a></td><td class="numi">1</td><td>1500015444228</td><td class="numi">9005</td></tr><tr class="passedodd"><td><a href="#m14"><b>testBatchUnread</b>  </a></td><td class="numi">1</td><td>1500015453233</td><td class="numi">7307</td></tr><tr class="passedodd"><td><a href="#m15"><b>testBatchRead</b>  </a></td><td class="numi">1</td><td>1500015460540</td><td class="numi">11778</td></tr>
-<tr class="passedeven"><td rowspan="5">testcases.VerifyEmail2</td><td><a href="#m16"><b>testMoveToTrash</b>  </a></td><td class="numi">1</td><td>1500015492060</td><td class="numi">4343</td></tr><tr class="passedeven"><td><a href="#m17"><b>testMoveToInboxFromTrashListing</b>  </a></td><td class="numi">1</td><td>1500015496403</td><td class="numi">3787</td></tr><tr class="passedeven"><td><a href="#m18"><b>TestBatchMoveToTrash</b>  </a></td><td class="numi">1</td><td>1500015500190</td><td class="numi">8364</td></tr><tr class="passedeven"><td><a href="#m19"><b>TestBatchMovetoInboxOfTrashEmail</b>  </a></td><td class="numi">1</td><td>1500015508555</td><td class="numi">8294</td></tr><tr class="passedeven"><td><a href="#m20"><b>TestDeleteForever</b>  </a></td><td class="numi">1</td><td>1500015516850</td><td class="numi">5067</td></tr>
+<tr class="passedodd"><td rowspan="12">contactTestCases.VerifyContactCreation</td><td><a href="#m13"><b>testContactQuickCreate</b>  </a></td><td class="numi">1</td><td>1500372249523</td><td class="numi">5250</td></tr><tr class="passedodd"><td><a href="#m14"><b>testCreateContactionBySearch</b>  </a></td><td class="numi">1</td><td>1500372254773</td><td class="numi">3127</td></tr><tr class="passedodd"><td><a href="#m15"><b>testCreateContactWithoutProfileSearch</b>  </a></td><td class="numi">1</td><td>1500372257901</td><td class="numi">3222</td></tr><tr class="passedodd"><td><a href="#m16"><b>testCreateContactWithoutAnyfields</b>  </a></td><td class="numi">1</td><td>1500372261123</td><td class="numi">658</td></tr><tr class="passedodd"><td><a href="#m17"><b>testUpdateContact</b>  </a></td><td class="numi">1</td><td>1500372261782</td><td class="numi">6154</td></tr><tr class="passedodd"><td><a href="#m18"><b>testSingleContactDeletion</b>  </a></td><td class="numi">1</td><td>1500372267936</td><td class="numi">6283</td></tr><tr class="passedodd"><td><a href="#m19"><b>testContactQuickCreate</b>  </a></td><td class="numi">1</td><td>1500372249523</td><td class="numi">5250</td></tr><tr class="passedodd"><td><a href="#m20"><b>testCreateContactionBySearch</b>  </a></td><td class="numi">1</td><td>1500372254773</td><td class="numi">3127</td></tr><tr class="passedodd"><td><a href="#m21"><b>testCreateContactWithoutProfileSearch</b>  </a></td><td class="numi">1</td><td>1500372257901</td><td class="numi">3222</td></tr><tr class="passedodd"><td><a href="#m22"><b>testCreateContactWithoutAnyfields</b>  </a></td><td class="numi">1</td><td>1500372261123</td><td class="numi">658</td></tr><tr class="passedodd"><td><a href="#m23"><b>testUpdateContact</b>  </a></td><td class="numi">1</td><td>1500372261782</td><td class="numi">6154</td></tr><tr class="passedodd"><td><a href="#m24"><b>testSingleContactDeletion</b>  </a></td><td class="numi">1</td><td>1500372267936</td><td class="numi">6283</td></tr>
 </table>
 <h1>Test</h1>
-<h2 id="m1">testcases.VerifyEmail4:testBatchTagToTopic</h2>
+<h2 id="m1">contactTestCases.VerifyContactCreation:testCreateContactWithoutAnyfields</h2>
 <div style="padding-left:3em">
-<p>Batch Tag to Topic got failed expected [true] but found [false]</p>
-org.testng.Assert.fail(Assert.java:94)
-<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
-<br/>at org.testng.Assert.assertEquals(Assert.java:123)
-<br/>at org.testng.Assert.assertEquals(Assert.java:286)
-<br/>at testcases.VerifyEmail4.testBatchTagToTopic(VerifyEmail4.java:126)
+<p>Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;LAPTOP-1D78PSH8&apos;, ip: &apos;192.168.132.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy6.click(Unknown Source)
+<br/>at Pages.ContactPage.clickCreateIcon(ContactPage.java:55)
+<br/>at contactTestCases.VerifyContactCreation.testCreateContactWithoutAnyfields(VerifyContactCreation.java:108)
 <br/>28 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">testcases.VerifyEmail5:testTagToTopic</h2>
+<h2 id="m2">contactTestCases.VerifyContactCreation:testUpdateContact</h2>
+<div style="padding-left:3em">
+<p>Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;LAPTOP-1D78PSH8&apos;, ip: &apos;192.168.132.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:513)
+<br/>at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+<br/>at org.openqa.selenium.support.pagefactory.ByAll.findElements(ByAll.java:63)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:85)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
+<br/>at com.sun.proxy.$Proxy8.iterator(Unknown Source)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$9.apply(ExpectedConditions.java:261)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$9.apply(ExpectedConditions.java:258)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+<br/>at Pages.ContactPage.getContactList(ContactPage.java:80)
+<br/>at contactTestCases.VerifyContactCreation.testUpdateContact(VerifyContactCreation.java:121)
+<br/>28 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">testcases.VerifyEmail4:testTagToTopic</h2>
+<h2 id="m3">contactTestCases.VerifyContactCreation:testCreateContactWithoutProfileSearch</h2>
+<div style="padding-left:3em">
+<p>Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;LAPTOP-1D78PSH8&apos;, ip: &apos;192.168.132.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy6.click(Unknown Source)
+<br/>at Pages.ContactPage.clickCreateIcon(ContactPage.java:55)
+<br/>at contactTestCases.VerifyContactCreation.testCreateContactWithoutProfileSearch(VerifyContactCreation.java:82)
+<br/>28 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">testcases.VerifyEmail3:testMarkAsUnread</h2>
+<h2 id="m4">contactTestCases.VerifyContactCreation:testContactQuickCreate</h2>
+<div style="padding-left:3em">
+<p>Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;LAPTOP-1D78PSH8&apos;, ip: &apos;192.168.132.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy6.isDisplayed(Unknown Source)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+<br/>at Pages.ContactPage.clickQuickContactIcon(ContactPage.java:130)
+<br/>at contactTestCases.VerifyContactCreation.testContactQuickCreate(VerifyContactCreation.java:22)
+<br/>28 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">testcases.VerifyEmail2:TestBatchMovetoInboxOfTrashEmail</h2>
+<h2 id="m5">contactTestCases.VerifyContactCreation:testCreateContactionBySearch</h2>
+<div style="padding-left:3em">
+<p>Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;LAPTOP-1D78PSH8&apos;, ip: &apos;192.168.132.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy6.click(Unknown Source)
+<br/>at Pages.ContactPage.clickCreateIcon(ContactPage.java:55)
+<br/>at contactTestCases.VerifyContactCreation.testCreateContactionBySearch(VerifyContactCreation.java:55)
+<br/>28 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m6">testcases.VerifyEmail2:TestDeleteForever</h2>
+<h2 id="m6">contactTestCases.VerifyContactCreation:testSingleContactDeletion</h2>
+<div style="padding-left:3em">
+<p>Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;LAPTOP-1D78PSH8&apos;, ip: &apos;192.168.132.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:513)
+<br/>at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+<br/>at org.openqa.selenium.support.pagefactory.ByAll.findElements(ByAll.java:63)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:85)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
+<br/>at com.sun.proxy.$Proxy8.iterator(Unknown Source)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$9.apply(ExpectedConditions.java:261)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$9.apply(ExpectedConditions.java:258)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+<br/>at Pages.ContactPage.getContactList(ContactPage.java:80)
+<br/>at contactTestCases.VerifyContactCreation.testSingleContactDeletion(VerifyContactCreation.java:157)
+<br/>28 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m7">testcases.VerifyEmail:TestUnProcessingOfEmail</h2>
+<h2 id="m7">contactTestCases.VerifyContactCreation:testSingleContactDeletion</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m8">testcases.VerifyEmail1:TestBatchMovetoSpamOfEmail</h2>
+<h2 id="m8">contactTestCases.VerifyContactCreation:testContactQuickCreate</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m9">testcases.VerifyEmail3:testBatchUnread</h2>
+<h2 id="m9">contactTestCases.VerifyContactCreation:testCreateContactWithoutAnyfields</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m10">testcases.VerifyEmail2:testMoveToInboxFromTrashListing</h2>
+<h2 id="m10">contactTestCases.VerifyContactCreation:testCreateContactWithoutProfileSearch</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m11">testcases.VerifyEmail2:TestBatchMoveToTrash</h2>
+<h2 id="m11">contactTestCases.VerifyContactCreation:testCreateContactionBySearch</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m12">testcases.VerifyEmail:TestProcessingOfEmail</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m13">testcases.VerifyEmail:TestBatchProcessingOfEmail</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m14">testcases.VerifyEmail1:testMoveToSpam</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m15">testcases.VerifyEmail1:TestBatchMovetoInboxOfSpamEmail</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m16">testcases.VerifyEmail1:testMarkAsNotSpam</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m17">testcases.VerifyEmail:testVerifySendingEmail</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m18">testcases.VerifyEmail3:testBatchRead</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m19">testcases.VerifyEmail2:testMoveToTrash</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m20">testcases.VerifyEmail:TestBatchUnProcessingOfEmail</h2>
+<h2 id="m12">contactTestCases.VerifyContactCreation:testUpdateContact</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

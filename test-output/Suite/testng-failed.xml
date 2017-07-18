@@ -3,51 +3,18 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="testcases.VerifyReadUnread">
+      <class name="contactTestCases.VerifyContactCreation">
         <methods>
-          <include name="testBatchRead"/>
-          <include name="testBatchUnread"/>
-          <include name="testMarkAsUnread"/>
-        </methods>
-      </class> <!-- testcases.VerifyReadUnread -->
-      <class name="testcases.VerifySpam">
-        <methods>
-          <include name="testMoveToSpam"/>
-          <include name="TestBatchMovetoInboxOfSpamEmail"/>
-          <include name="testMarkAsNotSpam"/>
-          <include name="TestBatchMovetoSpamOfEmail"/>
-        </methods>
-      </class> <!-- testcases.VerifySpam -->
-      <class name="testcases.VerifyTagToTopic">
-        <methods>
-          <include name="testTagToTopic"/>
-          <include name="testBatchTagToTopic"/>
-        </methods>
-      </class> <!-- testcases.VerifyTagToTopic -->
-      <class name="testcases.VerifySendAndProcessed">
-        <methods>
-          <include name="TestBatchProcessingOfEmail"/>
-          <include name="TestUnProcessingOfEmail"/>
-          <include name="testVerifySendingEmail"/>
-          <include name="TestBatchUnProcessingOfEmail"/>
-          <include name="TestProcessingOfEmail"/>
-        </methods>
-      </class> <!-- testcases.VerifySendAndProcessed -->
-      <class name="testcases.VerifyTrash">
-        <methods>
+          <include name="testCreateContactWithoutAnyfields"/>
+          <include name="testUpdateContact"/>
+          <include name="testSingleContactDeletion"/>
+          <include name="testCreateContactWithoutProfileSearch"/>
+          <include name="testCreateContactionBySearch"/>
           <include name="testBrowser"/>
-          <include name="testMoveToTrash"/>
-          <include name="testMoveToInboxFromTrashListing"/>
-          <include name="TestBatchMoveToTrash"/>
-          <include name="TestBatchMovetoInboxOfTrashEmail"/>
-          <include name="TestDeleteForever"/>
+          <include name="testContactQuickCreate"/>
+          <include name="postCondition"/>
         </methods>
-      </class> <!-- testcases.VerifyTrash -->
-      <class name="testcases.VerifySharing">
-        <methods>
-          <include name="testTagToTopic"/>
-        </methods>
-      </class> <!-- testcases.VerifySharing -->
+      </class> <!-- contactTestCases.VerifyContactCreation -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

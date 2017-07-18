@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Contact">
+    <classes>
+      <class name="contactTestCases.VerifyContactCreation"/>
+    </classes>
+  </test> <!-- Test -->
+    <test name="Email">
+    <classes>
+      <class name="emailTestCases.VerifyReadUnread"/>
+      <class name="emailTestCases.VerifyLogin"/>
+      <class name="emailTestCases.VerifyTrash"/>
+      <class name="emailTestCases.VerifyTagToTopic"/>
+      <class name="emailTestCases.VerifySendAndProcessed"/>
+      <class name="emailTestCases.VerifySpam"/>
+      <class name="emailTestCases.VerifySharing"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="155.005" tests="20" errors="0" skipped="0" failures="1">
+<testsuite name="TestSuite" time="24.813" tests="12" errors="0" skipped="0" failures="6">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_101\jre\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="D:\IRIIIS Automation\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6997566421687908277.tmp"/>
+    <property name="classworlds.conf" value="D:\IRIIIS Automation\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8869952348218136844.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_101\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_101/bin/server;C:/Program Files/Java/jre1.8.0_101/bin;C:/Program Files/Java/jre1.8.0_101/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Common Files\lenovo\easyplussdk\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\nodejs\;C:\Program Files\Amazon\AWSCLI\;C:\Users\Praveen\AppData\Local\Microsoft\WindowsApps;C:\Users\Praveen\AppData\Roaming\npm;C:\Users\Praveen\Desktop\Issues;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,32 +60,137 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testVerifySendingEmail" classname="testcases.VerifyEmail" time="12.395"/>
-  <testcase name="TestProcessingOfEmail" classname="testcases.VerifyEmail" time="4.187"/>
-  <testcase name="TestUnProcessingOfEmail" classname="testcases.VerifyEmail" time="3.243"/>
-  <testcase name="TestBatchProcessingOfEmail" classname="testcases.VerifyEmail" time="9.87"/>
-  <testcase name="TestBatchUnProcessingOfEmail" classname="testcases.VerifyEmail" time="8.24"/>
-  <testcase name="testTagToTopic" classname="testcases.VerifyEmail5" time="10.593"/>
-  <testcase name="testMoveToSpam" classname="testcases.VerifyEmail1" time="4.289"/>
-  <testcase name="testMarkAsNotSpam" classname="testcases.VerifyEmail1" time="2.744"/>
-  <testcase name="TestBatchMovetoSpamOfEmail" classname="testcases.VerifyEmail1" time="8.638"/>
-  <testcase name="TestBatchMovetoInboxOfSpamEmail" classname="testcases.VerifyEmail1" time="8.976"/>
-  <testcase name="testTagToTopic" classname="testcases.VerifyEmail4" time="10.338"/>
-  <testcase name="testBatchTagToTopic" classname="testcases.VerifyEmail4" time="13.546">
-    <failure message="Batch Tag to Topic got failed expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Batch Tag to Topic got failed expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:286)
-	at testcases.VerifyEmail4.testBatchTagToTopic(VerifyEmail4.java:126)
+  <testcase name="testContactQuickCreate" classname="contactTestCases.VerifyContactCreation" time="5.249"/>
+  <testcase name="testCreateContactionBySearch" classname="contactTestCases.VerifyContactCreation" time="3.125"/>
+  <testcase name="testCreateContactWithoutProfileSearch" classname="contactTestCases.VerifyContactCreation" time="3.222"/>
+  <testcase name="testCreateContactWithoutAnyfields" classname="contactTestCases.VerifyContactCreation" time="0.658"/>
+  <testcase name="testUpdateContact" classname="contactTestCases.VerifyContactCreation" time="6.158"/>
+  <testcase name="testSingleContactDeletion" classname="contactTestCases.VerifyContactCreation" time="6.28"/>
+  <testcase name="testContactQuickCreate" classname="contactTestCases.VerifyContactCreation" time="0.021">
+    <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;LAPTOP-1D78PSH8&apos;, ip: &apos;192.168.132.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-1D78PSH8', ip: '192.168.132.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy6.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at Pages.ContactPage.clickQuickContactIcon(ContactPage.java:130)
+	at contactTestCases.VerifyContactCreation.testContactQuickCreate(VerifyContactCreation.java:22)
 </failure>
   </testcase>
-  <testcase name="testMarkAsUnread" classname="testcases.VerifyEmail3" time="9.005"/>
-  <testcase name="testBatchUnread" classname="testcases.VerifyEmail3" time="7.307"/>
-  <testcase name="testBatchRead" classname="testcases.VerifyEmail3" time="11.778"/>
-  <testcase name="testMoveToTrash" classname="testcases.VerifyEmail2" time="4.343"/>
-  <testcase name="testMoveToInboxFromTrashListing" classname="testcases.VerifyEmail2" time="3.786"/>
-  <testcase name="TestBatchMoveToTrash" classname="testcases.VerifyEmail2" time="8.365"/>
-  <testcase name="TestBatchMovetoInboxOfTrashEmail" classname="testcases.VerifyEmail2" time="8.295"/>
-  <testcase name="TestDeleteForever" classname="testcases.VerifyEmail2" time="5.067"/>
+  <testcase name="testCreateContactionBySearch" classname="contactTestCases.VerifyContactCreation" time="0.01">
+    <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;LAPTOP-1D78PSH8&apos;, ip: &apos;192.168.132.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-1D78PSH8', ip: '192.168.132.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy6.click(Unknown Source)
+	at Pages.ContactPage.clickCreateIcon(ContactPage.java:55)
+	at contactTestCases.VerifyContactCreation.testCreateContactionBySearch(VerifyContactCreation.java:55)
+</failure>
+  </testcase>
+  <testcase name="testCreateContactWithoutProfileSearch" classname="contactTestCases.VerifyContactCreation" time="0.057">
+    <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;LAPTOP-1D78PSH8&apos;, ip: &apos;192.168.132.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-1D78PSH8', ip: '192.168.132.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy6.click(Unknown Source)
+	at Pages.ContactPage.clickCreateIcon(ContactPage.java:55)
+	at contactTestCases.VerifyContactCreation.testCreateContactWithoutProfileSearch(VerifyContactCreation.java:82)
+</failure>
+  </testcase>
+  <testcase name="testCreateContactWithoutAnyfields" classname="contactTestCases.VerifyContactCreation" time="0.003">
+    <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;LAPTOP-1D78PSH8&apos;, ip: &apos;192.168.132.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-1D78PSH8', ip: '192.168.132.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy6.click(Unknown Source)
+	at Pages.ContactPage.clickCreateIcon(ContactPage.java:55)
+	at contactTestCases.VerifyContactCreation.testCreateContactWithoutAnyfields(VerifyContactCreation.java:108)
+</failure>
+  </testcase>
+  <testcase name="testUpdateContact" classname="contactTestCases.VerifyContactCreation" time="0.017">
+    <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;LAPTOP-1D78PSH8&apos;, ip: &apos;192.168.132.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-1D78PSH8', ip: '192.168.132.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:513)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.support.pagefactory.ByAll.findElements(ByAll.java:63)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
+	at com.sun.proxy.$Proxy8.iterator(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$9.apply(ExpectedConditions.java:261)
+	at org.openqa.selenium.support.ui.ExpectedConditions$9.apply(ExpectedConditions.java:258)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at Pages.ContactPage.getContactList(ContactPage.java:80)
+	at contactTestCases.VerifyContactCreation.testUpdateContact(VerifyContactCreation.java:121)
+</failure>
+  </testcase>
+  <testcase name="testSingleContactDeletion" classname="contactTestCases.VerifyContactCreation" time="0.013">
+    <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;LAPTOP-1D78PSH8&apos;, ip: &apos;192.168.132.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-1D78PSH8', ip: '192.168.132.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:513)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.support.pagefactory.ByAll.findElements(ByAll.java:63)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
+	at com.sun.proxy.$Proxy8.iterator(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$9.apply(ExpectedConditions.java:261)
+	at org.openqa.selenium.support.ui.ExpectedConditions$9.apply(ExpectedConditions.java:258)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at Pages.ContactPage.getContactList(ContactPage.java:80)
+	at contactTestCases.VerifyContactCreation.testSingleContactDeletion(VerifyContactCreation.java:157)
+</failure>
+  </testcase>
 </testsuite>

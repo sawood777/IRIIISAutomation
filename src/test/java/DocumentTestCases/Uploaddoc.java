@@ -1,4 +1,4 @@
-package DocumentTestCases;
+/*package DocumentTestCases;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
@@ -46,4 +46,4 @@ public class Uploaddoc extends BaseTest {
 	
 		
 
-}
+}*/

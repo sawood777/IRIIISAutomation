@@ -3,13 +3,15 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="testcases.VerifySharing"/>
-      <class name="testcases.VerifyReadUnread"/>
-      <class name="testcases.VerifySpam"/>
-      <class name="testcases.VerifySendAndProcessed"/>
-      <class name="testcases.VerifyLogin"/>
-      <class name="testcases.VerifyTrash"/>
-      <class name="testcases.VerifyTagToTopic"/>
+      <class name="emailTestCases.VerifyReadUnread"/>
+      <class name="emailTestCases.VerifyLogin"/>
+      <class name="emailTestCases.VerifyTrash"/>
+      <class name="emailTestCases.VerifyTagToTopic"/>
+      <class name="emailTestCases.VerifySendAndProcessed"/>
+      <class name="emailTestCases.VerifySpam"/>
+      <class name="emailTestCases.VerifySharing"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+
+

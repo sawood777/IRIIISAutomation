@@ -1,54 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="26" passed="26">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="52432" started-at="2017-07-18T06:23:10Z" finished-at="2017-07-18T06:24:03Z">
+  <suite name="Suite" duration-ms="275933" started-at="2017-07-18T10:17:44Z" finished-at="2017-07-18T10:22:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="52432" started-at="2017-07-18T06:23:10Z" finished-at="2017-07-18T06:24:03Z">
-      <class name="emailTestCases.Uploaddoc">
-        <test-method status="PASS" signature="testBrowser()[pri:0, instance:emailTestCases.Uploaddoc@68c4039c]" name="testBrowser" is-config="true" duration-ms="17028" started-at="2017-07-18T11:53:10Z" finished-at="2017-07-18T11:53:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBrowser -->
-        <test-method status="PASS" signature="SingleFileUpload()[pri:0, instance:emailTestCases.Uploaddoc@68c4039c]" name="SingleFileUpload" duration-ms="16925" started-at="2017-07-18T11:53:27Z" finished-at="2017-07-18T11:53:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SingleFileUpload -->
-        <test-method status="PASS" signature="multifileupload()[pri:0, instance:emailTestCases.Uploaddoc@68c4039c]" name="multifileupload" duration-ms="16932" started-at="2017-07-18T11:53:44Z" finished-at="2017-07-18T11:54:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- multifileupload -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:emailTestCases.Uploaddoc@68c4039c]" name="postCondition" is-config="true" duration-ms="1525" started-at="2017-07-18T11:54:01Z" finished-at="2017-07-18T11:54:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-      </class> <!-- emailTestCases.Uploaddoc -->
-=======
-  <suite name="Default suite" duration-ms="24974" started-at="2017-07-18T07:34:49Z" finished-at="2017-07-18T07:35:14Z">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="24974" started-at="2017-07-18T07:34:49Z" finished-at="2017-07-18T07:35:14Z">
+    <test name="Contact" duration-ms="41621" started-at="2017-07-18T10:17:44Z" finished-at="2017-07-18T10:18:26Z">
       <class name="contactTestCases.VerifyContactCreation">
-        <test-method status="PASS" signature="testBrowser()[pri:0, instance:contactTestCases.VerifyContactCreation@3532ec19]" name="testBrowser" is-config="true" duration-ms="15098" started-at="2017-07-18T13:04:49Z" finished-at="2017-07-18T13:05:04Z">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:contactTestCases.VerifyContactCreation@ae45eb6]" name="testBrowser" is-config="true" duration-ms="15875" started-at="2017-07-18T15:47:44Z" finished-at="2017-07-18T15:48:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBrowser -->
-        <test-method status="PASS" signature="testContactQuickCreate()[pri:0, instance:contactTestCases.VerifyContactCreation@3532ec19]" name="testContactQuickCreate" duration-ms="5274" started-at="2017-07-18T13:05:04Z" finished-at="2017-07-18T13:05:09Z">
+        <test-method status="PASS" signature="testContactQuickCreate()[pri:0, instance:contactTestCases.VerifyContactCreation@ae45eb6]" name="testContactQuickCreate" duration-ms="5085" started-at="2017-07-18T15:48:00Z" finished-at="2017-07-18T15:48:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testContactQuickCreate -->
-        <test-method status="PASS" signature="testCreateContact()[pri:0, instance:contactTestCases.VerifyContactCreation@3532ec19]" name="testCreateContact" duration-ms="3124" started-at="2017-07-18T13:05:09Z" finished-at="2017-07-18T13:05:12Z">
+        <test-method status="PASS" signature="testCreateContactionBySearch()[pri:0, instance:contactTestCases.VerifyContactCreation@ae45eb6]" name="testCreateContactionBySearch" duration-ms="3053" started-at="2017-07-18T15:48:05Z" finished-at="2017-07-18T15:48:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCreateContact -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:contactTestCases.VerifyContactCreation@3532ec19]" name="postCondition" is-config="true" duration-ms="1458" started-at="2017-07-18T13:05:12Z" finished-at="2017-07-18T13:05:14Z">
+        </test-method> <!-- testCreateContactionBySearch -->
+        <test-method status="PASS" signature="testCreateContactWithoutProfileSearch()[pri:0, instance:contactTestCases.VerifyContactCreation@ae45eb6]" name="testCreateContactWithoutProfileSearch" duration-ms="3219" started-at="2017-07-18T15:48:08Z" finished-at="2017-07-18T15:48:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateContactWithoutProfileSearch -->
+        <test-method status="PASS" signature="testCreateContactWithoutAnyfields()[pri:0, instance:contactTestCases.VerifyContactCreation@ae45eb6]" name="testCreateContactWithoutAnyfields" duration-ms="643" started-at="2017-07-18T15:48:11Z" finished-at="2017-07-18T15:48:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateContactWithoutAnyfields -->
+        <test-method status="PASS" signature="testUpdateContact()[pri:0, instance:contactTestCases.VerifyContactCreation@ae45eb6]" name="testUpdateContact" duration-ms="5890" started-at="2017-07-18T15:48:12Z" finished-at="2017-07-18T15:48:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateContact -->
+        <test-method status="PASS" signature="testSingleContactDeletion()[pri:0, instance:contactTestCases.VerifyContactCreation@ae45eb6]" name="testSingleContactDeletion" duration-ms="6198" started-at="2017-07-18T15:48:18Z" finished-at="2017-07-18T15:48:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSingleContactDeletion -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:contactTestCases.VerifyContactCreation@ae45eb6]" name="postCondition" is-config="true" duration-ms="1628" started-at="2017-07-18T15:48:24Z" finished-at="2017-07-18T15:48:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
       </class> <!-- contactTestCases.VerifyContactCreation -->
->>>>>>> 0f4ead3b9cc790ff5b72a2b35a349cd5dd29817d
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Contact -->
+    <test name="Email" duration-ms="234290" started-at="2017-07-18T10:18:26Z" finished-at="2017-07-18T10:22:20Z">
+      <class name="emailTestCases.VerifyTrash">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:emailTestCases.VerifyTrash@e45f292]" name="testBrowser" is-config="true" duration-ms="12871" started-at="2017-07-18T15:48:26Z" finished-at="2017-07-18T15:48:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testMoveToTrash()[pri:0, instance:emailTestCases.VerifyTrash@e45f292]" name="testMoveToTrash" duration-ms="5322" started-at="2017-07-18T15:48:39Z" finished-at="2017-07-18T15:48:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMoveToTrash -->
+        <test-method status="PASS" signature="testMoveToInboxFromTrashListing()[pri:0, instance:emailTestCases.VerifyTrash@e45f292]" name="testMoveToInboxFromTrashListing" duration-ms="3604" started-at="2017-07-18T15:48:44Z" finished-at="2017-07-18T15:48:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMoveToInboxFromTrashListing -->
+        <test-method status="PASS" signature="TestBatchMoveToTrash()[pri:0, instance:emailTestCases.VerifyTrash@e45f292]" name="TestBatchMoveToTrash" duration-ms="7964" started-at="2017-07-18T15:48:48Z" finished-at="2017-07-18T15:48:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestBatchMoveToTrash -->
+        <test-method status="PASS" signature="TestBatchMovetoInboxOfTrashEmail()[pri:0, instance:emailTestCases.VerifyTrash@e45f292]" name="TestBatchMovetoInboxOfTrashEmail" duration-ms="7413" started-at="2017-07-18T15:48:56Z" finished-at="2017-07-18T15:49:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestBatchMovetoInboxOfTrashEmail -->
+        <test-method status="PASS" signature="TestDeleteForever()[pri:0, instance:emailTestCases.VerifyTrash@e45f292]" name="TestDeleteForever" duration-ms="4653" started-at="2017-07-18T15:49:03Z" finished-at="2017-07-18T15:49:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestDeleteForever -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:emailTestCases.VerifyTrash@e45f292]" name="postCondition" is-config="true" duration-ms="1116" started-at="2017-07-18T15:49:08Z" finished-at="2017-07-18T15:49:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- emailTestCases.VerifyTrash -->
+      <class name="emailTestCases.VerifySendAndProcessed">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:emailTestCases.VerifySendAndProcessed@5700d6b1]" name="testBrowser" is-config="true" duration-ms="13987" started-at="2017-07-18T15:50:25Z" finished-at="2017-07-18T15:50:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testVerifySendingEmail()[pri:0, instance:emailTestCases.VerifySendAndProcessed@5700d6b1]" name="testVerifySendingEmail" duration-ms="12858" started-at="2017-07-18T15:50:38Z" finished-at="2017-07-18T15:50:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVerifySendingEmail -->
+        <test-method status="PASS" signature="TestProcessingOfEmail()[pri:0, instance:emailTestCases.VerifySendAndProcessed@5700d6b1]" name="TestProcessingOfEmail" duration-ms="3947" started-at="2017-07-18T15:50:51Z" finished-at="2017-07-18T15:50:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestProcessingOfEmail -->
+        <test-method status="PASS" signature="TestUnProcessingOfEmail()[pri:0, instance:emailTestCases.VerifySendAndProcessed@5700d6b1]" name="TestUnProcessingOfEmail" duration-ms="2886" started-at="2017-07-18T15:50:55Z" finished-at="2017-07-18T15:50:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestUnProcessingOfEmail -->
+        <test-method status="PASS" signature="TestBatchProcessingOfEmail()[pri:0, instance:emailTestCases.VerifySendAndProcessed@5700d6b1]" name="TestBatchProcessingOfEmail" duration-ms="7101" started-at="2017-07-18T15:50:58Z" finished-at="2017-07-18T15:51:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestBatchProcessingOfEmail -->
+        <test-method status="PASS" signature="TestBatchUnProcessingOfEmail()[pri:0, instance:emailTestCases.VerifySendAndProcessed@5700d6b1]" name="TestBatchUnProcessingOfEmail" duration-ms="6283" started-at="2017-07-18T15:51:05Z" finished-at="2017-07-18T15:51:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestBatchUnProcessingOfEmail -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:emailTestCases.VerifySendAndProcessed@5700d6b1]" name="postCondition" is-config="true" duration-ms="1067" started-at="2017-07-18T15:51:12Z" finished-at="2017-07-18T15:51:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- emailTestCases.VerifySendAndProcessed -->
+      <class name="emailTestCases.VerifyReadUnread">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:emailTestCases.VerifyReadUnread@1ce92674]" name="testBrowser" is-config="true" duration-ms="12794" started-at="2017-07-18T15:49:09Z" finished-at="2017-07-18T15:49:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testMarkAsUnread()[pri:0, instance:emailTestCases.VerifyReadUnread@1ce92674]" name="testMarkAsUnread" duration-ms="9509" started-at="2017-07-18T15:49:22Z" finished-at="2017-07-18T15:49:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMarkAsUnread -->
+        <test-method status="PASS" signature="testBatchUnread()[pri:0, instance:emailTestCases.VerifyReadUnread@1ce92674]" name="testBatchUnread" duration-ms="6812" started-at="2017-07-18T15:49:31Z" finished-at="2017-07-18T15:49:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchUnread -->
+        <test-method status="PASS" signature="testBatchRead()[pri:0, instance:emailTestCases.VerifyReadUnread@1ce92674]" name="testBatchRead" duration-ms="8098" started-at="2017-07-18T15:49:38Z" finished-at="2017-07-18T15:49:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchRead -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:emailTestCases.VerifyReadUnread@1ce92674]" name="postCondition" is-config="true" duration-ms="1054" started-at="2017-07-18T15:49:46Z" finished-at="2017-07-18T15:49:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- emailTestCases.VerifyReadUnread -->
+      <class name="emailTestCases.VerifySharing">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:emailTestCases.VerifySharing@5bcab519]" name="testBrowser" is-config="true" duration-ms="14064" started-at="2017-07-18T15:51:53Z" finished-at="2017-07-18T15:52:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testTagToTopic()[pri:0, instance:emailTestCases.VerifySharing@5bcab519]" name="testTagToTopic" duration-ms="11662" started-at="2017-07-18T15:52:07Z" finished-at="2017-07-18T15:52:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTagToTopic -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:emailTestCases.VerifySharing@5bcab519]" name="postCondition" is-config="true" duration-ms="970" started-at="2017-07-18T15:52:19Z" finished-at="2017-07-18T15:52:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- emailTestCases.VerifySharing -->
+      <class name="emailTestCases.VerifyTagToTopic">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:emailTestCases.VerifyTagToTopic@5f2108b5]" name="testBrowser" is-config="true" duration-ms="12878" started-at="2017-07-18T15:49:47Z" finished-at="2017-07-18T15:50:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testTagToTopic()[pri:0, instance:emailTestCases.VerifyTagToTopic@5f2108b5]" name="testTagToTopic" duration-ms="11241" started-at="2017-07-18T15:50:00Z" finished-at="2017-07-18T15:50:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTagToTopic -->
+        <test-method status="PASS" signature="testBatchTagToTopic()[pri:0, instance:emailTestCases.VerifyTagToTopic@5f2108b5]" name="testBatchTagToTopic" duration-ms="12261" started-at="2017-07-18T15:50:11Z" finished-at="2017-07-18T15:50:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchTagToTopic -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:emailTestCases.VerifyTagToTopic@5f2108b5]" name="postCondition" is-config="true" duration-ms="1091" started-at="2017-07-18T15:50:23Z" finished-at="2017-07-18T15:50:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- emailTestCases.VerifyTagToTopic -->
+      <class name="emailTestCases.VerifySpam">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:emailTestCases.VerifySpam@6fd02e5]" name="testBrowser" is-config="true" duration-ms="13226" started-at="2017-07-18T15:51:13Z" finished-at="2017-07-18T15:51:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testMoveToSpam()[pri:0, instance:emailTestCases.VerifySpam@6fd02e5]" name="testMoveToSpam" duration-ms="4967" started-at="2017-07-18T15:51:26Z" finished-at="2017-07-18T15:51:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMoveToSpam -->
+        <test-method status="PASS" signature="testMarkAsNotSpam()[pri:0, instance:emailTestCases.VerifySpam@6fd02e5]" name="testMarkAsNotSpam" duration-ms="3215" started-at="2017-07-18T15:51:31Z" finished-at="2017-07-18T15:51:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMarkAsNotSpam -->
+        <test-method status="PASS" signature="TestBatchMovetoSpamOfEmail()[pri:0, instance:emailTestCases.VerifySpam@6fd02e5]" name="TestBatchMovetoSpamOfEmail" duration-ms="9395" started-at="2017-07-18T15:51:34Z" finished-at="2017-07-18T15:51:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestBatchMovetoSpamOfEmail -->
+        <test-method status="PASS" signature="TestBatchMovetoInboxOfSpamEmail()[pri:0, instance:emailTestCases.VerifySpam@6fd02e5]" name="TestBatchMovetoInboxOfSpamEmail" duration-ms="8691" started-at="2017-07-18T15:51:43Z" finished-at="2017-07-18T15:51:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestBatchMovetoInboxOfSpamEmail -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:emailTestCases.VerifySpam@6fd02e5]" name="postCondition" is-config="true" duration-ms="1269" started-at="2017-07-18T15:51:52Z" finished-at="2017-07-18T15:51:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- emailTestCases.VerifySpam -->
+    </test> <!-- Email -->
+  </suite> <!-- Suite -->
 </testng-results>
