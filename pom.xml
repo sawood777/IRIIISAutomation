@@ -62,8 +62,8 @@
 <configuration>
  
 <suiteXmlFiles>
-<suiteXmlFile>email.xml</suiteXmlFile>
-<suiteXmlFile>contact.xml</suiteXmlFile>
+<suiteXmlFile>All.xml</suiteXmlFile>
+
 </suiteXmlFiles>
  
 </configuration>
