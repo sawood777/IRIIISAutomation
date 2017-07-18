@@ -19,7 +19,7 @@ public class ContactPage {
 	
 	@FindBy(xpath="//button[@ng-click='createNewContact();']")private WebElement contactCreateIcon;
 	@FindBy(xpath="//button[@ng-click='toggleSearch()']")private WebElement contactSearchIcon;
-	@FindBy(xpath="//button[@ng-click='gotoDashboard()']")private WebElement goToDashboard;
+	@FindBy(xpath="//button[@ng-click='gotoContacts()']")private WebElement goToContacts;
 	@FindBy(xpath="//button[contains(text(),'More')]")private WebElement moreIcon;
 	@FindBy(xpath="//button[contains(text(),'Find and Merge Duplicates')]")private WebElement findAndMerge;
 	@FindBy(xpath="//button[@class='accounts-dropdown__top-btn']")private WebElement accountDropDown;
@@ -30,11 +30,17 @@ public class ContactPage {
 	@FindBy(xpath="//input[@type='tel']")private WebElement phoneNumber;
 	@FindBy(xpath="//textarea[@ng-model='contact.note']")private WebElement contactNote;
 	@FindBy(xpath="//input[@placeholder='Tags']")private WebElement contactTag;
-	@FindBy(xpath="//button[@ng-click='create()']")private WebElement createButton;
+	@FindBy(xpath="//button[@ng-click='create()']")private WebElement createUpdateButton;
 	@FindBy(xpath="//input[@placeholder='Search Contact']")private WebElement contactSearch;
 	@FindBy(xpath="//button[@aria-label='Quick contact']")private WebElement quickContact;
 	@FindBy(xpath="//input[@ng-model='contact.contactName']")private WebElement quickContactName;
 	@FindBy(xpath="//input[@ng-model='contact.contactEmail']")private WebElement quickContactEmail;
+	@FindBy(xpath="//div[contains(text(),'Kindly')]")private WebElement contactError; 
+	@FindBy(xpath="//button[@ng-click='editContact()']")private WebElement updateContact; 
+	@FindBy(xpath="//p[text()='Name']")private WebElement verifyPageLoded; 
+	@FindAll({@FindBy(xpath="//li[@ng-click='$mdAutocompleteCtrl.select($index)']")}) private List<WebElement> profileSearchResult;
+	@FindBy(xpath="//button[@ng-click='deleteContact()']")private WebElement contactDeletIcon;
+	@FindBy(xpath="//button[@ng-click='dialog.hide()']")private WebElement deleteConfirmation;
 	
 	
 	
@@ -52,9 +58,9 @@ public class ContactPage {
 	{
 		contactSearchIcon.click();
 	}
-	public void clickGoToDashboard()
+	public void clickGoToContacts()
 	{
-		goToDashboard.click();
+		goToContacts.click();
 	}
 	public void clickMoreIcon()
 	{
@@ -79,32 +85,38 @@ public class ContactPage {
 	}
 	public void enterDisplayName(String displayname)
 	{
-		displayName.click();
+		(new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(displayName)).click();
+		displayName.clear();
 		displayName.sendKeys(displayname);
 		displayName.sendKeys(Keys.TAB);
 	}
 	public void enterEmailAddress(String email)
 	{
-		(new WebDriverWait(driver, 20))
-		   .until(ExpectedConditions.visibilityOf(emailAddress)).sendKeys(email);
 		
+		(new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(emailAddress)).clear();
+		emailAddress.sendKeys(email);
 	}
 	public void enterPhoneNumbar(String number)
 	{
-		(new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(phoneNumber)).sendKeys(number);
+		
+		(new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(phoneNumber)).clear();
+		phoneNumber.sendKeys(number);
 	}
 	public void enterContactTag(String tag)
 	{
-		(new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(contactTag)).sendKeys(tag);
+		
+		(new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(contactTag)).clear();
+		contactTag.sendKeys(tag);
 	}
 	public void enterContactNote(String note)
 	{
-		(new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(contactNote)).sendKeys(note);
+		(new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(contactNote)).clear();
+		contactNote.sendKeys(note);
 	}
 	public void clickCreateButton()
 	{
 		(new WebDriverWait(driver, 20))
-		   .until(ExpectedConditions.visibilityOf(createButton)).click();
+		   .until(ExpectedConditions.visibilityOf(createUpdateButton)).click();
 		
 	}
 	public void enterContactSearchKey(String key)
@@ -128,5 +140,38 @@ public class ContactPage {
 		(new WebDriverWait(driver, 20))
 		   .until(ExpectedConditions.visibilityOf(quickContactEmail)).sendKeys(email);
 	}
+	public Boolean verifyContactError()
+	{
+		if(contactError.isDisplayed())
+		
+			return true;
+		else
+			return false;
+	}
+	public void clickUpdateContact()
+	{
+		(new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(updateContact)).click();
+	}
 	
+	
+		public Boolean verifyUpdatePageLoaded()
+		{
+			if((new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(verifyPageLoded)).isDisplayed())
+			
+				return true;
+			else
+				return false;
+		}
+		public List<WebElement> getProfileSearchResult()
+		{
+			return (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOfAllElements(profileSearchResult));
+		} 
+		public void clickContactDeletIcon()
+		{
+			(new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(contactDeletIcon)).click();
+		}
+		public void clickDelete()
+		{
+			(new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(deleteConfirmation)).click();
+		}
 }
