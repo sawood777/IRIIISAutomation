@@ -3,6 +3,7 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="emailTestCases.Uploaddoc">
         <methods>
           <include name="multifileupload"/>
@@ -10,6 +11,15 @@
           <include name="postCondition"/>
         </methods>
       </class> <!-- emailTestCases.Uploaddoc -->
+=======
+      <class name="contactTestCases.VerifyContactCreation">
+        <methods>
+          <include name="testSearchContact"/>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- contactTestCases.VerifyContactCreation -->
+>>>>>>> 0f4ead3b9cc790ff5b72a2b35a349cd5dd29817d
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,6 +2,8 @@ package Pages;
 
 import java.util.List;
 
+import javax.xml.xpath.XPath;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -30,6 +32,10 @@ public class ContactPage {
 	@FindBy(xpath="//input[@placeholder='Tags']")private WebElement contactTag;
 	@FindBy(xpath="//button[@ng-click='create()']")private WebElement createButton;
 	@FindBy(xpath="//input[@placeholder='Search Contact']")private WebElement contactSearch;
+	@FindBy(xpath="//button[@aria-label='Quick contact']")private WebElement quickContact;
+	@FindBy(xpath="//input[@ng-model='contact.contactName']")private WebElement quickContactName;
+	@FindBy(xpath="//input[@ng-model='contact.contactEmail']")private WebElement quickContactEmail;
+	
 	
 	
 	
@@ -107,6 +113,20 @@ public class ContactPage {
 		   .until(ExpectedConditions.visibilityOf(contactSearch)).sendKeys(key);
 		
 	}
-	
+	public void clickQuickContactIcon()
+	{
+		(new WebDriverWait(driver, 20)) .until(ExpectedConditions.visibilityOf(quickContact)).click();
+	}
+	public void enterQuickContactName(String name)
+	{
+		quickContactName.click();
+		(new WebDriverWait(driver, 20)) .until(ExpectedConditions.visibilityOf(quickContactName)).sendKeys(name);
+		quickContactName.sendKeys(Keys.TAB);
+	}
+	public void enterQuickContactEmail(String email)
+	{
+		(new WebDriverWait(driver, 20))
+		   .until(ExpectedConditions.visibilityOf(quickContactEmail)).sendKeys(email);
+	}
 	
 }
