@@ -1,4 +1,4 @@
-package testcases;
+package emailTestCases;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
@@ -17,6 +17,7 @@ public class BaseTest {
 	public WebDriver driver;
 	public ExtentReports report;
 	public ExtentTest logger;
+	
 	@BeforeClass
 	public void testBrowser()
 	{
