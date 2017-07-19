@@ -6,7 +6,7 @@
       <class name="contactTestCases.VerifyContactCreation"/>
     </classes>
   </test> <!-- Test -->
-    <test name="Email">
+    <test name="Gmail">
     <classes>
       <class name="GmailTestCases.VerifyReadUnreadGmail"/>
       <class name="GmailTestCases.VerifySpamGmail"/>
@@ -16,7 +16,7 @@
       <class name="GmailTestCases.VerifySendingEmailAndProcessing"/>
     </classes>
   </test> <!-- Test -->
-   <test name="Test">
+   <test name="IRIIIS">
     <classes>
       <class name="iriiisMailTestCases.VerifyTashIRIIIS"/>
       <class name="iriiisMailTestCases.VerifyReadUnreadIRIIIS"/>
@@ -25,6 +25,17 @@
       <class name="iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS"/>
       <class name="iriiisMailTestCases.VerifySharingIRIIIS"/>
     </classes>
+     </test> <!-- Test -->
+     <test name="AllAccount">
+    <classes>
+      <class name="IntegratedMailViewTestCases.VerifyTashAllAccount"/>
+      <class name="IntegratedMailViewTestCases.VerifySharingAllAccount"/>
+      <class name="IntegratedMailViewTestCases.VerifySpamAllAccount"/>
+      <class name="IntegratedMailViewTestCases.VerifySendingEmailAndProcessingAllAccount"/>
+      <class name="IntegratedMailViewTestCases.VerifyReadUnreadAllAccount"/>
+      <class name="IntegratedMailViewTestCases.VerifyTagToTopicAllAccount"/>
+    </classes>
+  </test> <!-- Test -->
   </test> <!-- Test -->
 </suite> <!-- Suite -->
 

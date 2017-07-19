@@ -14,7 +14,7 @@ import emailTestCases.VerifySpam;
 public class VerifySharingIRIIIS extends BaseTest {
 	
 	@Test(priority=21)
-	public void testMoveToSpamIRIIIS()
+	public void testShareToTopicIRIIIS()
 	{ 
 		MailPage m= new MailPage(driver);
 		VerifySharing v= new VerifySharing(driver);

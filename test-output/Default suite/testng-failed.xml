@@ -3,15 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="emailTestCases.VerifyTrash">
+      <class name="IntegratedMailViewTestCases.VerifyTagToTopicAllAccount">
         <methods>
-          <include name="TestBatchMoveToTrash"/>
-          <include name="TestDeleteForever"/>
-          <include name="TestBatchMovetoInboxOfTrashEmail"/>
-          <include name="testMoveToInboxFromTrashListing"/>
-          <include name="testMoveToTrash"/>
+          <include name="testTagToTopicAllAccount"/>
+          <include name="testBatchTagToTopicAllAccount"/>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
         </methods>
-      </class> <!-- emailTestCases.VerifyTrash -->
+      </class> <!-- IntegratedMailViewTestCases.VerifyTagToTopicAllAccount -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

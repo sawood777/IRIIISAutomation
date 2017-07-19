@@ -51,7 +51,7 @@ public class VerifyTagToTopicIRIIIS  extends BaseTest{
 		v.testTagToTopic();
 		}
 	@Test(dependsOnMethods="testTagToTopicIRIIIS")
-	public void testBatchTagToTopicGmail()
+	public void testBatchTagToTopicIRIIIS()
 	{ 
 		VerifyTagToTopic v= new VerifyTagToTopic(driver);
 		v.testBatchTagToTopic();

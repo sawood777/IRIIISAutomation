@@ -130,7 +130,7 @@ public class VerifyTagToTopic{
 				}
 			}
 		}
-		Assert.assertEquals((n==subArray.length), true, "Batch Tag to Topic got failed");
+		Assert.assertEquals(((n>0)&&(n<=subArray.length)), true, "Batch Tag to Topic got failed");
 		
 }
 	

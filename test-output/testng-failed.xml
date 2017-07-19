@@ -1,52 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="iriiisMailTestCases.VerifySpamIRIIIS">
+      <class name="IntegratedMailViewTestCases.VerifyTagToTopicAllAccount">
         <methods>
+          <include name="testTagToTopicAllAccount"/>
+          <include name="testBatchTagToTopicAllAccount"/>
           <include name="testBrowser"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- iriiisMailTestCases.VerifySpamIRIIIS -->
-      <class name="iriiisMailTestCases.VerifyTashIRIIIS">
-        <methods>
-          <include name="testMovetoInboxOfTrashEmailGmail"/>
-          <include name="testBatchMovetoInboxOfTrashGmail"/>
-          <include name="testBatchDeleteForeverGmail"/>
-          <include name="testMoveToTrashGmail"/>
-          <include name="testBatchMoveToTrashGmail"/>
-          <include name="testBrowser"/>
-          <include name="testDeleteForeverGmail"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- iriiisMailTestCases.VerifyTashIRIIIS -->
-      <class name="iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS">
-        <methods>
-          <include name="testBrowser"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS -->
-      <class name="iriiisMailTestCases.VerifyReadUnreadIRIIIS">
-        <methods>
-          <include name="testBrowser"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- iriiisMailTestCases.VerifyReadUnreadIRIIIS -->
-      <class name="iriiisMailTestCases.VerifyTagToTopicIRIIIS">
-        <methods>
-          <include name="testBatchTagToTopicGmail"/>
-          <include name="testTagToTopicGmail"/>
-          <include name="testBrowser"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- iriiisMailTestCases.VerifyTagToTopicIRIIIS -->
-      <class name="iriiisMailTestCases.VerifySharingIRIIIS">
-        <methods>
-          <include name="testBrowser"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- iriiisMailTestCases.VerifySharingIRIIIS -->
+      </class> <!-- IntegratedMailViewTestCases.VerifyTagToTopicAllAccount -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
