@@ -4,12 +4,8 @@ import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.relevantcodes.extentreports.LogStatus;
-
-import Pages.DashboardPage;
 import Pages.MailPage;
 import emailTestCases.BaseTest;
 import emailTestCases.VerifySendAndProcessed;

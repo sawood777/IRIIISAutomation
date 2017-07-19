@@ -8,7 +8,7 @@
       <class name="GmailTestCases.VerifyTagToTopicGmail"/>
       <class name="GmailTestCases.VerifySharingGmail"/>
       <class name="GmailTestCases.VerifyTashGmail"/>
-      <class name="GmailTestCases.VerifySendingEmailAndProcessing"/>
+      <class name="GmailTestCases.VerifySendingEmailAndProcessingGmail"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -13,7 +13,7 @@
       <class name="GmailTestCases.VerifyTagToTopicGmail"/>
       <class name="GmailTestCases.VerifySharingGmail"/>
       <class name="GmailTestCases.VerifyTashGmail"/>
-      <class name="GmailTestCases.VerifySendingEmailAndProcessing"/>
+      <class name="GmailTestCases.VerifySendingEmailAndProcessingGmail"/>
     </classes>
   </test> <!-- Test -->
    <test name="IRIIIS">
@@ -26,7 +26,7 @@
       <class name="iriiisMailTestCases.VerifySharingIRIIIS"/>
     </classes>
      </test> <!-- Test -->
-     <test name="AllAccount">
+     <test name="All Account">
     <classes>
       <class name="IntegratedMailViewTestCases.VerifyTashAllAccount"/>
       <class name="IntegratedMailViewTestCases.VerifySharingAllAccount"/>
