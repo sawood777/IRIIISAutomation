@@ -2,6 +2,7 @@ package emailTestCases;
 
 import java.util.List;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
@@ -11,7 +12,12 @@ import Pages.DashboardPage;
 import Pages.MailPage;
 
 
-public class VerifyReadUnread extends BaseTest {
+public class VerifyReadUnread {
+	WebDriver driver;
+	public VerifyReadUnread(WebDriver driver) 
+	{
+		this.driver= driver;
+	}
 	
 	@Test(priority=16)
 	public void testMarkAsUnread()
@@ -19,7 +25,7 @@ public class VerifyReadUnread extends BaseTest {
 		Boolean flag=false;
 		DashboardPage d= new DashboardPage(driver);
 		MailPage m= new MailPage(driver);
-		d.clickMailCard();
+		//d.clickMailCard();
 		List<WebElement> sub=m.GetemailSubjects();
 		String subj=sub.get(0).getText();
 		m.clickFirstEmail();
@@ -54,13 +60,8 @@ public class VerifyReadUnread extends BaseTest {
 		
 		List<WebElement> sub=m.GetemailSubjects();
 		Actions action = new Actions(driver); 
-		action.moveToElement(m.batchSelection()).click().build().perform();
-		action.moveToElement(m.batchSelection()).click().build().perform();
-		List<WebElement> box = m.getListOfCheckBox();
-		for(int i=1;i<4;i++)
-		{
-			box.get(i).click();
-		}
+		action.moveToElement(m.batchSelection1()).click().build().perform();
+		m.clickSelectAll();
 		m.markUnreadIcon();
 		m.clickMailFilter();
 		m.clickUnProcessedFilter();
@@ -88,13 +89,9 @@ public class VerifyReadUnread extends BaseTest {
 		
 		List<WebElement> sub=m.GetemailSubjects();
 		Actions action = new Actions(driver); 
-		action.moveToElement(m.batchSelection()).click().build().perform();
-		action.moveToElement(m.batchSelection()).click().build().perform();
-		List<WebElement> box = m.getListOfCheckBox();
-		for(int i=1;i<4;i++)
-		{
-			box.get(i).click();
-		}
+		
+		action.moveToElement(m.batchSelection1()).click().build().perform();
+		m.clickSelectAll();
 		m.markReadIcon();
 		m.clickMailFilter();
 		m.clickUnProcessedFilter();

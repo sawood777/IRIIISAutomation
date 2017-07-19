@@ -2,6 +2,7 @@ package emailTestCases;
 
 import java.util.List;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
@@ -10,16 +11,19 @@ import org.testng.annotations.Test;
 import Pages.DashboardPage;
 import Pages.MailPage;
 
-public class VerifySpam extends BaseTest{
+public class VerifySpam {
 
-		
+		WebDriver driver;
+		public VerifySpam(WebDriver driver) {
+			this.driver=driver;
+		}
 		@Test(priority=6)
 		public void testMoveToSpam()
 		{
 			Boolean flag=false;
 			DashboardPage d= new DashboardPage(driver);
 			MailPage m= new MailPage(driver);
-			d.clickMailCard();
+			//d.clickMailCard();
 			List<WebElement> sub=m.GetemailSubjects();
 			String subj=sub.get(0).getText();
 			m.clickFirstEmail();
@@ -84,7 +88,7 @@ public class VerifySpam extends BaseTest{
 			}
 		
 			Actions action = new Actions(driver); 
-			 action.moveToElement(m.batchSelection()).click().build().perform();
+			 action.moveToElement(m.batchSelection1()).click().build().perform();
 			 m.clickSelectAll();
 			m.clickSpamIcon();
 			m.clickMailFilter();
@@ -120,7 +124,7 @@ public class VerifySpam extends BaseTest{
 				
 			}
 			Actions action = new Actions(driver); 
-			action.moveToElement(m.batchSelection()).click().build().perform();
+			action.moveToElement(m.batchSelection1()).click().build().perform();
 			List<WebElement> box = m.getListOfCheckBox();
 			m.clickSelectAll();
 			m.clickNotSpam();

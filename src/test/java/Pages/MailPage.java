@@ -65,8 +65,9 @@ public class MailPage {
 	@FindAll({@FindBy(xpath="//div[@class='ng-binding']")}) private List<WebElement> searchResult;
 	@FindAll({@FindBy(xpath="//md-checkbox[@type='checkbox']")}) private List<WebElement> checkBox;
 	@FindBy(xpath="//button[@aria-label='close']") private WebElement closeMail;
-	
-	
+	@FindBy(xpath="//md-menu[@class='_md-nested-menu md-menu ng-scope _md']") private WebElement allAccounts;
+	@FindAll({@FindBy(xpath="//md-menu-item[@ng-click='setAccount(account)']")}) private List<WebElement> accountList;
+	@FindBy(xpath="//div[@ng-if='!thread.email.from.uid']")private WebElement batchSelection1;
 	
 	public MailPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -209,6 +210,10 @@ public class MailPage {
 	{
 		return batchSelection;
 	}
+	public WebElement batchSelection1()
+	{
+		return batchSelection1;
+	}
 	
 	public void clickSelectAll()
 	{
@@ -275,7 +280,15 @@ public class MailPage {
 	{
 		closeMail.click();
 	}
-	
+	public WebElement hoverAllaccount()
+	{
+	return allAccounts;
+	}
+	public List<WebElement> getAccountList()
+	{
+		return (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOfAllElements(accountList));
+	}
+
 }
 	
 

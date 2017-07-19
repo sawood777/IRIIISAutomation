@@ -3,13 +3,18 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="contactTestCases.VerifyContactCreation">
+      <class name="GmailTestCases.VerifyTashGmail">
         <methods>
-          <include name="testSingleContactDeletion"/>
+          <include name="testDeleteForeverGmail"/>
+          <include name="testBatchMovetoInboxOfTrashGmail"/>
+          <include name="testBatchDeleteForeverGmail"/>
+          <include name="testMoveToTrashGmail"/>
+          <include name="testMovetoInboxOfTrashEmailGmail"/>
           <include name="testBrowser"/>
+          <include name="testBatchMoveToTrashGmail"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- contactTestCases.VerifyContactCreation -->
+      </class> <!-- GmailTestCases.VerifyTashGmail -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

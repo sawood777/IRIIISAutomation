@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -36,8 +36,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -47,37 +47,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\Praveen\git\IRIIISAutomation\All.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>C:\Users\Praveen\AppData\Local\Temp\testng-eclipse-957517802\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">2 tests</span>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -90,146 +90,64 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">26 methods,   26 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,  4 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="GmailTestCases.VerifyTashGmail" hash-for-method="testMovetoInboxOfTrashEmailGmail">testMovetoInboxOfTrashEmailGmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Default_suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="GmailTestCases.VerifyTashGmail" hash-for-method="testBatchDeleteForeverGmail">testBatchDeleteForeverGmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="GmailTestCases.VerifyTashGmail" hash-for-method="testBatchMoveToTrashGmail">testBatchMoveToTrashGmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="GmailTestCases.VerifyTashGmail" hash-for-method="testBatchMovetoInboxOfTrashGmail">testBatchMovetoInboxOfTrashGmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="GmailTestCases.VerifyTashGmail" hash-for-method="testDeleteForeverGmail">testDeleteForeverGmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="emailTestCases.VerifyTrash" hash-for-method="TestBatchMoveToTrash">TestBatchMoveToTrash</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="GmailTestCases.VerifyTashGmail" hash-for-method="testMoveToTrashGmail">testMoveToTrashGmail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="emailTestCases.VerifySpam" hash-for-method="TestBatchMovetoInboxOfSpamEmail">TestBatchMovetoInboxOfSpamEmail</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="emailTestCases.VerifyTrash" hash-for-method="TestBatchMovetoInboxOfTrashEmail">TestBatchMovetoInboxOfTrashEmail</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="emailTestCases.VerifySpam" hash-for-method="TestBatchMovetoSpamOfEmail">TestBatchMovetoSpamOfEmail</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="emailTestCases.VerifySendAndProcessed" hash-for-method="TestBatchProcessingOfEmail">TestBatchProcessingOfEmail</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="emailTestCases.VerifySendAndProcessed" hash-for-method="TestBatchUnProcessingOfEmail">TestBatchUnProcessingOfEmail</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="emailTestCases.VerifyTrash" hash-for-method="TestDeleteForever">TestDeleteForever</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="emailTestCases.VerifySendAndProcessed" hash-for-method="TestProcessingOfEmail">TestProcessingOfEmail</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="emailTestCases.VerifySendAndProcessed" hash-for-method="TestUnProcessingOfEmail">TestUnProcessingOfEmail</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="emailTestCases.VerifyReadUnread" hash-for-method="testBatchRead">testBatchRead</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="emailTestCases.VerifyTagToTopic" hash-for-method="testBatchTagToTopic">testBatchTagToTopic</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="emailTestCases.VerifyReadUnread" hash-for-method="testBatchUnread">testBatchUnread</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="contactTestCases.VerifyContactCreation" hash-for-method="testContactQuickCreate">testContactQuickCreate</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="contactTestCases.VerifyContactCreation" hash-for-method="testCreateContactWithoutAnyfields">testCreateContactWithoutAnyfields</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="contactTestCases.VerifyContactCreation" hash-for-method="testCreateContactWithoutProfileSearch">testCreateContactWithoutProfileSearch</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="contactTestCases.VerifyContactCreation" hash-for-method="testCreateContactionBySearch">testCreateContactionBySearch</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="emailTestCases.VerifySpam" hash-for-method="testMarkAsNotSpam">testMarkAsNotSpam</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="emailTestCases.VerifyReadUnread" hash-for-method="testMarkAsUnread">testMarkAsUnread</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="emailTestCases.VerifyTrash" hash-for-method="testMoveToInboxFromTrashListing">testMoveToInboxFromTrashListing</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="emailTestCases.VerifySpam" hash-for-method="testMoveToSpam">testMoveToSpam</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="emailTestCases.VerifyTrash" hash-for-method="testMoveToTrash">testMoveToTrash</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="contactTestCases.VerifyContactCreation" hash-for-method="testSingleContactDeletion">testSingleContactDeletion</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="emailTestCases.VerifySharing" hash-for-method="testTagToTopic">testTagToTopic</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="emailTestCases.VerifyTagToTopic" hash-for-method="testTagToTopic">testTagToTopic</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="contactTestCases.VerifyContactCreation" hash-for-method="testUpdateContact">testUpdateContact</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="emailTestCases.VerifySendAndProcessed" hash-for-method="testVerifySendingEmail">testVerifySendingEmail</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -240,624 +158,262 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">emailTestCases.VerifyReadUnread</span>
+              <img src="failed.png"/>
+              <span class="class-name">GmailTestCases.VerifyTashGmail</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testBatchRead">
-                  </a> <!-- testBatchRead -->
-                  <span class="method-name">testBatchRead</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testBatchUnread">
-                  </a> <!-- testBatchUnread -->
-                  <span class="method-name">testBatchUnread</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMarkAsUnread">
-                  </a> <!-- testMarkAsUnread -->
-                  <span class="method-name">testMarkAsUnread</span>
+                  <a name="testMovetoInboxOfTrashEmailGmail">
+                  </a> <!-- testMovetoInboxOfTrashEmailGmail -->
+                  <span class="method-name">testMovetoInboxOfTrashEmailGmail</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: Email moved to Inbox from Untrash List is unsucessfully expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:286)
+	at emailTestCases.VerifyTrash.testMoveToInboxFromTrashListing(VerifyTrash.java:72)
+	at GmailTestCases.VerifyTashGmail.testMovetoInboxOfTrashEmailGmail(VerifyTashGmail.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+<br/> java.lang.AssertionError: Email moved to Inbox from Untrash List is unsucessfully expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:286)
+	at emailTestCases.VerifyTrash.testMoveToInboxFromTrashListing(VerifyTrash.java:72)
+	at GmailTestCases.VerifyTashGmail.testMovetoInboxOfTrashEmailGmail(VerifyTashGmail.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:286)<br>emailTestCases.VerifyTrash.testMoveToInboxFromTrashListing(VerifyTrash.java:72)<br>GmailTestCases.VerifyTashGmail.testMovetoInboxOfTrashEmailGmail(VerifyTashGmail.java:57)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)<br>
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">emailTestCases.VerifySpam</span>
+              <img src="skipped.png"/>
+              <span class="class-name">GmailTestCases.VerifyTashGmail</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TestBatchMovetoInboxOfSpamEmail">
-                  </a> <!-- TestBatchMovetoInboxOfSpamEmail -->
-                  <span class="method-name">TestBatchMovetoInboxOfSpamEmail</span>
+                  <a name="testBatchDeleteForeverGmail">
+                  </a> <!-- testBatchDeleteForeverGmail -->
+                  <span class="method-name">testBatchDeleteForeverGmail</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TestBatchMovetoSpamOfEmail">
-                  </a> <!-- TestBatchMovetoSpamOfEmail -->
-                  <span class="method-name">TestBatchMovetoSpamOfEmail</span>
+                  <a name="testBatchMoveToTrashGmail">
+                  </a> <!-- testBatchMoveToTrashGmail -->
+                  <span class="method-name">testBatchMoveToTrashGmail</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testMarkAsNotSpam">
-                  </a> <!-- testMarkAsNotSpam -->
-                  <span class="method-name">testMarkAsNotSpam</span>
+                  <a name="testBatchMovetoInboxOfTrashGmail">
+                  </a> <!-- testBatchMovetoInboxOfTrashGmail -->
+                  <span class="method-name">testBatchMovetoInboxOfTrashGmail</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testMoveToSpam">
-                  </a> <!-- testMoveToSpam -->
-                  <span class="method-name">testMoveToSpam</span>
+                  <a name="testDeleteForeverGmail">
+                  </a> <!-- testDeleteForeverGmail -->
+                  <span class="method-name">testDeleteForeverGmail</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-Default_suite-class-skipped -->
+          <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">emailTestCases.VerifySendAndProcessed</span>
+              <span class="class-name">GmailTestCases.VerifyTashGmail</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TestBatchProcessingOfEmail">
-                  </a> <!-- TestBatchProcessingOfEmail -->
-                  <span class="method-name">TestBatchProcessingOfEmail</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TestBatchUnProcessingOfEmail">
-                  </a> <!-- TestBatchUnProcessingOfEmail -->
-                  <span class="method-name">TestBatchUnProcessingOfEmail</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TestProcessingOfEmail">
-                  </a> <!-- TestProcessingOfEmail -->
-                  <span class="method-name">TestProcessingOfEmail</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TestUnProcessingOfEmail">
-                  </a> <!-- TestUnProcessingOfEmail -->
-                  <span class="method-name">TestUnProcessingOfEmail</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testVerifySendingEmail">
-                  </a> <!-- testVerifySendingEmail -->
-                  <span class="method-name">testVerifySendingEmail</span>
+                  <a name="testMoveToTrashGmail">
+                  </a> <!-- testMoveToTrashGmail -->
+                  <span class="method-name">testMoveToTrashGmail</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">emailTestCases.VerifySharing</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testTagToTopic">
-                  </a> <!-- testTagToTopic -->
-                  <span class="method-name">testTagToTopic</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">emailTestCases.VerifyTrash</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TestBatchMoveToTrash">
-                  </a> <!-- TestBatchMoveToTrash -->
-                  <span class="method-name">TestBatchMoveToTrash</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TestBatchMovetoInboxOfTrashEmail">
-                  </a> <!-- TestBatchMovetoInboxOfTrashEmail -->
-                  <span class="method-name">TestBatchMovetoInboxOfTrashEmail</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TestDeleteForever">
-                  </a> <!-- TestDeleteForever -->
-                  <span class="method-name">TestDeleteForever</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMoveToInboxFromTrashListing">
-                  </a> <!-- testMoveToInboxFromTrashListing -->
-                  <span class="method-name">testMoveToInboxFromTrashListing</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMoveToTrash">
-                  </a> <!-- testMoveToTrash -->
-                  <span class="method-name">testMoveToTrash</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">contactTestCases.VerifyContactCreation</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testContactQuickCreate">
-                  </a> <!-- testContactQuickCreate -->
-                  <span class="method-name">testContactQuickCreate</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCreateContactWithoutAnyfields">
-                  </a> <!-- testCreateContactWithoutAnyfields -->
-                  <span class="method-name">testCreateContactWithoutAnyfields</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCreateContactWithoutProfileSearch">
-                  </a> <!-- testCreateContactWithoutProfileSearch -->
-                  <span class="method-name">testCreateContactWithoutProfileSearch</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCreateContactionBySearch">
-                  </a> <!-- testCreateContactionBySearch -->
-                  <span class="method-name">testCreateContactionBySearch</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSingleContactDeletion">
-                  </a> <!-- testSingleContactDeletion -->
-                  <span class="method-name">testSingleContactDeletion</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testUpdateContact">
-                  </a> <!-- testUpdateContact -->
-                  <span class="method-name">testUpdateContact</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">emailTestCases.VerifyTagToTopic</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testBatchTagToTopic">
-                  </a> <!-- testBatchTagToTopic -->
-                  <span class="method-name">testBatchTagToTopic</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testTagToTopic">
-                  </a> <!-- testTagToTopic -->
-                  <span class="method-name">testTagToTopic</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-        </div> <!-- panel Suite -->
-        <div panel-name="test-xml-Suite" class="panel">
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Praveen\git\IRIIISAutomation\All.xml</span>
+            <span class="header-content">C:\Users\Praveen\AppData\Local\Temp\testng-eclipse-957517802\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot;&gt;
-  &lt;test name=&quot;Contact&quot;&gt;
+&lt;suite name=&quot;Default suite&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;contactTestCases.VerifyContactCreation&quot;/&gt;
+      &lt;class name=&quot;GmailTestCases.VerifyTashGmail&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Contact --&gt;
-  &lt;test name=&quot;Email&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;emailTestCases.VerifyReadUnread&quot;/&gt;
-      &lt;class name=&quot;emailTestCases.VerifyLogin&quot;/&gt;
-      &lt;class name=&quot;emailTestCases.VerifyTrash&quot;/&gt;
-      &lt;class name=&quot;emailTestCases.VerifyTagToTopic&quot;/&gt;
-      &lt;class name=&quot;emailTestCases.VerifySendAndProcessed&quot;/&gt;
-      &lt;class name=&quot;emailTestCases.VerifySpam&quot;/&gt;
-      &lt;class name=&quot;emailTestCases.VerifySharing&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Email --&gt;
-&lt;/suite&gt; &lt;!-- Suite --&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Suite" class="panel">
+        <div panel-name="testlist-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Suite</span>
+            <span class="header-content">Tests for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Contact (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Email (7 classes)</span>
+                <span class="test-name">Default test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Suite" class="panel">
+        <div panel-name="group-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Suite</span>
+            <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Suite" class="panel">
+        <div panel-name="times-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Suite</span>
+            <span class="header-content">Times for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Suite');
-function tableData_Suite() {
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(26);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testVerifySendingEmail')
-data.setCell(0, 2, 'emailTestCases.VerifySendAndProcessed')
-data.setCell(0, 3, 12858);
+data.setCell(0, 1, 'testMoveToTrashGmail')
+data.setCell(0, 2, 'GmailTestCases.VerifyTashGmail')
+data.setCell(0, 3, 19260);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testBatchTagToTopic')
-data.setCell(1, 2, 'emailTestCases.VerifyTagToTopic')
-data.setCell(1, 3, 12261);
+data.setCell(1, 1, 'testMovetoInboxOfTrashEmailGmail')
+data.setCell(1, 2, 'GmailTestCases.VerifyTashGmail')
+data.setCell(1, 3, 5741);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testTagToTopic')
-data.setCell(2, 2, 'emailTestCases.VerifySharing')
-data.setCell(2, 3, 11662);
+data.setCell(2, 1, 'testBatchMovetoInboxOfTrashGmail')
+data.setCell(2, 2, 'GmailTestCases.VerifyTashGmail')
+data.setCell(2, 3, 1);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testTagToTopic')
-data.setCell(3, 2, 'emailTestCases.VerifyTagToTopic')
-data.setCell(3, 3, 11241);
+data.setCell(3, 1, 'testDeleteForeverGmail')
+data.setCell(3, 2, 'GmailTestCases.VerifyTashGmail')
+data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testMarkAsUnread')
-data.setCell(4, 2, 'emailTestCases.VerifyReadUnread')
-data.setCell(4, 3, 9509);
+data.setCell(4, 1, 'testBatchMoveToTrashGmail')
+data.setCell(4, 2, 'GmailTestCases.VerifyTashGmail')
+data.setCell(4, 3, 0);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'TestBatchMovetoSpamOfEmail')
-data.setCell(5, 2, 'emailTestCases.VerifySpam')
-data.setCell(5, 3, 9395);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'TestBatchMovetoInboxOfSpamEmail')
-data.setCell(6, 2, 'emailTestCases.VerifySpam')
-data.setCell(6, 3, 8691);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testBatchRead')
-data.setCell(7, 2, 'emailTestCases.VerifyReadUnread')
-data.setCell(7, 3, 8098);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'TestBatchMoveToTrash')
-data.setCell(8, 2, 'emailTestCases.VerifyTrash')
-data.setCell(8, 3, 7964);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'TestBatchMovetoInboxOfTrashEmail')
-data.setCell(9, 2, 'emailTestCases.VerifyTrash')
-data.setCell(9, 3, 7413);
-data.setCell(10, 0, 10)
-data.setCell(10, 1, 'TestBatchProcessingOfEmail')
-data.setCell(10, 2, 'emailTestCases.VerifySendAndProcessed')
-data.setCell(10, 3, 7101);
-data.setCell(11, 0, 11)
-data.setCell(11, 1, 'testBatchUnread')
-data.setCell(11, 2, 'emailTestCases.VerifyReadUnread')
-data.setCell(11, 3, 6812);
-data.setCell(12, 0, 12)
-data.setCell(12, 1, 'TestBatchUnProcessingOfEmail')
-data.setCell(12, 2, 'emailTestCases.VerifySendAndProcessed')
-data.setCell(12, 3, 6283);
-data.setCell(13, 0, 13)
-data.setCell(13, 1, 'testSingleContactDeletion')
-data.setCell(13, 2, 'contactTestCases.VerifyContactCreation')
-data.setCell(13, 3, 6198);
-data.setCell(14, 0, 14)
-data.setCell(14, 1, 'testUpdateContact')
-data.setCell(14, 2, 'contactTestCases.VerifyContactCreation')
-data.setCell(14, 3, 5890);
-data.setCell(15, 0, 15)
-data.setCell(15, 1, 'testMoveToTrash')
-data.setCell(15, 2, 'emailTestCases.VerifyTrash')
-data.setCell(15, 3, 5322);
-data.setCell(16, 0, 16)
-data.setCell(16, 1, 'testContactQuickCreate')
-data.setCell(16, 2, 'contactTestCases.VerifyContactCreation')
-data.setCell(16, 3, 5085);
-data.setCell(17, 0, 17)
-data.setCell(17, 1, 'testMoveToSpam')
-data.setCell(17, 2, 'emailTestCases.VerifySpam')
-data.setCell(17, 3, 4967);
-data.setCell(18, 0, 18)
-data.setCell(18, 1, 'TestDeleteForever')
-data.setCell(18, 2, 'emailTestCases.VerifyTrash')
-data.setCell(18, 3, 4653);
-data.setCell(19, 0, 19)
-data.setCell(19, 1, 'TestProcessingOfEmail')
-data.setCell(19, 2, 'emailTestCases.VerifySendAndProcessed')
-data.setCell(19, 3, 3947);
-data.setCell(20, 0, 20)
-data.setCell(20, 1, 'testMoveToInboxFromTrashListing')
-data.setCell(20, 2, 'emailTestCases.VerifyTrash')
-data.setCell(20, 3, 3604);
-data.setCell(21, 0, 21)
-data.setCell(21, 1, 'testCreateContactWithoutProfileSearch')
-data.setCell(21, 2, 'contactTestCases.VerifyContactCreation')
-data.setCell(21, 3, 3219);
-data.setCell(22, 0, 22)
-data.setCell(22, 1, 'testMarkAsNotSpam')
-data.setCell(22, 2, 'emailTestCases.VerifySpam')
-data.setCell(22, 3, 3215);
-data.setCell(23, 0, 23)
-data.setCell(23, 1, 'testCreateContactionBySearch')
-data.setCell(23, 2, 'contactTestCases.VerifyContactCreation')
-data.setCell(23, 3, 3053);
-data.setCell(24, 0, 24)
-data.setCell(24, 1, 'TestUnProcessingOfEmail')
-data.setCell(24, 2, 'emailTestCases.VerifySendAndProcessed')
-data.setCell(24, 3, 2886);
-data.setCell(25, 0, 25)
-data.setCell(25, 1, 'testCreateContactWithoutAnyfields')
-data.setCell(25, 2, 'contactTestCases.VerifyContactCreation')
-data.setCell(25, 3, 643);
-window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+data.setCell(5, 1, 'testBatchDeleteForeverGmail')
+data.setCell(5, 2, 'GmailTestCases.VerifyTashGmail')
+data.setCell(5, 3, 0);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
-              <div id="times-div-Suite">
-              </div> <!-- times-div-Suite -->
+              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Suite" class="panel">
+        <div panel-name="reporter-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Suite</span>
+            <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Suite" class="panel">
+        <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Suite" class="panel">
+        <div panel-name="chronological-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">contactTestCases.VerifyContactCreation</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">GmailTestCases.VerifyTashGmail</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">testBrowser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">testContactQuickCreate</span>
-                <span class="method-start">15879 ms</span>
+                <span class="method-name">testMoveToTrashGmail</span>
+                <span class="method-start">23401 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testCreateContactionBySearch</span>
-                <span class="method-start">20965 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testCreateContactWithoutProfileSearch</span>
-                <span class="method-start">24020 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testCreateContactWithoutAnyfields</span>
-                <span class="method-start">27240 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testUpdateContact</span>
-                <span class="method-start">27885 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testSingleContactDeletion</span>
-                <span class="method-start">33777 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testMovetoInboxOfTrashEmailGmail</span>
+                <span class="method-start">42664 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">postCondition</span>
-                <span class="method-start">39977 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">emailTestCases.VerifyTrash</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">testBrowser</span>
-                <span class="method-start">41632 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">testMoveToTrash</span>
-                <span class="method-start">54503 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testMoveToInboxFromTrashListing</span>
-                <span class="method-start">59826 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TestBatchMoveToTrash</span>
-                <span class="method-start">63432 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TestBatchMovetoInboxOfTrashEmail</span>
-                <span class="method-start">71397 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TestDeleteForever</span>
-                <span class="method-start">78811 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">postCondition</span>
-                <span class="method-start">83465 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">emailTestCases.VerifyReadUnread</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">testBrowser</span>
-                <span class="method-start">84581 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">testMarkAsUnread</span>
-                <span class="method-start">97375 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testBatchUnread</span>
-                <span class="method-start">106885 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testBatchRead</span>
-                <span class="method-start">113698 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">postCondition</span>
-                <span class="method-start">121797 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">emailTestCases.VerifyTagToTopic</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">testBrowser</span>
-                <span class="method-start">122851 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">testTagToTopic</span>
-                <span class="method-start">135730 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testBatchTagToTopic</span>
-                <span class="method-start">146972 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">postCondition</span>
-                <span class="method-start">159234 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">emailTestCases.VerifySendAndProcessed</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">testBrowser</span>
-                <span class="method-start">160325 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">testVerifySendingEmail</span>
-                <span class="method-start">174312 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TestProcessingOfEmail</span>
-                <span class="method-start">187170 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TestUnProcessingOfEmail</span>
-                <span class="method-start">191118 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TestBatchProcessingOfEmail</span>
-                <span class="method-start">194004 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TestBatchUnProcessingOfEmail</span>
-                <span class="method-start">201105 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">postCondition</span>
-                <span class="method-start">207389 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">emailTestCases.VerifySpam</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">testBrowser</span>
-                <span class="method-start">208456 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">testMoveToSpam</span>
-                <span class="method-start">221682 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testMarkAsNotSpam</span>
-                <span class="method-start">226650 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TestBatchMovetoSpamOfEmail</span>
-                <span class="method-start">229866 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TestBatchMovetoInboxOfSpamEmail</span>
-                <span class="method-start">239262 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">postCondition</span>
-                <span class="method-start">247953 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">emailTestCases.VerifySharing</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">testBrowser</span>
-                <span class="method-start">249222 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">testTagToTopic</span>
-                <span class="method-start">263287 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">postCondition</span>
-                <span class="method-start">274949 ms</span>
+                <span class="method-start">48413 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

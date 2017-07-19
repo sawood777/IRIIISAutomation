@@ -2,6 +2,7 @@ package emailTestCases;
 
 import java.util.List;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
@@ -10,7 +11,11 @@ import org.testng.annotations.Test;
 import Pages.DashboardPage;
 import Pages.MailPage;
 
-public class VerifyTrash extends BaseTest {
+public class VerifyTrash {
+	WebDriver driver;
+	public VerifyTrash(WebDriver driver) {
+		this.driver=driver;
+	}
 	
 		@Test(priority=10)
 		public void testMoveToTrash()
@@ -18,7 +23,7 @@ public class VerifyTrash extends BaseTest {
 			Boolean flag=false;
 			DashboardPage d= new DashboardPage(driver);
 			MailPage m= new MailPage(driver);
-			d.clickMailCard();
+			//d.clickMailCard();
 			List<WebElement> sub=m.GetemailSubjects();
 			String subj=sub.get(0).getText();
 			m.clickFirstEmail();
@@ -84,7 +89,7 @@ public class VerifyTrash extends BaseTest {
 				
 			}
 			Actions action = new Actions(driver); 
-			action.moveToElement(m.batchSelection()).click().build().perform();
+			action.moveToElement(m.batchSelection1()).click().build().perform();
 			 m.clickSelectAll();
 			m.clickTrashIcon();
 			m.clickMailFilter();
@@ -121,7 +126,7 @@ public class VerifyTrash extends BaseTest {
 				
 			}
 			Actions action = new Actions(driver); 
-			action.moveToElement(m.batchSelection()).click().build().perform();
+			action.moveToElement(m.batchSelection1()).click().build().perform();
 			m.clickSelectAll();
 			m.clickUnTrash();
 			m.clickMailFilter();
@@ -219,7 +224,7 @@ public class VerifyTrash extends BaseTest {
 				
 			}
 			Actions action = new Actions(driver); 
-			action.moveToElement(m.batchSelection()).click().build().perform();
+			action.moveToElement(m.batchSelection1()).click().build().perform();
 			List<WebElement> box = m.getListOfCheckBox();
 			for(int i=1;i<4;i++)
 			{

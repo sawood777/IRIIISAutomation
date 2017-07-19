@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
@@ -13,7 +14,11 @@ import Pages.DashboardPage;
 import Pages.IriiisLogoPage;
 import Pages.MailPage;
 
-public class VerifyTagToTopic extends BaseTest{
+public class VerifyTagToTopic{
+	WebDriver driver;
+	public VerifyTagToTopic(WebDriver driver) {
+		this.driver=driver;
+	}
 	
 	@Test(priority=19)
 	public void testTagToTopic()
@@ -22,7 +27,7 @@ public class VerifyTagToTopic extends BaseTest{
 		DashboardPage d= new DashboardPage(driver);
 		MailPage m= new MailPage(driver);
 		IriiisLogoPage iriiis=new IriiisLogoPage(driver); 
-		m.clickmailCard();
+		//m.clickmailCard();
 		List<WebElement> sub = m.GetemailSubjects();
 		String s = sub.get(0).getText();
 		m.clickFirstEmail();
@@ -81,7 +86,7 @@ public class VerifyTagToTopic extends BaseTest{
 			subArray[i]=sub.get(i).getText();
 		}
 		Actions action = new Actions(driver); 
-		action.moveToElement(m.batchSelection()).click().build().perform();
+		action.moveToElement(m.batchSelection1()).click().build().perform();
 		List<WebElement> box = m.getListOfCheckBox();
 		for(int i=1;i<4;i++)
 		{
@@ -90,6 +95,7 @@ public class VerifyTagToTopic extends BaseTest{
 		m.clickTagToTopic();
 		List<WebElement> topics = m.getTopicListInTagToTopic();
 		String s1=topics.get(0).getText();
+		System.out.println(topics.get(0).getText());
 		topics.get(0).click();
 		m.clickTopicSave();
 		iriiis.clickIriiisLog();
@@ -101,6 +107,7 @@ public class VerifyTagToTopic extends BaseTest{
 		{
 			if(r.get(i).getText().equals(s1))
 			{
+				System.out.println(r.get(i).getText());
 				r.get(i).click();
 				break;
 			}

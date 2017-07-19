@@ -31,75 +31,38 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Contact</td><td class="numi">6</td><td class="numi">6</td><td class="numi">0</td><td class="numi">0</td><td class="numi">41.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="stripe"><td style="text-align:left;padding-right:2em">Email</td><td class="numi">20</td><td class="numi">20</td><td class="numi">0</td><td class="numi">0</td><td class="numi">234.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="total"><td>Total</td>
-<td class="numi">26</td><td class="numi">26</td><td class="numi">0</td><td class="numi">0</td><td class="numi">275.9 seconds</td><td colspan="2">&nbsp;</td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">1</td><td class="numi">1</td><td class="numi_attn">4</td><td class="numi_attn">1</td><td class="numi">50.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Contact &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="6">contactTestCases.VerifyContactCreation</td><td><a href="#m1"><b>testContactQuickCreate</b>  </a></td><td class="numi">1</td><td>1500373080560</td><td class="numi">5085</td></tr><tr class="passedodd"><td><a href="#m2"><b>testCreateContactionBySearch</b>  </a></td><td class="numi">1</td><td>1500373085646</td><td class="numi">3053</td></tr><tr class="passedodd"><td><a href="#m3"><b>testCreateContactWithoutProfileSearch</b>  </a></td><td class="numi">1</td><td>1500373088701</td><td class="numi">3219</td></tr><tr class="passedodd"><td><a href="#m4"><b>testCreateContactWithoutAnyfields</b>  </a></td><td class="numi">1</td><td>1500373091921</td><td class="numi">643</td></tr><tr class="passedodd"><td><a href="#m5"><b>testUpdateContact</b>  </a></td><td class="numi">1</td><td>1500373092566</td><td class="numi">5890</td></tr><tr class="passedodd"><td><a href="#m6"><b>testSingleContactDeletion</b>  </a></td><td class="numi">1</td><td>1500373098458</td><td class="numi">6198</td></tr>
-<tr><th colspan="4">Email &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="5">emailTestCases.VerifyTrash</td><td><a href="#m7"><b>testMoveToTrash</b>  </a></td><td class="numi">1</td><td>1500373119184</td><td class="numi">5322</td></tr><tr class="passedodd"><td><a href="#m8"><b>testMoveToInboxFromTrashListing</b>  </a></td><td class="numi">1</td><td>1500373124507</td><td class="numi">3604</td></tr><tr class="passedodd"><td><a href="#m9"><b>TestBatchMoveToTrash</b>  </a></td><td class="numi">1</td><td>1500373128113</td><td class="numi">7964</td></tr><tr class="passedodd"><td><a href="#m10"><b>TestBatchMovetoInboxOfTrashEmail</b>  </a></td><td class="numi">1</td><td>1500373136078</td><td class="numi">7413</td></tr><tr class="passedodd"><td><a href="#m11"><b>TestDeleteForever</b>  </a></td><td class="numi">1</td><td>1500373143492</td><td class="numi">4653</td></tr>
-<tr class="passedeven"><td rowspan="3">emailTestCases.VerifyReadUnread</td><td><a href="#m12"><b>testMarkAsUnread</b>  </a></td><td class="numi">1</td><td>1500373162056</td><td class="numi">9509</td></tr><tr class="passedeven"><td><a href="#m13"><b>testBatchUnread</b>  </a></td><td class="numi">1</td><td>1500373171566</td><td class="numi">6812</td></tr><tr class="passedeven"><td><a href="#m14"><b>testBatchRead</b>  </a></td><td class="numi">1</td><td>1500373178379</td><td class="numi">8098</td></tr>
-<tr class="passedodd"><td rowspan="2">emailTestCases.VerifyTagToTopic</td><td><a href="#m15"><b>testTagToTopic</b>  </a></td><td class="numi">1</td><td>1500373200411</td><td class="numi">11241</td></tr><tr class="passedodd"><td><a href="#m16"><b>testBatchTagToTopic</b>  </a></td><td class="numi">1</td><td>1500373211653</td><td class="numi">12261</td></tr>
-<tr class="passedeven"><td rowspan="5">emailTestCases.VerifySendAndProcessed</td><td><a href="#m17"><b>testVerifySendingEmail</b>  </a></td><td class="numi">1</td><td>1500373238993</td><td class="numi">12858</td></tr><tr class="passedeven"><td><a href="#m18"><b>TestProcessingOfEmail</b>  </a></td><td class="numi">1</td><td>1500373251851</td><td class="numi">3947</td></tr><tr class="passedeven"><td><a href="#m19"><b>TestUnProcessingOfEmail</b>  </a></td><td class="numi">1</td><td>1500373255799</td><td class="numi">2886</td></tr><tr class="passedeven"><td><a href="#m20"><b>TestBatchProcessingOfEmail</b>  </a></td><td class="numi">1</td><td>1500373258685</td><td class="numi">7101</td></tr><tr class="passedeven"><td><a href="#m21"><b>TestBatchUnProcessingOfEmail</b>  </a></td><td class="numi">1</td><td>1500373265786</td><td class="numi">6283</td></tr>
-<tr class="passedodd"><td rowspan="4">emailTestCases.VerifySpam</td><td><a href="#m22"><b>testMoveToSpam</b>  </a></td><td class="numi">1</td><td>1500373286363</td><td class="numi">4967</td></tr><tr class="passedodd"><td><a href="#m23"><b>testMarkAsNotSpam</b>  </a></td><td class="numi">1</td><td>1500373291331</td><td class="numi">3215</td></tr><tr class="passedodd"><td><a href="#m24"><b>TestBatchMovetoSpamOfEmail</b>  </a></td><td class="numi">1</td><td>1500373294547</td><td class="numi">9395</td></tr><tr class="passedodd"><td><a href="#m25"><b>TestBatchMovetoInboxOfSpamEmail</b>  </a></td><td class="numi">1</td><td>1500373303943</td><td class="numi">8691</td></tr>
-<tr class="passedeven"><td rowspan="1">emailTestCases.VerifySharing</td><td><a href="#m26"><b>testTagToTopic</b>  </a></td><td class="numi">1</td><td>1500373327968</td><td class="numi">11662</td></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">GmailTestCases.VerifyTashGmail</td><td><a href="#m1"><b>testMovetoInboxOfTrashEmailGmail</b>  </a></td><td class="numi">1</td><td>1500457812512</td><td class="numi">5741</td></tr>
+<tr><th colspan="4">Default test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="4">GmailTestCases.VerifyTashGmail</td><td><a href="#m2"><b>testDeleteForeverGmail</b>  </a></td><td class="numi">1</td><td>1500457818259</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m3"><b>testBatchMovetoInboxOfTrashGmail</b>  </a></td><td class="numi">1</td><td>1500457818257</td><td class="numi">1</td></tr><tr class="skippedodd"><td><a href="#m4"><b>testBatchMoveToTrashGmail</b>  </a></td><td class="numi">1</td><td>1500457818256</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m5"><b>testBatchDeleteForeverGmail</b>  </a></td><td class="numi">1</td><td>1500457818260</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">GmailTestCases.VerifyTashGmail</td><td><a href="#m6"><b>testMoveToTrashGmail</b>  </a></td><td class="numi">1</td><td>1500457793249</td><td class="numi">19260</td></tr>
 </table>
-<h1>Contact</h1>
-<h2 id="m1">contactTestCases.VerifyContactCreation:testCreateContactWithoutProfileSearch</h2>
+<h1>Default test</h1>
+<h2 id="m1">GmailTestCases.VerifyTashGmail:testMovetoInboxOfTrashEmailGmail</h2>
+<div style="padding-left:3em">
+<p>Email moved to Inbox from Untrash List is unsucessfully expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:286)
+<br/>at emailTestCases.VerifyTrash.testMoveToInboxFromTrashListing(VerifyTrash.java:72)
+<br/>at GmailTestCases.VerifyTashGmail.testMovetoInboxOfTrashEmailGmail(VerifyTashGmail.java:57)
+<br/>25 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">contactTestCases.VerifyContactCreation:testCreateContactWithoutAnyfields</h2>
+<h2 id="m2">GmailTestCases.VerifyTashGmail:testDeleteForeverGmail</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">contactTestCases.VerifyContactCreation:testContactQuickCreate</h2>
+<h2 id="m3">GmailTestCases.VerifyTashGmail:testBatchMovetoInboxOfTrashGmail</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">contactTestCases.VerifyContactCreation:testUpdateContact</h2>
+<h2 id="m4">GmailTestCases.VerifyTashGmail:testBatchMoveToTrashGmail</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">contactTestCases.VerifyContactCreation:testCreateContactionBySearch</h2>
+<h2 id="m5">GmailTestCases.VerifyTashGmail:testBatchDeleteForeverGmail</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m6">contactTestCases.VerifyContactCreation:testSingleContactDeletion</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h1>Email</h1>
-<h2 id="m7">emailTestCases.VerifySpam:testMoveToSpam</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m8">emailTestCases.VerifyReadUnread:testBatchUnread</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m9">emailTestCases.VerifyTrash:TestBatchMoveToTrash</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m10">emailTestCases.VerifySharing:testTagToTopic</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m11">emailTestCases.VerifyTrash:testMoveToTrash</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m12">emailTestCases.VerifyTrash:testMoveToInboxFromTrashListing</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m13">emailTestCases.VerifyReadUnread:testBatchRead</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m14">emailTestCases.VerifyTrash:TestBatchMovetoInboxOfTrashEmail</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m15">emailTestCases.VerifySpam:TestBatchMovetoInboxOfSpamEmail</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m16">emailTestCases.VerifyReadUnread:testMarkAsUnread</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m17">emailTestCases.VerifySendAndProcessed:TestProcessingOfEmail</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m18">emailTestCases.VerifyTagToTopic:testTagToTopic</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m19">emailTestCases.VerifySendAndProcessed:testVerifySendingEmail</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m20">emailTestCases.VerifyTagToTopic:testBatchTagToTopic</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m21">emailTestCases.VerifySpam:TestBatchMovetoSpamOfEmail</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m22">emailTestCases.VerifySendAndProcessed:TestUnProcessingOfEmail</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m23">emailTestCases.VerifySendAndProcessed:TestBatchProcessingOfEmail</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m24">emailTestCases.VerifySendAndProcessed:TestBatchUnProcessingOfEmail</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m25">emailTestCases.VerifySpam:testMarkAsNotSpam</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m26">emailTestCases.VerifyTrash:TestDeleteForever</h2>
+<h2 id="m6">GmailTestCases.VerifyTashGmail:testMoveToTrashGmail</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

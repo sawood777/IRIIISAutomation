@@ -2,6 +2,7 @@ package emailTestCases;
 
 import java.util.List;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -10,16 +11,19 @@ import Pages.DashboardPage;
 import Pages.IriiisLogoPage;
 import Pages.MailPage;
 
-public class VerifySharing extends BaseTest{
-	
+public class VerifySharing {
+	WebDriver driver;
+	public VerifySharing(WebDriver driver) {
+		this.driver=driver;;
+	}
 	@Test(priority=21)
-	public void testTagToTopic()
+	public void testShareToTopic()
 	{
 		Boolean flag=false;
 		DashboardPage d= new DashboardPage(driver);
 		MailPage m= new MailPage(driver);
 		IriiisLogoPage iriiis=new IriiisLogoPage(driver); 
-		m.clickmailCard();
+		//m.clickmailCard();
 		List<WebElement> sub = m.GetemailSubjects();
 		String s = sub.get(0).getText();
 		m.clickFirstEmail();
