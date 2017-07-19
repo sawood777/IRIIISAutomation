@@ -3,18 +3,50 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="contactTestCases.VerifyContactCreation">
+      <class name="iriiisMailTestCases.VerifySpamIRIIIS">
         <methods>
-          <include name="testCreateContactWithoutAnyfields"/>
-          <include name="testUpdateContact"/>
-          <include name="testSingleContactDeletion"/>
-          <include name="testCreateContactWithoutProfileSearch"/>
-          <include name="testCreateContactionBySearch"/>
           <include name="testBrowser"/>
-          <include name="testContactQuickCreate"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- contactTestCases.VerifyContactCreation -->
+      </class> <!-- iriiisMailTestCases.VerifySpamIRIIIS -->
+      <class name="iriiisMailTestCases.VerifyTashIRIIIS">
+        <methods>
+          <include name="testMovetoInboxOfTrashEmailGmail"/>
+          <include name="testBatchMovetoInboxOfTrashGmail"/>
+          <include name="testBatchDeleteForeverGmail"/>
+          <include name="testMoveToTrashGmail"/>
+          <include name="testBatchMoveToTrashGmail"/>
+          <include name="testBrowser"/>
+          <include name="testDeleteForeverGmail"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- iriiisMailTestCases.VerifyTashIRIIIS -->
+      <class name="iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS">
+        <methods>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS -->
+      <class name="iriiisMailTestCases.VerifyReadUnreadIRIIIS">
+        <methods>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- iriiisMailTestCases.VerifyReadUnreadIRIIIS -->
+      <class name="iriiisMailTestCases.VerifyTagToTopicIRIIIS">
+        <methods>
+          <include name="testBatchTagToTopicGmail"/>
+          <include name="testTagToTopicGmail"/>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- iriiisMailTestCases.VerifyTagToTopicIRIIIS -->
+      <class name="iriiisMailTestCases.VerifySharingIRIIIS">
+        <methods>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- iriiisMailTestCases.VerifySharingIRIIIS -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

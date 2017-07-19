@@ -16,5 +16,15 @@
       <class name="GmailTestCases.VerifySendingEmailAndProcessing"/>
     </classes>
   </test> <!-- Test -->
+   <test name="Test">
+    <classes>
+      <class name="iriiisMailTestCases.VerifyTashIRIIIS"/>
+      <class name="iriiisMailTestCases.VerifyReadUnreadIRIIIS"/>
+      <class name="iriiisMailTestCases.VerifySpamIRIIIS"/>
+      <class name="iriiisMailTestCases.VerifyTagToTopicIRIIIS"/>
+      <class name="iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS"/>
+      <class name="iriiisMailTestCases.VerifySharingIRIIIS"/>
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->
 

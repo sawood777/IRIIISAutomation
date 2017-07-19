@@ -1,4 +1,4 @@
-package GmailTestCases;
+package iriiisMailTestCases;
 
 import java.util.List;
 
@@ -10,10 +10,10 @@ import Pages.MailPage;
 import emailTestCases.BaseTest;
 import emailTestCases.VerifyReadUnread;
 
-public class VerifyReadUnreadGmail extends BaseTest {
+public class VerifyReadUnreadIRIIIS extends BaseTest {
 	
 	@Test(priority=16)
-	public void testMarkAsUnreadGmail()
+	public void testMarkAsUnreadIRIIIS()
 	{ 
 		MailPage m= new MailPage(driver);
 		VerifyReadUnread v= new VerifyReadUnread(driver);
@@ -36,7 +36,7 @@ public class VerifyReadUnreadGmail extends BaseTest {
 		List<WebElement> acc = m.getAccountList();
 		for(int i=0;i<acc.size();i++)
 		{
-			if(acc.get(i).getText().contains("@gmail.com"))
+			if(acc.get(i).getText().contains("@iriiis"))
 			{
 			acc.get(i).click();
 			break;
@@ -50,15 +50,15 @@ public class VerifyReadUnreadGmail extends BaseTest {
 		}
 		v.testMarkAsUnread();
 		}
-	@Test(dependsOnMethods="testMarkAsUnreadGmail")
-	public void testBatchUnreadGmail()
+	@Test(dependsOnMethods="testMarkAsUnreadIRIIIS")
+	public void testBatchUnreadIRIIIS()
 	{ 
 		VerifyReadUnread v= new VerifyReadUnread(driver);
 		v.testBatchUnread();
 	
 	}
-	@Test(dependsOnMethods="testMarkAsUnreadGmail")
-	public void testBatchReadGmail()
+	@Test(priority=18)
+	public void testBatchReadIRIIIS()
 	{ 
 		VerifyReadUnread v= new VerifyReadUnread(driver);
 		v.testBatchRead();

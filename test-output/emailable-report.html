@@ -31,38 +31,57 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">1</td><td class="numi">1</td><td class="numi_attn">4</td><td class="numi_attn">1</td><td class="numi">50.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">20</td><td class="numi">20</td><td class="numi">0</td><td class="numi">0</td><td class="numi">354.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Default test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">GmailTestCases.VerifyTashGmail</td><td><a href="#m1"><b>testMovetoInboxOfTrashEmailGmail</b>  </a></td><td class="numi">1</td><td>1500457812512</td><td class="numi">5741</td></tr>
-<tr><th colspan="4">Default test &#8212; skipped</th></tr>
-<tr class="skippedodd"><td rowspan="4">GmailTestCases.VerifyTashGmail</td><td><a href="#m2"><b>testDeleteForeverGmail</b>  </a></td><td class="numi">1</td><td>1500457818259</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m3"><b>testBatchMovetoInboxOfTrashGmail</b>  </a></td><td class="numi">1</td><td>1500457818257</td><td class="numi">1</td></tr><tr class="skippedodd"><td><a href="#m4"><b>testBatchMoveToTrashGmail</b>  </a></td><td class="numi">1</td><td>1500457818256</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m5"><b>testBatchDeleteForeverGmail</b>  </a></td><td class="numi">1</td><td>1500457818260</td><td class="numi">0</td></tr>
-<tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">GmailTestCases.VerifyTashGmail</td><td><a href="#m6"><b>testMoveToTrashGmail</b>  </a></td><td class="numi">1</td><td>1500457793249</td><td class="numi">19260</td></tr>
+<tr><th colspan="4">Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="5">iriiisMailTestCases.VerifyTashIRIIIS</td><td><a href="#m1"><b>testMoveToTrashGmail</b>  </a></td><td class="numi">1</td><td>1500459781972</td><td class="numi">15211</td></tr><tr class="passedodd"><td><a href="#m2"><b>testMovetoInboxOfTrashEmailGmail</b>  </a></td><td class="numi">1</td><td>1500459797185</td><td class="numi">3396</td></tr><tr class="passedodd"><td><a href="#m3"><b>testBatchMoveToTrashGmail</b>  </a></td><td class="numi">1</td><td>1500459800583</td><td class="numi">8124</td></tr><tr class="passedodd"><td><a href="#m4"><b>testBatchMovetoInboxOfTrashGmail</b>  </a></td><td class="numi">1</td><td>1500459808709</td><td class="numi">7323</td></tr><tr class="passedodd"><td><a href="#m5"><b>testDeleteForeverGmail</b>  </a></td><td class="numi">1</td><td>1500459816034</td><td class="numi">4651</td></tr>
+<tr class="passedeven"><td rowspan="3">iriiisMailTestCases.VerifyReadUnreadIRIIIS</td><td><a href="#m6"><b>testMarkAsUnreadGmail</b>  </a></td><td class="numi">1</td><td>1500459842575</td><td class="numi">19541</td></tr><tr class="passedeven"><td><a href="#m7"><b>testBatchReadGmail</b>  </a></td><td class="numi">1</td><td>1500459862117</td><td class="numi">13598</td></tr><tr class="passedeven"><td><a href="#m8"><b>testBatchUnreadGmail</b>  </a></td><td class="numi">1</td><td>1500459875716</td><td class="numi">13199</td></tr>
+<tr class="passedodd"><td rowspan="4">iriiisMailTestCases.VerifySpamIRIIIS</td><td><a href="#m9"><b>testMoveToSpamGmail</b>  </a></td><td class="numi">1</td><td>1500459909066</td><td class="numi">15188</td></tr><tr class="passedodd"><td><a href="#m10"><b>testMarkAsNotSpamGMail</b>  </a></td><td class="numi">1</td><td>1500459924255</td><td class="numi">2734</td></tr><tr class="passedodd"><td><a href="#m11"><b>testBatchMovetoSpamGmail</b>  </a></td><td class="numi">1</td><td>1500459926990</td><td class="numi">7691</td></tr><tr class="passedodd"><td><a href="#m12"><b>testBatchMovetoInboxOfSpamGmail</b>  </a></td><td class="numi">1</td><td>1500459934682</td><td class="numi">7548</td></tr>
+<tr class="passedeven"><td rowspan="2">iriiisMailTestCases.VerifyTagToTopicIRIIIS</td><td><a href="#m13"><b>testTagToTopicGmail</b>  </a></td><td class="numi">1</td><td>1500459962159</td><td class="numi">21059</td></tr><tr class="passedeven"><td><a href="#m14"><b>testBatchTagToTopicGmail</b>  </a></td><td class="numi">1</td><td>1500459983219</td><td class="numi">13114</td></tr>
+<tr class="passedodd"><td rowspan="5">iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS</td><td><a href="#m15"><b>testVerifySendingEmailGmail</b>  </a></td><td class="numi">1</td><td>1500460016199</td><td class="numi">23566</td></tr><tr class="passedodd"><td><a href="#m16"><b>testProcessingEmailGMail</b>  </a></td><td class="numi">1</td><td>1500460039767</td><td class="numi">5620</td></tr><tr class="passedodd"><td><a href="#m17"><b>testUnProcessingEmailGMail</b>  </a></td><td class="numi">1</td><td>1500460045388</td><td class="numi">3591</td></tr><tr class="passedodd"><td><a href="#m18"><b>testBatchProcessingEmailGMail</b>  </a></td><td class="numi">1</td><td>1500460048979</td><td class="numi">9554</td></tr><tr class="passedodd"><td><a href="#m19"><b>testBatchUnProcessingEmailGMail</b>  </a></td><td class="numi">1</td><td>1500460058534</td><td class="numi">8698</td></tr>
+<tr class="passedeven"><td rowspan="1">iriiisMailTestCases.VerifySharingIRIIIS</td><td><a href="#m20"><b>testMoveToSpamGmail</b>  </a></td><td class="numi">1</td><td>1500460089552</td><td class="numi">23615</td></tr>
 </table>
-<h1>Default test</h1>
-<h2 id="m1">GmailTestCases.VerifyTashGmail:testMovetoInboxOfTrashEmailGmail</h2>
-<div style="padding-left:3em">
-<p>Email moved to Inbox from Untrash List is unsucessfully expected [true] but found [false]</p>
-org.testng.Assert.fail(Assert.java:94)
-<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
-<br/>at org.testng.Assert.assertEquals(Assert.java:123)
-<br/>at org.testng.Assert.assertEquals(Assert.java:286)
-<br/>at emailTestCases.VerifyTrash.testMoveToInboxFromTrashListing(VerifyTrash.java:72)
-<br/>at GmailTestCases.VerifyTashGmail.testMovetoInboxOfTrashEmailGmail(VerifyTashGmail.java:57)
-<br/>25 lines not shown
-</div>
+<h1>Test</h1>
+<h2 id="m1">iriiisMailTestCases.VerifyReadUnreadIRIIIS:testBatchUnreadGmail</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">GmailTestCases.VerifyTashGmail:testDeleteForeverGmail</h2>
+<h2 id="m2">iriiisMailTestCases.VerifyTagToTopicIRIIIS:testTagToTopicGmail</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">GmailTestCases.VerifyTashGmail:testBatchMovetoInboxOfTrashGmail</h2>
+<h2 id="m3">iriiisMailTestCases.VerifyTagToTopicIRIIIS:testBatchTagToTopicGmail</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">GmailTestCases.VerifyTashGmail:testBatchMoveToTrashGmail</h2>
+<h2 id="m4">iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS:testBatchProcessingEmailGMail</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">GmailTestCases.VerifyTashGmail:testBatchDeleteForeverGmail</h2>
+<h2 id="m5">iriiisMailTestCases.VerifyTashIRIIIS:testBatchMovetoInboxOfTrashGmail</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m6">GmailTestCases.VerifyTashGmail:testMoveToTrashGmail</h2>
+<h2 id="m6">iriiisMailTestCases.VerifySpamIRIIIS:testMoveToSpamGmail</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">iriiisMailTestCases.VerifySpamIRIIIS:testMarkAsNotSpamGMail</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">iriiisMailTestCases.VerifyTashIRIIIS:testDeleteForeverGmail</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">iriiisMailTestCases.VerifyReadUnreadIRIIIS:testBatchReadGmail</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">iriiisMailTestCases.VerifySpamIRIIIS:testBatchMovetoSpamGmail</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS:testProcessingEmailGMail</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">iriiisMailTestCases.VerifySpamIRIIIS:testBatchMovetoInboxOfSpamGmail</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">iriiisMailTestCases.VerifyTashIRIIIS:testBatchMoveToTrashGmail</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">iriiisMailTestCases.VerifyTashIRIIIS:testMoveToTrashGmail</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">iriiisMailTestCases.VerifyTashIRIIIS:testMovetoInboxOfTrashEmailGmail</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS:testVerifySendingEmailGmail</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS:testUnProcessingEmailGMail</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS:testBatchUnProcessingEmailGMail</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">iriiisMailTestCases.VerifyReadUnreadIRIIIS:testMarkAsUnreadGmail</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">iriiisMailTestCases.VerifySharingIRIIIS:testMoveToSpamGmail</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

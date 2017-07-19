@@ -14,7 +14,7 @@ import Pages.MailPage;
 import emailTestCases.BaseTest;
 import emailTestCases.VerifySendAndProcessed;
 
-public class VerifySendingEmailAndProcessing extends BaseTest {
+public class VerifySendingEmailAndProcessingGmail extends BaseTest {
 	
 	@Test(priority=1)
 	public void testVerifySendingEmailGmail()

@@ -1,4 +1,4 @@
-package GmailTestCases;
+package iriiisMailTestCases;
 
 import java.util.List;
 
@@ -8,15 +8,16 @@ import org.testng.annotations.Test;
 
 import Pages.MailPage;
 import emailTestCases.BaseTest;
-import emailTestCases.VerifyReadUnread;
+import emailTestCases.VerifySharing;
+import emailTestCases.VerifySpam;
 
-public class VerifyReadUnreadGmail extends BaseTest {
+public class VerifySharingIRIIIS extends BaseTest {
 	
-	@Test(priority=16)
-	public void testMarkAsUnreadGmail()
+	@Test(priority=21)
+	public void testMoveToSpamIRIIIS()
 	{ 
 		MailPage m= new MailPage(driver);
-		VerifyReadUnread v= new VerifyReadUnread(driver);
+		VerifySharing v= new VerifySharing(driver);
 		m.clickmailCard();
 		m.clickMailFilter();
 		try {
@@ -36,7 +37,7 @@ public class VerifyReadUnreadGmail extends BaseTest {
 		List<WebElement> acc = m.getAccountList();
 		for(int i=0;i<acc.size();i++)
 		{
-			if(acc.get(i).getText().contains("@gmail.com"))
+			if(acc.get(i).getText().contains("@iriiis"))
 			{
 			acc.get(i).click();
 			break;
@@ -48,22 +49,7 @@ public class VerifyReadUnreadGmail extends BaseTest {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		v.testMarkAsUnread();
+		v.testShareToTopic();
 		}
-	@Test(dependsOnMethods="testMarkAsUnreadGmail")
-	public void testBatchUnreadGmail()
-	{ 
-		VerifyReadUnread v= new VerifyReadUnread(driver);
-		v.testBatchUnread();
-	
-	}
-	@Test(dependsOnMethods="testMarkAsUnreadGmail")
-	public void testBatchReadGmail()
-	{ 
-		VerifyReadUnread v= new VerifyReadUnread(driver);
-		v.testBatchRead();
-	
-	}
-	
 
 }
