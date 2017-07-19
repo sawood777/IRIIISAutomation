@@ -68,6 +68,11 @@ public class MailPage {
 	@FindBy(xpath="//md-menu[@class='_md-nested-menu md-menu ng-scope _md']") private WebElement allAccounts;
 	@FindAll({@FindBy(xpath="//md-menu-item[@ng-click='setAccount(account)']")}) private List<WebElement> accountList;
 	@FindBy(xpath="//div[@ng-if='!thread.email.from.uid']")private WebElement batchSelection1;
+	@FindBy(xpath="//*[@id='mceu_0']/button") private WebElement AttachIcon;
+	@FindBy(xpath="//div[@ng-click='handleFileClick(file)']/div[2]/div") private WebElement SelectAttch;
+	@FindBy(xpath="//md-dialog-actions/button[2]") private WebElement Attachbutton;
+	@FindBy(xpath=".//a[contains(@href, 'https')]") WebElement AttachmentLink;
+
 	
 	public MailPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -288,6 +293,34 @@ public class MailPage {
 	{
 		return (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOfAllElements(accountList));
 	}
+	
+	public void Alert(){
+		driver.switchTo().alert().accept();
+	}
+	
+	public void Attacfile(){
+		
+		AttachIcon.click();
+	}
+	
+	public void Selectattachment(){
+		SelectAttch.click();
+		String Attachmentname=SelectAttch.getText();
+		System.out.println(Attachmentname);
+		Attachbutton.click();
+
+	}
+		
+	public void sendmail(){
+		sendButton.click();
+		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.switchTo().alert().accept();
+	}
+	
+	public void verifyAttachment(){
+		 AttachmentLink.isDisplayed();
+	}
+
 
 }
 	
