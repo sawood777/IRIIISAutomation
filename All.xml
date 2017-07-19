@@ -36,6 +36,6 @@
       <class name="IntegratedMailViewTestCases.VerifyTagToTopicAllAccount"/>
     </classes>
   </test> <!-- Test -->
-  </test> <!-- Test -->
+ 
 </suite> <!-- Suite -->
 
