@@ -68,17 +68,14 @@ public class MailPage {
 	@FindBy(xpath="//md-menu[@class='_md-nested-menu md-menu ng-scope _md']") private WebElement allAccounts;
 	@FindAll({@FindBy(xpath="//md-menu-item[@ng-click='setAccount(account)']")}) private List<WebElement> accountList;
 	@FindBy(xpath="//div[@ng-if='!thread.email.from.uid']")private WebElement batchSelection1;
-<<<<<<< Updated upstream
 	@FindBy(xpath="//*[@id='mceu_0']/button") private WebElement AttachIcon;
 	@FindBy(xpath="//div[@ng-click='handleFileClick(file)']/div[2]/div") private WebElement SelectAttch;
 	@FindBy(xpath="//md-dialog-actions/button[2]") private WebElement Attachbutton;
 	@FindBy(xpath=".//a[contains(@href, 'https')]") WebElement AttachmentLink;
-
-=======
 	@FindBy(xpath="//button[@ng-if='actions.reply']")private WebElement replyButton;
 	@FindBy(xpath="//button[@ng-if='actions.replyAll && thread.showReplyAll']")private WebElement replyAllButton;
 	@FindBy(xpath="//button[@ng-if='actions.forward']")private WebElement forwardButton;
->>>>>>> Stashed changes
+
 	
 	public MailPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -300,7 +297,7 @@ public class MailPage {
 		return (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOfAllElements(accountList));
 	}
 	
-<<<<<<< Updated upstream
+
 	public void Alert(){
 		driver.switchTo().alert().accept();
 	}
@@ -328,7 +325,7 @@ public class MailPage {
 		 AttachmentLink.isDisplayed();
 	}
 
-=======
+
 	public void clickReplyButton()
 	{
 		(new WebDriverWait(driver, 10)).until(ExpectedConditions.elementToBeClickable(replyButton)).click();
@@ -347,7 +344,7 @@ public class MailPage {
 		(new WebDriverWait(driver, 10)).until(ExpectedConditions.elementToBeClickable(forwardButton)).click();
 		
 	}
->>>>>>> Stashed changes
+
 
 }
 	
