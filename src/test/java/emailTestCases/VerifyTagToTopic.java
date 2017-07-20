@@ -76,9 +76,9 @@ public class VerifyTagToTopic{
 		DashboardPage d= new DashboardPage(driver);
 		MailPage m= new MailPage(driver);
 		IriiisLogoPage iriiis=new IriiisLogoPage(driver); 
-		iriiis.clickIriiisLog();
+		/*iriiis.clickIriiisLog();
 		iriiis.clickMacroView();
-		m.clickmailCard();
+		m.clickmailCard();*/
 		List<WebElement> sub = m.GetemailSubjects();
 		String[] subArray = new String[4];
 		for(int i=0;i<=3;i++)

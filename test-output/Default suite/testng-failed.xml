@@ -3,13 +3,17 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="GmailTestCases.VerifyReplyAndForwardGmail">
+      <class name="iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS">
         <methods>
+          <include name="testUnProcessingEmailIRIIIS"/>
+          <include name="testVerifySendingEmailIRIIIS"/>
+          <include name="testBatchProcessingEmailIRIIIS"/>
+          <include name="testProcessingEmailIRIIIS"/>
           <include name="testBrowser"/>
-          <include name="testVerifySendingEmailGmail"/>
+          <include name="testBatchUnProcessingEmailIRIIIS"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- GmailTestCases.VerifyReplyAndForwardGmail -->
+      </class> <!-- iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,4 +1,4 @@
-package GmailTestCases;
+package iriiisMailTestCases;
 
 import java.util.List;
 
@@ -10,11 +10,11 @@ import Pages.MailPage;
 import emailTestCases.BaseTest;
 import emailTestCases.VerifyReplyAndForwardingEmail;
 
-public class VerifyReplyAndForwardGmail extends BaseTest{
+public class VerifyReplyAndForwardIRIIIS extends BaseTest{
 	
 
-	@Test
-public void testVerifyReplyEmailGmail()
+	@Test(priority=1)
+public void testVerifyForwardIRIIIS()
 { 
 	MailPage m= new MailPage(driver);
 	
@@ -38,7 +38,7 @@ public void testVerifyReplyEmailGmail()
 	List<WebElement> acc = m.getAccountList();
 	for(int i=0;i<acc.size();i++)
 	{
-		if(acc.get(i).getText().contains("@gmail.com"))
+		if(acc.get(i).getText().contains("@iriiis"))
 		{
 		acc.get(i).click();
 		break;
@@ -50,21 +50,21 @@ public void testVerifyReplyEmailGmail()
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
-	v.testReply("Reply","Replying to Email");
+	v.testReply("Forward","Forwarding to Email");
 }
-	@Test(dependsOnMethods="testVerifyReplyEmailGmail")
-	public void testVerifyForwardGmail()
+	@Test(priority=2)
+	public void testVerifyReplyEmailIRIIIS()
 	{ 
 		MailPage m= new MailPage(driver);
 		
 		VerifyReplyAndForwardingEmail v= new VerifyReplyAndForwardingEmail(driver);
 		m.clickMailFilter();
 		m.clickUnProcessedFilter();
-		v.testReply("Forward","Forwarding to Email");
+		v.testReply("Reply","Replying to Email");
 		
 	}
-	@Test(dependsOnMethods="testVerifyForwardGmail")
-	public void testVerifyReplyAllGmail()
+	@Test(dependsOnMethods="testVerifyForwardIRIIIS")
+	public void testVerifyReplyAllIRIIIS()
 	{ 
 		MailPage m= new MailPage(driver);
 		

@@ -53,9 +53,24 @@ public class VerifyTrash {
 			m.clickFirstEmail();
 			m.clickElipses();
 			m.clickunTrashExpandedView();
-			if(m.checkcloseMailIcon())
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			while(m.checkcloseMailIcon())
 			{
-				m.clickCloseMailIcon();
+				m.clickExpandview();
+				m.clickElipses();
+				m.clickunTrashExpandedView();	
+				try {
+					Thread.sleep(2000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
 			m.clickMailFilter();
 			m.clickUnProcessedFilter();

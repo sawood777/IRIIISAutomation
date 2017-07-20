@@ -14,7 +14,7 @@ import emailTestCases.VerifySpam;
 public class VerifySharingGmail extends BaseTest {
 	
 	@Test(priority=21)
-	public void testMoveToSpamGmail()
+	public void testSharingofGmail()
 	{ 
 		MailPage m= new MailPage(driver);
 		VerifySharing v= new VerifySharing(driver);

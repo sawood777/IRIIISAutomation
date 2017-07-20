@@ -9,6 +9,7 @@
       <class name="IntegratedMailViewTestCases.VerifySendingEmailAndProcessingAllAccount"/>
       <class name="IntegratedMailViewTestCases.VerifyReadUnreadAllAccount"/>
       <class name="IntegratedMailViewTestCases.VerifyTagToTopicAllAccount"/>
+       <class name="IntegratedMailViewTestCases.VerifyReplyAndForwardAllAccount"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

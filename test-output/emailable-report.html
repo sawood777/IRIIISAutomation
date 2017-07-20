@@ -31,58 +31,91 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">68.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">5</td><td class="numi">186.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr><th colspan="4">Default test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">GmailTestCases.VerifyReplyAndForwardGmail</td><td><a href="#m1"><b>testVerifySendingEmailGmail</b>  </a></td><td class="numi">1</td><td>1500529605848</td><td class="numi">50440</td></tr>
+<tr class="failedodd"><td rowspan="5">iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS</td><td><a href="#m1"><b>testVerifySendingEmailIRIIIS</b>  </a></td><td class="numi">1</td><td>1500551882850</td><td class="numi">41338</td></tr><tr class="failedodd"><td><a href="#m2"><b>testProcessingEmailIRIIIS</b>  </a></td><td class="numi">1</td><td>1500551924188</td><td class="numi">30847</td></tr><tr class="failedodd"><td><a href="#m3"><b>testUnProcessingEmailIRIIIS</b>  </a></td><td class="numi">1</td><td>1500551955035</td><td class="numi">30198</td></tr><tr class="failedodd"><td><a href="#m4"><b>testBatchProcessingEmailIRIIIS</b>  </a></td><td class="numi">1</td><td>1500551985249</td><td class="numi">30693</td></tr><tr class="failedodd"><td><a href="#m5"><b>testBatchUnProcessingEmailIRIIIS</b>  </a></td><td class="numi">1</td><td>1500552015942</td><td class="numi">30112</td></tr>
 </table>
 <h1>Default test</h1>
-<h2 id="m1">GmailTestCases.VerifyReplyAndForwardGmail:testVerifySendingEmailGmail</h2>
+<h2 id="m1">iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS:testBatchProcessingEmailIRIIIS</h2>
 <div style="padding-left:3em">
-<p>Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //button[@role=&apos;menuitem&apos;]/span[@layout-align=&apos;start center&apos;]&apos; (tried for 20 second(s) with 500 MILLISECONDS interval)</p>
-org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
-<br/>at Pages.MailPage.clickMailFilter(MailPage.java:123)
-<br/>at emailTestCases.VerifyReplyAndForwardingEmail.testReply(VerifyReplyAndForwardingEmail.java:31)
-<br/>at GmailTestCases.VerifyReplyAndForwardGmail.testVerifySendingEmailGmail(VerifyReplyAndForwardGmail.java:54)
-<br/>25 lines not shown
-<p>Caused by no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@role=&apos;menuitem&apos;]/span[@layout-align=&apos;start center&apos;]&quot;}
-  (Session info: chrome=59.0.3071.115)
-  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.04 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+<p>Expected condition failed: waiting for visibility of all [] (tried for 20 second(s) with 500 MILLISECONDS interval)
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
 System info: host: &apos;LAPTOP-1D78PSH8&apos;, ip: &apos;192.168.132.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\Praveen\AppData\Local\Temp\scoped_dir6344_13689}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: c6205b83cca7018f98fb47e0d4cd859e
-*** Element info: {Using=xpath, value=//button[@role=&apos;menuitem&apos;]/span[@layout-align=&apos;start center&apos;]}</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-<br/>at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:673)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:669)
-<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-<br/>at Pages.MailPage.clickMailFilter(MailPage.java:123)
-<br/>at emailTestCases.VerifyReplyAndForwardingEmail.testReply(VerifyReplyAndForwardingEmail.java:31)
-<br/>at GmailTestCases.VerifyReplyAndForwardGmail.testVerifySendingEmailGmail(VerifyReplyAndForwardGmail.java:54)
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\Praveen\AppData\Local\Temp\scoped_dir8632_3877}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: cfcae908ae8ca80e7164d0cba572a682</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+<br/>at Pages.MailPage.GetemailSubjects(MailPage.java:176)
+<br/>at emailTestCases.VerifySendAndProcessed.TestBatchProcessingOfEmail(VerifySendAndProcessed.java:163)
+<br/>at iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS.testBatchProcessingEmailIRIIIS(VerifySendingEmailAndProcessingIRIIIS.java:71)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS:testUnProcessingEmailIRIIIS</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of all [] (tried for 20 second(s) with 500 MILLISECONDS interval)
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;LAPTOP-1D78PSH8&apos;, ip: &apos;192.168.132.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\Praveen\AppData\Local\Temp\scoped_dir8632_3877}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: cfcae908ae8ca80e7164d0cba572a682</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+<br/>at Pages.MailPage.GetemailSubjects(MailPage.java:176)
+<br/>at emailTestCases.VerifySendAndProcessed.TestUnProcessingOfEmail(VerifySendAndProcessed.java:131)
+<br/>at iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS.testUnProcessingEmailIRIIIS(VerifySendingEmailAndProcessingIRIIIS.java:64)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS:testBatchUnProcessingEmailIRIIIS</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of all [] (tried for 20 second(s) with 500 MILLISECONDS interval)
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;LAPTOP-1D78PSH8&apos;, ip: &apos;192.168.132.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\Praveen\AppData\Local\Temp\scoped_dir8632_3877}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: cfcae908ae8ca80e7164d0cba572a682</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+<br/>at Pages.MailPage.GetemailSubjects(MailPage.java:176)
+<br/>at emailTestCases.VerifySendAndProcessed.TestBatchUnProcessingOfEmail(VerifySendAndProcessed.java:203)
+<br/>at iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS.testBatchUnProcessingEmailIRIIIS(VerifySendingEmailAndProcessingIRIIIS.java:77)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS:testProcessingEmailIRIIIS</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of all [] (tried for 20 second(s) with 500 MILLISECONDS interval)
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;LAPTOP-1D78PSH8&apos;, ip: &apos;192.168.132.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\Praveen\AppData\Local\Temp\scoped_dir8632_3877}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: cfcae908ae8ca80e7164d0cba572a682</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+<br/>at Pages.MailPage.GetemailSubjects(MailPage.java:176)
+<br/>at emailTestCases.VerifySendAndProcessed.TestProcessingOfEmail(VerifySendAndProcessed.java:95)
+<br/>at iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS.testProcessingEmailIRIIIS(VerifySendingEmailAndProcessingIRIIIS.java:57)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS:testVerifySendingEmailIRIIIS</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of all [] (tried for 20 second(s) with 500 MILLISECONDS interval)
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;LAPTOP-1D78PSH8&apos;, ip: &apos;192.168.132.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\Praveen\AppData\Local\Temp\scoped_dir8632_3877}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: cfcae908ae8ca80e7164d0cba572a682</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+<br/>at Pages.MailPage.GetemailSubjects(MailPage.java:176)
+<br/>at emailTestCases.VerifySendAndProcessed.testVerifySendingEmail(VerifySendAndProcessed.java:61)
+<br/>at iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS.testVerifySendingEmailIRIIIS(VerifySendingEmailAndProcessingIRIIIS.java:20)
 <br/>25 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>

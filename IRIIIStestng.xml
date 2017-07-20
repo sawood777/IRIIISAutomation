@@ -9,6 +9,7 @@
       <class name="iriiisMailTestCases.VerifyTagToTopicIRIIIS"/>
       <class name="iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS"/>
       <class name="iriiisMailTestCases.VerifySharingIRIIIS"/>
+       <class name="iriiisMailTestCases.VerifyReplyAndForwardIRIIIS"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
