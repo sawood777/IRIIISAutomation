@@ -87,11 +87,7 @@ public class VerifyTagToTopic{
 		}
 		Actions action = new Actions(driver); 
 		action.moveToElement(m.batchSelection1()).click().build().perform();
-		List<WebElement> box = m.getListOfCheckBox();
-		for(int i=1;i<4;i++)
-		{
-			box.get(i).click();
-		}
+		m.clickSelectAll();
 		m.clickTagToTopic();
 		List<WebElement> topics = m.getTopicListInTagToTopic();
 		String s1=topics.get(0).getText();
