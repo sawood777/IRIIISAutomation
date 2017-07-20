@@ -6,7 +6,9 @@ package Pages;
 
 import java.util.Iterator;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -71,7 +73,12 @@ public class MailPage {
 	@FindBy(xpath="//*[@id='mceu_0']/button") private WebElement AttachIcon;
 	@FindBy(xpath="//div[@ng-click='handleFileClick(file)']/div[2]/div") private WebElement SelectAttch;
 	@FindBy(xpath="//md-dialog-actions/button[2]") private WebElement Attachbutton;
-	@FindBy(xpath=".//a[contains(@href, 'https')]") WebElement AttachmentLink;
+	@FindBy(xpath=".//a[contains(@href, 'https')]") private WebElement AttachmentLink;
+
+	
+	
+	 
+	
 
 	
 	public MailPage(WebDriver driver) {
@@ -289,6 +296,7 @@ public class MailPage {
 	{
 	return allAccounts;
 	}
+	
 	public List<WebElement> getAccountList()
 	{
 		return (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOfAllElements(accountList));
@@ -308,12 +316,12 @@ public class MailPage {
 		String Attachmentname=SelectAttch.getText();
 		System.out.println(Attachmentname);
 		Attachbutton.click();
-
+		
 	}
 		
 	public void sendmail(){
+		
 		sendButton.click();
-		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.switchTo().alert().accept();
 	}
 	
