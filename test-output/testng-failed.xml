@@ -1,53 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="IntegratedMailViewTestCases.VerifySpamAllAccount">
+      <class name="iriiisMailTestCases.VerifyattachandEmails">
         <methods>
-          <include name="testMoveToSpamAllAccount"/>
-          <include name="testMarkAsNotSpamAllAccount"/>
-          <include name="testBatchMovetoSpamAllAccount"/>
-          <include name="testBatchMovetoInboxOfSpamAllAccount"/>
-        </methods>
-      </class> <!-- IntegratedMailViewTestCases.VerifySpamAllAccount -->
-      <class name="IntegratedMailViewTestCases.VerifyReadUnreadAllAccount">
-        <methods>
-          <include name="testBatchReadAllAccount"/>
-          <include name="testMarkAsUnreadAllAccount"/>
-          <include name="testBatchUnreadAllAccount"/>
-        </methods>
-      </class> <!-- IntegratedMailViewTestCases.VerifyReadUnreadAllAccount -->
-      <class name="IntegratedMailViewTestCases.VerifyTashAllAccount">
-        <methods>
-          <include name="testBatchMovetoInboxOfTrashAllAccount"/>
-          <include name="testMoveToTrashAllAccount"/>
-          <include name="testBatchMoveToTrashAllAccount"/>
-          <include name="testDeleteForeverAllAccount"/>
           <include name="testBrowser"/>
-          <include name="testMovetoInboxOfTrashEmailAllAccount"/>
+          <include name="VeiryAttachments"/>
+          <include name="postCondition"/>
         </methods>
-      </class> <!-- IntegratedMailViewTestCases.VerifyTashAllAccount -->
-      <class name="IntegratedMailViewTestCases.VerifySharingAllAccount">
-        <methods>
-          <include name="testShareToTopicAllAccount"/>
-        </methods>
-      </class> <!-- IntegratedMailViewTestCases.VerifySharingAllAccount -->
-      <class name="IntegratedMailViewTestCases.VerifySendingEmailAndProcessingAllAccount">
-        <methods>
-          <include name="testVerifySendingEmailAllAccount"/>
-          <include name="testBatchUnProcessingEmailAllAccount"/>
-          <include name="testProcessingEmailAllAccount"/>
-          <include name="testBatchProcessingEmailAllAccount"/>
-          <include name="testUnProcessingEmailAllAccount"/>
-        </methods>
-      </class> <!-- IntegratedMailViewTestCases.VerifySendingEmailAndProcessingAllAccount -->
-      <class name="IntegratedMailViewTestCases.VerifyTagToTopicAllAccount">
-        <methods>
-          <include name="testTagToTopicAllAccount"/>
-          <include name="testBatchTagToTopicAllAccount"/>
-        </methods>
-      </class> <!-- IntegratedMailViewTestCases.VerifyTagToTopicAllAccount -->
+      </class> <!-- iriiisMailTestCases.VerifyattachandEmails -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
