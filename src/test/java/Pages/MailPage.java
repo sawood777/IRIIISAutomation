@@ -10,6 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -28,7 +29,8 @@ public class MailPage {
 	@FindBy(xpath="//md-icon[@md-font-icon='add']")private WebElement composeIcon;
 	@FindBy(id="autocompleteInputTo")private WebElement toAddress;
 	@FindBy(xpath="//input[@placeholder='Subject']")private WebElement subject;
-	@FindBy(id="ui-tinymce-1")private WebElement emailBody;
+	@FindBy(xpath="//div[@ui-tinymce='tinymceOptions']")private WebElement emailBody;
+	@FindBy(xpath="//div[@ui-tinymce='tinymceOptions']")private WebElement forwardBody;
 	@FindBy(xpath="//button[text()='Send']")private WebElement sendButton;
 	@FindBy(xpath="//div[@ng-repeat='thread in allThreads | orderBy: orderByTime:true']")private WebElement firstEmail;
 	@FindBy(xpath="//md-icon[text()='done']")private WebElement processunprocessedIcon;
@@ -73,12 +75,10 @@ public class MailPage {
 	@FindBy(xpath="//*[@id='mceu_0']/button") private WebElement AttachIcon;
 	@FindBy(xpath="//div[@ng-click='handleFileClick(file)']/div[2]/div") private WebElement SelectAttch;
 	@FindBy(xpath="//md-dialog-actions/button[2]") private WebElement Attachbutton;
-	@FindBy(xpath=".//a[contains(@href, 'https')]") private WebElement AttachmentLink;
-
-	
-	
-	 
-	
+	@FindBy(xpath=".//a[contains(@href, 'https')]") WebElement AttachmentLink;
+	@FindAll({@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content//md-menu-item//button")}) private List<WebElement> options;
+	@FindBy(xpath="//button[@ng-click='contexualBack()']")private WebElement closeButton;
+	@FindBy(xpath="//div[@class='email-message__header']")private WebElement expandview;
 
 	
 	public MailPage(WebDriver driver) {
@@ -99,6 +99,7 @@ public class MailPage {
 	public void enterToAddreess(String toaddress)
 	{
 		toAddress.sendKeys(toaddress);
+		toAddress.sendKeys(Keys.ENTER);
 	}
 	public void enterSubject(String sub)
 	{
@@ -115,6 +116,18 @@ public class MailPage {
 		}
 		emailBody.sendKeys(body);
 	}
+	public void enterForwardBody(String body)
+	{
+		forwardBody.click();
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		forwardBody.sendKeys(body);
+	}
+	
 	public void clickSendButton()
 	{
 		sendButton.click();
@@ -239,7 +252,7 @@ public class MailPage {
 	
 	public List<WebElement> getUnreadEmails()
 	{
-		return (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOfAllElements(unreadEmails));
+		return (new WebDriverWait(driver, 40)).until(ExpectedConditions.visibilityOfAllElements(unreadEmails));
 	}
 	public List<WebElement> getReadEmails()
 	{
@@ -281,11 +294,18 @@ public class MailPage {
 	}
 	public boolean checkcloseMailIcon()
 	{
-		if(closeMail.isDisplayed())
+		boolean text;
+		try 
+		{
+		    text = closeMail.isDisplayed();
+		}
+		catch (NoSuchElementException e)
+		{
+		    text = false;
+		}
+		System.out.println(text);
+		return text;
 		
-				return true;
-			else
-				return false;
 		
 	}
 	public void clickCloseMailIcon()
@@ -302,6 +322,7 @@ public class MailPage {
 		return (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOfAllElements(accountList));
 	}
 	
+
 	public void Alert(){
 		driver.switchTo().alert().accept();
 	}
@@ -328,6 +349,29 @@ public class MailPage {
 	public void verifyAttachment(){
 		 AttachmentLink.isDisplayed();
 	}
+
+
+	public List<WebElement> getOptions()
+	{
+		return options;
+	}
+	public void clickCloseButton()
+	{
+		(new WebDriverWait(driver, 10)).until(ExpectedConditions.elementToBeClickable(closeButton)).click();
+		
+	}
+	public void clickExpandview()
+	{
+		(new WebDriverWait(driver, 10)).until(ExpectedConditions.elementToBeClickable(expandview)).click();
+		
+	}
+	public boolean verifyExpandview()
+	{
+		return expandview.isDisplayed();
+		
+	}
+	
+	
 
 
 }

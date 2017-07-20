@@ -9,6 +9,7 @@
       <class name="GmailTestCases.VerifySharingGmail"/>
       <class name="GmailTestCases.VerifyTashGmail"/>
       <class name="GmailTestCases.VerifySendingEmailAndProcessingGmail"/>
+      <class name="GmailTestCases.VerifyReplyAndForwardGmail"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

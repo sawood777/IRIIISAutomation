@@ -76,9 +76,9 @@ public class VerifyTagToTopic{
 		DashboardPage d= new DashboardPage(driver);
 		MailPage m= new MailPage(driver);
 		IriiisLogoPage iriiis=new IriiisLogoPage(driver); 
-		iriiis.clickIriiisLog();
+		/*iriiis.clickIriiisLog();
 		iriiis.clickMacroView();
-		m.clickmailCard();
+		m.clickmailCard();*/
 		List<WebElement> sub = m.GetemailSubjects();
 		String[] subArray = new String[4];
 		for(int i=0;i<=3;i++)
@@ -87,11 +87,7 @@ public class VerifyTagToTopic{
 		}
 		Actions action = new Actions(driver); 
 		action.moveToElement(m.batchSelection1()).click().build().perform();
-		List<WebElement> box = m.getListOfCheckBox();
-		for(int i=1;i<4;i++)
-		{
-			box.get(i).click();
-		}
+		m.clickSelectAll();
 		m.clickTagToTopic();
 		List<WebElement> topics = m.getTopicListInTagToTopic();
 		String s1=topics.get(0).getText();
