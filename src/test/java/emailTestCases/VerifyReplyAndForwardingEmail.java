@@ -89,7 +89,7 @@ public class VerifyReplyAndForwardingEmail {
 		m.clickFirstEmail();
 		m.clickElipses();
 		List<WebElement> opt = m.getOptions();
-		if(opt.size()>5)
+		if(opt.size()>6)
 		{
 		for(int i=0;i<opt.size();i++)
 		{
