@@ -3,27 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
       <class name="iriiisMailTestCases.VerifyattachandEmails">
         <methods>
+          <include name="VerifyForwardAttachments"/>
           <include name="testBrowser"/>
-          <include name="VeiryAttachments"/>
           <include name="postCondition"/>
         </methods>
       </class> <!-- iriiisMailTestCases.VerifyattachandEmails -->
-=======
-      <class name="iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS">
-        <methods>
-          <include name="testUnProcessingEmailIRIIIS"/>
-          <include name="testVerifySendingEmailIRIIIS"/>
-          <include name="testBatchProcessingEmailIRIIIS"/>
-          <include name="testProcessingEmailIRIIIS"/>
-          <include name="testBrowser"/>
-          <include name="testBatchUnProcessingEmailIRIIIS"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS -->
->>>>>>> 7aab611ad7f5d523e3df499d2d8516ea133b1229
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

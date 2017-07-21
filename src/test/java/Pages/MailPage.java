@@ -40,6 +40,7 @@ public class MailPage {
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']//md-menu-item[6]")private WebElement sentFilter;
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']//md-menu-item[7]")private WebElement spamFilter;
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']//md-menu-item[8]")private WebElement trashFilter;
+	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']//md-menu-item[4]")private WebElement inboxFilter;
 	@FindAll({@FindBy(xpath="//span[@class='subject ng-binding']")}) private WebElement emailSubject;
 	@FindAll({@FindBy(xpath="//span[@class='subject ng-binding']")}) private List<WebElement> emailSubject1;
 	@FindBy(xpath="//button[@aria-label='tag topics']")private WebElement tagToTopic;
@@ -72,7 +73,7 @@ public class MailPage {
 	@FindBy(xpath="//md-menu[@class='_md-nested-menu md-menu ng-scope _md']") private WebElement allAccounts;
 	@FindAll({@FindBy(xpath="//md-menu-item[@ng-click='setAccount(account)']")}) private List<WebElement> accountList;
 	@FindBy(xpath="//div[@ng-if='!thread.email.from.uid']")private WebElement batchSelection1;
-	@FindBy(xpath="//*[@id='mceu_0']/button") private WebElement AttachIcon;
+	@FindBy(xpath="//i[@class='mce-ico mce-i-attach']") private WebElement AttachIcon;
 	@FindBy(xpath="//div[@ng-click='handleFileClick(file)']/div[2]/div") private WebElement SelectAttch;
 	@FindBy(xpath="//md-dialog-actions/button[2]") private WebElement Attachbutton;
 	@FindBy(xpath=".//a[contains(@href, 'https')]") WebElement AttachmentLink;
@@ -140,6 +141,11 @@ public class MailPage {
 	{
 		processunprocessedIcon.click();
 	}
+	public void clickInboxIcon()
+	{
+		inboxFilter.click();
+	}
+	
 	public void clickMailFilter()
 	{
 		(new WebDriverWait(driver, 20)).until(ExpectedConditions.elementToBeClickable(mailFilter)).click();
@@ -343,6 +349,10 @@ public class MailPage {
 	public void sendmail(){
 		
 		sendButton.click();
+		try {
+			Thread.sleep(3000);
+		} catch (Exception e) {
+		}
 		driver.switchTo().alert().accept();
 	}
 	

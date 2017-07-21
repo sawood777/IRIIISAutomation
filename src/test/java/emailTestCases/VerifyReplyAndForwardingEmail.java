@@ -89,7 +89,7 @@ public class VerifyReplyAndForwardingEmail {
 		m.clickFirstEmail();
 		m.clickElipses();
 		List<WebElement> opt = m.getOptions();
-		if(opt.size()>5)
+		if(opt.size()>6)
 		{
 		for(int i=0;i<opt.size();i++)
 		{
@@ -117,8 +117,6 @@ public class VerifyReplyAndForwardingEmail {
 		}
 		Assert.assertEquals((flag==true), true, "Email not sent");
 		}
-		
-		
 		else
 		{
 			System.out.println("There are no multiple recepients found to perform Reply All hence performing Reply");
@@ -153,3 +151,4 @@ public class VerifyReplyAndForwardingEmail {
 
 	
 }
+
