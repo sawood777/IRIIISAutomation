@@ -10,6 +10,7 @@
       <class name="iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS"/>
       <class name="iriiisMailTestCases.VerifySharingIRIIIS"/>
        <class name="iriiisMailTestCases.VerifyReplyAndForwardIRIIIS"/>
+       <class name="iriiisMailTestCases.VerifySentEmails"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
