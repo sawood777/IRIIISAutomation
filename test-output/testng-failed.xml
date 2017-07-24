@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="iriiisMailTestCases.VerifyattachandEmails">
+      <class name="DocumentTestCases.SelectinAccount">
         <methods>
-          <include name="VerifyForwardAttachments"/>
+          <include name="SelectAccount"/>
           <include name="testBrowser"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- iriiisMailTestCases.VerifyattachandEmails -->
+      </class> <!-- DocumentTestCases.SelectinAccount -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,9 +1,16 @@
-/*package Pages;
+package Pages;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.sikuli.script.FindFailed;
 import org.sikuli.script.Pattern;
 import org.sikuli.script.Screen;
@@ -22,6 +29,23 @@ public class DocumentsPage {
 	@FindBy(xpath="//div[contains(text(),'IRIIIS')]")private WebElement FileName2;
 	//@FindBy(xpath="//div[@class='file-list__items ng-isolate-scope flex']/div/div/div[2]/div")private WebElement FileName;
 	@FindBy(linkText="Add more")private WebElement Addmore;
+	@FindBy(xpath="//img[@src='img/dropbox.png']")private WebElement dropboxlink;
+	@FindBy(xpath="//button/img[@src='img/iriiis_logo.png']")private WebElement iriiislink;
+	@FindBy(xpath="//button/img[@src='img/google_drive.png']")private WebElement googledrivelink;
+	@FindBy(xpath="//button/img[@src='img/one_drive.png']")private WebElement onedrivelink;
+	@FindBy(xpath="//button/img[@src='img/box.png']")private WebElement boxdrive;
+	@FindBy(xpath="//button[@class='accounts-dropdown__top-btn']")private WebElement DriveDropdown;
+	@FindBy(xpath="//span[text()='Accounts']/following::md-menu-item/md-menu/button[@ng-click='$mdOpenMenu()']")private WebElement Allaccuntslink;
+	@FindAll({@FindBy(xpath="//div[@class='file-list__item-cell']/div")})private List<WebElement> AllFileNames;
+	@FindAll({@FindBy(xpath="//li[@class='topic-selector__list-item ng-scope']")}) private List<WebElement> topicListInTagToTopic;
+	@FindBy(xpath="//i[@class='material-icons ng-scope']")private WebElement elipseIcon;
+	@FindBy(xpath="//div[@class='file-list__item-cell']/div")private WebElement FirstFileName;
+	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[5]/button")private WebElement TagToTopic;
+	@FindBy(xpath="//button[contains(text(),'Save')]")private WebElement topicSave;
+	
+	
+	
+	
 	
 
 	public DocumentsPage(WebDriver driver){
@@ -30,7 +54,75 @@ public class DocumentsPage {
 		this.driver=driver;
 	}
 	
-	public void uploadFile(){
+	
+	public void ClickonDrive(){
+		
+		DriveDropdown.click();
+		
+	}
+	
+	public void hoveronAllAccounts(){
+		WebDriverWait wait=new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.visibilityOf(Allaccuntslink));
+		Actions action=new Actions(driver);
+		action.moveToElement(Allaccuntslink).build().perform();
+		action.click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='All accounts']")));
+	/*	try {
+			Thread.sleep(5000);
+		} catch (Exception e) {
+
+		}*/
+	}
+	
+	public void ClickonRequiredAccount(String drivename){
+		if(drivename.equalsIgnoreCase("iriiis")){
+			iriiislink.click();
+		}
+		else if(drivename.equalsIgnoreCase("google")){
+			googledrivelink.click();
+		}
+		else if(drivename.equalsIgnoreCase("box")){
+			boxdrive.click();
+		}
+		else if(drivename.equalsIgnoreCase("dropbox")){
+			dropboxlink.click();
+		}
+		else if(drivename.equalsIgnoreCase("onedrive")){
+			onedrivelink.click();
+		}	
+	}
+	
+	public List<WebElement> getTopicListInTagToTopic()
+	{
+		return (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOfAllElements(topicListInTagToTopic));
+	}
+	
+	public String Filename(){
+		
+		String FileName=FirstFileName.getText();
+		return FileName;
+	}
+	
+	
+	public void clickelipse(){
+		elipseIcon.click();
+	}
+	
+	public void clickTagtoTopic(){
+		TagToTopic.click();
+	}
+	
+	
+	public List<WebElement> GetAllFileNames()
+	{
+		return (new WebDriverWait(driver, 20))
+		   .until(ExpectedConditions.visibilityOfAllElements(AllFileNames));
+		
+	}
+	
+	
+/*	public void uploadFile(){
 		FileAdd.click();
 		FileUpload.click();
 		SelectFromComp.click();	
@@ -105,8 +197,7 @@ public class DocumentsPage {
 			
 		} catch (FindFailed e) {
 		}	
-	}
+	}*/
 	
 
 }
-*/
