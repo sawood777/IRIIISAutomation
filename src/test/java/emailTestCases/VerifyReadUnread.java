@@ -61,7 +61,11 @@ public class VerifyReadUnread {
 		List<WebElement> sub=m.GetemailSubjects();
 		Actions action = new Actions(driver); 
 		action.moveToElement(m.batchSelection1()).click().build().perform();
-		m.clickSelectAll();
+		List<WebElement> box = m.getListOfCheckBox();
+		for(int i=1;i<4;i++)
+		{
+			box.get(i).click();
+		}
 		m.markUnreadIcon();
 		m.clickMailFilter();
 		m.clickUnProcessedFilter();
@@ -91,7 +95,11 @@ public class VerifyReadUnread {
 		Actions action = new Actions(driver); 
 		
 		action.moveToElement(m.batchSelection1()).click().build().perform();
-		m.clickSelectAll();
+		List<WebElement> box = m.getListOfCheckBox();
+		for(int i=1;i<4;i++)
+		{
+			box.get(i).click();
+		}
 		m.markReadIcon();
 		m.clickMailFilter();
 		m.clickUnProcessedFilter();

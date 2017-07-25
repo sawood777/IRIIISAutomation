@@ -72,7 +72,7 @@ public class MailPage {
 	@FindBy(xpath="//button[@aria-label='close']") private WebElement closeMail;
 	@FindBy(xpath="//md-menu[@class='_md-nested-menu md-menu ng-scope _md']") private WebElement allAccounts;
 	@FindAll({@FindBy(xpath="//md-menu-item[@ng-click='setAccount(account)']")}) private List<WebElement> accountList;
-	@FindBy(xpath="//div[@ng-if='!thread.email.from.uid']")private WebElement batchSelection1;
+	@FindBy(xpath="//div[contains(@class,'email-item__img email-item__cell table-cell ng-scope')]")private WebElement batchSelection1;
 	@FindBy(xpath="//i[@class='mce-ico mce-i-attach']") private WebElement AttachIcon;
 	@FindBy(xpath="//div[@ng-click='handleFileClick(file)']/div[2]/div") private WebElement SelectAttch;
 	@FindBy(xpath="//md-dialog-actions/button[2]") private WebElement Attachbutton;

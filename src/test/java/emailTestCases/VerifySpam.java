@@ -80,8 +80,8 @@ public class VerifySpam {
 			MailPage m= new MailPage(driver);
 		
 			List<WebElement> sub=m.GetemailSubjects();
-			String[] myStringArray = new String[sub.size()];
-			for(int i=0;i<sub.size();i++)
+			String[] myStringArray = new String[4];
+			for(int i=0;i<4;i++)
 			{
 				myStringArray[i]=sub.get(i).getText();
 				
@@ -89,7 +89,11 @@ public class VerifySpam {
 		
 			Actions action = new Actions(driver); 
 			 action.moveToElement(m.batchSelection1()).click().build().perform();
-			 m.clickSelectAll();
+			 List<WebElement> box = m.getListOfCheckBox();
+				for(int i=1;i<4;i++)
+				{
+					box.get(i).click();
+				}
 			m.clickSpamIcon();
 			m.clickMailFilter();
 			m.clickSpamFilter();
@@ -114,19 +118,23 @@ public class VerifySpam {
 		//Only 3 or less than 3 mails are been batch selected
 		public void TestBatchMovetoInboxOfSpamEmail()
 		{
-			int n=0;
+			boolean flag=false;
 			MailPage m= new MailPage(driver);
 			List<WebElement> sub=m.GetemailSubjects();
-			String[] myStringArray = new String[sub.size()];
-			for(int i=0;i<sub.size();i++)
+			String[] myStringArray = new String[4];
+			for(int i=0;i<4;i++)
 			{
 				myStringArray[i]=sub.get(i).getText();
 				
 			}
 			Actions action = new Actions(driver); 
 			action.moveToElement(m.batchSelection1()).click().build().perform();
+			
 			List<WebElement> box = m.getListOfCheckBox();
-			m.clickSelectAll();
+			for(int i=1;i<4;i++)
+			{
+				box.get(i).click();
+			}
 			m.clickNotSpam();
 			m.clickMailFilter();
 			m.clickUnProcessedFilter();
@@ -137,12 +145,12 @@ public class VerifySpam {
 				{
 				if(sub1.get(i).getText().equals(myStringArray[j]))
 				{
-					n= n+1;
+					flag=true;
 					break;
 				}
 			}
 			}
-			Assert.assertEquals(((n>0)&&(n<=myStringArray.length)), true, "Email Batch Move to Inbox of Spam email got failed");
+			Assert.assertEquals(flag==true, true, "Email Batch Move to Inbox of Spam email got failed");
 			
 		}
 

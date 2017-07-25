@@ -1,15 +1,270 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Suite]">
+  <test name="Gmail(failed)">
     <classes>
+<<<<<<< HEAD
+      <class name="GmailTestCases.VerifyReadUnreadGmail">
+        <methods>
+          <include name="testBatchUnreadGmail"/>
+          <include name="testBatchReadGmail"/>
+=======
       <class name="IriiisDrive.VerifyIriiisFileTaging">
         <methods>
           <include name="VerifyIriiisTag"/>
+>>>>>>> c97f501f779279fd63b6f7b0e2307e6933d40cb6
+          <include name="testBrowser"/>
+          <include name="testMarkAsUnreadGmail"/>
+          <include name="postCondition"/>
+        </methods>
+<<<<<<< HEAD
+      </class> <!-- GmailTestCases.VerifyReadUnreadGmail -->
+      <class name="GmailTestCases.VerifySpamGmail">
+        <methods>
           <include name="testBrowser"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- IriiisDrive.VerifyIriiisFileTaging -->
+      </class> <!-- GmailTestCases.VerifySpamGmail -->
+      <class name="GmailTestCases.VerifyTagToTopicGmail">
+        <methods>
+          <include name="testTagToTopicGmail"/>
+          <include name="testBrowser"/>
+          <include name="testBatchTagToTopicGmail"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- GmailTestCases.VerifyTagToTopicGmail -->
+      <class name="iriiisMailTestCases.VerifyTashIRIIIS">
+        <methods>
+          <include name="testBrowser"/>
+        </methods>
+      </class> <!-- iriiisMailTestCases.VerifyTashIRIIIS -->
+      <class name="GmailTestCases.VerifyTashGmail">
+        <methods>
+          <include name="testDeleteForeverGmail"/>
+          <include name="testBatchMovetoInboxOfTrashGmail"/>
+          <include name="testBatchDeleteForeverGmail"/>
+          <include name="testMoveToTrashGmail"/>
+          <include name="testMovetoInboxOfTrashEmailGmail"/>
+          <include name="testBrowser"/>
+          <include name="testBatchMoveToTrashGmail"/>
+        </methods>
+      </class> <!-- GmailTestCases.VerifyTashGmail -->
+      <class name="IntegratedMailViewTestCases.VerifyTashAllAccount">
+        <methods>
+          <include name="testBrowser"/>
+        </methods>
+      </class> <!-- IntegratedMailViewTestCases.VerifyTashAllAccount -->
+      <class name="GmailTestCases.VerifySendingEmailAndProcessingGmail">
+        <methods>
+          <include name="testBatchUnProcessingEmailGMail"/>
+          <include name="testVerifySendingEmailGmail"/>
+          <include name="testProcessingEmailGMail"/>
+          <include name="testBatchProcessingEmailGMail"/>
+          <include name="testUnProcessingEmailGMail"/>
+        </methods>
+      </class> <!-- GmailTestCases.VerifySendingEmailAndProcessingGmail -->
+      <class name="contactTestCases.VerifyContactCreation">
+        <methods>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- contactTestCases.VerifyContactCreation -->
+      <class name="GmailTestCases.VerifySharingGmail">
+        <methods>
+          <include name="testSharingofGmail"/>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- GmailTestCases.VerifySharingGmail -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Gmail(failed) -->
+  <test name="IRIIIS(failed)">
+    <classes>
+      <class name="GmailTestCases.VerifyReadUnreadGmail">
+        <methods>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- GmailTestCases.VerifyReadUnreadGmail -->
+      <class name="GmailTestCases.VerifyTagToTopicGmail">
+        <methods>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- GmailTestCases.VerifyTagToTopicGmail -->
+      <class name="iriiisMailTestCases.VerifyattachandEmails">
+        <methods>
+          <include name="VerifyForwardAttachments"/>
+          <include name="VerifyReplyallwithAttachment"/>
+          <include name="VerifyReplyAttachments"/>
+          <include name="VeiryAttachments"/>
+        </methods>
+      </class> <!-- iriiisMailTestCases.VerifyattachandEmails -->
+      <class name="GmailTestCases.VerifyTashGmail">
+        <methods>
+          <include name="testBrowser"/>
+        </methods>
+      </class> <!-- GmailTestCases.VerifyTashGmail -->
+      <class name="IntegratedMailViewTestCases.VerifyTashAllAccount">
+        <methods>
+          <include name="testBrowser"/>
+        </methods>
+      </class> <!-- IntegratedMailViewTestCases.VerifyTashAllAccount -->
+      <class name="contactTestCases.VerifyContactCreation">
+        <methods>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- contactTestCases.VerifyContactCreation -->
+      <class name="GmailTestCases.VerifySpamGmail">
+        <methods>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- GmailTestCases.VerifySpamGmail -->
+      <class name="iriiisMailTestCases.VerifyTashIRIIIS">
+        <methods>
+          <include name="testBatchMovetoInboxOfTrashIRIIIS"/>
+          <include name="testBatchMoveToTrashIRIIIS"/>
+          <include name="testMovetoInboxOfTrashEmailIRIIIS"/>
+          <include name="testMoveToTrashIRIIIS"/>
+          <include name="testBrowser"/>
+          <include name="testDeleteForeverIRIIIS"/>
+        </methods>
+      </class> <!-- iriiisMailTestCases.VerifyTashIRIIIS -->
+      <class name="iriiisMailTestCases.VerifySpamIRIIIS">
+        <methods>
+          <include name="testMarkAsNotSpamIRIIIS"/>
+          <include name="testMoveToSpamIRIIIS"/>
+          <include name="testBatchMovetoSpamIRIIIS"/>
+          <include name="testBatchMovetoInboxOfSpamIRIIIS"/>
+        </methods>
+      </class> <!-- iriiisMailTestCases.VerifySpamIRIIIS -->
+      <class name="iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS">
+        <methods>
+          <include name="testUnProcessingEmailIRIIIS"/>
+          <include name="testVerifySendingEmailIRIIIS"/>
+          <include name="testBatchProcessingEmailIRIIIS"/>
+          <include name="testProcessingEmailIRIIIS"/>
+          <include name="testBatchUnProcessingEmailIRIIIS"/>
+        </methods>
+      </class> <!-- iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS -->
+      <class name="iriiisMailTestCases.VerifyTagToTopicIRIIIS">
+        <methods>
+          <include name="testTagToTopicIRIIIS"/>
+          <include name="testBatchTagToTopicIRIIIS"/>
+        </methods>
+      </class> <!-- iriiisMailTestCases.VerifyTagToTopicIRIIIS -->
+      <class name="iriiisMailTestCases.VerifyReadUnreadIRIIIS">
+        <methods>
+          <include name="testBatchReadIRIIIS"/>
+          <include name="testMarkAsUnreadIRIIIS"/>
+          <include name="testBatchUnreadIRIIIS"/>
+        </methods>
+      </class> <!-- iriiisMailTestCases.VerifyReadUnreadIRIIIS -->
+      <class name="iriiisMailTestCases.VerifySharingIRIIIS">
+        <methods>
+          <include name="testShareToTopicIRIIIS"/>
+        </methods>
+      </class> <!-- iriiisMailTestCases.VerifySharingIRIIIS -->
+      <class name="GmailTestCases.VerifySharingGmail">
+        <methods>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- GmailTestCases.VerifySharingGmail -->
+    </classes>
+  </test> <!-- IRIIIS(failed) -->
+  <test name="All Account(failed)">
+    <classes>
+      <class name="IntegratedMailViewTestCases.VerifyReadUnreadAllAccount">
+        <methods>
+          <include name="testBatchReadAllAccount"/>
+          <include name="testMarkAsUnreadAllAccount"/>
+          <include name="testBatchUnreadAllAccount"/>
+        </methods>
+      </class> <!-- IntegratedMailViewTestCases.VerifyReadUnreadAllAccount -->
+      <class name="GmailTestCases.VerifyReadUnreadGmail">
+        <methods>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- GmailTestCases.VerifyReadUnreadGmail -->
+      <class name="IntegratedMailViewTestCases.VerifySpamAllAccount">
+        <methods>
+          <include name="testMoveToSpamAllAccount"/>
+          <include name="testMarkAsNotSpamAllAccount"/>
+          <include name="testBatchMovetoSpamAllAccount"/>
+          <include name="testBatchMovetoInboxOfSpamAllAccount"/>
+        </methods>
+      </class> <!-- IntegratedMailViewTestCases.VerifySpamAllAccount -->
+      <class name="GmailTestCases.VerifyTagToTopicGmail">
+        <methods>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- GmailTestCases.VerifyTagToTopicGmail -->
+      <class name="IntegratedMailViewTestCases.VerifyTashAllAccount">
+        <methods>
+          <include name="testBatchMovetoInboxOfTrashAllAccount"/>
+          <include name="testMoveToTrashAllAccount"/>
+          <include name="testBatchMoveToTrashAllAccount"/>
+          <include name="testDeleteForeverAllAccount"/>
+          <include name="testBrowser"/>
+          <include name="testMovetoInboxOfTrashEmailAllAccount"/>
+        </methods>
+      </class> <!-- IntegratedMailViewTestCases.VerifyTashAllAccount -->
+      <class name="GmailTestCases.VerifyTashGmail">
+        <methods>
+          <include name="testBrowser"/>
+        </methods>
+      </class> <!-- GmailTestCases.VerifyTashGmail -->
+      <class name="contactTestCases.VerifyContactCreation">
+        <methods>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- contactTestCases.VerifyContactCreation -->
+      <class name="GmailTestCases.VerifySpamGmail">
+        <methods>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- GmailTestCases.VerifySpamGmail -->
+      <class name="iriiisMailTestCases.VerifyTashIRIIIS">
+        <methods>
+          <include name="testBrowser"/>
+        </methods>
+      </class> <!-- iriiisMailTestCases.VerifyTashIRIIIS -->
+      <class name="IntegratedMailViewTestCases.VerifyTagToTopicAllAccount">
+        <methods>
+          <include name="testTagToTopicAllAccount"/>
+          <include name="testBatchTagToTopicAllAccount"/>
+        </methods>
+      </class> <!-- IntegratedMailViewTestCases.VerifyTagToTopicAllAccount -->
+      <class name="IntegratedMailViewTestCases.VerifySharingAllAccount">
+        <methods>
+          <include name="testShareToTopicAllAccount"/>
+        </methods>
+      </class> <!-- IntegratedMailViewTestCases.VerifySharingAllAccount -->
+      <class name="IntegratedMailViewTestCases.VerifySendingEmailAndProcessingAllAccount">
+        <methods>
+          <include name="testVerifySendingEmailAllAccount"/>
+          <include name="testBatchUnProcessingEmailAllAccount"/>
+          <include name="testProcessingEmailAllAccount"/>
+          <include name="testBatchProcessingEmailAllAccount"/>
+          <include name="testUnProcessingEmailAllAccount"/>
+        </methods>
+      </class> <!-- IntegratedMailViewTestCases.VerifySendingEmailAndProcessingAllAccount -->
+      <class name="GmailTestCases.VerifySharingGmail">
+        <methods>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- GmailTestCases.VerifySharingGmail -->
+=======
+      </class> <!-- IriiisDrive.VerifyIriiisFileTaging -->
+>>>>>>> c97f501f779279fd63b6f7b0e2307e6933d40cb6
+    </classes>
+  </test> <!-- All Account(failed) -->
+</suite> <!-- Failed suite [Suite] -->
