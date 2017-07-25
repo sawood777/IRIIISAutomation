@@ -93,19 +93,23 @@ public class VerifyTrash {
 		//Only 3 or less than 3 mails are been batch selected
 		public void TestBatchMoveToTrash()
 		{
-			int n=0;
+			boolean flag=false;
 
 			MailPage m= new MailPage(driver);
 			List<WebElement> sub=m.GetemailSubjects();
-			String[] myStringArray = new String[sub.size()];
-			for(int i=0;i<sub.size();i++)
+			String[] myStringArray = new String[4];
+			for(int i=0;i<4;i++)
 			{
 				myStringArray[i]=sub.get(i).getText();
 				
 			}
 			Actions action = new Actions(driver); 
 			action.moveToElement(m.batchSelection1()).click().build().perform();
-			 m.clickSelectAll();
+			List<WebElement> box = m.getListOfCheckBox();
+			for(int i=1;i<4;i++)
+			{
+				box.get(i).click();
+			}
 			m.clickTrashIcon();
 			m.clickMailFilter();
 			m.clickTrashFilter();
@@ -116,12 +120,12 @@ public class VerifyTrash {
 				{
 				if(sub1.get(i).getText().equals(myStringArray[j]))
 				{
-					n= n+1;
+					flag=true;
 					break;
 				}
 			}
 			}
-			Assert.assertEquals(((n>0)&&(n<=myStringArray.length)), true, "Email Batch Operation for Trash failed");
+			Assert.assertEquals(flag==true, true, "Email Batch Operation for Trash failed");
 			
 		}
 		
@@ -129,20 +133,24 @@ public class VerifyTrash {
 		//Only 3 or less than 3 mails are been batch selected
 		public void TestBatchMovetoInboxOfTrashEmail()
 		{
-			int n=0;
+			boolean flag=false;
 
 			MailPage m= new MailPage(driver);
 		
 			List<WebElement> sub=m.GetemailSubjects();
-			String[] myStringArray = new String[sub.size()];
-			for(int i=0;i<sub.size();i++)
+			String[] myStringArray = new String[4];
+			for(int i=0;i<4;i++)
 			{
 				myStringArray[i]=sub.get(i).getText();
 				
 			}
 			Actions action = new Actions(driver); 
 			action.moveToElement(m.batchSelection1()).click().build().perform();
-			m.clickSelectAll();
+			List<WebElement> box = m.getListOfCheckBox();
+			for(int i=1;i<4;i++)
+			{
+				box.get(i).click();
+			}
 			m.clickUnTrash();
 			m.clickMailFilter();
 			m.clickUnProcessedFilter();
@@ -153,12 +161,12 @@ public class VerifyTrash {
 				{
 				if(sub1.get(i).getText().equals(myStringArray[j]))
 				{
-					n= n+1;
+					flag=true;
 					break;
 				}
 			}
 			}
-			Assert.assertEquals(((n>0)&&(n<=myStringArray.length)), true, "Email Batch Move to Inbox from Trash folder got failed");
+			Assert.assertEquals(flag==true, true, "Email Batch Move to Inbox from Trash folder got failed");
 			
 		}
 		
@@ -166,7 +174,7 @@ public class VerifyTrash {
 		//Only 3 or less than 3 mails are been batch selected
 		public void TestDeleteForever()
 		{
-			Boolean flag=false;
+			boolean flag=false;
 			MailPage m= new MailPage(driver);
 			m.clickFirstEmail();
 			m.clickTrashIcon();

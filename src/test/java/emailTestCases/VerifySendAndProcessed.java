@@ -161,15 +161,19 @@ public class VerifySendAndProcessed {
 		m.clickMailFilter();
 		m.clickUnProcessedFilter();
 		List<WebElement> sub=m.GetemailSubjects();
-		String[] myStringArray1 = new String[sub.size()];
-		for(int i=0;i<sub.size();i++)
+		String[] myStringArray = new String[4];
+		for(int i=0;i<4;i++)
 		{
-			myStringArray1[i]=sub.get(i).getText();
+			myStringArray[i]=sub.get(i).getText();
 			
 		}
 		 Actions action = new Actions(driver); 
 		 action.moveToElement(m.batchSelection1()).click().build().perform();
-		m.clickSelectAll();
+		List<WebElement> box = m.getListOfCheckBox();
+		for(int i=1;i<4;i++)
+		{
+			box.get(i).click();
+		}
 		
 		//logger.log(LogStatus.INFO, "All emails are selected");
 		m.clickProcessUnProcessedIcon();
@@ -180,16 +184,16 @@ public class VerifySendAndProcessed {
 		List<WebElement> sub1=m.GetemailSubjects();
 		for(int i=0;i<sub1.size();i++)
 		{
-			for(int j=0;j<myStringArray1.length;j++)
+			for(int j=0;j<myStringArray.length;j++)
 			{
-			if(sub1.get(i).getText().equals(myStringArray1[j]))
+			if(sub1.get(i).getText().equals(myStringArray[j]))
 			{
 				n=n+1;
 				break;
 			}
 		}
 		}
-		Assert.assertEquals(((n>0)&&(n<=myStringArray1.length)), true, "Email Batch processing Failed");
+		Assert.assertEquals(((n>0)&&(n<=myStringArray.length)), true, "Email Batch processing Failed");
 		
 		//logger.log(LogStatus.PASS, "batch process is completed");
 	}
@@ -197,19 +201,23 @@ public class VerifySendAndProcessed {
 	@Test(priority=5)
 	public void TestBatchUnProcessingOfEmail()
 	{
-		int n=0;
+		boolean flag=false;
 
 		MailPage m= new MailPage(driver);	
 		List<WebElement> sub=m.GetemailSubjects();
-		String[] myStringArray = new String[sub.size()];
-		for(int i=0;i<sub.size();i++)
+		String[] myStringArray = new String[4];
+		for(int i=0;i<4;i++)
 		{
 			myStringArray[i]=sub.get(i).getText();
 			
 		}
 		Actions action = new Actions(driver); 
 		 action.moveToElement(m.batchSelection1()).click().build().perform();
-		 m.clickSelectAll();
+		 List<WebElement> box = m.getListOfCheckBox();
+			for(int i=1;i<4;i++)
+			{
+				box.get(i).click();
+			}
 		 
 		// logger.log(LogStatus.INFO, "all mail selected");
 		 
@@ -225,13 +233,13 @@ public class VerifySendAndProcessed {
 			{
 			if(sub1.get(i).getText().equals(myStringArray[j]))
 			{
-				n= n+1;
+				flag=true;
 				break;
 			}
 		}
 		}
 		
-		Assert.assertEquals(((n>0)&&(n<=myStringArray.length)), true, "Email Batch Unprocessing Failed");
+		Assert.assertEquals(flag==true, true, "Email Batch Unprocessing Failed");
 		
 		//logger.log(LogStatus.PASS, "batch Unprocess is completed");
 	}
