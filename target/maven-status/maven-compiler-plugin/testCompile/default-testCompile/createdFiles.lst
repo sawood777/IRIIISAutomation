@@ -1,3 +1,5 @@
+emailTestCases\VerifyReplyAndForwardingEmail.class
+iriiisMailTestCases\VerifyReplyAndForwardIRIIIS.class
 IntegratedMailViewTestCases\VerifySharingAllAccount.class
 IntegratedMailViewTestCases\VerifyTashAllAccount.class
 emailTestCases\VerifyTrash.class
@@ -7,15 +9,21 @@ GmailTestCases\VerifySpamGmail.class
 Pages\IriiisLogoPage.class
 emailTestCases\VerifyReadUnread.class
 iriiisMailTestCases\VerifyReadUnreadIRIIIS.class
+Pages\DocumentsPage.class
 DataCollection\ExcellDataCollection.class
 iriiisMailTestCases\VerifySendingEmailAndProcessingIRIIIS.class
 IntegratedMailViewTestCases\VerifyReadUnreadAllAccount.class
 DataCollection\Configdata.class
+IntegratedMailViewTestCases\VerifyReplyAndForwardAllAccount.class
+IriiisDrive\VerifyIriiisFileTaging.class
 Pages\LoginPage.class
+DocumentTestCases\VerifyFileTaging.class
 GmailTestCases\VerifyReadUnreadGmail.class
 iriiisMailTestCases\VerifyTagToTopicIRIIIS.class
 Pages\DashboardPage.class
 IntegratedMailViewTestCases\VerifySpamAllAccount.class
+GmailTestCases\VerifyReplyAndForwardGmail.class
+iriiisMailTestCases\VerifyattachandEmails.class
 Utility\Reporting.class
 Pages\MailPage.class
 iriiisMailTestCases\VerifyTashIRIIIS.class
@@ -31,6 +39,7 @@ emailTestCases\BaseTest.class
 GmailTestCases\VerifySendingEmailAndProcessingGmail.class
 IntegratedMailViewTestCases\VerifySendingEmailAndProcessingAllAccount.class
 GmailTestCases\VerifyTagToTopicGmail.class
+emailTestCases\VerifySentEmails.class
 emailTestCases\VerifySendAndProcessed.class
 emailTestCases\VerifyTagToTopic.class
 IntegratedMailViewTestCases\VerifyTagToTopicAllAccount.class

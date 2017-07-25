@@ -24,8 +24,10 @@
       <class name="iriiisMailTestCases.VerifyTagToTopicIRIIIS"/>
       <class name="iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS"/>
       <class name="iriiisMailTestCases.VerifySharingIRIIIS"/>
+      <class name="iriiisMailTestCases.VerifyattachandEmails"/>
     </classes>
      </test> <!-- Test -->
+     
      <test name="All Account">
     <classes>
       <class name="IntegratedMailViewTestCases.VerifyTashAllAccount"/>
