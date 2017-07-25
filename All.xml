@@ -27,6 +27,7 @@
       <class name="iriiisMailTestCases.VerifySentEmails"/>
     </classes>
      </test> <!-- Test -->
+     
      <test name="All Account">
     <classes>
       <class name="IntegratedMailViewTestCases.VerifyTashAllAccount"/>
