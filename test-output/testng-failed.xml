@@ -3,14 +3,21 @@
 <suite name="Failed suite [Suite]">
   <test name="Gmail(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="GmailTestCases.VerifyReadUnreadGmail">
         <methods>
           <include name="testBatchUnreadGmail"/>
           <include name="testBatchReadGmail"/>
+=======
+      <class name="IriiisDrive.VerifyIriiisFileTaging">
+        <methods>
+          <include name="VerifyIriiisTag"/>
+>>>>>>> c97f501f779279fd63b6f7b0e2307e6933d40cb6
           <include name="testBrowser"/>
           <include name="testMarkAsUnreadGmail"/>
           <include name="postCondition"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- GmailTestCases.VerifyReadUnreadGmail -->
       <class name="GmailTestCases.VerifySpamGmail">
         <methods>
@@ -255,6 +262,9 @@
           <include name="postCondition"/>
         </methods>
       </class> <!-- GmailTestCases.VerifySharingGmail -->
+=======
+      </class> <!-- IriiisDrive.VerifyIriiisFileTaging -->
+>>>>>>> c97f501f779279fd63b6f7b0e2307e6933d40cb6
     </classes>
   </test> <!-- All Account(failed) -->
 </suite> <!-- Failed suite [Suite] -->

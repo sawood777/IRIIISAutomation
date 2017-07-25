@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="56" failed="4" total="71" passed="11">
   <reporter-output>
   </reporter-output>
@@ -890,4 +891,45 @@ Session ID: d5c1cb07880f6e35176edf96ca3f5f1b
       </class> <!-- IntegratedMailViewTestCases.VerifySendingEmailAndProcessingAllAccount -->
     </test> <!-- All Account -->
   </suite> <!-- Suite -->
+=======
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="106557" started-at="2017-07-25T06:09:59Z" finished-at="2017-07-25T06:11:45Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="106557" started-at="2017-07-25T06:09:59Z" finished-at="2017-07-25T06:11:45Z">
+      <class name="IriiisDrive.VerifyIriiisFileTaging">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@ae45eb6]" name="testBrowser" is-config="true" duration-ms="20059" started-at="2017-07-25T11:39:59Z" finished-at="2017-07-25T11:40:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="VerifyIriiisTag()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@ae45eb6]" name="VerifyIriiisTag" duration-ms="17322" started-at="2017-07-25T11:40:19Z" finished-at="2017-07-25T11:40:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyIriiisTag -->
+        <test-method status="PASS" signature="VerifgoogleTag()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@ae45eb6]" name="VerifgoogleTag" duration-ms="17016" started-at="2017-07-25T11:40:36Z" finished-at="2017-07-25T11:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifgoogleTag -->
+        <test-method status="PASS" signature="VerifboxdriveTag()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@ae45eb6]" name="VerifboxdriveTag" duration-ms="16839" started-at="2017-07-25T11:40:53Z" finished-at="2017-07-25T11:41:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifboxdriveTag -->
+        <test-method status="PASS" signature="VerifdropboxdriveTag()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@ae45eb6]" name="VerifdropboxdriveTag" duration-ms="16667" started-at="2017-07-25T11:41:10Z" finished-at="2017-07-25T11:41:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifdropboxdriveTag -->
+        <test-method status="PASS" signature="VerifonedriveTag()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@ae45eb6]" name="VerifonedriveTag" duration-ms="16807" started-at="2017-07-25T11:41:27Z" finished-at="2017-07-25T11:41:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifonedriveTag -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@ae45eb6]" name="postCondition" is-config="true" duration-ms="1824" started-at="2017-07-25T11:41:43Z" finished-at="2017-07-25T11:41:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- IriiisDrive.VerifyIriiisFileTaging -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+>>>>>>> c97f501f779279fd63b6f7b0e2307e6933d40cb6
 </testng-results>
