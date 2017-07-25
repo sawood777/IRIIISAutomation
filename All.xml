@@ -38,6 +38,13 @@
       <class name="IntegratedMailViewTestCases.VerifyTagToTopicAllAccount"/>
     </classes>
   </test> <!-- Test -->
+  
+    <test name="Iriis Drive">
+    <classes>
+      <class name="IriiisDrive.VerifyIriiisFileTaging"/>
+    </classes>
+  </test> <!-- Test -->
+  
  
 </suite> <!-- Suite -->
 

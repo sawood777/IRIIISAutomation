@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="IriiisDrive.VerifyIriiisFileTaging">
+      <class name="GmailTestCases.VerifySharingGmail">
         <methods>
-          <include name="VerifyIriiisTag"/>
+          <include name="testSharingofGmail"/>
           <include name="testBrowser"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- IriiisDrive.VerifyIriiisFileTaging -->
+      </class> <!-- GmailTestCases.VerifySharingGmail -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
