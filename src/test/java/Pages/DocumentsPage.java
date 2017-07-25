@@ -11,9 +11,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.sikuli.script.FindFailed;
-import org.sikuli.script.Pattern;
-import org.sikuli.script.Screen;
+
 
 
 
@@ -42,9 +40,6 @@ public class DocumentsPage {
 	@FindBy(xpath="//div[@class='file-list__item-cell']/div")private WebElement FirstFileName;
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[5]/button")private WebElement TagToTopic;
 	@FindBy(xpath="//button[contains(text(),'Save')]")private WebElement topicSave;
-	
-	
-	
 	
 	
 
