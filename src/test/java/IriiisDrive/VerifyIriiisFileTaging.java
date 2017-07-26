@@ -53,6 +53,57 @@ public class VerifyIriiisFileTaging extends BaseTest {
 		select.SelectAccount("onedrive");
 	}
 
+/*	@Test(priority=1)
+	public void VerifyBatchtaging() throws Exception{
+		VerifyFileTaging select=new VerifyFileTaging(driver);
+		select.DocumentBathcSelection("iriiis");
+		Thread.sleep(3000);
+	}*/
+	
+	@Test(priority=6)
+	public void VerifyIriiisSharing(){
+		VerifyFileTaging select=new VerifyFileTaging(driver);
+		IriiisLogoPage iriiis=new IriiisLogoPage(driver); 
+		iriiis.clickIriiisLog();
+		iriiis.clickMacroView();
+		select.SharingtoTopic("iriiis");
+	}
+	
+	@Test(priority=7)
+	public void VerifyGoogleSharing(){
+		VerifyFileTaging select=new VerifyFileTaging(driver);
+		IriiisLogoPage iriiis=new IriiisLogoPage(driver); 
+		iriiis.clickIriiisLog();
+		iriiis.clickMacroView();
+		select.SharingtoTopic("google");
+	}
+	
+	@Test(priority=8)
+	public void VerifyboxSharing(){
+		VerifyFileTaging select=new VerifyFileTaging(driver);
+		IriiisLogoPage iriiis=new IriiisLogoPage(driver); 
+		iriiis.clickIriiisLog();
+		iriiis.clickMacroView();
+		select.SharingtoTopic("box");
+	}
+	
+	@Test(priority=9)
+	public void VerifyDropboxSharing(){
+		VerifyFileTaging select=new VerifyFileTaging(driver);
+		IriiisLogoPage iriiis=new IriiisLogoPage(driver); 
+		iriiis.clickIriiisLog();
+		iriiis.clickMacroView();
+		select.SharingtoTopic("dropbox");
+	}
+	
+	@Test(priority=10)
+	public void VerifyOnedriveSharing(){
+		VerifyFileTaging select=new VerifyFileTaging(driver);
+		IriiisLogoPage iriiis=new IriiisLogoPage(driver); 
+		iriiis.clickIriiisLog();
+		iriiis.clickMacroView();
+		select.SharingtoTopic("onedrive");
+	}
 	
 	
 }

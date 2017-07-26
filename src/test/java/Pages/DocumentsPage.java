@@ -12,10 +12,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-
-
-
-
 public class DocumentsPage {
 	WebDriver driver; 
 	
@@ -39,10 +35,10 @@ public class DocumentsPage {
 	@FindBy(xpath="//i[@class='material-icons ng-scope']")private WebElement elipseIcon;
 	@FindBy(xpath="//div[@class='file-list__item-cell']/div")private WebElement FirstFileName;
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[5]/button")private WebElement TagToTopic;
+	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[3]/button")private WebElement ShareToTopic;
 	@FindBy(xpath="//button[contains(text(),'Save')]")private WebElement topicSave;
+	@FindAll({@FindBy(xpath="//div[1]/md-checkbox/div[1]")})private List<WebElement> DocBatchselection;
 	
-	
-
 	public DocumentsPage(WebDriver driver){
 		
 		PageFactory.initElements(driver, this);
@@ -108,6 +104,10 @@ public class DocumentsPage {
 		TagToTopic.click();
 	}
 	
+	public void clickSharetoTopic(){
+		ShareToTopic.click();
+	}
+	
 	
 	public List<WebElement> GetAllFileNames()
 	{
@@ -115,6 +115,18 @@ public class DocumentsPage {
 		   .until(ExpectedConditions.visibilityOfAllElements(AllFileNames));
 		
 	}
+	
+	public void ClickSelectBacthfiles(){
+		
+		int size=DocBatchselection.size();
+		System.out.println("total number of files"+ size);
+		for(int i=0; i<=3; i++){
+		DocBatchselection.get(i).click();
+			
+		}
+	}
+	
+
 	
 	
 /*	public void uploadFile(){
