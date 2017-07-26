@@ -5,13 +5,10 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.Test;
-
 import Pages.DashboardPage;
 import Pages.DocumentsPage;
 import Pages.IriiisLogoPage;
 import Pages.MailPage;
-import emailTestCases.BaseTest;
 
 
 public class VerifyFileTaging {
