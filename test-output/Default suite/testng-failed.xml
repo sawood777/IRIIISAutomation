@@ -5,7 +5,7 @@
     <classes>
       <class name="IriiisDrive.VerifyIriiisFileTaging">
         <methods>
-          <include name="VerifyIriiisTag"/>
+          <include name="VerifyBatchtaging"/>
           <include name="testBrowser"/>
           <include name="postCondition"/>
         </methods>
