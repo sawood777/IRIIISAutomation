@@ -53,12 +53,12 @@ public class VerifyIriiisFileTaging extends BaseTest {
 		select.SelectAccount("onedrive");
 	}
 
-/*	@Test(priority=1)
+	@Test(priority=1)
 	public void VerifyBatchtaging() throws Exception{
 		VerifyFileTaging select=new VerifyFileTaging(driver);
 		select.DocumentBathcSelection("iriiis");
 		Thread.sleep(3000);
-	}*/
+	}
 	
 	@Test(priority=6)
 	public void VerifyIriiisSharing(){

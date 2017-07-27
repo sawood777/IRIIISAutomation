@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
@@ -71,6 +72,29 @@ Session ID: 418f4ba9a39949cf72e0cabe3bc19bbd
           </reporter-output>
         </test-method> <!-- postCondition -->
       </class> <!-- contactTestCases.VerifyInvitingContact -->
+=======
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="38054" started-at="2017-07-27T06:16:59Z" finished-at="2017-07-27T06:17:37Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="38054" started-at="2017-07-27T06:16:59Z" finished-at="2017-07-27T06:17:37Z">
+      <class name="iriiisMailTestCases.VerifyattachandEmails">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:iriiisMailTestCases.VerifyattachandEmails@26653222]" name="testBrowser" is-config="true" duration-ms="14297" started-at="2017-07-27T11:46:59Z" finished-at="2017-07-27T11:47:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="VeiryAttachments()[pri:0, instance:iriiisMailTestCases.VerifyattachandEmails@26653222]" name="VeiryAttachments" duration-ms="22341" started-at="2017-07-27T11:47:14Z" finished-at="2017-07-27T11:47:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VeiryAttachments -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:iriiisMailTestCases.VerifyattachandEmails@26653222]" name="postCondition" is-config="true" duration-ms="1398" started-at="2017-07-27T11:47:36Z" finished-at="2017-07-27T11:47:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- iriiisMailTestCases.VerifyattachandEmails -->
+>>>>>>> aaaf4db64ce6b579c416fb2934ccba333e1c2db7
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

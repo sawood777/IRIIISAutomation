@@ -29,15 +29,21 @@ WebDriver driver;
 		MailPage m= new MailPage(driver);
 		d.clickMailCard();
 		m.clickMailFilter();
-		WebDriverWait waiter1 = new WebDriverWait(driver, 10);
-		waiter1.until(ExpectedConditions.visibilityOf(m.hoverAllaccount()));
+		//WebDriverWait waiter1 = new WebDriverWait(driver, 10);
+		//waiter1.until(ExpectedConditions.visibilityOf(m.hoverAllaccount()));
+		
+		try {
+			Thread.sleep(3000);
+		} catch (Exception e) {
+			
+		}
 		
 		Actions action = new Actions(driver); 
 		action.moveToElement(m.hoverAllaccount()).build().perform();
 		
 		
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(3000);
 		} catch (Exception e) {
 			
 		}

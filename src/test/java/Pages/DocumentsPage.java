@@ -58,12 +58,12 @@ public class DocumentsPage {
 		Actions action=new Actions(driver);
 		action.moveToElement(Allaccuntslink).build().perform();
 		action.click();
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='All accounts']")));
-	/*	try {
-			Thread.sleep(5000);
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='All accounts']")));
+		try {
+			Thread.sleep(3000);
 		} catch (Exception e) {
 
-		}*/
+		}
 	}
 	
 	public void ClickonRequiredAccount(String drivename){
