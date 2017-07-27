@@ -1,85 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="149709" started-at="2017-07-26T09:17:03Z" finished-at="2017-07-26T09:19:33Z">
+  <suite name="Default suite" duration-ms="38054" started-at="2017-07-27T06:16:59Z" finished-at="2017-07-27T06:17:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="149709" started-at="2017-07-26T09:17:03Z" finished-at="2017-07-26T09:19:33Z">
-      <class name="IriiisDrive.VerifyIriiisFileTaging">
-        <test-method status="PASS" signature="testBrowser()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@26653222]" name="testBrowser" is-config="true" duration-ms="20619" started-at="2017-07-26T14:47:03Z" finished-at="2017-07-26T14:47:24Z">
+    <test name="Default test" duration-ms="38054" started-at="2017-07-27T06:16:59Z" finished-at="2017-07-27T06:17:37Z">
+      <class name="iriiisMailTestCases.VerifyattachandEmails">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:iriiisMailTestCases.VerifyattachandEmails@26653222]" name="testBrowser" is-config="true" duration-ms="14297" started-at="2017-07-27T11:46:59Z" finished-at="2017-07-27T11:47:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBrowser -->
-        <test-method status="PASS" signature="VerifyIriiisTag()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@26653222]" name="VerifyIriiisTag" duration-ms="23474" started-at="2017-07-26T14:47:24Z" finished-at="2017-07-26T14:47:47Z">
+        <test-method status="PASS" signature="VeiryAttachments()[pri:0, instance:iriiisMailTestCases.VerifyattachandEmails@26653222]" name="VeiryAttachments" duration-ms="22341" started-at="2017-07-27T11:47:14Z" finished-at="2017-07-27T11:47:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyIriiisTag -->
-        <test-method status="PASS" signature="VerifgoogleTag()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@26653222]" name="VerifgoogleTag" duration-ms="17452" started-at="2017-07-26T14:47:47Z" finished-at="2017-07-26T14:48:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifgoogleTag -->
-        <test-method status="PASS" signature="VerifboxdriveTag()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@26653222]" name="VerifboxdriveTag" duration-ms="17437" started-at="2017-07-26T14:48:05Z" finished-at="2017-07-26T14:48:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifboxdriveTag -->
-        <test-method status="PASS" signature="VerifdropboxdriveTag()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@26653222]" name="VerifdropboxdriveTag" duration-ms="17146" started-at="2017-07-26T14:48:22Z" finished-at="2017-07-26T14:48:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifdropboxdriveTag -->
-        <test-method status="PASS" signature="VerifonedriveTag()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@26653222]" name="VerifonedriveTag" duration-ms="17181" started-at="2017-07-26T14:48:39Z" finished-at="2017-07-26T14:48:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifonedriveTag -->
-        <test-method status="PASS" signature="VerifyIriiisSharing()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@26653222]" name="VerifyIriiisSharing" duration-ms="17866" started-at="2017-07-26T14:48:57Z" finished-at="2017-07-26T14:49:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyIriiisSharing -->
-        <test-method status="PASS" signature="VerifyGoogleSharing()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@26653222]" name="VerifyGoogleSharing" duration-ms="17019" started-at="2017-07-26T14:49:14Z" finished-at="2017-07-26T14:49:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyGoogleSharing -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@26653222]" name="postCondition" is-config="true" duration-ms="1490" started-at="2017-07-26T14:49:31Z" finished-at="2017-07-26T14:49:33Z">
-=======
-<testng-results skipped="0" failed="0" total="5" passed="5">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Default suite" duration-ms="112689" started-at="2017-07-25T09:02:42Z" finished-at="2017-07-25T09:04:35Z">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="112689" started-at="2017-07-25T09:02:42Z" finished-at="2017-07-25T09:04:35Z">
-      <class name="IriiisDrive.VerifyIriiisFileTaging">
-        <test-method status="PASS" signature="testBrowser()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@3532ec19]" name="testBrowser" is-config="true" duration-ms="20400" started-at="2017-07-25T14:32:42Z" finished-at="2017-07-25T14:33:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBrowser -->
-        <test-method status="PASS" signature="VerifyIriiisTag()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@3532ec19]" name="VerifyIriiisTag" duration-ms="17269" started-at="2017-07-25T14:33:02Z" finished-at="2017-07-25T14:33:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyIriiisTag -->
-        <test-method status="PASS" signature="VerifgoogleTag()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@3532ec19]" name="VerifgoogleTag" duration-ms="18867" started-at="2017-07-25T14:33:20Z" finished-at="2017-07-25T14:33:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifgoogleTag -->
-        <test-method status="PASS" signature="VerifboxdriveTag()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@3532ec19]" name="VerifboxdriveTag" duration-ms="18566" started-at="2017-07-25T14:33:38Z" finished-at="2017-07-25T14:33:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifboxdriveTag -->
-        <test-method status="PASS" signature="VerifdropboxdriveTag()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@3532ec19]" name="VerifdropboxdriveTag" duration-ms="17371" started-at="2017-07-25T14:33:57Z" finished-at="2017-07-25T14:34:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifdropboxdriveTag -->
-        <test-method status="PASS" signature="VerifonedriveTag()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@3532ec19]" name="VerifonedriveTag" duration-ms="18470" started-at="2017-07-25T14:34:14Z" finished-at="2017-07-25T14:34:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifonedriveTag -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@3532ec19]" name="postCondition" is-config="true" duration-ms="1711" started-at="2017-07-25T14:34:33Z" finished-at="2017-07-25T14:34:35Z">
->>>>>>> 4b3de6b69faa22181c3be78a93bed3668953ab56
+        </test-method> <!-- VeiryAttachments -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:iriiisMailTestCases.VerifyattachandEmails@26653222]" name="postCondition" is-config="true" duration-ms="1398" started-at="2017-07-27T11:47:36Z" finished-at="2017-07-27T11:47:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-      </class> <!-- IriiisDrive.VerifyIriiisFileTaging -->
+      </class> <!-- iriiisMailTestCases.VerifyattachandEmails -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
