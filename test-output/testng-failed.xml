@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+<<<<<<< HEAD
+      <class name="IriiisDrive.VerifyIriiisFileTaging">
+        <methods>
+          <include name="VerifyBatchtaging"/>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- IriiisDrive.VerifyIriiisFileTaging -->
+=======
+      <class name="GmailTestCases.VerifySharingGmail">
+        <methods>
+          <include name="testSharingofGmail"/>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- GmailTestCases.VerifySharingGmail -->
+>>>>>>> 4b3de6b69faa22181c3be78a93bed3668953ab56
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
