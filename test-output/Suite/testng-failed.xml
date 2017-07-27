@@ -49,11 +49,6 @@
       </class> <!-- IntegratedMailViewTestCases.VerifyTashAllAccount -->
       <class name="GmailTestCases.VerifySendingEmailAndProcessingGmail">
         <methods>
-          <include name="testBatchUnProcessingEmailGMail"/>
-          <include name="testVerifySendingEmailGmail"/>
-          <include name="testProcessingEmailGMail"/>
-          <include name="testBatchProcessingEmailGMail"/>
-          <include name="testUnProcessingEmailGMail"/>
           <include name="testBrowser"/>
           <include name="postCondition"/>
         </methods>
@@ -70,6 +65,12 @@
           <include name="postCondition"/>
         </methods>
       </class> <!-- GmailTestCases.VerifySpamGmail -->
+      <class name="IriiisDrive.VerifyIriiisFileTaging">
+        <methods>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- IriiisDrive.VerifyIriiisFileTaging -->
       <class name="iriiisMailTestCases.VerifyTashIRIIIS">
         <methods>
           <include name="testBrowser"/>
@@ -82,36 +83,36 @@
           <include name="postCondition"/>
         </methods>
       </class> <!-- iriiisMailTestCases.VerifySpamIRIIIS -->
-      <class name="iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS">
-        <methods>
-          <include name="testBrowser"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS -->
       <class name="IntegratedMailViewTestCases.VerifyTagToTopicAllAccount">
         <methods>
           <include name="testBrowser"/>
           <include name="postCondition"/>
         </methods>
       </class> <!-- IntegratedMailViewTestCases.VerifyTagToTopicAllAccount -->
+      <class name="iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS">
+        <methods>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS -->
       <class name="iriiisMailTestCases.VerifyTagToTopicIRIIIS">
         <methods>
           <include name="testBrowser"/>
           <include name="postCondition"/>
         </methods>
       </class> <!-- iriiisMailTestCases.VerifyTagToTopicIRIIIS -->
-      <class name="IntegratedMailViewTestCases.VerifySharingAllAccount">
-        <methods>
-          <include name="testBrowser"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- IntegratedMailViewTestCases.VerifySharingAllAccount -->
       <class name="iriiisMailTestCases.VerifyReadUnreadIRIIIS">
         <methods>
           <include name="testBrowser"/>
           <include name="postCondition"/>
         </methods>
       </class> <!-- iriiisMailTestCases.VerifyReadUnreadIRIIIS -->
+      <class name="IntegratedMailViewTestCases.VerifySharingAllAccount">
+        <methods>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- IntegratedMailViewTestCases.VerifySharingAllAccount -->
       <class name="iriiisMailTestCases.VerifySharingIRIIIS">
         <methods>
           <include name="testBrowser"/>
@@ -126,7 +127,6 @@
       </class> <!-- IntegratedMailViewTestCases.VerifySendingEmailAndProcessingAllAccount -->
       <class name="GmailTestCases.VerifySharingGmail">
         <methods>
-          <include name="testSharingofGmail"/>
           <include name="testBrowser"/>
           <include name="postCondition"/>
         </methods>
@@ -199,6 +199,12 @@
           <include name="postCondition"/>
         </methods>
       </class> <!-- GmailTestCases.VerifySpamGmail -->
+      <class name="IriiisDrive.VerifyIriiisFileTaging">
+        <methods>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- IriiisDrive.VerifyIriiisFileTaging -->
       <class name="iriiisMailTestCases.VerifyTashIRIIIS">
         <methods>
           <include name="testBatchMovetoInboxOfTrashIRIIIS"/>
@@ -216,36 +222,36 @@
           <include name="postCondition"/>
         </methods>
       </class> <!-- iriiisMailTestCases.VerifySpamIRIIIS -->
-      <class name="iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS">
-        <methods>
-          <include name="testBrowser"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS -->
       <class name="IntegratedMailViewTestCases.VerifyTagToTopicAllAccount">
         <methods>
           <include name="testBrowser"/>
           <include name="postCondition"/>
         </methods>
       </class> <!-- IntegratedMailViewTestCases.VerifyTagToTopicAllAccount -->
+      <class name="iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS">
+        <methods>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS -->
       <class name="iriiisMailTestCases.VerifyTagToTopicIRIIIS">
         <methods>
           <include name="testBrowser"/>
           <include name="postCondition"/>
         </methods>
       </class> <!-- iriiisMailTestCases.VerifyTagToTopicIRIIIS -->
-      <class name="IntegratedMailViewTestCases.VerifySharingAllAccount">
-        <methods>
-          <include name="testBrowser"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- IntegratedMailViewTestCases.VerifySharingAllAccount -->
       <class name="iriiisMailTestCases.VerifyReadUnreadIRIIIS">
         <methods>
           <include name="testBrowser"/>
           <include name="postCondition"/>
         </methods>
       </class> <!-- iriiisMailTestCases.VerifyReadUnreadIRIIIS -->
+      <class name="IntegratedMailViewTestCases.VerifySharingAllAccount">
+        <methods>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- IntegratedMailViewTestCases.VerifySharingAllAccount -->
       <class name="iriiisMailTestCases.VerifySharingIRIIIS">
         <methods>
           <include name="testBrowser"/>
@@ -333,6 +339,12 @@
           <include name="postCondition"/>
         </methods>
       </class> <!-- GmailTestCases.VerifySpamGmail -->
+      <class name="IriiisDrive.VerifyIriiisFileTaging">
+        <methods>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- IriiisDrive.VerifyIriiisFileTaging -->
       <class name="iriiisMailTestCases.VerifyTashIRIIIS">
         <methods>
           <include name="testBrowser"/>
@@ -347,8 +359,6 @@
       </class> <!-- iriiisMailTestCases.VerifySpamIRIIIS -->
       <class name="IntegratedMailViewTestCases.VerifyTagToTopicAllAccount">
         <methods>
-          <include name="testTagToTopicAllAccount"/>
-          <include name="testBatchTagToTopicAllAccount"/>
           <include name="testBrowser"/>
           <include name="postCondition"/>
         </methods>
@@ -365,18 +375,18 @@
           <include name="postCondition"/>
         </methods>
       </class> <!-- iriiisMailTestCases.VerifyTagToTopicIRIIIS -->
-      <class name="IntegratedMailViewTestCases.VerifySharingAllAccount">
-        <methods>
-          <include name="testBrowser"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- IntegratedMailViewTestCases.VerifySharingAllAccount -->
       <class name="iriiisMailTestCases.VerifyReadUnreadIRIIIS">
         <methods>
           <include name="testBrowser"/>
           <include name="postCondition"/>
         </methods>
       </class> <!-- iriiisMailTestCases.VerifyReadUnreadIRIIIS -->
+      <class name="IntegratedMailViewTestCases.VerifySharingAllAccount">
+        <methods>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- IntegratedMailViewTestCases.VerifySharingAllAccount -->
       <class name="iriiisMailTestCases.VerifySharingIRIIIS">
         <methods>
           <include name="testBrowser"/>

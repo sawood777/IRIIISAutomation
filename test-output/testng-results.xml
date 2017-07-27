@@ -1,41 +1,904 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="5" failed="7" total="76" passed="64">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="112689" started-at="2017-07-25T09:02:42Z" finished-at="2017-07-25T09:04:35Z">
+  <suite name="Suite" duration-ms="1089570" started-at="2017-07-26T03:34:52Z" finished-at="2017-07-26T03:53:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="112689" started-at="2017-07-25T09:02:42Z" finished-at="2017-07-25T09:04:35Z">
-      <class name="IriiisDrive.VerifyIriiisFileTaging">
-        <test-method status="PASS" signature="testBrowser()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@3532ec19]" name="testBrowser" is-config="true" duration-ms="20400" started-at="2017-07-25T14:32:42Z" finished-at="2017-07-25T14:33:02Z">
+    <test name="Contact" duration-ms="48255" started-at="2017-07-26T03:34:52Z" finished-at="2017-07-26T03:35:40Z">
+      <class name="contactTestCases.VerifyContactCreation">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:contactTestCases.VerifyContactCreation@3532ec19]" name="testBrowser" is-config="true" duration-ms="18870" started-at="2017-07-26T09:04:52Z" finished-at="2017-07-26T09:05:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBrowser -->
-        <test-method status="PASS" signature="VerifyIriiisTag()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@3532ec19]" name="VerifyIriiisTag" duration-ms="17269" started-at="2017-07-25T14:33:02Z" finished-at="2017-07-25T14:33:20Z">
+        <test-method status="PASS" signature="testContactQuickCreate()[pri:0, instance:contactTestCases.VerifyContactCreation@3532ec19]" name="testContactQuickCreate" duration-ms="6013" started-at="2017-07-26T09:05:11Z" finished-at="2017-07-26T09:05:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactQuickCreate -->
+        <test-method status="PASS" signature="testCreateContactionBySearch()[pri:0, instance:contactTestCases.VerifyContactCreation@3532ec19]" name="testCreateContactionBySearch" duration-ms="3515" started-at="2017-07-26T09:05:17Z" finished-at="2017-07-26T09:05:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateContactionBySearch -->
+        <test-method status="PASS" signature="testCreateContactWithoutProfileSearch()[pri:0, instance:contactTestCases.VerifyContactCreation@3532ec19]" name="testCreateContactWithoutProfileSearch" duration-ms="3818" started-at="2017-07-26T09:05:20Z" finished-at="2017-07-26T09:05:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateContactWithoutProfileSearch -->
+        <test-method status="PASS" signature="testCreateContactWithoutAnyfields()[pri:0, instance:contactTestCases.VerifyContactCreation@3532ec19]" name="testCreateContactWithoutAnyfields" duration-ms="806" started-at="2017-07-26T09:05:24Z" finished-at="2017-07-26T09:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateContactWithoutAnyfields -->
+        <test-method status="PASS" signature="testUpdateContact()[pri:0, instance:contactTestCases.VerifyContactCreation@3532ec19]" name="testUpdateContact" duration-ms="6645" started-at="2017-07-26T09:05:25Z" finished-at="2017-07-26T09:05:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateContact -->
+        <test-method status="PASS" signature="testSingleContactDeletion()[pri:0, instance:contactTestCases.VerifyContactCreation@3532ec19]" name="testSingleContactDeletion" duration-ms="6582" started-at="2017-07-26T09:05:32Z" finished-at="2017-07-26T09:05:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSingleContactDeletion -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:contactTestCases.VerifyContactCreation@3532ec19]" name="postCondition" is-config="true" duration-ms="1981" started-at="2017-07-26T09:05:38Z" finished-at="2017-07-26T09:05:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- contactTestCases.VerifyContactCreation -->
+    </test> <!-- Contact -->
+    <test name="Gmail" duration-ms="318210" started-at="2017-07-26T03:35:40Z" finished-at="2017-07-26T03:40:58Z">
+      <class name="GmailTestCases.VerifyTagToTopicGmail">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:GmailTestCases.VerifyTagToTopicGmail@5f341870]" name="testBrowser" is-config="true" duration-ms="14003" started-at="2017-07-26T09:07:24Z" finished-at="2017-07-26T09:07:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="FAIL" signature="testTagToTopicGmail()[pri:0, instance:GmailTestCases.VerifyTagToTopicGmail@5f341870]" name="testTagToTopicGmail" duration-ms="23565" started-at="2017-07-26T09:07:38Z" finished-at="2017-07-26T09:08:02Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Tag to Topic got failed expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Tag to Topic got failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:286)
+	at emailTestCases.VerifyTagToTopic.testTagToTopic(VerifyTagToTopic.java:68)
+	at GmailTestCases.VerifyTagToTopicGmail.testTagToTopicGmail(VerifyTagToTopicGmail.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTagToTopicGmail -->
+        <test-method status="SKIP" signature="testBatchTagToTopicGmail()[pri:0, instance:GmailTestCases.VerifyTagToTopicGmail@5f341870]" name="testBatchTagToTopicGmail" duration-ms="1" started-at="2017-07-26T09:08:02Z" depends-on-methods="GmailTestCases.VerifyTagToTopicGmail.testTagToTopicGmail" finished-at="2017-07-26T09:08:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchTagToTopicGmail -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:GmailTestCases.VerifyTagToTopicGmail@5f341870]" name="postCondition" is-config="true" duration-ms="1147" started-at="2017-07-26T09:08:02Z" finished-at="2017-07-26T09:08:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- GmailTestCases.VerifyTagToTopicGmail -->
+      <class name="GmailTestCases.VerifySpamGmail">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:GmailTestCases.VerifySpamGmail@14bf9759]" name="testBrowser" is-config="true" duration-ms="13606" started-at="2017-07-26T09:06:37Z" finished-at="2017-07-26T09:06:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testMoveToSpamGmail()[pri:0, instance:GmailTestCases.VerifySpamGmail@14bf9759]" name="testMoveToSpamGmail" duration-ms="16716" started-at="2017-07-26T09:06:51Z" finished-at="2017-07-26T09:07:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMoveToSpamGmail -->
+        <test-method status="PASS" signature="testMarkAsNotSpamGMail()[pri:0, instance:GmailTestCases.VerifySpamGmail@14bf9759]" name="testMarkAsNotSpamGMail" duration-ms="3650" started-at="2017-07-26T09:07:07Z" finished-at="2017-07-26T09:07:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMarkAsNotSpamGMail -->
+        <test-method status="PASS" signature="testBatchMovetoSpamGmail()[pri:0, instance:GmailTestCases.VerifySpamGmail@14bf9759]" name="testBatchMovetoSpamGmail" duration-ms="4813" started-at="2017-07-26T09:07:11Z" finished-at="2017-07-26T09:07:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchMovetoSpamGmail -->
+        <test-method status="PASS" signature="testBatchMovetoInboxOfSpamGmail()[pri:0, instance:GmailTestCases.VerifySpamGmail@14bf9759]" name="testBatchMovetoInboxOfSpamGmail" duration-ms="7499" started-at="2017-07-26T09:07:16Z" finished-at="2017-07-26T09:07:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchMovetoInboxOfSpamGmail -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:GmailTestCases.VerifySpamGmail@14bf9759]" name="postCondition" is-config="true" duration-ms="1033" started-at="2017-07-26T09:07:23Z" finished-at="2017-07-26T09:07:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- GmailTestCases.VerifySpamGmail -->
+      <class name="GmailTestCases.VerifyReadUnreadGmail">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:GmailTestCases.VerifyReadUnreadGmail@3c0ecd4b]" name="testBrowser" is-config="true" duration-ms="13243" started-at="2017-07-26T09:05:40Z" finished-at="2017-07-26T09:05:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testMarkAsUnreadGmail()[pri:0, instance:GmailTestCases.VerifyReadUnreadGmail@3c0ecd4b]" name="testMarkAsUnreadGmail" duration-ms="21337" started-at="2017-07-26T09:05:53Z" finished-at="2017-07-26T09:06:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMarkAsUnreadGmail -->
+        <test-method status="PASS" signature="testBatchReadGmail()[pri:0, instance:GmailTestCases.VerifyReadUnreadGmail@3c0ecd4b]" name="testBatchReadGmail" duration-ms="13149" started-at="2017-07-26T09:06:15Z" depends-on-methods="GmailTestCases.VerifyReadUnreadGmail.testMarkAsUnreadGmail" finished-at="2017-07-26T09:06:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchReadGmail -->
+        <test-method status="PASS" signature="testBatchUnreadGmail()[pri:0, instance:GmailTestCases.VerifyReadUnreadGmail@3c0ecd4b]" name="testBatchUnreadGmail" duration-ms="8049" started-at="2017-07-26T09:06:28Z" depends-on-methods="GmailTestCases.VerifyReadUnreadGmail.testMarkAsUnreadGmail" finished-at="2017-07-26T09:06:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchUnreadGmail -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:GmailTestCases.VerifyReadUnreadGmail@3c0ecd4b]" name="postCondition" is-config="true" duration-ms="1135" started-at="2017-07-26T09:06:36Z" finished-at="2017-07-26T09:06:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- GmailTestCases.VerifyReadUnreadGmail -->
+      <class name="GmailTestCases.VerifyTashGmail">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:GmailTestCases.VerifyTashGmail@553f17c]" name="testBrowser" is-config="true" duration-ms="13672" started-at="2017-07-26T09:08:41Z" finished-at="2017-07-26T09:08:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testMoveToTrashGmail()[pri:0, instance:GmailTestCases.VerifyTashGmail@553f17c]" name="testMoveToTrashGmail" duration-ms="17239" started-at="2017-07-26T09:08:55Z" finished-at="2017-07-26T09:09:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMoveToTrashGmail -->
+        <test-method status="PASS" signature="testMovetoInboxOfTrashEmailGmail()[pri:0, instance:GmailTestCases.VerifyTashGmail@553f17c]" name="testMovetoInboxOfTrashEmailGmail" duration-ms="16315" started-at="2017-07-26T09:09:12Z" depends-on-methods="GmailTestCases.VerifyTashGmail.testMoveToTrashGmail" finished-at="2017-07-26T09:09:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMovetoInboxOfTrashEmailGmail -->
+        <test-method status="PASS" signature="testBatchMoveToTrashGmail()[pri:0, instance:GmailTestCases.VerifyTashGmail@553f17c]" name="testBatchMoveToTrashGmail" duration-ms="5924" started-at="2017-07-26T09:09:29Z" depends-on-methods="GmailTestCases.VerifyTashGmail.testMovetoInboxOfTrashEmailGmail" finished-at="2017-07-26T09:09:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchMoveToTrashGmail -->
+        <test-method status="PASS" signature="testBatchMovetoInboxOfTrashGmail()[pri:0, instance:GmailTestCases.VerifyTashGmail@553f17c]" name="testBatchMovetoInboxOfTrashGmail" duration-ms="7433" started-at="2017-07-26T09:09:35Z" depends-on-methods="GmailTestCases.VerifyTashGmail.testBatchMoveToTrashGmail" finished-at="2017-07-26T09:09:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchMovetoInboxOfTrashGmail -->
+        <test-method status="PASS" signature="testDeleteForeverGmail()[pri:0, instance:GmailTestCases.VerifyTashGmail@553f17c]" name="testDeleteForeverGmail" duration-ms="10303" started-at="2017-07-26T09:09:42Z" depends-on-methods="GmailTestCases.VerifyTashGmail.testBatchMovetoInboxOfTrashGmail" finished-at="2017-07-26T09:09:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteForeverGmail -->
+        <test-method status="PASS" signature="testBatchDeleteForeverGmail()[pri:0, instance:GmailTestCases.VerifyTashGmail@553f17c]" name="testBatchDeleteForeverGmail" duration-ms="0" started-at="2017-07-26T09:09:52Z" depends-on-methods="GmailTestCases.VerifyTashGmail.testDeleteForeverGmail" finished-at="2017-07-26T09:09:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchDeleteForeverGmail -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:GmailTestCases.VerifyTashGmail@553f17c]" name="postCondition" is-config="true" duration-ms="1032" started-at="2017-07-26T09:09:52Z" finished-at="2017-07-26T09:09:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- GmailTestCases.VerifyTashGmail -->
+      <class name="GmailTestCases.VerifySharingGmail">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:GmailTestCases.VerifySharingGmail@271053e1]" name="testBrowser" is-config="true" duration-ms="14094" started-at="2017-07-26T09:08:03Z" finished-at="2017-07-26T09:08:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testSharingofGmail()[pri:0, instance:GmailTestCases.VerifySharingGmail@271053e1]" name="testSharingofGmail" duration-ms="23171" started-at="2017-07-26T09:08:17Z" finished-at="2017-07-26T09:08:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSharingofGmail -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:GmailTestCases.VerifySharingGmail@271053e1]" name="postCondition" is-config="true" duration-ms="979" started-at="2017-07-26T09:08:40Z" finished-at="2017-07-26T09:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- GmailTestCases.VerifySharingGmail -->
+      <class name="GmailTestCases.VerifySendingEmailAndProcessingGmail">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:GmailTestCases.VerifySendingEmailAndProcessingGmail@4f7d0008]" name="testBrowser" is-config="true" duration-ms="13592" started-at="2017-07-26T09:09:53Z" finished-at="2017-07-26T09:10:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testVerifySendingEmailGmail()[pri:0, instance:GmailTestCases.VerifySendingEmailAndProcessingGmail@4f7d0008]" name="testVerifySendingEmailGmail" duration-ms="25589" started-at="2017-07-26T09:10:07Z" finished-at="2017-07-26T09:10:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVerifySendingEmailGmail -->
+        <test-method status="PASS" signature="testProcessingEmailGMail()[pri:0, instance:GmailTestCases.VerifySendingEmailAndProcessingGmail@4f7d0008]" name="testProcessingEmailGMail" duration-ms="5362" started-at="2017-07-26T09:10:33Z" finished-at="2017-07-26T09:10:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProcessingEmailGMail -->
+        <test-method status="PASS" signature="testUnProcessingEmailGMail()[pri:0, instance:GmailTestCases.VerifySendingEmailAndProcessingGmail@4f7d0008]" name="testUnProcessingEmailGMail" duration-ms="3953" started-at="2017-07-26T09:10:38Z" finished-at="2017-07-26T09:10:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUnProcessingEmailGMail -->
+        <test-method status="PASS" signature="testBatchProcessingEmailGMail()[pri:0, instance:GmailTestCases.VerifySendingEmailAndProcessingGmail@4f7d0008]" name="testBatchProcessingEmailGMail" duration-ms="8188" started-at="2017-07-26T09:10:42Z" finished-at="2017-07-26T09:10:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchProcessingEmailGMail -->
+        <test-method status="PASS" signature="testBatchUnProcessingEmailGMail()[pri:0, instance:GmailTestCases.VerifySendingEmailAndProcessingGmail@4f7d0008]" name="testBatchUnProcessingEmailGMail" duration-ms="7310" started-at="2017-07-26T09:10:50Z" finished-at="2017-07-26T09:10:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchUnProcessingEmailGMail -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:GmailTestCases.VerifySendingEmailAndProcessingGmail@4f7d0008]" name="postCondition" is-config="true" duration-ms="1018" started-at="2017-07-26T09:10:57Z" finished-at="2017-07-26T09:10:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- GmailTestCases.VerifySendingEmailAndProcessingGmail -->
+    </test> <!-- Gmail -->
+    <test name="IRIIIS" duration-ms="370583" started-at="2017-07-26T03:40:58Z" finished-at="2017-07-26T03:47:09Z">
+      <class name="iriiisMailTestCases.VerifyattachandEmails">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:iriiisMailTestCases.VerifyattachandEmails@72d818d1]" name="testBrowser" is-config="true" duration-ms="13009" started-at="2017-07-26T09:16:28Z" finished-at="2017-07-26T09:16:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="FAIL" signature="VeiryAttachments()[pri:0, instance:iriiisMailTestCases.VerifyattachandEmails@72d818d1]" name="VeiryAttachments" duration-ms="26307" started-at="2017-07-26T09:16:41Z" finished-at="2017-07-26T09:17:07Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of all [[[ChromeDriver: chrome on XP (cd8410548729556fe9652cde4052d678)] -> xpath: //md-menu-item[@ng-click='setAccount(account)']], [[ChromeDriver: chrome on XP (cd8410548729556fe9652cde4052d678)] -> xpath: //md-menu-item[@ng-click='setAccount(account)']], [[ChromeDriver: chrome on XP (cd8410548729556fe9652cde4052d678)] -> xpath: //md-menu-item[@ng-click='setAccount(account)']]] (tried for 20 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-1D78PSH8', ip: '192.168.132.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\Praveen\AppData\Local\Temp\scoped_dir9236_20165}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: cd8410548729556fe9652cde4052d678]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [[[ChromeDriver: chrome on XP (cd8410548729556fe9652cde4052d678)] -> xpath: //md-menu-item[@ng-click='setAccount(account)']], [[ChromeDriver: chrome on XP (cd8410548729556fe9652cde4052d678)] -> xpath: //md-menu-item[@ng-click='setAccount(account)']], [[ChromeDriver: chrome on XP (cd8410548729556fe9652cde4052d678)] -> xpath: //md-menu-item[@ng-click='setAccount(account)']]] (tried for 20 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-1D78PSH8', ip: '192.168.132.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\Praveen\AppData\Local\Temp\scoped_dir9236_20165}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: cd8410548729556fe9652cde4052d678
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at Pages.MailPage.getAccountList(MailPage.java:328)
+	at emailTestCases.VerifySentEmails.VerifyAttachment(VerifySentEmails.java:45)
+	at iriiisMailTestCases.VerifyattachandEmails.VeiryAttachments(VerifyattachandEmails.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VeiryAttachments -->
+        <test-method status="FAIL" signature="VerifyReplyAttachments()[pri:0, instance:iriiisMailTestCases.VerifyattachandEmails@72d818d1]" name="VerifyReplyAttachments" duration-ms="194" started-at="2017-07-26T09:17:07Z" finished-at="2017-07-26T09:17:07Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Element <span style="margin-left: 10px" layout="" layout-align="start center" class="layout-align-start-center layout-row">...</span> is not clickable at point (274, 105). Other element would receive the click: <md-backdrop class="md-menu-backdrop md-click-catcher ng-scope" style="position: fixed;"></md-backdrop>
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 83 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-1D78PSH8', ip: '192.168.132.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\Praveen\AppData\Local\Temp\scoped_dir9236_20165}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: cd8410548729556fe9652cde4052d678]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <span style="margin-left: 10px" layout="" layout-align="start center" class="layout-align-start-center layout-row">...</span> is not clickable at point (274, 105). Other element would receive the click: <md-backdrop class="md-menu-backdrop md-click-catcher ng-scope" style="position: fixed;"></md-backdrop>
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 83 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-1D78PSH8', ip: '192.168.132.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\Praveen\AppData\Local\Temp\scoped_dir9236_20165}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: cd8410548729556fe9652cde4052d678
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at Pages.MailPage.clickMailFilter(MailPage.java:151)
+	at emailTestCases.VerifySentEmails.ReplyAndForwardwithAttach(VerifySentEmails.java:82)
+	at iriiisMailTestCases.VerifyattachandEmails.VerifyReplyAttachments(VerifyattachandEmails.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyReplyAttachments -->
+        <test-method status="FAIL" signature="VerifyForwardAttachments()[pri:0, instance:iriiisMailTestCases.VerifyattachandEmails@72d818d1]" name="VerifyForwardAttachments" duration-ms="98" started-at="2017-07-26T09:17:07Z" finished-at="2017-07-26T09:17:07Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Element <span style="margin-left: 10px" layout="" layout-align="start center" class="layout-align-start-center layout-row">...</span> is not clickable at point (274, 105). Other element would receive the click: <md-backdrop class="md-menu-backdrop md-click-catcher ng-scope" style="position: fixed;"></md-backdrop>
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-1D78PSH8', ip: '192.168.132.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\Praveen\AppData\Local\Temp\scoped_dir9236_20165}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: cd8410548729556fe9652cde4052d678]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <span style="margin-left: 10px" layout="" layout-align="start center" class="layout-align-start-center layout-row">...</span> is not clickable at point (274, 105). Other element would receive the click: <md-backdrop class="md-menu-backdrop md-click-catcher ng-scope" style="position: fixed;"></md-backdrop>
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-1D78PSH8', ip: '192.168.132.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\Praveen\AppData\Local\Temp\scoped_dir9236_20165}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: cd8410548729556fe9652cde4052d678
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at Pages.MailPage.clickMailFilter(MailPage.java:151)
+	at iriiisMailTestCases.VerifyattachandEmails.VerifyForwardAttachments(VerifyattachandEmails.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyForwardAttachments -->
+        <test-method status="FAIL" signature="VerifyReplyallwithAttachment()[pri:0, instance:iriiisMailTestCases.VerifyattachandEmails@72d818d1]" name="VerifyReplyallwithAttachment" duration-ms="780" started-at="2017-07-26T09:17:07Z" finished-at="2017-07-26T09:17:08Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Element <div class="service-panel__content__listItem email-list__item email-item table-fixed ng-scope" ng-repeat="thread in allThreads | orderBy: orderByTime:true" ng-click="openThread(thread)" ng-class="{'email-item--unread': !thread.email.isRead}" role="button" tabindex="0">...</div> is not clickable at point (858, 156). Other element would receive the click: <md-backdrop class="md-menu-backdrop md-click-catcher ng-scope" style="position: fixed;"></md-backdrop>
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 73 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-1D78PSH8', ip: '192.168.132.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\Praveen\AppData\Local\Temp\scoped_dir9236_20165}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: cd8410548729556fe9652cde4052d678]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <div class="service-panel__content__listItem email-list__item email-item table-fixed ng-scope" ng-repeat="thread in allThreads | orderBy: orderByTime:true" ng-click="openThread(thread)" ng-class="{'email-item--unread': !thread.email.isRead}" role="button" tabindex="0">...</div> is not clickable at point (858, 156). Other element would receive the click: <md-backdrop class="md-menu-backdrop md-click-catcher ng-scope" style="position: fixed;"></md-backdrop>
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 73 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-1D78PSH8', ip: '192.168.132.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\Praveen\AppData\Local\Temp\scoped_dir9236_20165}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: cd8410548729556fe9652cde4052d678
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at Pages.MailPage.clickFirstEmail(MailPage.java:138)
+	at emailTestCases.VerifySentEmails.testReplyAllwithAttachment(VerifySentEmails.java:182)
+	at iriiisMailTestCases.VerifyattachandEmails.VerifyReplyallwithAttachment(VerifyattachandEmails.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyReplyallwithAttachment -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:iriiisMailTestCases.VerifyattachandEmails@72d818d1]" name="postCondition" is-config="true" duration-ms="1035" started-at="2017-07-26T09:17:08Z" finished-at="2017-07-26T09:17:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- iriiisMailTestCases.VerifyattachandEmails -->
+      <class name="iriiisMailTestCases.VerifyTashIRIIIS">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:iriiisMailTestCases.VerifyTashIRIIIS@1e397ed7]" name="testBrowser" is-config="true" duration-ms="13742" started-at="2017-07-26T09:10:58Z" finished-at="2017-07-26T09:11:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testMoveToTrashIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifyTashIRIIIS@1e397ed7]" name="testMoveToTrashIRIIIS" duration-ms="16655" started-at="2017-07-26T09:11:12Z" finished-at="2017-07-26T09:11:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMoveToTrashIRIIIS -->
+        <test-method status="PASS" signature="testMovetoInboxOfTrashEmailIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifyTashIRIIIS@1e397ed7]" name="testMovetoInboxOfTrashEmailIRIIIS" duration-ms="18724" started-at="2017-07-26T09:11:29Z" depends-on-methods="iriiisMailTestCases.VerifyTashIRIIIS.testMoveToTrashIRIIIS" finished-at="2017-07-26T09:11:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMovetoInboxOfTrashEmailIRIIIS -->
+        <test-method status="PASS" signature="testBatchMoveToTrashIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifyTashIRIIIS@1e397ed7]" name="testBatchMoveToTrashIRIIIS" duration-ms="5120" started-at="2017-07-26T09:11:48Z" depends-on-methods="iriiisMailTestCases.VerifyTashIRIIIS.testMovetoInboxOfTrashEmailIRIIIS" finished-at="2017-07-26T09:11:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchMoveToTrashIRIIIS -->
+        <test-method status="PASS" signature="testBatchMovetoInboxOfTrashIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifyTashIRIIIS@1e397ed7]" name="testBatchMovetoInboxOfTrashIRIIIS" duration-ms="5641" started-at="2017-07-26T09:11:53Z" depends-on-methods="iriiisMailTestCases.VerifyTashIRIIIS.testBatchMoveToTrashIRIIIS" finished-at="2017-07-26T09:11:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchMovetoInboxOfTrashIRIIIS -->
+        <test-method status="FAIL" signature="testDeleteForeverIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifyTashIRIIIS@1e397ed7]" name="testDeleteForeverIRIIIS" duration-ms="9839" started-at="2017-07-26T09:11:58Z" depends-on-methods="iriiisMailTestCases.VerifyTashIRIIIS.testBatchMovetoInboxOfTrashIRIIIS" finished-at="2017-07-26T09:12:08Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[delete forever of Email is unsucessfully expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: delete forever of Email is unsucessfully expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:286)
+	at emailTestCases.VerifyTrash.TestDeleteForever(VerifyTrash.java:229)
+	at iriiisMailTestCases.VerifyTashIRIIIS.testDeleteForeverIRIIIS(VerifyTashIRIIIS.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteForeverIRIIIS -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:iriiisMailTestCases.VerifyTashIRIIIS@1e397ed7]" name="postCondition" is-config="true" duration-ms="1051" started-at="2017-07-26T09:12:08Z" finished-at="2017-07-26T09:12:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- iriiisMailTestCases.VerifyTashIRIIIS -->
+      <class name="iriiisMailTestCases.VerifySpamIRIIIS">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:iriiisMailTestCases.VerifySpamIRIIIS@490ab905]" name="testBrowser" is-config="true" duration-ms="14084" started-at="2017-07-26T09:13:01Z" finished-at="2017-07-26T09:13:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testMoveToSpamIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifySpamIRIIIS@490ab905]" name="testMoveToSpamIRIIIS" duration-ms="16194" started-at="2017-07-26T09:13:15Z" finished-at="2017-07-26T09:13:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMoveToSpamIRIIIS -->
+        <test-method status="PASS" signature="testMarkAsNotSpamIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifySpamIRIIIS@490ab905]" name="testMarkAsNotSpamIRIIIS" duration-ms="3834" started-at="2017-07-26T09:13:31Z" finished-at="2017-07-26T09:13:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMarkAsNotSpamIRIIIS -->
+        <test-method status="PASS" signature="testBatchMovetoSpamIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifySpamIRIIIS@490ab905]" name="testBatchMovetoSpamIRIIIS" duration-ms="4500" started-at="2017-07-26T09:13:35Z" finished-at="2017-07-26T09:13:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchMovetoSpamIRIIIS -->
+        <test-method status="PASS" signature="testBatchMovetoInboxOfSpamIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifySpamIRIIIS@490ab905]" name="testBatchMovetoInboxOfSpamIRIIIS" duration-ms="6047" started-at="2017-07-26T09:13:40Z" finished-at="2017-07-26T09:13:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchMovetoInboxOfSpamIRIIIS -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:iriiisMailTestCases.VerifySpamIRIIIS@490ab905]" name="postCondition" is-config="true" duration-ms="1053" started-at="2017-07-26T09:13:46Z" finished-at="2017-07-26T09:13:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- iriiisMailTestCases.VerifySpamIRIIIS -->
+      <class name="iriiisMailTestCases.VerifyTagToTopicIRIIIS">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:iriiisMailTestCases.VerifyTagToTopicIRIIIS@27c20538]" name="testBrowser" is-config="true" duration-ms="13829" started-at="2017-07-26T09:13:47Z" finished-at="2017-07-26T09:14:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testTagToTopicIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifyTagToTopicIRIIIS@27c20538]" name="testTagToTopicIRIIIS" duration-ms="23281" started-at="2017-07-26T09:14:01Z" finished-at="2017-07-26T09:14:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTagToTopicIRIIIS -->
+        <test-method status="PASS" signature="testBatchTagToTopicIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifyTagToTopicIRIIIS@27c20538]" name="testBatchTagToTopicIRIIIS" duration-ms="27592" started-at="2017-07-26T09:14:24Z" depends-on-methods="iriiisMailTestCases.VerifyTagToTopicIRIIIS.testTagToTopicIRIIIS" finished-at="2017-07-26T09:14:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchTagToTopicIRIIIS -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:iriiisMailTestCases.VerifyTagToTopicIRIIIS@27c20538]" name="postCondition" is-config="true" duration-ms="1007" started-at="2017-07-26T09:14:52Z" finished-at="2017-07-26T09:14:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- iriiisMailTestCases.VerifyTagToTopicIRIIIS -->
+      <class name="iriiisMailTestCases.VerifyReadUnreadIRIIIS">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:iriiisMailTestCases.VerifyReadUnreadIRIIIS@6e06451e]" name="testBrowser" is-config="true" duration-ms="13424" started-at="2017-07-26T09:12:09Z" finished-at="2017-07-26T09:12:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testMarkAsUnreadIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifyReadUnreadIRIIIS@6e06451e]" name="testMarkAsUnreadIRIIIS" duration-ms="20555" started-at="2017-07-26T09:12:23Z" finished-at="2017-07-26T09:12:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMarkAsUnreadIRIIIS -->
+        <test-method status="PASS" signature="testBatchReadIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifyReadUnreadIRIIIS@6e06451e]" name="testBatchReadIRIIIS" duration-ms="6322" started-at="2017-07-26T09:12:43Z" finished-at="2017-07-26T09:12:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchReadIRIIIS -->
+        <test-method status="PASS" signature="testBatchUnreadIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifyReadUnreadIRIIIS@6e06451e]" name="testBatchUnreadIRIIIS" duration-ms="10618" started-at="2017-07-26T09:12:49Z" depends-on-methods="iriiisMailTestCases.VerifyReadUnreadIRIIIS.testMarkAsUnreadIRIIIS" finished-at="2017-07-26T09:13:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchUnreadIRIIIS -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:iriiisMailTestCases.VerifyReadUnreadIRIIIS@6e06451e]" name="postCondition" is-config="true" duration-ms="1018" started-at="2017-07-26T09:13:00Z" finished-at="2017-07-26T09:13:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- iriiisMailTestCases.VerifyReadUnreadIRIIIS -->
+      <class name="iriiisMailTestCases.VerifySharingIRIIIS">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:iriiisMailTestCases.VerifySharingIRIIIS@59494225]" name="testBrowser" is-config="true" duration-ms="13354" started-at="2017-07-26T09:15:50Z" finished-at="2017-07-26T09:16:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testShareToTopicIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifySharingIRIIIS@59494225]" name="testShareToTopicIRIIIS" duration-ms="22559" started-at="2017-07-26T09:16:04Z" finished-at="2017-07-26T09:16:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testShareToTopicIRIIIS -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:iriiisMailTestCases.VerifySharingIRIIIS@59494225]" name="postCondition" is-config="true" duration-ms="1312" started-at="2017-07-26T09:16:26Z" finished-at="2017-07-26T09:16:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- iriiisMailTestCases.VerifySharingIRIIIS -->
+      <class name="iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@56ac3a89]" name="testBrowser" is-config="true" duration-ms="13538" started-at="2017-07-26T09:14:53Z" finished-at="2017-07-26T09:15:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testVerifySendingEmailIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@56ac3a89]" name="testVerifySendingEmailIRIIIS" duration-ms="25373" started-at="2017-07-26T09:15:06Z" finished-at="2017-07-26T09:15:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVerifySendingEmailIRIIIS -->
+        <test-method status="PASS" signature="testProcessingEmailIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@56ac3a89]" name="testProcessingEmailIRIIIS" duration-ms="4424" started-at="2017-07-26T09:15:31Z" finished-at="2017-07-26T09:15:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProcessingEmailIRIIIS -->
+        <test-method status="PASS" signature="testUnProcessingEmailIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@56ac3a89]" name="testUnProcessingEmailIRIIIS" duration-ms="3891" started-at="2017-07-26T09:15:36Z" finished-at="2017-07-26T09:15:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUnProcessingEmailIRIIIS -->
+        <test-method status="PASS" signature="testBatchProcessingEmailIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@56ac3a89]" name="testBatchProcessingEmailIRIIIS" duration-ms="4711" started-at="2017-07-26T09:15:40Z" finished-at="2017-07-26T09:15:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchProcessingEmailIRIIIS -->
+        <test-method status="PASS" signature="testBatchUnProcessingEmailIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@56ac3a89]" name="testBatchUnProcessingEmailIRIIIS" duration-ms="4826" started-at="2017-07-26T09:15:44Z" finished-at="2017-07-26T09:15:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchUnProcessingEmailIRIIIS -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@56ac3a89]" name="postCondition" is-config="true" duration-ms="1003" started-at="2017-07-26T09:15:49Z" finished-at="2017-07-26T09:15:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS -->
+    </test> <!-- IRIIIS -->
+    <test name="All Account" duration-ms="244467" started-at="2017-07-26T03:47:09Z" finished-at="2017-07-26T03:51:13Z">
+      <class name="IntegratedMailViewTestCases.VerifySpamAllAccount">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:IntegratedMailViewTestCases.VerifySpamAllAccount@6adede5]" name="testBrowser" is-config="true" duration-ms="13041" started-at="2017-07-26T09:18:26Z" finished-at="2017-07-26T09:18:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testMoveToSpamAllAccount()[pri:0, instance:IntegratedMailViewTestCases.VerifySpamAllAccount@6adede5]" name="testMoveToSpamAllAccount" duration-ms="5331" started-at="2017-07-26T09:18:39Z" finished-at="2017-07-26T09:18:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMoveToSpamAllAccount -->
+        <test-method status="PASS" signature="testMarkAsNotSpamAllAccount()[pri:0, instance:IntegratedMailViewTestCases.VerifySpamAllAccount@6adede5]" name="testMarkAsNotSpamAllAccount" duration-ms="3544" started-at="2017-07-26T09:18:44Z" finished-at="2017-07-26T09:18:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMarkAsNotSpamAllAccount -->
+        <test-method status="PASS" signature="testBatchMovetoSpamAllAccount()[pri:0, instance:IntegratedMailViewTestCases.VerifySpamAllAccount@6adede5]" name="testBatchMovetoSpamAllAccount" duration-ms="4538" started-at="2017-07-26T09:18:48Z" finished-at="2017-07-26T09:18:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchMovetoSpamAllAccount -->
+        <test-method status="PASS" signature="testBatchMovetoInboxOfSpamAllAccount()[pri:0, instance:IntegratedMailViewTestCases.VerifySpamAllAccount@6adede5]" name="testBatchMovetoInboxOfSpamAllAccount" duration-ms="5127" started-at="2017-07-26T09:18:52Z" finished-at="2017-07-26T09:18:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchMovetoInboxOfSpamAllAccount -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:IntegratedMailViewTestCases.VerifySpamAllAccount@6adede5]" name="postCondition" is-config="true" duration-ms="1005" started-at="2017-07-26T09:18:57Z" finished-at="2017-07-26T09:18:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- IntegratedMailViewTestCases.VerifySpamAllAccount -->
+      <class name="IntegratedMailViewTestCases.VerifySharingAllAccount">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:IntegratedMailViewTestCases.VerifySharingAllAccount@49993335]" name="testBrowser" is-config="true" duration-ms="13824" started-at="2017-07-26T09:17:59Z" finished-at="2017-07-26T09:18:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testShareToTopicAllAccount()[pri:0, instance:IntegratedMailViewTestCases.VerifySharingAllAccount@49993335]" name="testShareToTopicAllAccount" duration-ms="12085" started-at="2017-07-26T09:18:13Z" finished-at="2017-07-26T09:18:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testShareToTopicAllAccount -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:IntegratedMailViewTestCases.VerifySharingAllAccount@49993335]" name="postCondition" is-config="true" duration-ms="1119" started-at="2017-07-26T09:18:25Z" finished-at="2017-07-26T09:18:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- IntegratedMailViewTestCases.VerifySharingAllAccount -->
+      <class name="IntegratedMailViewTestCases.VerifyTashAllAccount">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:IntegratedMailViewTestCases.VerifyTashAllAccount@5025a98f]" name="testBrowser" is-config="true" duration-ms="13493" started-at="2017-07-26T09:17:09Z" finished-at="2017-07-26T09:17:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="FAIL" signature="testMoveToTrashAllAccount()[pri:0, instance:IntegratedMailViewTestCases.VerifyTashAllAccount@5025a98f]" name="testMoveToTrashAllAccount" duration-ms="34962" started-at="2017-07-26T09:17:23Z" finished-at="2017-07-26T09:17:57Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of all [] (tried for 20 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-1D78PSH8', ip: '192.168.132.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\Praveen\AppData\Local\Temp\scoped_dir7496_26531}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: cdc2077478dfc3b48962877016217bd8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [] (tried for 20 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-1D78PSH8', ip: '192.168.132.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\Praveen\AppData\Local\Temp\scoped_dir7496_26531}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: cdc2077478dfc3b48962877016217bd8
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at Pages.MailPage.GetemailSubjects(MailPage.java:180)
+	at emailTestCases.VerifyTrash.testMoveToTrash(VerifyTrash.java:33)
+	at IntegratedMailViewTestCases.VerifyTashAllAccount.testMoveToTrashAllAccount(VerifyTashAllAccount.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMoveToTrashAllAccount -->
+        <test-method status="SKIP" signature="testMovetoInboxOfTrashEmailAllAccount()[pri:0, instance:IntegratedMailViewTestCases.VerifyTashAllAccount@5025a98f]" name="testMovetoInboxOfTrashEmailAllAccount" duration-ms="0" started-at="2017-07-26T09:17:57Z" depends-on-methods="IntegratedMailViewTestCases.VerifyTashAllAccount.testMoveToTrashAllAccount" finished-at="2017-07-26T09:17:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMovetoInboxOfTrashEmailAllAccount -->
+        <test-method status="SKIP" signature="testBatchMovetoInboxOfTrashAllAccount()[pri:0, instance:IntegratedMailViewTestCases.VerifyTashAllAccount@5025a98f]" name="testBatchMovetoInboxOfTrashAllAccount" duration-ms="0" started-at="2017-07-26T09:17:57Z" depends-on-methods="IntegratedMailViewTestCases.VerifyTashAllAccount.testBatchMoveToTrashAllAccount" finished-at="2017-07-26T09:17:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchMovetoInboxOfTrashAllAccount -->
+        <test-method status="SKIP" signature="testBatchMoveToTrashAllAccount()[pri:0, instance:IntegratedMailViewTestCases.VerifyTashAllAccount@5025a98f]" name="testBatchMoveToTrashAllAccount" duration-ms="0" started-at="2017-07-26T09:17:57Z" depends-on-methods="IntegratedMailViewTestCases.VerifyTashAllAccount.testMovetoInboxOfTrashEmailAllAccount" finished-at="2017-07-26T09:17:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchMoveToTrashAllAccount -->
+        <test-method status="SKIP" signature="testDeleteForeverAllAccount()[pri:0, instance:IntegratedMailViewTestCases.VerifyTashAllAccount@5025a98f]" name="testDeleteForeverAllAccount" duration-ms="0" started-at="2017-07-26T09:17:57Z" depends-on-methods="IntegratedMailViewTestCases.VerifyTashAllAccount.testBatchMovetoInboxOfTrashAllAccount" finished-at="2017-07-26T09:17:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteForeverAllAccount -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:IntegratedMailViewTestCases.VerifyTashAllAccount@5025a98f]" name="postCondition" is-config="true" duration-ms="1258" started-at="2017-07-26T09:17:57Z" finished-at="2017-07-26T09:17:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- IntegratedMailViewTestCases.VerifyTashAllAccount -->
+      <class name="IntegratedMailViewTestCases.VerifyTagToTopicAllAccount">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:IntegratedMailViewTestCases.VerifyTagToTopicAllAccount@2d928643]" name="testBrowser" is-config="true" duration-ms="13600" started-at="2017-07-26T09:20:33Z" finished-at="2017-07-26T09:20:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testTagToTopicAllAccount()[pri:0, instance:IntegratedMailViewTestCases.VerifyTagToTopicAllAccount@2d928643]" name="testTagToTopicAllAccount" duration-ms="12352" started-at="2017-07-26T09:20:46Z" finished-at="2017-07-26T09:20:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTagToTopicAllAccount -->
+        <test-method status="PASS" signature="testBatchTagToTopicAllAccount()[pri:0, instance:IntegratedMailViewTestCases.VerifyTagToTopicAllAccount@2d928643]" name="testBatchTagToTopicAllAccount" duration-ms="14027" started-at="2017-07-26T09:20:58Z" depends-on-methods="IntegratedMailViewTestCases.VerifyTagToTopicAllAccount.testTagToTopicAllAccount" finished-at="2017-07-26T09:21:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchTagToTopicAllAccount -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:IntegratedMailViewTestCases.VerifyTagToTopicAllAccount@2d928643]" name="postCondition" is-config="true" duration-ms="974" started-at="2017-07-26T09:21:13Z" finished-at="2017-07-26T09:21:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- IntegratedMailViewTestCases.VerifyTagToTopicAllAccount -->
+      <class name="IntegratedMailViewTestCases.VerifyReadUnreadAllAccount">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:IntegratedMailViewTestCases.VerifyReadUnreadAllAccount@5649fd9b]" name="testBrowser" is-config="true" duration-ms="15509" started-at="2017-07-26T09:19:48Z" finished-at="2017-07-26T09:20:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testMarkAsUnreadAllAccount()[pri:0, instance:IntegratedMailViewTestCases.VerifyReadUnreadAllAccount@5649fd9b]" name="testMarkAsUnreadAllAccount" duration-ms="10436" started-at="2017-07-26T09:20:04Z" finished-at="2017-07-26T09:20:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMarkAsUnreadAllAccount -->
+        <test-method status="PASS" signature="testBatchReadAllAccount()[pri:0, instance:IntegratedMailViewTestCases.VerifyReadUnreadAllAccount@5649fd9b]" name="testBatchReadAllAccount" duration-ms="6632" started-at="2017-07-26T09:20:14Z" finished-at="2017-07-26T09:20:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchReadAllAccount -->
+        <test-method status="PASS" signature="testBatchUnreadAllAccount()[pri:0, instance:IntegratedMailViewTestCases.VerifyReadUnreadAllAccount@5649fd9b]" name="testBatchUnreadAllAccount" duration-ms="10454" started-at="2017-07-26T09:20:21Z" depends-on-methods="IntegratedMailViewTestCases.VerifyReadUnreadAllAccount.testMarkAsUnreadAllAccount" finished-at="2017-07-26T09:20:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchUnreadAllAccount -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:IntegratedMailViewTestCases.VerifyReadUnreadAllAccount@5649fd9b]" name="postCondition" is-config="true" duration-ms="1095" started-at="2017-07-26T09:20:31Z" finished-at="2017-07-26T09:20:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- IntegratedMailViewTestCases.VerifyReadUnreadAllAccount -->
+      <class name="IntegratedMailViewTestCases.VerifySendingEmailAndProcessingAllAccount">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:IntegratedMailViewTestCases.VerifySendingEmailAndProcessingAllAccount@20322d26]" name="testBrowser" is-config="true" duration-ms="13687" started-at="2017-07-26T09:18:58Z" finished-at="2017-07-26T09:19:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testVerifySendingEmailAllAccount()[pri:0, instance:IntegratedMailViewTestCases.VerifySendingEmailAndProcessingAllAccount@20322d26]" name="testVerifySendingEmailAllAccount" duration-ms="13398" started-at="2017-07-26T09:19:12Z" finished-at="2017-07-26T09:19:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVerifySendingEmailAllAccount -->
+        <test-method status="PASS" signature="testProcessingEmailAllAccount()[pri:0, instance:IntegratedMailViewTestCases.VerifySendingEmailAndProcessingAllAccount@20322d26]" name="testProcessingEmailAllAccount" duration-ms="5155" started-at="2017-07-26T09:19:25Z" finished-at="2017-07-26T09:19:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProcessingEmailAllAccount -->
+        <test-method status="PASS" signature="testUnProcessingEmailAllAccount()[pri:0, instance:IntegratedMailViewTestCases.VerifySendingEmailAndProcessingAllAccount@20322d26]" name="testUnProcessingEmailAllAccount" duration-ms="3703" started-at="2017-07-26T09:19:31Z" finished-at="2017-07-26T09:19:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUnProcessingEmailAllAccount -->
+        <test-method status="PASS" signature="testBatchProcessingEmailAllAccount()[pri:0, instance:IntegratedMailViewTestCases.VerifySendingEmailAndProcessingAllAccount@20322d26]" name="testBatchProcessingEmailAllAccount" duration-ms="7172" started-at="2017-07-26T09:19:34Z" finished-at="2017-07-26T09:19:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchProcessingEmailAllAccount -->
+        <test-method status="PASS" signature="testBatchUnProcessingEmailAllAccount()[pri:0, instance:IntegratedMailViewTestCases.VerifySendingEmailAndProcessingAllAccount@20322d26]" name="testBatchUnProcessingEmailAllAccount" duration-ms="5917" started-at="2017-07-26T09:19:41Z" finished-at="2017-07-26T09:19:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchUnProcessingEmailAllAccount -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:IntegratedMailViewTestCases.VerifySendingEmailAndProcessingAllAccount@20322d26]" name="postCondition" is-config="true" duration-ms="1003" started-at="2017-07-26T09:19:47Z" finished-at="2017-07-26T09:19:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- IntegratedMailViewTestCases.VerifySendingEmailAndProcessingAllAccount -->
+    </test> <!-- All Account -->
+    <test name="Iriis Drive" duration-ms="107934" started-at="2017-07-26T03:51:14Z" finished-at="2017-07-26T03:53:01Z">
+      <class name="IriiisDrive.VerifyIriiisFileTaging">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@60c6f5b]" name="testBrowser" is-config="true" duration-ms="14024" started-at="2017-07-26T09:21:14Z" finished-at="2017-07-26T09:21:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="VerifyIriiisTag()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@60c6f5b]" name="VerifyIriiisTag" duration-ms="19209" started-at="2017-07-26T09:21:28Z" finished-at="2017-07-26T09:21:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyIriiisTag -->
-        <test-method status="PASS" signature="VerifgoogleTag()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@3532ec19]" name="VerifgoogleTag" duration-ms="18867" started-at="2017-07-25T14:33:20Z" finished-at="2017-07-25T14:33:38Z">
+        <test-method status="PASS" signature="VerifgoogleTag()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@60c6f5b]" name="VerifgoogleTag" duration-ms="17649" started-at="2017-07-26T09:21:47Z" finished-at="2017-07-26T09:22:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifgoogleTag -->
-        <test-method status="PASS" signature="VerifboxdriveTag()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@3532ec19]" name="VerifboxdriveTag" duration-ms="18566" started-at="2017-07-25T14:33:38Z" finished-at="2017-07-25T14:33:57Z">
+        <test-method status="PASS" signature="VerifboxdriveTag()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@60c6f5b]" name="VerifboxdriveTag" duration-ms="18020" started-at="2017-07-26T09:22:04Z" finished-at="2017-07-26T09:22:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifboxdriveTag -->
-        <test-method status="PASS" signature="VerifdropboxdriveTag()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@3532ec19]" name="VerifdropboxdriveTag" duration-ms="17371" started-at="2017-07-25T14:33:57Z" finished-at="2017-07-25T14:34:14Z">
+        <test-method status="PASS" signature="VerifdropboxdriveTag()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@60c6f5b]" name="VerifdropboxdriveTag" duration-ms="17780" started-at="2017-07-26T09:22:22Z" finished-at="2017-07-26T09:22:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifdropboxdriveTag -->
-        <test-method status="PASS" signature="VerifonedriveTag()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@3532ec19]" name="VerifonedriveTag" duration-ms="18470" started-at="2017-07-25T14:34:14Z" finished-at="2017-07-25T14:34:33Z">
+        <test-method status="PASS" signature="VerifonedriveTag()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@60c6f5b]" name="VerifonedriveTag" duration-ms="20096" started-at="2017-07-26T09:22:40Z" finished-at="2017-07-26T09:23:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifonedriveTag -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@3532ec19]" name="postCondition" is-config="true" duration-ms="1711" started-at="2017-07-25T14:34:33Z" finished-at="2017-07-25T14:34:35Z">
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:IriiisDrive.VerifyIriiisFileTaging@60c6f5b]" name="postCondition" is-config="true" duration-ms="1148" started-at="2017-07-26T09:23:00Z" finished-at="2017-07-26T09:23:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
       </class> <!-- IriiisDrive.VerifyIriiisFileTaging -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Iriis Drive -->
+  </suite> <!-- Suite -->
 </testng-results>
