@@ -3,17 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="GmailTestCases.VerifySharingGmail">
+      <class name="contactTestCases.VerifyInvitingContact">
         <methods>
-<<<<<<< HEAD
-          <include name="VerifyBatchtaging"/>
-=======
-          <include name="testSharingofGmail"/>
->>>>>>> 4b3de6b69faa22181c3be78a93bed3668953ab56
+          <include name="testCreatingContactGroup"/>
           <include name="testBrowser"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- GmailTestCases.VerifySharingGmail -->
+      </class> <!-- contactTestCases.VerifyInvitingContact -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -5,6 +5,7 @@ import java.util.List;
 import javax.xml.xpath.XPath;
 
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
@@ -41,7 +42,10 @@ public class ContactPage {
 	@FindAll({@FindBy(xpath="//li[@ng-click='$mdAutocompleteCtrl.select($index)']")}) private List<WebElement> profileSearchResult;
 	@FindBy(xpath="//button[@ng-click='deleteContact()']")private WebElement contactDeletIcon;
 	@FindBy(xpath="//button[@ng-click='dialog.hide()']")private WebElement deleteConfirmation;
-	
+	@FindBy(xpath="//button[@ng-click='inviteContact(contact); $event.stopPropagation()']")private WebElement inviteButton;
+	@FindBy(xpath="//md-toast[contains(@class,'ng-scope _md md-bottom md-left md-default-theme')]")private WebElement toastNotification;	
+	@FindBy(xpath="//button[@ng-click='$mdOpenMenu()']")private WebElement contactFilter;	
+	@FindAll({@FindBy(xpath="//button[@aria-owns='menu_container_25']")}) private List<WebElement> filterOptions;
 	
 	
 	
@@ -174,4 +178,44 @@ public class ContactPage {
 		{
 			(new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(deleteConfirmation)).click();
 		}
+		public boolean verifyInviteButton()
+		{
+			boolean text;
+			try 
+			{
+			    text = inviteButton.isDisplayed();
+			}
+			catch (NoSuchElementException e)
+			{
+			    text = false;
+			}
+			System.out.println(text);
+			return text;
+		}
+		public void clickInviteButton()
+		{
+			inviteButton.click();
+		}
+		public boolean verifyToastNotification()
+		{
+			boolean text;
+			try 
+			{
+			    text = (new WebDriverWait(driver,20)).until(ExpectedConditions.visibilityOf(toastNotification)).isDisplayed();
+			}
+			catch (NoSuchElementException e)
+			{
+			    text = false;
+			}
+			System.out.println(text);
+			return text;
+		}
+		public void clickContactFilter(){
+			(new WebDriverWait(driver,20)).until(ExpectedConditions.visibilityOf(contactFilter)).click();
+		}
+		public List<WebElement> getContactFilterOptions()
+		{
+			return (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOfAllElements(filterOptions));
+		}
+		
 }
