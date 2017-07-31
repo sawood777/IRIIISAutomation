@@ -17,7 +17,7 @@ public class VerifyIriiisFileTaging extends BaseTest {
 		select.SelectAccount("iriiis");
 	}
 	
-	@Test(priority=2)
+	/*@Test(priority=2)
 	public void VerifgoogleTag(){
 		VerifyFileTaging select=new VerifyFileTaging(driver);
 		IriiisLogoPage iriiis=new IriiisLogoPage(driver); 
@@ -104,7 +104,7 @@ public class VerifyIriiisFileTaging extends BaseTest {
 		iriiis.clickMacroView();
 		select.SharingtoTopic("onedrive");
 	}
-	
+	*/
 	
 }
 

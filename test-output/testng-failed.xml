@@ -3,13 +3,17 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="iriiisMailTestCases.VerifyattachandEmails">
+      <class name="IriiisDrive.VerifyFilesTrashAndUntrash">
         <methods>
+          <include name="VerifyGoogleFileTrash"/>
+          <include name="VerifyIriiisFileTrash"/>
+          <include name="VerifyDropboxFileTrash"/>
           <include name="testBrowser"/>
-          <include name="VeiryAttachments"/>
+          <include name="VerifyBoxFileTrash"/>
+          <include name="VerifyOnedriveFileTrash"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- iriiisMailTestCases.VerifyattachandEmails -->
+      </class> <!-- IriiisDrive.VerifyFilesTrashAndUntrash -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
