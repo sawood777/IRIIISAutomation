@@ -23,7 +23,7 @@ public class BaseTest {
 	{
 		System.out.println("Opening the browser");
 		driver=Browserfactory.getbrowser("chrome");
-		driver.get(DataFactory.getconfic().getProdurl());
+		driver.get(DataFactory.getconfic().getDevurl());
 		VerifyLogin v= new VerifyLogin();
 		v.testLogin(DataFactory.getdata().getDataByIndex(0, 0, 0),DataFactory.getdata().getDataByIndex(0, 0,1 ) ,driver);
 		report= new ExtentReports("./Reports/mytest.html", true);
