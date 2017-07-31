@@ -3,36 +3,17 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
       <class name="IriiisDrive.VerifyFilesTrashAndUntrash">
         <methods>
           <include name="VerifyGoogleFileTrash"/>
           <include name="VerifyIriiisFileTrash"/>
           <include name="VerifyDropboxFileTrash"/>
-=======
-<<<<<<< HEAD
-      <class name="contactTestCases.VerifyInvitingContact">
-        <methods>
-          <include name="testCreatingContactGroup"/>
-=======
-      <class name="iriiisMailTestCases.VerifyattachandEmails">
-        <methods>
->>>>>>> aaaf4db64ce6b579c416fb2934ccba333e1c2db7
->>>>>>> 63deac3cf4aae5f37cbd51accbd2af01646d116f
           <include name="testBrowser"/>
           <include name="VerifyBoxFileTrash"/>
           <include name="VerifyOnedriveFileTrash"/>
           <include name="postCondition"/>
         </methods>
-<<<<<<< HEAD
       </class> <!-- IriiisDrive.VerifyFilesTrashAndUntrash -->
-=======
-<<<<<<< HEAD
-      </class> <!-- contactTestCases.VerifyInvitingContact -->
-=======
-      </class> <!-- iriiisMailTestCases.VerifyattachandEmails -->
->>>>>>> aaaf4db64ce6b579c416fb2934ccba333e1c2db7
->>>>>>> 63deac3cf4aae5f37cbd51accbd2af01646d116f
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

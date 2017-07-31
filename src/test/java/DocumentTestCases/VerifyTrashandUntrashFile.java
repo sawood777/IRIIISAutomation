@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
 import Pages.DashboardPage;
@@ -29,7 +30,12 @@ public class VerifyTrashandUntrashFile {
 		DocumentsPage doc=new DocumentsPage(driver);
 		d.clickDocumentCard();
 		doc.ClickonDrive();
-		
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		doc.hoveronAllAccounts();
 		doc.ClickonRequiredAccount(drivename);
 		System.out.println("successfully clicked on link");
@@ -43,26 +49,29 @@ public class VerifyTrashandUntrashFile {
 		
 		doc.clickelipse();
 		doc.ClickOnTrashFile();
-		
-		
-		doc.ClickonDrive();
-		System.out.println("Drive clicked");
-		
 		try {
 			Thread.sleep(5000);
-		} catch (Exception e1) {
-
+		} catch (InterruptedException e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
 		}
 		
-		doc.NavigateToTrash();
-		System.out.println("trash shows up");
-		try {
-			Thread.sleep(3000);
-		} catch (Exception e1) {
-
-		}
+		doc.ClickonDrive();
+		System.out.println(doc.NavigateToTrash().getText());
 		
-		doc.clickonTrashButton2();
+		Actions action=new Actions(driver);
+		action.moveToElement(doc.NavigateToTrash()).build().perform();
+		doc.NavigateToTrash().click();
+		
+		List<WebElement> s = doc.clickonTrashButton2();
+		for(int i=0;i<s.size();i++)
+		{
+			System.out.println(s.get(i).getText());
+			if(s.get(i).getText().contains("Trash"))
+			{
+				s.get(i).click();
+			}
+		}
 		System.out.println("navigated to trash sucessfully");
 		
 		List<WebElement> NamesofAllfile = doc.GetAllFileNames();
@@ -74,9 +83,9 @@ public class VerifyTrashandUntrashFile {
 				break;
 			}
 		}
-		
-		Assert.assertEquals(flag==true, true, "Tag to Topic got failed");
 		doc.clickonCloseIcon();
+		Assert.assertEquals(flag==true, true, "Tag to Topic got failed");
+		
 		
 	}
 

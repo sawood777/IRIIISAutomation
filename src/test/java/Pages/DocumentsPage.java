@@ -2,6 +2,8 @@ package Pages;
 
 import java.util.List;
 
+import javax.print.Doc;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -36,12 +38,13 @@ public class DocumentsPage {
 	@FindBy(xpath="//div[@class='file-list__item-cell']/div")private WebElement FirstFileName;
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[5]/button")private WebElement TagToTopic;
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[3]/button")private WebElement ShareToTopic;
-	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[10]/button")private WebElement TrashFile;
+	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item/button[text()='Trash']")private WebElement TrashFile;
 	@FindBy(xpath="//button[contains(text(),'Save')]")private WebElement topicSave;
 	@FindAll({@FindBy(xpath="//div[1]/md-checkbox/div[1]")})private List<WebElement> DocBatchselection;
-	@FindBy(xpath="//md-menu/button[text()='Drive']")private WebElement Drivebutton1;
-	@FindBy(xpath="//md-menu-item/button[text()='Drive']")private WebElement Drivebutton2;
-	@FindBy(xpath="//md-menu-content/md-menu-item[2]/button[text()='Trash']")private WebElement TrashButton2;
+	@FindBy(xpath="//button[text()='Drive']")private WebElement Drivebutton1;
+	
+	@FindBy(xpath="//md-menu[contains(@class,'_md-nested-menu md-menu ng-scope _md')]")private WebElement Drivebutton2;
+	@FindAll({@FindBy(xpath="//md-menu-item[@ng-repeat='folder in folders']")})private List<WebElement> TrashButton2;
 	@FindBy(xpath="//button[text()='Trash']")private WebElement TrashButton1;
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item/button")private WebElement UntrashIcon;
 	@FindBy(xpath="//md-icon[@aria-label='remove_circle']")private WebElement ClosePage;
@@ -57,12 +60,6 @@ public class DocumentsPage {
 	public void ClickonDrive(){
 		
 		DriveDropdown.click();
-		try {
-			Thread.sleep(3000);
-		} catch (Exception e) {
-
-		}
-		
 	}
 	
 	public void hoveronAllAccounts(){
@@ -140,9 +137,9 @@ public class DocumentsPage {
 	}
 	
 	public void NavigateToDrive(){
-		Actions action=new Actions(driver);
-		action.moveToElement(Drivebutton1).build().perform();
-		action.click();
+		//Actions action=new Actions(driver);
+		//action.moveToElement(Drivebutton1).build().perform();
+		//action.click();
 		
 		try {
 			Thread.sleep(3000);
@@ -160,21 +157,17 @@ public class DocumentsPage {
 	  TrashFile.click();
 	}
 	
-	public void NavigateToTrash(){
-		WebDriverWait wait=new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//md-menu/button[text()='Drive']"))).click();
-		System.out.println("Drive button is clicked");
-		//Drivebutton1.click();
+	public WebElement NavigateToTrash(){
 		
-		//Actions action1=new Actions(driver);
-		//action1.moveToElement(Drivebutton1).build().perform();
-		//action1.click(Drivebutton1);
+		return (new WebDriverWait(driver, 20))
+			   .until(ExpectedConditions.visibilityOf(Drivebutton1));
 		
 	}
 	
-	public void clickonTrashButton2(){
+	
+	public List<WebElement> clickonTrashButton2(){
 		
-		TrashButton2.click();
+		return TrashButton2;
 	}
 	
 	public void clickonCloseIcon(){

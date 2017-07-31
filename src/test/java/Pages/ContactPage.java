@@ -45,7 +45,7 @@ public class ContactPage {
 	@FindBy(xpath="//button[@ng-click='inviteContact(contact); $event.stopPropagation()']")private WebElement inviteButton;
 	@FindBy(xpath="//md-toast[contains(@class,'ng-scope _md md-bottom md-left md-default-theme')]")private WebElement toastNotification;	
 	@FindBy(xpath="//button[@ng-click='$mdOpenMenu()']")private WebElement contactFilter;	
-	@FindAll({@FindBy(xpath="//button[@aria-owns='menu_container_25']")}) private List<WebElement> filterOptions;
+	@FindAll({@FindBy(xpath="//button[text()='Contacts']")}) private List<WebElement> filterOptions;
 	
 	
 	
