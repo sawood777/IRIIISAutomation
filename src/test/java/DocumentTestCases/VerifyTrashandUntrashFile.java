@@ -31,8 +31,11 @@ public class VerifyTrashandUntrashFile {
 		d.clickDocumentCard();
 		doc.ClickonDrive();
 		try {
-			Thread.sleep(3000);
-		} catch (Exception e) {
+
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 
 		}
 		doc.hoveronAllAccounts();
@@ -79,8 +82,31 @@ public class VerifyTrashandUntrashFile {
 				
 		
 		System.out.println("trash shows up");
+
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		}
 		
-		doc.clickonTrashButton2();
+		doc.ClickonDrive();
+		System.out.println(doc.NavigateToTrash().getText());
+
+		
+		Actions action=new Actions(driver);
+		action.moveToElement(doc.NavigateToTrash()).build().perform();
+		doc.NavigateToTrash().click();
+		
+		List<WebElement> s = doc.clickonTrashButton2();
+		for(int i=0;i<s.size();i++)
+		{
+			System.out.println(s.get(i).getText());
+			if(s.get(i).getText().contains("Trash"))
+			{
+				s.get(i).click();
+			}
+		}
 		System.out.println("navigated to trash sucessfully");
 		
 		List<WebElement> NamesofAllfile = doc.GetAllFileNames();
@@ -93,6 +119,8 @@ public class VerifyTrashandUntrashFile {
 			}
 		}
 		doc.clickonCloseIcon();
+		Assert.assertEquals(flag==true, true, "Tag to Topic got failed");
+		
 		
 		Assert.assertEquals(flag==true, true, "tras got failed");
 		

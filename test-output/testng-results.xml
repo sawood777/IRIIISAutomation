@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
@@ -16,6 +17,41 @@
           </reporter-output>
         </test-method> <!-- VerifyOnedriveFileTrash -->
         <test-method status="PASS" signature="postCondition()[pri:0, instance:IriiisDrive.VerifyFilesTrashAndUntrash@26653222]" name="postCondition" is-config="true" duration-ms="1418" started-at="2017-07-31T17:01:46Z" finished-at="2017-07-31T17:01:48Z">
+=======
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="111917" started-at="2017-07-31T11:34:16Z" finished-at="2017-07-31T11:36:08Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="111917" started-at="2017-07-31T11:34:16Z" finished-at="2017-07-31T11:36:08Z">
+      <class name="IriiisDrive.VerifyFilesTrashAndUntrash">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:IriiisDrive.VerifyFilesTrashAndUntrash@3532ec19]" name="testBrowser" is-config="true" duration-ms="18166" started-at="2017-07-31T17:04:16Z" finished-at="2017-07-31T17:04:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="VerifyIriiisFileTrash()[pri:0, instance:IriiisDrive.VerifyFilesTrashAndUntrash@3532ec19]" name="VerifyIriiisFileTrash" duration-ms="20370" started-at="2017-07-31T17:04:34Z" finished-at="2017-07-31T17:04:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyIriiisFileTrash -->
+        <test-method status="PASS" signature="VerifyGoogleFileTrash()[pri:0, instance:IriiisDrive.VerifyFilesTrashAndUntrash@3532ec19]" name="VerifyGoogleFileTrash" duration-ms="17633" started-at="2017-07-31T17:04:55Z" finished-at="2017-07-31T17:05:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyGoogleFileTrash -->
+        <test-method status="PASS" signature="VerifyDropboxFileTrash()[pri:0, instance:IriiisDrive.VerifyFilesTrashAndUntrash@3532ec19]" name="VerifyDropboxFileTrash" duration-ms="17653" started-at="2017-07-31T17:05:12Z" finished-at="2017-07-31T17:05:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDropboxFileTrash -->
+        <test-method status="PASS" signature="VerifyBoxFileTrash()[pri:0, instance:IriiisDrive.VerifyFilesTrashAndUntrash@3532ec19]" name="VerifyBoxFileTrash" duration-ms="17670" started-at="2017-07-31T17:05:30Z" finished-at="2017-07-31T17:05:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyBoxFileTrash -->
+        <test-method status="PASS" signature="VerifyOnedriveFileTrash()[pri:0, instance:IriiisDrive.VerifyFilesTrashAndUntrash@3532ec19]" name="VerifyOnedriveFileTrash" duration-ms="18591" started-at="2017-07-31T17:05:48Z" finished-at="2017-07-31T17:06:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyOnedriveFileTrash -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:IriiisDrive.VerifyFilesTrashAndUntrash@3532ec19]" name="postCondition" is-config="true" duration-ms="1794" started-at="2017-07-31T17:06:06Z" finished-at="2017-07-31T17:06:08Z">
+>>>>>>> 817029f76cf82bd4418891373023771a41ea3e2d
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->

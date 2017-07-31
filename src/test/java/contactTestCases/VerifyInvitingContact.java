@@ -41,7 +41,7 @@ public class VerifyInvitingContact extends BaseTest {
 		
 	
 	//Scenario 10: Creating groups under contact and added contacts to the group
-	/*@Test(priority=2)
+	@Test(priority=2)
 	public void testCreatingContactGroup()
 	{
 		ContactPage c= new ContactPage(driver);
@@ -57,6 +57,6 @@ public class VerifyInvitingContact extends BaseTest {
 		{
 			System.out.println(opt.get(i).getText());
 		}
-	}*/
+	}
 	
 }
