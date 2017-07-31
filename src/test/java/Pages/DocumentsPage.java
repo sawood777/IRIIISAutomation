@@ -23,7 +23,7 @@ public class DocumentsPage {
 	@FindBy(xpath="//div[contains(text(),'IRIIIS')]")private WebElement FileName2;
 	//@FindBy(xpath="//div[@class='file-list__items ng-isolate-scope flex']/div/div/div[2]/div")private WebElement FileName;
 	@FindBy(linkText="Add more")private WebElement Addmore;
-	@FindBy(xpath="//img[@src='img/dropbox.png']")private WebElement dropboxlink;
+	@FindBy(xpath="//button/img[@src='img/dropbox.png']")private WebElement dropboxlink;
 	@FindBy(xpath="//button/img[@src='img/iriiis_logo.png']")private WebElement iriiislink;
 	@FindBy(xpath="//button/img[@src='img/google_drive.png']")private WebElement googledrivelink;
 	@FindBy(xpath="//button/img[@src='img/one_drive.png']")private WebElement onedrivelink;
@@ -36,8 +36,15 @@ public class DocumentsPage {
 	@FindBy(xpath="//div[@class='file-list__item-cell']/div")private WebElement FirstFileName;
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[5]/button")private WebElement TagToTopic;
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[3]/button")private WebElement ShareToTopic;
+	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[10]/button")private WebElement TrashFile;
 	@FindBy(xpath="//button[contains(text(),'Save')]")private WebElement topicSave;
 	@FindAll({@FindBy(xpath="//div[1]/md-checkbox/div[1]")})private List<WebElement> DocBatchselection;
+	@FindBy(xpath="//md-menu/button[text()='Drive']")private WebElement Drivebutton1;
+	@FindBy(xpath="//md-menu-item/button[text()='Drive']")private WebElement Drivebutton2;
+	@FindBy(xpath="//md-menu-content/md-menu-item[2]/button[text()='Trash']")private WebElement TrashButton2;
+	@FindBy(xpath="//button[text()='Trash']")private WebElement TrashButton1;
+	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item/button")private WebElement UntrashIcon;
+	@FindBy(xpath="//md-icon[@aria-label='remove_circle']")private WebElement ClosePage;
 	
 	public DocumentsPage(WebDriver driver){
 		
@@ -45,16 +52,22 @@ public class DocumentsPage {
 		this.driver=driver;
 	}
 	
+
 	
 	public void ClickonDrive(){
 		
 		DriveDropdown.click();
+		try {
+			Thread.sleep(3000);
+		} catch (Exception e) {
+
+		}
 		
 	}
 	
 	public void hoveronAllAccounts(){
-		WebDriverWait wait=new WebDriverWait(driver, 20);
-		wait.until(ExpectedConditions.visibilityOf(Allaccuntslink));
+		//WebDriverWait wait=new WebDriverWait(driver, 20);
+		//wait.until(ExpectedConditions.visibilityOf(Allaccuntslink));
 		Actions action=new Actions(driver);
 		action.moveToElement(Allaccuntslink).build().perform();
 		action.click();
@@ -126,7 +139,51 @@ public class DocumentsPage {
 		}
 	}
 	
+	public void NavigateToDrive(){
+		Actions action=new Actions(driver);
+		action.moveToElement(Drivebutton1).build().perform();
+		action.click();
+		
+		try {
+			Thread.sleep(3000);
+		} catch (Exception e) {
 
+		}
+
+	}
+	
+	public void clickDrivebutton2(){
+		Drivebutton2.click();
+	}
+	
+	public void ClickOnTrashFile(){
+	  TrashFile.click();
+	}
+	
+	public void NavigateToTrash(){
+		WebDriverWait wait=new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//md-menu/button[text()='Drive']"))).click();
+		System.out.println("Drive button is clicked");
+		//Drivebutton1.click();
+		
+		//Actions action1=new Actions(driver);
+		//action1.moveToElement(Drivebutton1).build().perform();
+		//action1.click(Drivebutton1);
+		
+	}
+	
+	public void clickonTrashButton2(){
+		
+		TrashButton2.click();
+	}
+	
+	public void clickonCloseIcon(){
+		ClosePage.click();
+	}
+	
+  
+  
+  
 	
 	
 /*	public void uploadFile(){
