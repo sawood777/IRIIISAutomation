@@ -28,7 +28,7 @@ public class DocumentsPage {
 	@FindBy(xpath="//button/img[@src='img/google_drive.png']")private WebElement googledrivelink;
 	@FindBy(xpath="//button/img[@src='img/one_drive.png']")private WebElement onedrivelink;
 	@FindBy(xpath="//button/img[@src='img/box.png']")private WebElement boxdrive;
-	@FindBy(xpath="//button[@class='accounts-dropdown__top-btn']")private WebElement DriveDropdown;
+	@FindBy(xpath="//md-menu[contains(@class,'accounts-dropdown md-menu ng-scope _md')]")private WebElement DriveDropdown;
 	@FindBy(xpath="//span[text()='Accounts']/following::md-menu-item/md-menu/button[@ng-click='$mdOpenMenu()']")private WebElement Allaccuntslink;
 	@FindAll({@FindBy(xpath="//div[@class='file-list__item-cell']/div")})private List<WebElement> AllFileNames;
 	@FindAll({@FindBy(xpath="//li[@class='topic-selector__list-item ng-scope']")}) private List<WebElement> topicListInTagToTopic;
@@ -36,7 +36,10 @@ public class DocumentsPage {
 	@FindBy(xpath="//div[@class='file-list__item-cell']/div")private WebElement FirstFileName;
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[5]/button")private WebElement TagToTopic;
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[3]/button")private WebElement ShareToTopic;
-	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[10]/button")private WebElement TrashFile;
+	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item/button[text()='Trash']")private WebElement TrashFile;
+	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[8]/button")private WebElement RenameFile;
+	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[9]/button")private WebElement UpdateDesc;
+	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[1]/button")private WebElement ViewDetails;
 	@FindBy(xpath="//button[contains(text(),'Save')]")private WebElement topicSave;
 	@FindAll({@FindBy(xpath="//div[1]/md-checkbox/div[1]")})private List<WebElement> DocBatchselection;
 	@FindBy(xpath="//md-menu/button[text()='Drive']")private WebElement Drivebutton1;
@@ -45,6 +48,10 @@ public class DocumentsPage {
 	@FindBy(xpath="//button[text()='Trash']")private WebElement TrashButton1;
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item/button")private WebElement UntrashIcon;
 	@FindBy(xpath="//md-icon[@aria-label='remove_circle']")private WebElement ClosePage;
+	@FindBy(name="//*[@name='name']") WebElement RenameField;
+	@FindBy(xpath="//button[text()=' Save ']")private WebElement SaveFile;
+	@FindBy(xpath="//div/textarea[@name='description']")private WebElement UpdateDescField;
+	@FindBy(xpath="//div/div[8]")private WebElement DescDetails;
 	
 	public DocumentsPage(WebDriver driver){
 		
@@ -57,20 +64,17 @@ public class DocumentsPage {
 	public void ClickonDrive(){
 		
 		DriveDropdown.click();
-		try {
-			Thread.sleep(3000);
-		} catch (Exception e) {
 
-		}
 		
 	}
 	
 	public void hoveronAllAccounts(){
 		//WebDriverWait wait=new WebDriverWait(driver, 20);
 		//wait.until(ExpectedConditions.visibilityOf(Allaccuntslink));
+		
 		Actions action=new Actions(driver);
 		action.moveToElement(Allaccuntslink).build().perform();
-		action.click();
+		//action.click();
 		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='All accounts']")));
 		try {
 			Thread.sleep(3000);
@@ -160,20 +164,15 @@ public class DocumentsPage {
 	  TrashFile.click();
 	}
 	
-	public void NavigateToTrash(){
+	public WebElement NavigateToTrash(){
 		WebDriverWait wait=new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//md-menu/button[text()='Drive']"))).click();
-		System.out.println("Drive button is clicked");
-		//Drivebutton1.click();
-		
-		//Actions action1=new Actions(driver);
-		//action1.moveToElement(Drivebutton1).build().perform();
-		//action1.click(Drivebutton1);
+	return	wait.until(ExpectedConditions.visibilityOf(Drivebutton1));
 		
 	}
 	
 	public void clickonTrashButton2(){
 		
+		//new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//md-menu/button[text()='Drive']")));
 		TrashButton2.click();
 	}
 	
@@ -181,10 +180,40 @@ public class DocumentsPage {
 		ClosePage.click();
 	}
 	
+	public void ClickOnRename(){
+		RenameFile.click();
+	}
   
+  public void EnterFileName(String EnterFileName){
+	  RenameField.clear();
+	  RenameField.sendKeys(EnterFileName);
+	  
+  }
   
+  public void ClickOnFilesave(){
+	  SaveFile.click();
+  }
   
+  public void ClickOnUpdateDesc(){
+	  UpdateDesc.click();
+  }
+ 
+  public void EnterFileDesc(String EnterFileDesc){
+	  UpdateDescField.clear();
+	  UpdateDescField.sendKeys(EnterFileDesc);
+  }
+  
+  public void ClickOnViewDetails(){
+	  ViewDetails.click();
+  }
+  
+  public String GetDescDetails(){
+	  
+	  String Desc=DescDetails.getText();
+	  return Desc;
+  }
 	
+  
 	
 /*	public void uploadFile(){
 		FileAdd.click();
