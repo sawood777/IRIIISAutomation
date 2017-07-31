@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" total="1" passed="1">
+=======
+<<<<<<< HEAD
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="44357" started-at="2017-07-31T11:31:03Z" finished-at="2017-07-31T11:31:48Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="44357" started-at="2017-07-31T11:31:03Z" finished-at="2017-07-31T11:31:48Z">
+      <class name="IriiisDrive.VerifyFilesTrashAndUntrash">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:IriiisDrive.VerifyFilesTrashAndUntrash@26653222]" name="testBrowser" is-config="true" duration-ms="14654" started-at="2017-07-31T17:01:03Z" finished-at="2017-07-31T17:01:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="VerifyOnedriveFileTrash()[pri:0, instance:IriiisDrive.VerifyFilesTrashAndUntrash@26653222]" name="VerifyOnedriveFileTrash" duration-ms="28268" started-at="2017-07-31T17:01:18Z" finished-at="2017-07-31T17:01:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyOnedriveFileTrash -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:IriiisDrive.VerifyFilesTrashAndUntrash@26653222]" name="postCondition" is-config="true" duration-ms="1418" started-at="2017-07-31T17:01:46Z" finished-at="2017-07-31T17:01:48Z">
+=======
+<testng-results skipped="0" failed="0" total="5" passed="5">
+>>>>>>> 884e7c6b86c7fb1c498fddee32e3980eef5b7b55
   <reporter-output>
   </reporter-output>
   <suite name="Default suite" duration-ms="44139" started-at="2017-07-31T12:02:09Z" finished-at="2017-07-31T12:02:53Z">
@@ -15,7 +38,12 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyOnedriveFileTrash -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="postCondition()[pri:0, instance:IriiisDrive.VerifyFilesTrashAndUntrash@3532ec19]" name="postCondition" is-config="true" duration-ms="2486" started-at="2017-07-31T17:32:50Z" finished-at="2017-07-31T17:32:53Z">
+=======
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:IriiisDrive.VerifyFilesTrashAndUntrash@3532ec19]" name="postCondition" is-config="true" duration-ms="1794" started-at="2017-07-31T17:06:06Z" finished-at="2017-07-31T17:06:08Z">
+>>>>>>> 817029f76cf82bd4418891373023771a41ea3e2d
+>>>>>>> 884e7c6b86c7fb1c498fddee32e3980eef5b7b55
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
