@@ -6,8 +6,8 @@
       <class name="contactTestCases.VerifyContactCreation"/>
       <class name="contactTestCases.VerifyContact"/>
       <class name="contactTestCases.VerifyInvitingContact"/>
-      
-     
+      <class name="contactTestCases.VerifyContactDuplicateContact"/>
+  
     </classes>
   </test> <!-- Test -->
     <test name="Gmail">

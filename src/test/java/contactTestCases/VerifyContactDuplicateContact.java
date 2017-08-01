@@ -62,36 +62,76 @@ public class VerifyContactDuplicateContact extends BaseTest {
 			else
 				Assert.assertTrue(c.verifyTextArea(), "Initiating the One to One chat from the contact failed");
 	}
+	@Test(priority=3)
+	public void testCreatingContactGroup()
+	{
+		boolean flag=false;
+		IriiisLogoPage iriiis=new IriiisLogoPage(driver); 
+		DashboardPage d= new DashboardPage(driver);
+		ContactPage c= new ContactPage(driver);
+		MailPage m=new MailPage(driver);
+		iriiis.clickIriiisLog();
+		iriiis.clickMacroView();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		d.clickContactCard();
+		c.clickContactFilter();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		 c.clickFilterOptions().click();
+		
+		List<WebElement> s = c.getContactFilters();
+		s.get(1).click();
+		c.clickCreateIcon1();
+		c.enterGroupName("morotoda");
+		c.clickContactPicker();
+		Actions action1=new Actions(driver);
+		action1.moveToElement(c.hoverContactList()).click().build().perform();
+		List<WebElement> box = m.getListOfCheckBox();
+		for(int i=1;i<8;i++)
+		{
+			box.get(i).click();
+		}
+		c.clickAddToContact();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	
+		c.clickCreateButton();
+		
+		List<WebElement> q = c.getContactGroupList();
+				for(int i=0;i<q.size();i++)
+				{
+					if(q.get(i).getText().contains("morotoda"))
+					{
+						flag=true;;
+					}
+				}
+				
+				Assert.assertEquals(flag==true, true, "ContactGroup creation Failed");
+	}
 	
 	//Scenario: 15 : Deleted contact should be removed from all the contact group
-	@Test(priority=3)
+	@Test(priority=4)
 	public void testContactRemovalFromGroupWhenContactDeleted()
 	{
 		String p1 = null;
 	boolean flag=false;
-	IriiisLogoPage iriiis=new IriiisLogoPage(driver); 
+	
 	DashboardPage d= new DashboardPage(driver);
 	ContactPage c= new ContactPage(driver);
 	MailPage m=new MailPage(driver);
-	iriiis.clickIriiisLog();
-	iriiis.clickMacroView();
-	try {
-		Thread.sleep(3000);
-	} catch (InterruptedException e1) {
-		// TODO Auto-generated catch block
-		e1.printStackTrace();
-	}
-	d.clickContactCard();
-	c.clickContactFilter();
-	try {
-		Thread.sleep(5000);
-	} catch (InterruptedException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
-	 c.clickFilterOptions().click();
-	 List<WebElement> s = c.getContactFilters();
-	s.get(1).click();
 	List<WebElement> q = c.getContactGroupList();
 	String qtext= q.get(0).getText();
 	
