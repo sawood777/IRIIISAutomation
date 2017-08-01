@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="IriiisDrive.VerifyTheFileDeletes">
+      <class name="contactTestCases.VerifyContactDuplicateContact">
         <methods>
-          <include name="VerifyDropboxFileDelete"/>
-          <include name="VerifyIriiisFileDelete"/>
-          <include name="VerifygoogleFileDelete"/>
+          <include name="testContactRemovalFromGroupWhenContactDeleted"/>
           <include name="testBrowser"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- IriiisDrive.VerifyTheFileDeletes -->
+      </class> <!-- contactTestCases.VerifyContactDuplicateContact -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

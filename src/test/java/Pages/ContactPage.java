@@ -19,8 +19,10 @@ public class ContactPage {
 	WebDriver driver;
 	
 	@FindBy(xpath="//button[@ng-click='createNewContact();']")private WebElement contactCreateIcon;
+	@FindBy(xpath="//a[@ui-sref='layout.createContactGroup']")private WebElement contactCreateIcon1;
 	@FindBy(xpath="//button[@ng-click='toggleSearch()']")private WebElement contactSearchIcon;
 	@FindBy(xpath="//button[@ng-click='gotoContacts()']")private WebElement goToContacts;
+	
 	@FindBy(xpath="//button[contains(text(),'More')]")private WebElement moreIcon;
 	@FindBy(xpath="//button[contains(text(),'Find and Merge Duplicates')]")private WebElement findAndMerge;
 	@FindBy(xpath="//button[@class='accounts-dropdown__top-btn']")private WebElement accountDropDown;
@@ -43,10 +45,27 @@ public class ContactPage {
 	@FindBy(xpath="//button[@ng-click='deleteContact()']")private WebElement contactDeletIcon;
 	@FindBy(xpath="//button[@ng-click='dialog.hide()']")private WebElement deleteConfirmation;
 	@FindBy(xpath="//button[@ng-click='inviteContact(contact); $event.stopPropagation()']")private WebElement inviteButton;
+	@FindBy(xpath="//button[@ng-click='chatContact(contact); $event.stopPropagation()']")private WebElement chatButton;
 	@FindBy(xpath="//md-toast[contains(@class,'ng-scope _md md-bottom md-left md-default-theme')]")private WebElement toastNotification;	
 	@FindBy(xpath="//button[@ng-click='$mdOpenMenu()']")private WebElement contactFilter;	
-	@FindAll({@FindBy(xpath="//button[text()='Contacts']")}) private List<WebElement> filterOptions;
+	@FindBy(xpath="//button[text()='Contacts']") private WebElement filterOptions ;
+	@FindBy(xpath="//button[text()='Groups']") private WebElement groupOptions ;
 	
+	@FindAll({@FindBy(xpath="//md-menu-item[@class='accounts-submenu md-in-menu-bar']")}) private List<WebElement>  contactOptions;
+	@FindBy(xpath=" //input[@name='groupName']") private WebElement groupName ;
+	@FindBy(xpath="//div[@ng-click='openContactPicker()']") private WebElement contactPicker;
+	@FindBy(xpath="//div[@class='contact-picker__img table-cell']") private WebElement contactPickerList;
+	@FindBy(xpath="//input[@ng-click='openContactPicker()']") private WebElement contactPicker1;
+	
+	
+	@FindAll({@FindBy(xpath="//div[@class='contact-picker__displayname table-cell ng-binding']")}) private List<WebElement> contactsInContactPicket;
+	@FindBy(xpath="//button[@ng-click='addItemsToList()']") private WebElement addToGroup;
+	@FindAll({@FindBy(xpath="//div[@class='contact-item-header__name contact-item-header__cell table-cell ng-binding']")}) private List<WebElement> contactGroupList;
+	@FindBy(xpath="//button[@ng-if='$mdChipsCtrl.isRemovable()']") private WebElement removeContact;
+	@FindBy(xpath="//button[@ng-click='updateGroup()']") private WebElement updateGroupIcon;
+	@FindBy(xpath="//button[@ng-click='deleteGroup()']") private WebElement deleteGroupIcon;
+	@FindBy(xpath="//button[@ng-click='dialog.hide()']") private WebElement confirmationDelete;
+	@FindBy(xpath="//textarea[@id='chat-input-textarea']") private WebElement textArea;
 	
 	
 	public ContactPage(WebDriver driver) {
@@ -58,6 +77,11 @@ public class ContactPage {
 	{
 		contactCreateIcon.click();
 	}
+	public void clickCreateIcon1()
+	{
+		contactCreateIcon1.click();
+	}
+	
 	public void clickSeachIcon()
 	{
 		contactSearchIcon.click();
@@ -192,6 +216,25 @@ public class ContactPage {
 			System.out.println(text);
 			return text;
 		}
+		public boolean verifyChatButton()
+		{
+			boolean text;
+			try 
+			{
+			    text = chatButton.isDisplayed();
+			}
+			catch (NoSuchElementException e)
+			{
+			    text = false;
+			}
+			System.out.println(text);
+			return text;
+		}
+		public void clickChatButton()
+		{
+			chatButton.click();
+		}
+		
 		public void clickInviteButton()
 		{
 			inviteButton.click();
@@ -213,9 +256,94 @@ public class ContactPage {
 		public void clickContactFilter(){
 			(new WebDriverWait(driver,20)).until(ExpectedConditions.visibilityOf(contactFilter)).click();
 		}
-		public List<WebElement> getContactFilterOptions()
+		public WebElement clickFilterOptions()
 		{
-			return (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOfAllElements(filterOptions));
+			return (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(filterOptions));
 		}
+		public List<WebElement> getContactFilters()
+		{
+			return (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOfAllElements(contactOptions));
+		}
+		public void enterGroupName(String s)
+		{
+			(new WebDriverWait(driver,20)).until(ExpectedConditions.visibilityOf(groupName)).clear();
+			groupName.sendKeys(s);
+		}
+		public void clickContactPicker()
+		{
+			(new WebDriverWait(driver,20)).until(ExpectedConditions.visibilityOf(contactPicker)).click();
+		}
+		public void clickContactPicker1()
+		{
+			(new WebDriverWait(driver,20)).until(ExpectedConditions.visibilityOf(contactPicker1)).click();
+		}
+		
+		
+		public WebElement hoverContactList()
+		{
+			return (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(contactPickerList));
+		}
+
+		public List<WebElement> getContactListInContactPicker()
+		{
+			return (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOfAllElements(contactsInContactPicket));
+		}
+		public void clickAddToContact()
+		{
+			(new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(addToGroup)).click();
+		}
+		public List<WebElement> getContactGroupList()
+		{
+			return (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOfAllElements(contactGroupList));
+		}
+		public void clickRemoveContactIcon()
+		{
+			 (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(removeContact)).click();
+		}
+		public void clickUpdateGroupicon()
+		{
+			(new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(updateGroupIcon)).click();
+		}
+		public void clickDeleteGroupIcon()
+		{
+			(new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(deleteGroupIcon)).click();
+		}
+		public void clickDeleteInConformationPopUp()
+		{
+			(new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(confirmationDelete)).click();
+		}
+		public boolean verifyTextArea()
+		{
+			boolean text;
+			try 
+			{  
+			    text = (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(textArea)).isDisplayed();
+			    if(text)
+			    {
+			    	if(textArea.isEnabled())
+			    	{
+			    		System.out.println("text box is enabled user can send the message");
+			    	}
+			    	else
+			    	{
+			    		System.out.println("Text box is disabled user cannot type the message as the other user has to accept the chat invitation");
+			    	}
+			    }
+			}
+			catch (NoSuchElementException e)
+			{
+			    text = false;
+			}
+			System.out.println(text);
+			return text;
+			
+		}
+		public WebElement clickGroupOptions()
+		{
+			return (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(groupOptions));
+		}
+		
+	
+		
 		
 }
