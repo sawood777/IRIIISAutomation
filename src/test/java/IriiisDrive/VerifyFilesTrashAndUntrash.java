@@ -14,8 +14,7 @@ public class VerifyFilesTrashAndUntrash extends BaseTest{
 		VerifyTrashandUntrashFile Trash=new VerifyTrashandUntrashFile(driver);
 		Trash.VerifyTrashFile("iriiis");
 	}
-	
-		
+			
 	@Test(priority=2)
 	public void VerifyGoogleFileTrash(){
 		VerifyTrashandUntrashFile Trash=new VerifyTrashandUntrashFile(driver);
