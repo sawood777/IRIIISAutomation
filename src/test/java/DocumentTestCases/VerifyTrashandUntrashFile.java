@@ -30,65 +30,20 @@ public class VerifyTrashandUntrashFile {
 		DocumentsPage doc=new DocumentsPage(driver);
 		d.clickDocumentCard();
 		doc.ClickonDrive();
-		try {
-
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-
-		}
+		doc.SleepThreeSec();
+		
 		doc.hoveronAllAccounts();
 		doc.ClickonRequiredAccount(drivename);
-		System.out.println("successfully clicked on link");
+		
 		String filename=doc.Filename();
-		System.out.println(filename);
-		try {
-			Thread.sleep(3000);
-		} catch (Exception e1) {
-
-		}
+		System.out.println("First before trash filename is"+ filename);
+		doc.SleepThreeSec();
 		
 		doc.clickelipse();
 		doc.ClickOnTrashFile();
 		
-		try {
-			Thread.sleep(3000);
-		} catch (Exception e) {
-
-		}
+		doc.SleepFiveSec();
 		
-		doc.ClickonDrive();
-		
-		System.out.println("Drive clicked");
-		
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		
-		Actions action1=new Actions(driver);
-				action1.moveToElement(doc.NavigateToTrash()).build().perform();
-				try {
-					Thread.sleep(5000);
-				} catch (Exception e1) {
-
-				}
-				//doc.NavigateToTrash().click();
-				
-				
-		
-		System.out.println("trash shows up");
-
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e2) {
-			// TODO Auto-generated catch block
-			e2.printStackTrace();
-		}
 		
 		doc.ClickonDrive();
 		System.out.println(doc.NavigateToTrash().getText());
@@ -107,23 +62,65 @@ public class VerifyTrashandUntrashFile {
 				s.get(i).click();
 			}
 		}
-		System.out.println("navigated to trash sucessfully");
+		
 		
 		List<WebElement> NamesofAllfile = doc.GetAllFileNames();
 		for(int i=0;i<NamesofAllfile.size();i++)
 		{
 			if(NamesofAllfile.get(i).getText().equals(filename))
 			{
+				System.out.println("In Untrash filename is "+ NamesofAllfile.get(i).getText());
 				flag=true;
 				break;
 			}
 		}
-		doc.clickonCloseIcon();
-		Assert.assertEquals(flag==true, true, "Tag to Topic got failed");
-		
 		
 		Assert.assertEquals(flag==true, true, "tras got failed");
 		
+		String Trashfilename=doc.Filename();
+		System.out.println("untrash this file "+ Trashfilename);
+		
+		doc.clickelipse();
+		doc.ClickOnUntrashIcon();
+		
+		doc.SleepFiveSec();
+		
+		doc.ClickOnTrashMainBtn();
+		doc.SleepThreeSec();
+		
+		doc.ClickOnSubTrashBtn();
+		
+		doc.SleepThreeSec();
+		
+		
+		List<WebElement> s1 = doc.clickonTrashButton2();
+		for(int i=0;i<s1.size();i++)
+		{
+			System.out.println(s1.get(i).getText());
+			if(s1.get(i).getText().contains("Drive"))
+			{
+				s1.get(i).click();
+			}
+		}
+		
+		
+		List<WebElement> NamesofAllfile2 = doc.GetAllFileNames();
+		for(int i=0;i<NamesofAllfile2.size();i++)
+		{
+			if(NamesofAllfile2.get(i).getText().equals(Trashfilename))
+			{
+				
+				System.out.println("After untrash filenmae found "+ NamesofAllfile2.get(i).getText());
+				flag=true;
+				break;
+			}
+		}
+		
+		doc.clickonCloseIcon();
+		doc.SleepThreeSec();
+		
+		Assert.assertEquals(flag==true, true, "untras got failed");
+			
 		
 	}
 

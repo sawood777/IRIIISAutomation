@@ -51,12 +51,15 @@ public class DocumentsPage {
 	@FindBy(xpath="//md-menu[contains(@class,'_md-nested-menu md-menu ng-scope _md')]")private WebElement Drivebutton2;
 	@FindAll({@FindBy(xpath="//md-menu-item[@ng-repeat='folder in folders']")})private List<WebElement> TrashButton2;
 	@FindBy(xpath="//button[text()='Trash']")private WebElement TrashButton1;
-	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item/button")private WebElement UntrashIcon;
+	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item/button[text()='Untrash']")private WebElement UntrashIcon;
 	@FindBy(xpath="//md-icon[@aria-label='remove_circle']")private WebElement ClosePage;
 	@FindBy(name="//*[@name='name']") WebElement RenameField;
 	@FindBy(xpath="//button[text()=' Save ']")private WebElement SaveFile;
 	@FindBy(xpath="//div/textarea[@name='description']")private WebElement UpdateDescField;
 	@FindBy(xpath="//div/div[8]")private WebElement DescDetails;
+	@FindBy(xpath="//span/span[text()='Trash']")private WebElement TrashMainBtn;
+	@FindBy(xpath="//button[text()='Trash']")private WebElement SubTrashBtn;
+
 	
 	public DocumentsPage(WebDriver driver){
 		
@@ -216,8 +219,34 @@ public class DocumentsPage {
 	  String Desc=DescDetails.getText();
 	  return Desc;
   }
-	
   
+  public void ClickOnUntrashIcon(){
+	  UntrashIcon.click();
+  }
+  
+  public void ClickOnTrashMainBtn(){
+	  TrashMainBtn.click();
+  }
+	
+  public void ClickOnSubTrashBtn(){
+	  SubTrashBtn.click();
+  }
+  
+  public void SleepFiveSec(){
+	  try {
+		Thread.sleep(5000);
+	} 
+	  catch (Exception e) {
+	}
+  }
+  
+  public void SleepThreeSec(){
+	  try {
+		Thread.sleep(3000);
+	} 
+	  catch (Exception e) {
+	}
+  }
 	
 /*	public void uploadFile(){
 		FileAdd.click();

@@ -8,7 +8,7 @@ import emailTestCases.BaseTest;
 public class VerifyFilesTrashAndUntrash extends BaseTest{
 	
 	
-	//@Test(priority=1)
+	@Test(priority=1)
 	public void VerifyIriiisFileTrash(){
 		
 		VerifyTrashandUntrashFile Trash=new VerifyTrashandUntrashFile(driver);
@@ -16,20 +16,20 @@ public class VerifyFilesTrashAndUntrash extends BaseTest{
 	}
 	
 		
-	///@Test(priority=2)
+	@Test(priority=2)
 	public void VerifyGoogleFileTrash(){
 		VerifyTrashandUntrashFile Trash=new VerifyTrashandUntrashFile(driver);
 		Trash.VerifyTrashFile("google");	
 	}
 	
-	//@Test(priority=3)
+	@Test(priority=3)
 	public void VerifyDropboxFileTrash(){
 		
 		VerifyTrashandUntrashFile Trash=new VerifyTrashandUntrashFile(driver);
 		Trash.VerifyTrashFile("dropbox");	
 	}
 	
-	//@Test(priority=4)
+	@Test(priority=4)
 	public void VerifyBoxFileTrash(){
 		
 		VerifyTrashandUntrashFile Trash=new VerifyTrashandUntrashFile(driver);
