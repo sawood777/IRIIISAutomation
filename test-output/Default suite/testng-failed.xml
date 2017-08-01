@@ -3,19 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="IriiisDrive.VerifyFilesTrashAndUntrash">
+      <class name="contactTestCases.VerifyContactDuplicateContact">
         <methods>
-<<<<<<< HEAD
-=======
-          <include name="VerifyGoogleFileTrash"/>
-          <include name="VerifyIriiisFileTrash"/>
-          <include name="VerifyDropboxFileTrash"/>
->>>>>>> 817029f76cf82bd4418891373023771a41ea3e2d
+          <include name="testContactRemovalFromGroupWhenContactDeleted"/>
           <include name="testBrowser"/>
-          <include name="VerifyOnedriveFileTrash"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- IriiisDrive.VerifyFilesTrashAndUntrash -->
+      </class> <!-- contactTestCases.VerifyContactDuplicateContact -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

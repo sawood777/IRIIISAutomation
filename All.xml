@@ -4,6 +4,10 @@
   <test name="Contact">
     <classes>
       <class name="contactTestCases.VerifyContactCreation"/>
+      <class name="contactTestCases.VerifyContact"/>
+      <class name="contactTestCases.VerifyInvitingContact"/>
+      
+     
     </classes>
   </test> <!-- Test -->
     <test name="Gmail">
