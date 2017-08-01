@@ -40,9 +40,9 @@ public class DocumentsPage {
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[3]/button")private WebElement ShareToTopic;
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item/button[text()='Trash']")private WebElement TrashFile;
 
-	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[8]/button")private WebElement RenameFile;
-	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[9]/button")private WebElement UpdateDesc;
-	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[1]/button")private WebElement ViewDetails;
+	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item/button[text()='Rename']")private WebElement RenameFile;
+	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item/button[text()='Update Description']")private WebElement UpdateDesc;
+	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[1]/button[text()='View Details']")private WebElement ViewDetails;
 
 	@FindBy(xpath="//button[contains(text(),'Save')]")private WebElement topicSave;
 	@FindAll({@FindBy(xpath="//div[1]/md-checkbox/div[1]")})private List<WebElement> DocBatchselection;
@@ -53,7 +53,8 @@ public class DocumentsPage {
 	@FindBy(xpath="//button[text()='Trash']")private WebElement TrashButton1;
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item/button[text()='Untrash']")private WebElement UntrashIcon;
 	@FindBy(xpath="//md-icon[@aria-label='remove_circle']")private WebElement ClosePage;
-	@FindBy(name="//*[@name='name']") WebElement RenameField;
+	@FindBy(name="name") WebElement RenameField;
+	///*[@name='name']
 	@FindBy(xpath="//button[text()=' Save ']")private WebElement SaveFile;
 	@FindBy(xpath="//div/textarea[@name='description']")private WebElement UpdateDescField;
 	@FindBy(xpath="//div/div[8]")private WebElement DescDetails;

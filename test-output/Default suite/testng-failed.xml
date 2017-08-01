@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="IriiisDrive.VerifyFilesTrashAndUntrash">
+      <class name="IriiisDrive.VerifyTheFileUpdatedesc">
         <methods>
-          <include name="VerifyIriiisFileTrash"/>
           <include name="testBrowser"/>
+          <include name="VerifygoogleFileUpdateDesc"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- IriiisDrive.VerifyFilesTrashAndUntrash -->
+      </class> <!-- IriiisDrive.VerifyTheFileUpdatedesc -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
