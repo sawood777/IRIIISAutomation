@@ -122,5 +122,69 @@ public class VerifyTrashandUntrashFile {
 			
 		
 	}
+	
+	
+	public void BatchTrash(String drivename){
+		
+		Boolean flag=false;
+		MailPage m= new MailPage(driver);
+		IriiisLogoPage iriiis=new IriiisLogoPage(driver); 
+		DashboardPage d= new DashboardPage(driver);
+		DocumentsPage doc=new DocumentsPage(driver);
+		d.clickDocumentCard();
+		doc.ClickonDrive();
+		doc.SleepThreeSec();
+		
+		doc.hoveronAllAccounts();
+		doc.SleepThreeSec();
+		doc.ClickonRequiredAccount(drivename);
+		doc.ClickSelectBacthfiles();
+		System.out.println("3 files are selected");
+		
+		List<WebElement> FilenNames=doc.GetAllFileNames();
+		
+		String[] myStringArray = new String[3];
+		for(int i=0;i<3;i++)
+		{
+			myStringArray[i]=FilenNames.get(i).getText();
+			
+		}
+		
+		doc.ClickOnMoveToTrashBtn();
+		doc.SleepThreeSec();
+		
+		doc.ClickonDrive();
+		doc.SleepThreeSec();
+		
+		doc.clickDrivebutton2();
+		doc.SleepThreeSec();
+		
+		List<WebElement> s1 = doc.clickonTrashButton2();
+		for(int i=0;i<s1.size();i++)
+		{
+			System.out.println(s1.get(i).getText());
+			if(s1.get(i).getText().contains("Trash"))
+			{
+				s1.get(i).click();
+			}
+		}
+		
+		
+		List<WebElement> FilenNames1=doc.GetAllFileNames();
+		for(int i=0;i<FilenNames1.size();i++)
+		{
+			for(int j=0;j<myStringArray.length;j++)
+			{
+			if(FilenNames1.get(i).getText().equals(myStringArray[j]))
+			{
+				flag=true;
+				break;
+			}
+		}
+		}
+		
+		
+		
+	}
 
 }
