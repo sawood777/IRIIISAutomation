@@ -118,7 +118,6 @@ public class VerifyTrashandUntrashFile {
 		
 		doc.clickonCloseIcon();
 		doc.SleepThreeSec();
-		
 		Assert.assertEquals(flag==true, true, "untras got failed");
 			
 		

@@ -36,8 +36,8 @@ public class DocumentsPage {
 	@FindAll({@FindBy(xpath="//li[@class='topic-selector__list-item ng-scope']")}) private List<WebElement> topicListInTagToTopic;
 	@FindBy(xpath="//i[@class='material-icons ng-scope']")private WebElement elipseIcon;
 	@FindBy(xpath="//div[@class='file-list__item-cell']/div")private WebElement FirstFileName;
-	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[5]/button")private WebElement TagToTopic;
-	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[3]/button")private WebElement ShareToTopic;
+	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[5]/button[text()='Tag topics']")private WebElement TagToTopic;
+	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[3]/button[text()='Share to Topics']")private WebElement ShareToTopic;
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item/button[text()='Trash']")private WebElement TrashFile;
 
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item/button[text()='Rename']")private WebElement RenameFile;
@@ -52,6 +52,7 @@ public class DocumentsPage {
 	@FindAll({@FindBy(xpath="//md-menu-item[@ng-repeat='folder in folders']")})private List<WebElement> TrashButton2;
 	@FindBy(xpath="//button[text()='Trash']")private WebElement TrashButton1;
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item/button[text()='Untrash']")private WebElement UntrashIcon;
+	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item/button[text()='Remove']")private WebElement RemoveIcon;
 	@FindBy(xpath="//md-icon[@aria-label='remove_circle']")private WebElement ClosePage;
 	@FindBy(name="name") WebElement RenameField;
 	///*[@name='name']
@@ -60,6 +61,7 @@ public class DocumentsPage {
 	@FindBy(xpath="//div/div[8]")private WebElement DescDetails;
 	@FindBy(xpath="//span/span[text()='Trash']")private WebElement TrashMainBtn;
 	@FindBy(xpath="//button[text()='Trash']")private WebElement SubTrashBtn;
+	@FindBy(xpath="//md-menu-content/md-menu-item[2]/md-menu/button")private WebElement ChangeAccount;
 
 	
 	public DocumentsPage(WebDriver driver){
@@ -248,6 +250,16 @@ public class DocumentsPage {
 	  catch (Exception e) {
 	}
   }
+  
+  public void ClickonChangeAccount(){
+	  ChangeAccount.click();
+  }
+  
+  public void ClickOnRemove(){
+	  RemoveIcon.click();
+  }
+  
+  
 	
 /*	public void uploadFile(){
 		FileAdd.click();

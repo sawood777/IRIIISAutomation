@@ -17,7 +17,7 @@ public class VerifyIriiisFileTaging extends BaseTest {
 		select.SelectAccount("iriiis");
 	}
 	
-	/*@Test(priority=2)
+	@Test(priority=2)
 	public void VerifgoogleTag(){
 		VerifyFileTaging select=new VerifyFileTaging(driver);
 		IriiisLogoPage iriiis=new IriiisLogoPage(driver); 
@@ -53,12 +53,6 @@ public class VerifyIriiisFileTaging extends BaseTest {
 		select.SelectAccount("onedrive");
 	}
 
-	@Test(priority=1)
-	public void VerifyBatchtaging() throws Exception{
-		VerifyFileTaging select=new VerifyFileTaging(driver);
-		select.DocumentBathcSelection("iriiis");
-		Thread.sleep(3000);
-	}
 	
 	@Test(priority=6)
 	public void VerifyIriiisSharing(){
@@ -104,7 +98,17 @@ public class VerifyIriiisFileTaging extends BaseTest {
 		iriiis.clickMacroView();
 		select.SharingtoTopic("onedrive");
 	}
-	*/
+	
+	//@Test(priority=11)
+	public void VerifyBatchtaging() throws Exception{
+		VerifyFileTaging select=new VerifyFileTaging(driver);
+		IriiisLogoPage iriiis=new IriiisLogoPage(driver); 
+		iriiis.clickIriiisLog();
+		iriiis.clickMacroView();
+		select.DocumentBathcSelection("iriiis");
+		Thread.sleep(3000);
+	}
+	
 	
 }
 
