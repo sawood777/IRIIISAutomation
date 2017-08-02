@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="3" total="5" passed="2">
+=======
+<<<<<<< HEAD
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="40275" started-at="2017-08-01T12:15:36Z" finished-at="2017-08-01T12:16:16Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="40275" started-at="2017-08-01T12:15:36Z" finished-at="2017-08-01T12:16:16Z">
+      <class name="IriiisDrive.VerifyFilesTrashAndUntrash">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:IriiisDrive.VerifyFilesTrashAndUntrash@26653222]" name="testBrowser" is-config="true" duration-ms="15605" started-at="2017-08-01T17:45:36Z" finished-at="2017-08-01T17:45:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="VerifyIriiisBatchFileTrash()[pri:0, instance:IriiisDrive.VerifyFilesTrashAndUntrash@26653222]" name="VerifyIriiisBatchFileTrash" duration-ms="23298" started-at="2017-08-01T17:45:52Z" finished-at="2017-08-01T17:46:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyIriiisBatchFileTrash -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:IriiisDrive.VerifyFilesTrashAndUntrash@26653222]" name="postCondition" is-config="true" duration-ms="1354" started-at="2017-08-01T17:46:15Z" finished-at="2017-08-01T17:46:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- IriiisDrive.VerifyFilesTrashAndUntrash -->
+=======
+<testng-results skipped="0" failed="0" total="4" passed="4">
+>>>>>>> fda21093b15c3986644d16c9858ef62661fd074f
   <reporter-output>
   </reporter-output>
   <suite name="Default suite" duration-ms="31129" started-at="2017-08-02T11:13:07Z" finished-at="2017-08-02T11:13:38Z">
@@ -233,7 +260,12 @@ Session ID: eb7871d03adeef1ca93bf278498aa834
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
+<<<<<<< HEAD
       </class> <!-- contactTestCases.VerifyContactDuplicate -->
+=======
+      </class> <!-- contactTestCases.VerifyContactDuplicateContact -->
+>>>>>>> 016063e70b721a3afd91854bbf260f6d68b18757
+>>>>>>> fda21093b15c3986644d16c9858ef62661fd074f
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -193,8 +193,8 @@ WebDriver driver;
 		
 		List<WebElement> FilenNames=doc.GetAllFileNames();
 		
-		String[] myStringArray = new String[4];
-		for(int i=0;i<4;i++)
+		String[] myStringArray = new String[3];
+		for(int i=0;i<3;i++)
 		{
 			myStringArray[i]=FilenNames.get(i).getText();
 			

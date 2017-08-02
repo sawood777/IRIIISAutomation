@@ -62,6 +62,9 @@ public class DocumentsPage {
 	@FindBy(xpath="//span/span[text()='Trash']")private WebElement TrashMainBtn;
 	@FindBy(xpath="//button[text()='Trash']")private WebElement SubTrashBtn;
 	@FindBy(xpath="//md-menu-content/md-menu-item[2]/md-menu/button")private WebElement ChangeAccount;
+	@FindBy(xpath="//md-icon[@md-font-icon='delete']")private WebElement MoveToTrashBtn;
+	@FindBy(xpath="//md-icon[@md-font-icon='undo']")private WebElement UndoBtn;
+	@FindBy(xpath="//md-icon[@md-font-icon='delete_forever']")private WebElement DeleteForeverBtn;
 
 	
 	public DocumentsPage(WebDriver driver){
@@ -70,6 +73,17 @@ public class DocumentsPage {
 		this.driver=driver;
 	}
 	
+	public void ClickOnMoveToTrashBtn(){
+		MoveToTrashBtn.click();
+	}
+	
+	public void ClickOnUndoBtn(){
+		UndoBtn.click();
+	}
+	
+	public void ClickOnDeleteForeverBtn(){
+		DeleteForeverBtn.click();
+	}
 
 	
 	public void ClickonDrive(){

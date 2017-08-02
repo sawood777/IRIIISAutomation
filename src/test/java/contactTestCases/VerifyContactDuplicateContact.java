@@ -1,3 +1,4 @@
+
 package contactTestCases;
 
 import java.util.List;
@@ -129,8 +130,9 @@ public class VerifyContactDuplicateContact extends BaseTest {
 		String p1 = null;
 	boolean flag=false;
 	
+	DashboardPage d= new DashboardPage(driver);
 	ContactPage c= new ContactPage(driver);
-	
+	MailPage m=new MailPage(driver);
 	List<WebElement> q = c.getContactGroupList();
 	String qtext= q.get(0).getText();
 	
@@ -202,4 +204,5 @@ public class VerifyContactDuplicateContact extends BaseTest {
 
 	}
 }
+
 
