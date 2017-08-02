@@ -56,8 +56,6 @@ public class ContactPage {
 	@FindBy(xpath="//div[@ng-click='openContactPicker()']") private WebElement contactPicker;
 	@FindBy(xpath="//div[@class='contact-picker__img table-cell']") private WebElement contactPickerList;
 	@FindBy(xpath="//input[@ng-click='openContactPicker()']") private WebElement contactPicker1;
-	
-	
 	@FindAll({@FindBy(xpath="//div[@class='contact-picker__displayname table-cell ng-binding']")}) private List<WebElement> contactsInContactPicket;
 	@FindBy(xpath="//button[@ng-click='addItemsToList()']") private WebElement addToGroup;
 	@FindAll({@FindBy(xpath="//div[@class='contact-item-header__name contact-item-header__cell table-cell ng-binding']")}) private List<WebElement> contactGroupList;
@@ -66,6 +64,17 @@ public class ContactPage {
 	@FindBy(xpath="//button[@ng-click='deleteGroup()']") private WebElement deleteGroupIcon;
 	@FindBy(xpath="//button[@ng-click='dialog.hide()']") private WebElement confirmationDelete;
 	@FindBy(xpath="//textarea[@id='chat-input-textarea']") private WebElement textArea;
+	@FindAll({@FindBy(xpath="//button[contains(@ng-disabled,'userInputs.selected')]")}) private List<WebElement> optionsUnderMore;
+	@FindBy(xpath="//button[@ng-click='mergeAllDuplicates(duplicateLists)']") private WebElement mergeAll;
+	@FindBy(xpath="//div[text()='No duplicates found']") private WebElement noDuplicatesFound;
+	@FindAll({@FindBy(xpath="//md-menu-item[contains(@ng-click,'loadContacts')]")}) private List<WebElement> sortOptions;
+	@FindBy(xpath="//span[contains(text(),'(')]") private WebElement numberOfContacts;
+	@FindBy(xpath="//button[text()='Export Contacts']") private WebElement exportContact ;
+	@FindBy(xpath="//button[text()='CSV format']") private WebElement csvExport ;
+	@FindBy(xpath="//button[text()='Import Contacts']") private WebElement importContact ;
+	@FindAll({@FindBy(xpath="//button[contains(@ng-click,'importContacts(')]")}) private List<WebElement> importTypes;
+	@FindBy(xpath="//button[contains(@ng-click,'showOpenDialog()')]") private WebElement selectFromComputer ;
+	@FindBy(xpath="//button[@ng-click='initiateUpload(true)']") private WebElement upload ;
 	
 	
 	public ContactPage(WebDriver driver) {
@@ -92,7 +101,8 @@ public class ContactPage {
 	}
 	public void clickMoreIcon()
 	{
-		moreIcon.click();
+		(new WebDriverWait(driver, 20))
+		   .until(ExpectedConditions.visibilityOf(moreIcon)).click();
 	}
 	public void clickFindAndMerge()
 	{
@@ -243,12 +253,12 @@ public class ContactPage {
 		{
 			boolean text;
 			try 
-			{
-			    text = (new WebDriverWait(driver,20)).until(ExpectedConditions.visibilityOf(toastNotification)).isDisplayed();
+			{ 
+			  text=toastNotification.isDisplayed();
 			}
 			catch (NoSuchElementException e)
 			{
-			    text = false;
+			 text=false;
 			}
 			System.out.println(text);
 			return text;
@@ -343,7 +353,65 @@ public class ContactPage {
 			return (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(groupOptions));
 		}
 		
-	
+		public List<WebElement> getoptionsUnderMore()
+		{
+			return (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOfAllElements(optionsUnderMore));
+		}
+		public void clickMergeAll()
+		{
+			 (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(mergeAll)).click();
+		}
 		
+		public boolean verifynoDuplicatesFound()
+		{
+			boolean text;
+			try 
+			{  
+			    text = noDuplicatesFound.isDisplayed();
+			    
+			}
+			catch (NoSuchElementException e)
+			{
+			    text = false;
+			}
+			System.out.println(text);
+			return text;
+			
+		}
+		public List<WebElement> getSortOptions()
+		{
+			return (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOfAllElements(sortOptions));
+		}
+		public String getNumberOfContacts()
+		{
+			return (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(numberOfContacts)).getText();
+		}
+		
+		public WebElement clickExportOption()
+		{
+			return (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(exportContact));
+		}
+		public void clickCSVExport()
+		{
+			(new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(csvExport)).click();
+		}
+		public WebElement clickImportContact()
+		{
+			return (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(importContact));
+		}
+		public List<WebElement> getImportTypes()
+		{
+			return (new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOfAllElements(importTypes));
+		}
+		public void clickSelectFromComputer()
+		{
+			(new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(selectFromComputer)).click();
+		}
+		public void clickUpload()
+		{
+			(new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(upload)).click();
+		}
 		
 }
+
+

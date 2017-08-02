@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="contactTestCases.VerifyContactDuplicateContact">
+      <class name="contactTestCases.VerifyContactDuplicate">
         <methods>
-          <include name="testContactRemovalFromGroupWhenContactDeleted"/>
+          <include name="testImportGoogleCSVContact"/>
+          <include name="testImportOutlookCSVContact"/>
           <include name="testBrowser"/>
+          <include name="testImportVCFContact"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- contactTestCases.VerifyContactDuplicateContact -->
+      </class> <!-- contactTestCases.VerifyContactDuplicate -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
