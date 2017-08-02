@@ -45,7 +45,13 @@
   
     <test name="Iriis Drive">
     <classes>
-      <class name="IriiisDrive.VerifyIriiisFileTaging"/>
+      <class name="IriiisDrive.VerifyIriiisFileTagingAndSharing"/>
+      <class name="IriiisDrive.VerifyRenamingTheFilesName"/>
+      <class name="IriiisDrive.VerifyTheFileUpdatedesc"/>
+      <class name="IriiisDrive.VerifyFilesTrashAndUntrash"/>
+      <class name="IriiisDrive.VerifyTheFileDeletes"/>
+      <class name="IriiisDrive.VerifyBatchTrashAndUntrash"/>
+      <class name="IriiisDrive.VerifyBatchFileDelete"/>
     </classes>
   </test> <!-- Test -->
   
