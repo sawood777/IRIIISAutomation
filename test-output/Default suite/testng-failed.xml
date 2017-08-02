@@ -3,15 +3,25 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
+      <class name="IriiisDrive.VerifyBatchFileDelete">
+        <methods>
+          <include name="VerifyboxBatchDelete"/>
+=======
       <class name="contactTestCases.VerifyContactDuplicate">
         <methods>
           <include name="testImportGoogleCSVContact"/>
           <include name="testImportOutlookCSVContact"/>
+>>>>>>> 12ec0d4a6dcdaff1f62377c3e8b368abcc27e6a9
           <include name="testBrowser"/>
           <include name="testImportVCFContact"/>
           <include name="postCondition"/>
         </methods>
+<<<<<<< HEAD
+      </class> <!-- IriiisDrive.VerifyBatchFileDelete -->
+=======
       </class> <!-- contactTestCases.VerifyContactDuplicate -->
+>>>>>>> 12ec0d4a6dcdaff1f62377c3e8b368abcc27e6a9
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

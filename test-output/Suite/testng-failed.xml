@@ -1,39 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <test name="Gmail(failed)">
+  <test name="Test(failed)">
     <classes>
-      <class name="contactTestCases.VerifyContact">
+      <class name="IriiisDrive.VerifyIriiisFileTagingAndSharing">
+        <methods>
+          <include name="VerifyDropboxSharing"/>
+          <include name="VerifyboxSharing"/>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+<<<<<<< HEAD
+      </class> <!-- IriiisDrive.VerifyIriiisFileTagingAndSharing -->
+      <class name="IriiisDrive.VerifyTheFileUpdatedesc">
         <methods>
           <include name="testBrowser"/>
           <include name="postCondition"/>
         </methods>
+      </class> <!-- IriiisDrive.VerifyTheFileUpdatedesc -->
+      <class name="IriiisDrive.VerifyBatchTrashAndUntrash">
+=======
       </class> <!-- contactTestCases.VerifyContact -->
       <class name="IriiisDrive.VerifyIriiisFileTaging">
+>>>>>>> 12ec0d4a6dcdaff1f62377c3e8b368abcc27e6a9
         <methods>
+          <include name="VerifyDropboxBatchFileTrash"/>
+          <include name="VerifygoogleBatchFileUnTrash"/>
+          <include name="VerifyBoxdriveBatchFileUnTrash"/>
           <include name="testBrowser"/>
+          <include name="VerifyboxBatchFileUnTrash"/>
           <include name="postCondition"/>
         </methods>
+<<<<<<< HEAD
+      </class> <!-- IriiisDrive.VerifyBatchTrashAndUntrash -->
+      <class name="IriiisDrive.VerifyFilesTrashAndUntrash">
+=======
       </class> <!-- IriiisDrive.VerifyIriiisFileTaging -->
       <class name="GmailTestCases.VerifyTagToTopicGmail">
+>>>>>>> 12ec0d4a6dcdaff1f62377c3e8b368abcc27e6a9
         <methods>
-          <include name="testTagToTopicGmail"/>
+          <include name="VerifyDropboxFileTrash"/>
           <include name="testBrowser"/>
-          <include name="testBatchTagToTopicGmail"/>
+          <include name="VerifyBoxFileTrash"/>
+          <include name="VerifyOnedriveFileTrash"/>
           <include name="postCondition"/>
         </methods>
+<<<<<<< HEAD
+      </class> <!-- IriiisDrive.VerifyFilesTrashAndUntrash -->
+      <class name="IriiisDrive.VerifyTheFileDeletes">
+        <methods>
+          <include name="VerifyIriiisBatchDelete"/>
+          <include name="VerifyDropboxFileDelete"/>
+          <include name="VerifyOneDriveFileDelete"/>
+          <include name="VerifygoogleBatchDelete"/>
+          <include name="VerifyboxBatchDelete"/>
+          <include name="testBrowser"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- IriiisDrive.VerifyTheFileDeletes -->
+      <class name="IriiisDrive.VerifyBatchFileDelete">
+=======
       </class> <!-- GmailTestCases.VerifyTagToTopicGmail -->
       <class name="GmailTestCases.VerifyReadUnreadGmail">
+>>>>>>> 12ec0d4a6dcdaff1f62377c3e8b368abcc27e6a9
         <methods>
+          <include name="VerifyIriiisBatchDelete"/>
+          <include name="VerifyboxBatchDelete"/>
           <include name="testBrowser"/>
           <include name="postCondition"/>
         </methods>
+<<<<<<< HEAD
+      </class> <!-- IriiisDrive.VerifyBatchFileDelete -->
+      <class name="IriiisDrive.VerifyRenamingTheFilesName">
+=======
       </class> <!-- GmailTestCases.VerifyReadUnreadGmail -->
       <class name="iriiisMailTestCases.VerifyTagToTopicIRIIIS">
+>>>>>>> 12ec0d4a6dcdaff1f62377c3e8b368abcc27e6a9
         <methods>
           <include name="testBrowser"/>
           <include name="postCondition"/>
         </methods>
+<<<<<<< HEAD
+      </class> <!-- IriiisDrive.VerifyRenamingTheFilesName -->
+    </classes>
+  </test> <!-- Test(failed) -->
+=======
       </class> <!-- iriiisMailTestCases.VerifyTagToTopicIRIIIS -->
       <class name="GmailTestCases.VerifySpamGmail">
         <methods>
@@ -464,4 +515,5 @@
       </class> <!-- iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS -->
     </classes>
   </test> <!-- All Account(failed) -->
+>>>>>>> 12ec0d4a6dcdaff1f62377c3e8b368abcc27e6a9
 </suite> <!-- Failed suite [Suite] -->

@@ -45,7 +45,7 @@ public class DocumentsPage {
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[1]/button[text()='View Details']")private WebElement ViewDetails;
 
 	@FindBy(xpath="//button[contains(text(),'Save')]")private WebElement topicSave;
-	@FindAll({@FindBy(xpath="//div[1]/md-checkbox/div[1]")})private List<WebElement> DocBatchselection;
+	@FindAll({@FindBy(xpath="//div[1]/md-checkbox")})private List<WebElement> DocBatchselection;
 	@FindBy(xpath="//button[text()='Drive']")private WebElement Drivebutton1;
 	
 	@FindBy(xpath="//md-menu[contains(@class,'_md-nested-menu md-menu ng-scope _md')]")private WebElement Drivebutton2;
@@ -65,7 +65,29 @@ public class DocumentsPage {
 	@FindBy(xpath="//md-icon[@md-font-icon='delete']")private WebElement MoveToTrashBtn;
 	@FindBy(xpath="//md-icon[@md-font-icon='undo']")private WebElement UndoBtn;
 	@FindBy(xpath="//md-icon[@md-font-icon='delete_forever']")private WebElement DeleteForeverBtn;
+	@FindBy(xpath="//div[@class='file-list__item-cell ng-scope']")private WebElement BatchCheck;
+	@FindBy(xpath="//button[text()=' Select All ']")private WebElement SelectAllBtn;
+	
+	@FindBy(xpath="//div/span[contains(text(),'No files')]")private WebElement TextAfterDelet;
 
+
+	public String GetTextAfterTrash(){
+		String TextAfterFilesTras=TextAfterDelet.getText();
+		return TextAfterFilesTras;
+	}
+	public void ClickBatchCheck(){
+		Actions action=new Actions(driver);
+		action.moveToElement(BatchCheck).build().perform();
+		//BatchCheck.click();
+	}
+	
+	public void ClickBatchCheck1(){
+		BatchCheck.click();
+		//BatchCheck.click();
+	}
+	public void ClickOnSelectAllBtn(){
+		SelectAllBtn.click();
+	}
 	
 	public DocumentsPage(WebDriver driver){
 		

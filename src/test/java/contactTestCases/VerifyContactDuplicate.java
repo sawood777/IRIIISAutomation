@@ -1,3 +1,4 @@
+
 package contactTestCases;
 
 import java.io.IOException;
@@ -10,7 +11,6 @@ import org.testng.asserts.SoftAssert;
 
 import Pages.ContactPage;
 import Pages.DashboardPage;
-import Pages.DocumentsPage;
 import emailTestCases.BaseTest;
 
 public class VerifyContactDuplicate extends BaseTest{
@@ -63,7 +63,7 @@ public class VerifyContactDuplicate extends BaseTest{
 
 }
 	//Sorting contact by Name
-	@Test(priority=2)
+	//@Test(priority=2)
 	public void testSortByName()
 	{
 		ContactPage c= new ContactPage(driver);
@@ -93,7 +93,7 @@ public class VerifyContactDuplicate extends BaseTest{
 	}
 	
 	//Sorting contact byRecency
-		@Test(priority=3)
+	//	@Test(priority=3)
 		public void testSortByRecency()
 		{
 			Boolean flag=false;
@@ -142,7 +142,7 @@ public class VerifyContactDuplicate extends BaseTest{
 			
 		}
 		
-		@Test(priority=4)
+		//@Test(priority=2)
 		public void testExportContact()
 		{
 			ContactPage c= new ContactPage(driver);
@@ -162,15 +162,21 @@ public class VerifyContactDuplicate extends BaseTest{
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+			try {
+				Thread.sleep(10000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
 		}
 		
-		@Test(priority=5)
+		@Test(priority=2)
 		public void testImportCSVContact() throws InterruptedException
 		{
 			ContactPage c= new ContactPage(driver);
-			DocumentsPage p=new DocumentsPage(driver);
 			c.clickMoreIcon();
-			p.SleepFiveSec();
+			
 			c.clickImportContact().click();
 			List<WebElement> l = c.getImportTypes();
 					l.get(0).click();	
@@ -180,26 +186,16 @@ public class VerifyContactDuplicate extends BaseTest{
 			} catch (IOException e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
-			}p.SleepFiveSec();
-			if(c.verifyUpload())
-			{
-			c.clickUpload();
 			}
-			if(c.verifyDoneFound())
-			{
-				c.clickDone();
-				driver.switchTo().alert().accept();
-			}p.SleepFiveSec();
+			c.clickUpload();
 			
 			
 		}
-		@Test(priority=6)
+		@Test(priority=3)
 		public void testImportGoogleCSVContact()
 		{
 			ContactPage c= new ContactPage(driver);
-			DocumentsPage p=new DocumentsPage(driver);
 			c.clickMoreIcon();
-			p.SleepFiveSec();
 			c.clickImportContact().click();
 			List<WebElement> l = c.getImportTypes();
 					l.get(1).click();	
@@ -209,25 +205,16 @@ public class VerifyContactDuplicate extends BaseTest{
 			} catch (IOException e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
-			}p.SleepFiveSec();
-			if(c.verifyUpload())
-			{
-			c.clickUpload();
 			}
-			if(c.verifyDoneFound())
-			{
-				c.clickDone();
-				driver.switchTo().alert().accept();
-			}p.SleepFiveSec();
+			c.clickUpload();
+			c.getNumberOfContacts();
 		}
 		
-		@Test(priority=7)
+		@Test(priority=4)
 		public void testImportOutlookCSVContact()
 		{
 			ContactPage c= new ContactPage(driver);
-			DocumentsPage p=new DocumentsPage(driver);
 			c.clickMoreIcon();
-			p.SleepFiveSec();
 			c.clickImportContact().click();
 			List<WebElement> l = c.getImportTypes();
 					l.get(2).click();	
@@ -237,25 +224,15 @@ public class VerifyContactDuplicate extends BaseTest{
 			} catch (IOException e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
-			}p.SleepFiveSec();
-			if(c.verifyUpload())
-			{
-			c.clickUpload();
 			}
-			
-			if(c.verifyDoneFound())
-			{
-				c.clickDone();
-				driver.switchTo().alert().accept();
-			}p.SleepFiveSec();
+			c.clickUpload();
+			c.getNumberOfContacts();
 		}
-		@Test(priority=8)
+		@Test(priority=5)
 		public void testImportVCFContact()
 		{
 			ContactPage c= new ContactPage(driver);
-			DocumentsPage p=new DocumentsPage(driver);
 			c.clickMoreIcon();
-			p.SleepFiveSec();
 			c.clickImportContact().click();
 			List<WebElement> l = c.getImportTypes();
 					l.get(3).click();	
@@ -266,17 +243,9 @@ public class VerifyContactDuplicate extends BaseTest{
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
-			p.SleepFiveSec();
-			if(c.verifyUpload())
-			{
 			c.clickUpload();
-			}
-			
-			if(c.verifyDoneFound())
-			{
-				c.clickDone();
-				driver.switchTo().alert().accept();
-			}p.SleepFiveSec();
+			c.getNumberOfContacts();
 		}
 		
 }
+

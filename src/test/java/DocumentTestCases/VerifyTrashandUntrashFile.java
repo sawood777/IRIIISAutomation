@@ -138,26 +138,33 @@ public class VerifyTrashandUntrashFile {
 		doc.hoveronAllAccounts();
 		doc.SleepThreeSec();
 		doc.ClickonRequiredAccount(drivename);
+		doc.SleepThreeSec();
+		
+		doc.ClickBatchCheck();
+		doc.SleepThreeSec();
+		
 		doc.ClickSelectBacthfiles();
-		System.out.println("3 files are selected");
+		System.out.println("4 files are selected");
 		
 		List<WebElement> FilenNames=doc.GetAllFileNames();
 		
-		String[] myStringArray = new String[3];
-		for(int i=0;i<3;i++)
+		String[] myStringArray = new String[5];
+		for(int i=0;i<5;i++)
 		{
 			myStringArray[i]=FilenNames.get(i).getText();
 			
 		}
 		
 		doc.ClickOnMoveToTrashBtn();
-		doc.SleepThreeSec();
+		doc.SleepFiveSec();
 		
 		doc.ClickonDrive();
 		doc.SleepThreeSec();
 		
 		doc.clickDrivebutton2();
 		doc.SleepThreeSec();
+		
+		
 		
 		List<WebElement> s1 = doc.clickonTrashButton2();
 		for(int i=0;i<s1.size();i++)
@@ -183,7 +190,99 @@ public class VerifyTrashandUntrashFile {
 		}
 		}
 		
+		doc.clickonCloseIcon();
+		doc.SleepThreeSec();
 		
+		Assert.assertEquals(flag==true, true, "Batchuntras got failed");
+		
+	}
+	
+	
+	public void BatchUnTrash(String drivename){
+		
+		Boolean flag=false;
+		MailPage m= new MailPage(driver);
+		IriiisLogoPage iriiis=new IriiisLogoPage(driver); 
+		DashboardPage d= new DashboardPage(driver);
+		DocumentsPage doc=new DocumentsPage(driver);
+		d.clickDocumentCard();
+		doc.ClickonDrive();
+		doc.SleepThreeSec();
+		
+		doc.hoveronAllAccounts();
+		doc.SleepThreeSec();
+		doc.ClickonRequiredAccount(drivename);
+		doc.SleepThreeSec();
+		
+		doc.ClickonDrive();
+		doc.SleepThreeSec();
+		
+		doc.clickDrivebutton2();
+		doc.SleepThreeSec();
+		
+		List<WebElement> s1 = doc.clickonTrashButton2();
+		for(int i=0;i<s1.size();i++)
+		{
+			System.out.println(s1.get(i).getText());
+			if(s1.get(i).getText().contains("Trash"))
+			{
+				s1.get(i).click();
+			}
+		}
+		
+		
+		doc.ClickBatchCheck();
+		doc.SleepThreeSec();
+		
+		doc.ClickSelectBacthfiles();
+		System.out.println("4 files are selected");
+		
+		List<WebElement> FilenNames=doc.GetAllFileNames();
+		
+		String[] myStringArray = new String[3];
+		for(int i=0;i<3;i++)
+		{
+			myStringArray[i]=FilenNames.get(i).getText();
+			
+		}
+		
+		doc.ClickOnUndoBtn();
+		doc.SleepFiveSec();
+		
+		doc.ClickOnTrashMainBtn();
+		doc.SleepThreeSec();
+		doc.ClickOnSubTrashBtn();
+		doc.SleepThreeSec();
+		
+		List<WebElement> s2 = doc.clickonTrashButton2();
+		for(int i=0;i<s1.size();i++)
+		{
+			System.out.println(s1.get(i).getText());
+			if(s2.get(i).getText().contains("Drive"))
+			{
+				s2.get(i).click();
+			}
+		}
+		
+		doc.SleepThreeSec();
+		
+		List<WebElement> FilenNames1=doc.GetAllFileNames();
+		for(int i=0;i<FilenNames1.size();i++)
+		{
+			for(int j=0;j<myStringArray.length;j++)
+			{
+			if(FilenNames1.get(i).getText().equals(myStringArray[j]))
+			{
+				flag=true;
+				break;
+			}
+		}
+		}
+		
+		doc.clickonCloseIcon();
+		doc.SleepThreeSec();
+		
+		Assert.assertEquals(flag==true, true, "Batchuntras got failed");
 		
 	}
 

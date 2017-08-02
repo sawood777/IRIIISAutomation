@@ -190,5 +190,49 @@ public class VerifyBasicFileActivity {
 		Assert.assertEquals(flag==true, false, "File Remove got failed");
 		
 	}
+	
+	public void VeryBatchDelete(String driveanme){
+		
+		DashboardPage d= new DashboardPage(driver);
+		DocumentsPage doc=new DocumentsPage(driver);
+		
+		d.clickDocumentCard();
+		doc.ClickonDrive();
+		doc.SleepFiveSec();
+		doc.hoveronAllAccounts();
+		doc.SleepThreeSec();
+		doc.ClickonRequiredAccount(driveanme);
+		doc.SleepThreeSec();
+		
+		
+		doc.ClickonDrive();
+		doc.SleepThreeSec();
+		doc.clickDrivebutton2();
+		doc.SleepThreeSec();
+		
+		List<WebElement> s = doc.clickonTrashButton2();
+		for(int i=0;i<s.size();i++)
+		{
+			System.out.println(s.get(i).getText());
+			if(s.get(i).getText().contains("Trash"))
+			{
+				s.get(i).click();
+			}
+		}
+		
+		
+		doc.ClickBatchCheck();
+		doc.ClickBatchCheck1();
+		doc.ClickOnSelectAllBtn();
+		doc.ClickOnDeleteForeverBtn();
+		doc.SleepFiveSec();
+		
+		String TextAfterTrash=doc.GetTextAfterTrash();
+		doc.clickonCloseIcon();
+		doc.SleepThreeSec();
+		
+		Assert.assertEquals(TextAfterTrash, "No files or folders in Trash.");
+		
+	}
 
 }
