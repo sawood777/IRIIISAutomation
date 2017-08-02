@@ -7,7 +7,7 @@ import emailTestCases.BaseTest;
 
 public class VerifyBatchFileDelete extends BaseTest{
 	
-	//@Test(priority=1)
+	@Test(priority=1)
 	public void VerifygoogleBatchDelete(){
 		
 		VerifyBasicFileActivity remove=new VerifyBasicFileActivity(driver);
