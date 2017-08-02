@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="IriiisDrive.VerifyIriiisFileTagingAndSharing"/>
+      <class name="IriiisDrive.VerifyRenamingTheFilesName"/>
+      <class name="IriiisDrive.VerifyTheFileUpdatedesc"/>
+      <class name="IriiisDrive.VerifyFilesTrashAndUntrash"/>
+      <class name="IriiisDrive.VerifyTheFileDeletes"/>
+      <class name="IriiisDrive.VerifyBatchTrashAndUntrash"/>
+      <class name="IriiisDrive.VerifyBatchFileDelete"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

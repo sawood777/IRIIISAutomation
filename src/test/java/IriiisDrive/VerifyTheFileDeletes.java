@@ -14,14 +14,14 @@ public class VerifyTheFileDeletes extends BaseTest {
 		remove.VeryFileRemove("iriiis");
 	}
 	
-	@Test(dependsOnMethods="VerifyIriiisFileDelete")
+	@Test(priority=2)
 	public void VerifyBoxdriveFileDelete(){
 		
 		VerifyBasicFileActivity remove=new VerifyBasicFileActivity(driver);
 		remove.VeryFileRemove2("box");
 	}
 	
-	@Test(dependsOnMethods="VerifyBoxdriveFileDelete")
+	@Test(priority=3)
 	public void VerifygoogleFileDelete(){
 		
 		VerifyBasicFileActivity remove=new VerifyBasicFileActivity(driver);
@@ -29,14 +29,14 @@ public class VerifyTheFileDeletes extends BaseTest {
 	}
 	
 	
-	//@Test(dependsOnMethods="VerifyIriiisFileDelete")
+	//@Test(priority=4)
 	public void VerifyDropboxFileDelete(){
 		
 		VerifyBasicFileActivity remove=new VerifyBasicFileActivity(driver);
 		remove.VeryFileRemove2("dropbox");
 	}
 	
-	//@Test(dependsOnMethods="VerifyIriiisFileDelete")
+	//@Test(priority=5)
 	public void VerifyOneDriveFileDelete(){
 		
 		VerifyBasicFileActivity remove=new VerifyBasicFileActivity(driver);

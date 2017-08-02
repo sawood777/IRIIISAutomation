@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="contactTestCases.VerifyContactDuplicateContact">
+      <class name="IriiisDrive.VerifyBatchFileDelete">
         <methods>
-          <include name="testContactRemovalFromGroupWhenContactDeleted"/>
+          <include name="VerifyboxBatchDelete"/>
           <include name="testBrowser"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- contactTestCases.VerifyContactDuplicateContact -->
+      </class> <!-- IriiisDrive.VerifyBatchFileDelete -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -9,7 +9,7 @@ import Pages.DashboardPage;
 import Pages.IriiisLogoPage;
 import emailTestCases.BaseTest;
 
-public class VerifyIriiisFileTaging extends BaseTest {
+public class VerifyIriiisFileTagingAndSharing extends BaseTest {
 	
 	@Test(priority=1)
 	public void VerifyIriiisTag(){

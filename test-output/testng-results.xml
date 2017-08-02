@@ -1,61 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40275" started-at="2017-08-01T12:15:36Z" finished-at="2017-08-01T12:16:16Z">
+  <suite name="Default suite" duration-ms="79199" started-at="2017-08-02T11:48:27Z" finished-at="2017-08-02T11:49:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="40275" started-at="2017-08-01T12:15:36Z" finished-at="2017-08-01T12:16:16Z">
-      <class name="IriiisDrive.VerifyFilesTrashAndUntrash">
-        <test-method status="PASS" signature="testBrowser()[pri:0, instance:IriiisDrive.VerifyFilesTrashAndUntrash@26653222]" name="testBrowser" is-config="true" duration-ms="15605" started-at="2017-08-01T17:45:36Z" finished-at="2017-08-01T17:45:52Z">
+    <test name="Default test" duration-ms="79199" started-at="2017-08-02T11:48:27Z" finished-at="2017-08-02T11:49:47Z">
+      <class name="IriiisDrive.VerifyBatchFileDelete">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:IriiisDrive.VerifyBatchFileDelete@26653222]" name="testBrowser" is-config="true" duration-ms="17256" started-at="2017-08-02T17:18:27Z" finished-at="2017-08-02T17:18:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBrowser -->
-        <test-method status="PASS" signature="VerifyIriiisBatchFileTrash()[pri:0, instance:IriiisDrive.VerifyFilesTrashAndUntrash@26653222]" name="VerifyIriiisBatchFileTrash" duration-ms="23298" started-at="2017-08-01T17:45:52Z" finished-at="2017-08-01T17:46:15Z">
+        <test-method status="PASS" signature="VerifyIriiisBatchDelete()[pri:0, instance:IriiisDrive.VerifyBatchFileDelete@26653222]" name="VerifyIriiisBatchDelete" duration-ms="30259" started-at="2017-08-02T17:18:45Z" finished-at="2017-08-02T17:19:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyIriiisBatchFileTrash -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:IriiisDrive.VerifyFilesTrashAndUntrash@26653222]" name="postCondition" is-config="true" duration-ms="1354" started-at="2017-08-01T17:46:15Z" finished-at="2017-08-01T17:46:16Z">
+        </test-method> <!-- VerifyIriiisBatchDelete -->
+        <test-method status="PASS" signature="VerifyboxBatchDelete()[pri:0, instance:IriiisDrive.VerifyBatchFileDelete@26653222]" name="VerifyboxBatchDelete" duration-ms="30263" started-at="2017-08-02T17:19:15Z" finished-at="2017-08-02T17:19:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postCondition -->
-      </class> <!-- IriiisDrive.VerifyFilesTrashAndUntrash -->
-=======
-<testng-results skipped="0" failed="0" total="4" passed="4">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Default suite" duration-ms="63235" started-at="2017-08-01T11:37:28Z" finished-at="2017-08-01T11:38:32Z">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="63235" started-at="2017-08-01T11:37:28Z" finished-at="2017-08-01T11:38:32Z">
-      <class name="contactTestCases.VerifyContactDuplicateContact">
-        <test-method status="PASS" signature="testBrowser()[pri:0, instance:contactTestCases.VerifyContactDuplicateContact@3532ec19]" name="testBrowser" is-config="true" duration-ms="16444" started-at="2017-08-01T17:07:28Z" finished-at="2017-08-01T17:07:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBrowser -->
-        <test-method status="PASS" signature="testDuplicateContact()[pri:0, instance:contactTestCases.VerifyContactDuplicateContact@3532ec19]" name="testDuplicateContact" duration-ms="7197" started-at="2017-08-01T17:07:45Z" finished-at="2017-08-01T17:07:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDuplicateContact -->
-        <test-method status="PASS" signature="testInitiatingContactForOneOnOneChat()[pri:0, instance:contactTestCases.VerifyContactDuplicateContact@3532ec19]" name="testInitiatingContactForOneOnOneChat" duration-ms="1568" started-at="2017-08-01T17:07:52Z" finished-at="2017-08-01T17:07:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInitiatingContactForOneOnOneChat -->
-        <test-method status="PASS" signature="testCreatingContactGroup()[pri:0, instance:contactTestCases.VerifyContactDuplicateContact@3532ec19]" name="testCreatingContactGroup" duration-ms="17098" started-at="2017-08-01T17:07:54Z" finished-at="2017-08-01T17:08:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreatingContactGroup -->
-        <test-method status="PASS" signature="testContactRemovalFromGroupWhenContactDeleted()[pri:0, instance:contactTestCases.VerifyContactDuplicateContact@3532ec19]" name="testContactRemovalFromGroupWhenContactDeleted" duration-ms="19355" started-at="2017-08-01T17:08:11Z" finished-at="2017-08-01T17:08:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testContactRemovalFromGroupWhenContactDeleted -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:contactTestCases.VerifyContactDuplicateContact@3532ec19]" name="postCondition" is-config="true" duration-ms="1544" started-at="2017-08-01T17:08:30Z" finished-at="2017-08-01T17:08:32Z">
+        </test-method> <!-- VerifyboxBatchDelete -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:IriiisDrive.VerifyBatchFileDelete@26653222]" name="postCondition" is-config="true" duration-ms="1399" started-at="2017-08-02T17:19:45Z" finished-at="2017-08-02T17:19:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-      </class> <!-- contactTestCases.VerifyContactDuplicateContact -->
->>>>>>> 016063e70b721a3afd91854bbf260f6d68b18757
+      </class> <!-- IriiisDrive.VerifyBatchFileDelete -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
