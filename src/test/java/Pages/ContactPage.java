@@ -75,7 +75,7 @@ public class ContactPage {
 	@FindAll({@FindBy(xpath="//button[contains(@ng-click,'importContacts(')]")}) private List<WebElement> importTypes;
 	@FindBy(xpath="//button[contains(@ng-click,'showOpenDialog()')]") private WebElement selectFromComputer ;
 	@FindBy(xpath="//button[@ng-click='initiateUpload(true)']") private WebElement upload ;
-	
+	@FindBy(xpath="//button[@ng-click='close()']") private WebElement done;
 	
 	public ContactPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -101,8 +101,7 @@ public class ContactPage {
 	}
 	public void clickMoreIcon()
 	{
-		(new WebDriverWait(driver, 20))
-		   .until(ExpectedConditions.visibilityOf(moreIcon)).click();
+		moreIcon.click();
 	}
 	public void clickFindAndMerge()
 	{
@@ -407,9 +406,48 @@ public class ContactPage {
 		{
 			(new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(selectFromComputer)).click();
 		}
+		
+		public boolean verifyUpload()
+		{
+			boolean text;
+			try 
+			{  
+			    text = upload.isDisplayed();
+			    
+			}
+			catch (NoSuchElementException e)
+			{
+			    text = false;
+			}
+		
+			return text;
+			
+		}
+		
 		public void clickUpload()
 		{
 			(new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(upload)).click();
+		}
+		
+		public boolean verifyDoneFound()
+		{
+			boolean text;
+			try 
+			{  
+			    text = done.isDisplayed();
+			    
+			}
+			catch (NoSuchElementException e)
+			{
+			    text = false;
+			}
+		
+			return text;
+			
+		}
+		public void clickDone()
+		{
+			(new WebDriverWait(driver, 20)).until(ExpectedConditions.visibilityOf(done)).click();
 		}
 		
 }
