@@ -1,112 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="117436" started-at="2017-08-02T12:12:19Z" finished-at="2017-08-02T12:14:16Z">
+  <suite name="Default suite" duration-ms="89281" started-at="2017-08-03T06:00:11Z" finished-at="2017-08-03T06:01:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="117436" started-at="2017-08-02T12:12:19Z" finished-at="2017-08-02T12:14:16Z">
-      <class name="contactTestCases.VerifyContactDuplicate">
-        <test-method status="PASS" signature="testBrowser()[pri:0, instance:contactTestCases.VerifyContactDuplicate@68c4039c]" name="testBrowser" is-config="true" duration-ms="22333" started-at="2017-08-02T17:42:19Z" finished-at="2017-08-02T17:42:41Z">
+    <test name="Default test" duration-ms="89281" started-at="2017-08-03T06:00:11Z" finished-at="2017-08-03T06:01:41Z">
+      <class name="iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@3532ec19]" name="testBrowser" is-config="true" duration-ms="22314" started-at="2017-08-03T11:30:11Z" finished-at="2017-08-03T11:30:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBrowser -->
-        <test-method status="PASS" signature="testDuplicateContact()[pri:0, instance:contactTestCases.VerifyContactDuplicate@68c4039c]" name="testDuplicateContact" duration-ms="2687" started-at="2017-08-02T17:42:41Z" finished-at="2017-08-02T17:42:44Z">
+        <test-method status="PASS" signature="testVerifySendingEmailIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@3532ec19]" name="testVerifySendingEmailIRIIIS" duration-ms="35301" started-at="2017-08-03T11:30:34Z" finished-at="2017-08-03T11:31:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDuplicateContact -->
-        <test-method status="PASS" signature="testSortByName()[pri:0, instance:contactTestCases.VerifyContactDuplicate@68c4039c]" name="testSortByName" duration-ms="5676" started-at="2017-08-02T17:42:44Z" finished-at="2017-08-02T17:42:50Z">
+        </test-method> <!-- testVerifySendingEmailIRIIIS -->
+        <test-method status="PASS" signature="testProcessingEmailIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@3532ec19]" name="testProcessingEmailIRIIIS" duration-ms="6670" started-at="2017-08-03T11:31:09Z" finished-at="2017-08-03T11:31:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSortByName -->
-        <test-method status="PASS" signature="testSortByRecency()[pri:0, instance:contactTestCases.VerifyContactDuplicate@68c4039c]" name="testSortByRecency" duration-ms="6580" started-at="2017-08-02T17:42:50Z" finished-at="2017-08-02T17:42:56Z">
-=======
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" total="2" passed="2">
-=======
-<<<<<<< HEAD
-<testng-results skipped="0" failed="3" total="5" passed="2">
-=======
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" total="1" passed="1">
->>>>>>> 12ec0d4a6dcdaff1f62377c3e8b368abcc27e6a9
-  <reporter-output>
-  </reporter-output>
-  <suite name="Default suite" duration-ms="79199" started-at="2017-08-02T11:48:27Z" finished-at="2017-08-02T11:49:47Z">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="79199" started-at="2017-08-02T11:48:27Z" finished-at="2017-08-02T11:49:47Z">
-      <class name="IriiisDrive.VerifyBatchFileDelete">
-        <test-method status="PASS" signature="testBrowser()[pri:0, instance:IriiisDrive.VerifyBatchFileDelete@26653222]" name="testBrowser" is-config="true" duration-ms="17256" started-at="2017-08-02T17:18:27Z" finished-at="2017-08-02T17:18:45Z">
+        </test-method> <!-- testProcessingEmailIRIIIS -->
+        <test-method status="PASS" signature="testUnProcessingEmailIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@3532ec19]" name="testUnProcessingEmailIRIIIS" duration-ms="4839" started-at="2017-08-03T11:31:16Z" finished-at="2017-08-03T11:31:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBrowser -->
-        <test-method status="PASS" signature="VerifyIriiisBatchDelete()[pri:0, instance:IriiisDrive.VerifyBatchFileDelete@26653222]" name="VerifyIriiisBatchDelete" duration-ms="30259" started-at="2017-08-02T17:18:45Z" finished-at="2017-08-02T17:19:15Z">
+        </test-method> <!-- testUnProcessingEmailIRIIIS -->
+        <test-method status="PASS" signature="testBatchProcessingEmailIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@3532ec19]" name="testBatchProcessingEmailIRIIIS" duration-ms="7308" started-at="2017-08-03T11:31:20Z" finished-at="2017-08-03T11:31:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyIriiisBatchDelete -->
-        <test-method status="PASS" signature="VerifyboxBatchDelete()[pri:0, instance:IriiisDrive.VerifyBatchFileDelete@26653222]" name="VerifyboxBatchDelete" duration-ms="30263" started-at="2017-08-02T17:19:15Z" finished-at="2017-08-02T17:19:45Z">
+        </test-method> <!-- testBatchProcessingEmailIRIIIS -->
+        <test-method status="PASS" signature="testBatchUnProcessingEmailIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@3532ec19]" name="testBatchUnProcessingEmailIRIIIS" duration-ms="9758" started-at="2017-08-03T11:31:28Z" finished-at="2017-08-03T11:31:38Z">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- VerifyboxBatchDelete -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:IriiisDrive.VerifyBatchFileDelete@26653222]" name="postCondition" is-config="true" duration-ms="1399" started-at="2017-08-02T17:19:45Z" finished-at="2017-08-02T17:19:47Z">
+        </test-method> <!-- testBatchUnProcessingEmailIRIIIS -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@3532ec19]" name="postCondition" is-config="true" duration-ms="3037" started-at="2017-08-03T11:31:38Z" finished-at="2017-08-03T11:31:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-      </class> <!-- IriiisDrive.VerifyBatchFileDelete -->
-=======
-        </test-method> <!-- postCondition -->
-      </class> <!-- IriiisDrive.VerifyFilesTrashAndUntrash -->
-=======
-<testng-results skipped="0" failed="0" total="4" passed="4">
->>>>>>> fda21093b15c3986644d16c9858ef62661fd074f
-  <reporter-output>
-  </reporter-output>
-  <suite name="Default suite" duration-ms="31129" started-at="2017-08-02T11:13:07Z" finished-at="2017-08-02T11:13:38Z">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="31129" started-at="2017-08-02T11:13:07Z" finished-at="2017-08-02T11:13:38Z">
-      <class name="contactTestCases.VerifyContactDuplicate">
-        <test-method status="PASS" signature="testBrowser()[pri:0, instance:contactTestCases.VerifyContactDuplicate@3532ec19]" name="testBrowser" is-config="true" duration-ms="22225" started-at="2017-08-02T16:43:07Z" finished-at="2017-08-02T16:43:29Z">
->>>>>>> b8101cdd75caaa0c407797bcd6ae1b6003fcaac1
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSortByRecency -->
-        <test-method status="PASS" signature="testExportContact()[pri:0, instance:contactTestCases.VerifyContactDuplicate@68c4039c]" name="testExportContact" duration-ms="8650" started-at="2017-08-02T17:42:56Z" finished-at="2017-08-02T17:43:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testExportContact -->
-        <test-method status="PASS" signature="testImportCSVContact()[pri:0, instance:contactTestCases.VerifyContactDuplicate@68c4039c]" name="testImportCSVContact" duration-ms="17515" started-at="2017-08-02T17:43:05Z" finished-at="2017-08-02T17:43:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testImportCSVContact -->
-        <test-method status="PASS" signature="testImportGoogleCSVContact()[pri:0, instance:contactTestCases.VerifyContactDuplicate@68c4039c]" name="testImportGoogleCSVContact" duration-ms="17537" started-at="2017-08-02T17:43:22Z" finished-at="2017-08-02T17:43:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testImportGoogleCSVContact -->
-        <test-method status="PASS" signature="testImportOutlookCSVContact()[pri:0, instance:contactTestCases.VerifyContactDuplicate@68c4039c]" name="testImportOutlookCSVContact" duration-ms="17368" started-at="2017-08-02T17:43:40Z" finished-at="2017-08-02T17:43:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testImportOutlookCSVContact -->
-        <test-method status="PASS" signature="testImportVCFContact()[pri:0, instance:contactTestCases.VerifyContactDuplicate@68c4039c]" name="testImportVCFContact" duration-ms="17267" started-at="2017-08-02T17:43:57Z" finished-at="2017-08-02T17:44:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testImportVCFContact -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:contactTestCases.VerifyContactDuplicate@68c4039c]" name="postCondition" is-config="true" duration-ms="1764" started-at="2017-08-02T17:44:14Z" finished-at="2017-08-02T17:44:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-      </class> <!-- contactTestCases.VerifyContactDuplicate -->
-<<<<<<< HEAD
-=======
-=======
-      </class> <!-- contactTestCases.VerifyContactDuplicateContact -->
->>>>>>> 016063e70b721a3afd91854bbf260f6d68b18757
->>>>>>> fda21093b15c3986644d16c9858ef62661fd074f
->>>>>>> 12ec0d4a6dcdaff1f62377c3e8b368abcc27e6a9
->>>>>>> b8101cdd75caaa0c407797bcd6ae1b6003fcaac1
+      </class> <!-- iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

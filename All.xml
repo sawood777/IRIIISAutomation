@@ -7,6 +7,8 @@
       <class name="contactTestCases.VerifyContact"/>
       <class name="contactTestCases.VerifyInvitingContact"/>
       <class name="contactTestCases.VerifyContactDuplicateContact"/>
+      <class name="contactTestCases.VerifyContactDuplicate"/>
+      
   
     </classes>
   </test> <!-- Test -->
