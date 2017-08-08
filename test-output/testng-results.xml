@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
@@ -91,6 +92,45 @@ Session ID: 5d5eb2c2773d0d7fb608099cb7ed746f
           </reporter-output>
         </test-method> <!-- postCondition -->
       </class> <!-- IriiisDrive.VerifyFolderActivities -->
+=======
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="89281" started-at="2017-08-03T06:00:11Z" finished-at="2017-08-03T06:01:41Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="89281" started-at="2017-08-03T06:00:11Z" finished-at="2017-08-03T06:01:41Z">
+      <class name="iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@3532ec19]" name="testBrowser" is-config="true" duration-ms="22314" started-at="2017-08-03T11:30:11Z" finished-at="2017-08-03T11:30:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowser -->
+        <test-method status="PASS" signature="testVerifySendingEmailIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@3532ec19]" name="testVerifySendingEmailIRIIIS" duration-ms="35301" started-at="2017-08-03T11:30:34Z" finished-at="2017-08-03T11:31:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVerifySendingEmailIRIIIS -->
+        <test-method status="PASS" signature="testProcessingEmailIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@3532ec19]" name="testProcessingEmailIRIIIS" duration-ms="6670" started-at="2017-08-03T11:31:09Z" finished-at="2017-08-03T11:31:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProcessingEmailIRIIIS -->
+        <test-method status="PASS" signature="testUnProcessingEmailIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@3532ec19]" name="testUnProcessingEmailIRIIIS" duration-ms="4839" started-at="2017-08-03T11:31:16Z" finished-at="2017-08-03T11:31:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUnProcessingEmailIRIIIS -->
+        <test-method status="PASS" signature="testBatchProcessingEmailIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@3532ec19]" name="testBatchProcessingEmailIRIIIS" duration-ms="7308" started-at="2017-08-03T11:31:20Z" finished-at="2017-08-03T11:31:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchProcessingEmailIRIIIS -->
+        <test-method status="PASS" signature="testBatchUnProcessingEmailIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@3532ec19]" name="testBatchUnProcessingEmailIRIIIS" duration-ms="9758" started-at="2017-08-03T11:31:28Z" finished-at="2017-08-03T11:31:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBatchUnProcessingEmailIRIIIS -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@3532ec19]" name="postCondition" is-config="true" duration-ms="3037" started-at="2017-08-03T11:31:38Z" finished-at="2017-08-03T11:31:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS -->
+>>>>>>> a1fe65bf0809b66f0960e2b8c2d5cfd3312d8d84
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,6 +3,7 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="IriiisDrive.VerifyFolderActivities">
         <methods>
           <include name="testBrowser"/>
@@ -10,6 +11,19 @@
           <include name="postCondition"/>
         </methods>
       </class> <!-- IriiisDrive.VerifyFolderActivities -->
+=======
+      <class name="iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS">
+        <methods>
+          <include name="testUnProcessingEmailIRIIIS"/>
+          <include name="testVerifySendingEmailIRIIIS"/>
+          <include name="testBatchProcessingEmailIRIIIS"/>
+          <include name="testProcessingEmailIRIIIS"/>
+          <include name="testBrowser"/>
+          <include name="testBatchUnProcessingEmailIRIIIS"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS -->
+>>>>>>> a1fe65bf0809b66f0960e2b8c2d5cfd3312d8d84
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

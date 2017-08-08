@@ -99,7 +99,14 @@ public class MailPage {
 	}
 	public void enterToAddreess(String toaddress)
 	{
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		toAddress.sendKeys(toaddress);
+		
 		toAddress.sendKeys(Keys.ENTER);
 	}
 	public void enterSubject(String sub)

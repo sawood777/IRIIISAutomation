@@ -1,3 +1,4 @@
+
 package contactTestCases;
 
 import java.io.IOException;
@@ -247,3 +248,4 @@ public class VerifyContactDuplicate extends BaseTest{
 		}
 		
 }
+
