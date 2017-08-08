@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.print.Doc;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,6 +20,7 @@ public class DocumentsPage {
 	
 	@FindBy(xpath="//md-icon[@class='ng-scope md-font material-icons add']")private WebElement FileAdd;
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[2]/button")private WebElement FileUpload;
+	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item/button")private WebElement Createfolder;
 	@FindBy(xpath="//dock-modal/dock-modal-content/div[2]/dropzone/div/div/button")private WebElement SelectFromComp;
 	@FindBy(xpath="//dock-modal/dock-modal-header/button[2]/md-icon")private WebElement Closebutton;
 	@FindBy(xpath="//div[contains(text(),'zyx')]")private WebElement FileName;
@@ -69,8 +71,53 @@ public class DocumentsPage {
 	@FindBy(xpath="//button[text()=' Select All ']")private WebElement SelectAllBtn;
 	
 	@FindBy(xpath="//div/span[contains(text(),'No files')]")private WebElement TextAfterDelet;
+	@FindBy(xpath="//div/span[@class='file__name file__name--blue ng-binding']")private WebElement FileStatus;
+	@FindBy(xpath="//*[@name='folderName']")private WebElement FolderNamefiled;
+	@FindBy(xpath="//md-dialog-actions/button[2]")private WebElement FolderCreateButn;
+	@FindBy(xpath="//div[contains(text(), 'KB')]/preceding::div[2]")private WebElement Files;
+	@FindBy(xpath="//div[@class='file-list__item-cell ng-binding'][contains(text(), '-')]/preceding::div[2]")private WebElement AllFolder;
+	
+	
+	
+	public void ClickOnfolderCreateBtn(){
+		FolderCreateButn.click();
+	}
+	
+	public void EnterFolderName(String Foldername){
+		FolderNamefiled.clear();
+		FolderNamefiled.sendKeys(Foldername);
+	}
+	
+	
 
+	public void filestatus(){
+		WebDriverWait wait=new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div/span[@class='file__name file__name--blue ng-binding']")));
+	}
 
+	public void acceptalert(){
+		WebDriverWait wait=new WebDriverWait(driver, 10);
+		if((ExpectedConditions.alertIsPresent().apply(driver))==null){
+				System.out.println("alert is not present");
+		}
+		
+		else{
+			Alert alert = driver.switchTo().alert();
+			alert.dismiss();
+			
+			try {
+				Thread.sleep(9000);
+			} catch (InterruptedException e) {
+				
+			}
+			
+		Closebutton.click();	
+		
+			}  
+		
+	}
+	
+	
 	public String GetTextAfterTrash(){
 		String TextAfterFilesTras=TextAfterDelet.getText();
 		return TextAfterFilesTras;
@@ -297,13 +344,22 @@ public class DocumentsPage {
   
   
 	
-/*	public void uploadFile(){
+	public void uploadFile(){
 		FileAdd.click();
 		FileUpload.click();
 		SelectFromComp.click();	
 	}
 	
-	public void SelectFromComp(){
+	public void ClickonFileAdd(){
+		FileAdd.click();
+	}
+	
+	public void ClickOnCreateFolderIcon(){
+		Createfolder.click();
+	}
+	
+	
+	/*public void SelectFromComp(){
 		
 		Screen screen=new Screen();
 		
@@ -318,17 +374,19 @@ public class DocumentsPage {
 			
 		} catch (FindFailed e) {
 		}	
-	}
+	}*/
 	
 	public void closebutton(){
+		//WebDriverWait wait=new WebDriverWait(driver, 20);
+		//wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div/span[contains(text(),'.pdf')]")));
 		
 		Closebutton.click();
 	}
 	
 	public void VerifyFile(){
-		String myfile=FileName.getText();
+		String myfile=FirstFileName.getText();
 		System.out.println(myfile);
-		if(myfile.contains("zyx")){
+		if(myfile.contains("IRIIIS")){
 			
 			System.out.println("file is uploaded");
 		}
@@ -357,7 +415,7 @@ public class DocumentsPage {
 		Addmore.click();
 	}
 	
-	public void SelectFromComp2(){
+	/*public void SelectFromComp2(){
 		
 		Screen screen=new Screen();
 		
