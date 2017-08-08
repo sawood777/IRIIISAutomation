@@ -3,17 +3,16 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="IriiisDrive.VerifyBatchTrashAndUntrash">
+      <class name="IriiisDrive.VerifyTheFileUpdatedesc">
         <methods>
-          <include name="VerifyDropboxBatchFileTrash"/>
-          <include name="VerifyOIriiisBatchFileUnTrash"/>
-          <include name="VerifygoogleBatchFileUnTrash"/>
-          <include name="VerifyBoxdriveBatchFileUnTrash"/>
+          <include name="VerifyDropboxdriveFileUpdateDesc"/>
+          <include name="VerifyOnedriveFileUpdateDesc"/>
           <include name="testBrowser"/>
-          <include name="VerifyboxBatchFileUnTrash"/>
+          <include name="VerifyIriiisFileUpdateDesc"/>
+          <include name="VerifyboxdriveFileUpdateDesc"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- IriiisDrive.VerifyBatchTrashAndUntrash -->
+      </class> <!-- IriiisDrive.VerifyTheFileUpdatedesc -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

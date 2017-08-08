@@ -10,6 +10,7 @@
       <class name="IriiisDrive.VerifyTheFileDeletes"/>
       <class name="IriiisDrive.VerifyBatchTrashAndUntrash"/>
       <class name="IriiisDrive.VerifyBatchFileDelete"/>
+      <class name="IriiisDrive.VerifyFolderActivities"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
