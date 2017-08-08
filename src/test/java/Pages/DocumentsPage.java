@@ -34,10 +34,16 @@ public class DocumentsPage {
 	@FindBy(xpath="//button/img[@src='img/box.png']")private WebElement boxdrive;
 	@FindBy(xpath="//md-menu[contains(@class,'accounts-dropdown md-menu ng-scope _md')]")private WebElement DriveDropdown;
 	@FindBy(xpath="//span[text()='Accounts']/following::md-menu-item/md-menu/button[@ng-click='$mdOpenMenu()']")private WebElement Allaccuntslink;
-	@FindAll({@FindBy(xpath="//div[@class='file-list__item-cell']/div")})private List<WebElement> AllFileNames;
+	//@FindAll({@FindBy(xpath="//div[@class='file-list__item-cell']/div")})private List<WebElement> AllFileNames;
+	@FindAll({@FindBy(xpath="//div[contains(text(), 'KB')]/preceding::div[2]")})private List<WebElement> AllFileNames;
+	
 	@FindAll({@FindBy(xpath="//li[@class='topic-selector__list-item ng-scope']")}) private List<WebElement> topicListInTagToTopic;
-	@FindBy(xpath="//i[@class='material-icons ng-scope']")private WebElement elipseIcon;
-	@FindBy(xpath="//div[@class='file-list__item-cell']/div")private WebElement FirstFileName;
+	//@FindBy(xpath="//i[@class='material-icons ng-scope']")private WebElement elipseIcon;
+	@FindBy(xpath="//div[contains(text(), 'KB')]/following::div/md-menu/button/i[@class='material-icons ng-scope']")private WebElement elipseIcon;
+	
+//	@FindBy(xpath="//div[@class='file-list__item-cell']/div")private WebElement FirstFileName;
+	@FindBy(xpath="//div[contains(text(), 'KB')]/preceding::div[2]")private WebElement FirstFileName;
+	
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[5]/button[text()='Tag topics']")private WebElement TagToTopic;
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[3]/button[text()='Share to Topics']")private WebElement ShareToTopic;
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item/button[text()='Trash']")private WebElement TrashFile;
@@ -47,7 +53,7 @@ public class DocumentsPage {
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[1]/button[text()='View Details']")private WebElement ViewDetails;
 
 	@FindBy(xpath="//button[contains(text(),'Save')]")private WebElement topicSave;
-	@FindAll({@FindBy(xpath="//div[1]/md-checkbox")})private List<WebElement> DocBatchselection;
+	
 	@FindBy(xpath="//button[text()='Drive']")private WebElement Drivebutton1;
 	
 	@FindBy(xpath="//md-menu[contains(@class,'_md-nested-menu md-menu ng-scope _md')]")private WebElement Drivebutton2;
@@ -67,7 +73,16 @@ public class DocumentsPage {
 	@FindBy(xpath="//md-icon[@md-font-icon='delete']")private WebElement MoveToTrashBtn;
 	@FindBy(xpath="//md-icon[@md-font-icon='undo']")private WebElement UndoBtn;
 	@FindBy(xpath="//md-icon[@md-font-icon='delete_forever']")private WebElement DeleteForeverBtn;
-	@FindBy(xpath="//div[@class='file-list__item-cell ng-scope']")private WebElement BatchCheck;
+	
+	//@FindBy(xpath="//div[@class='file-list__item-cell ng-scope']")private WebElement BatchCheck;
+	@FindBy(xpath="//div[contains(text(), 'KB')]/preceding::div[4]")private WebElement BatchCheck;
+	
+	//@FindAll({@FindBy(xpath="//div[1]/md-checkbox")})private List<WebElement> DocBatchselection;
+	@FindAll({@FindBy(xpath="//div[contains(text(), 'KB')]/preceding::div[8]")})private List<WebElement> DocBatchselection;
+	//div[contains(text(), 'KB')]/preceding::div[8]
+	
+	
+	
 	@FindBy(xpath="//button[text()=' Select All ']")private WebElement SelectAllBtn;
 	
 	@FindBy(xpath="//div/span[contains(text(),'No files')]")private WebElement TextAfterDelet;
@@ -132,6 +147,18 @@ public class DocumentsPage {
 		BatchCheck.click();
 		//BatchCheck.click();
 	}
+	
+public void ClickSelectBacthfiles(){
+		
+		int size=DocBatchselection.size();
+		System.out.println("total number of files"+ size);
+		for(int i=0; i<=3; i++){
+		DocBatchselection.get(i).click();
+			
+		}
+	}
+
+
 	public void ClickOnSelectAllBtn(){
 		SelectAllBtn.click();
 	}
@@ -226,15 +253,7 @@ public class DocumentsPage {
 		
 	}
 	
-	public void ClickSelectBacthfiles(){
-		
-		int size=DocBatchselection.size();
-		System.out.println("total number of files"+ size);
-		for(int i=0; i<=3; i++){
-		DocBatchselection.get(i).click();
-			
-		}
-	}
+	
 	
 	public void NavigateToDrive(){
 		//Actions action=new Actions(driver);

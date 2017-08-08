@@ -1,62 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="5" total="8" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="61158" started-at="2017-08-08T07:34:53Z" finished-at="2017-08-08T07:35:54Z">
+  <suite name="Default suite" duration-ms="178708" started-at="2017-08-08T10:32:22Z" finished-at="2017-08-08T10:35:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="61158" started-at="2017-08-08T07:34:53Z" finished-at="2017-08-08T07:35:54Z">
-      <class name="IriiisDrive.VerifyFolderActivities">
-        <test-method status="PASS" signature="testBrowser()[pri:0, instance:IriiisDrive.VerifyFolderActivities@26653222]" name="testBrowser" is-config="true" duration-ms="15165" started-at="2017-08-08T13:04:53Z" finished-at="2017-08-08T13:05:08Z">
+    <test name="Default test" duration-ms="178708" started-at="2017-08-08T10:32:22Z" finished-at="2017-08-08T10:35:21Z">
+      <class name="IriiisDrive.VerifyBatchTrashAndUntrash">
+        <test-method status="PASS" signature="testBrowser()[pri:0, instance:IriiisDrive.VerifyBatchTrashAndUntrash@3532ec19]" name="testBrowser" is-config="true" duration-ms="17617" started-at="2017-08-08T16:02:22Z" finished-at="2017-08-08T16:02:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBrowser -->
-        <test-method status="PASS" signature="RenamedropboxFolder()[pri:0, instance:IriiisDrive.VerifyFolderActivities@26653222]" name="RenamedropboxFolder" duration-ms="21415" started-at="2017-08-08T13:05:08Z" finished-at="2017-08-08T13:05:29Z">
+        <test-method status="PASS" signature="VerifyIriiisBatchFileTrash()[pri:0, instance:IriiisDrive.VerifyBatchTrashAndUntrash@3532ec19]" name="VerifyIriiisBatchFileTrash" duration-ms="34434" started-at="2017-08-08T16:02:40Z" finished-at="2017-08-08T16:03:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RenamedropboxFolder -->
-        <test-method status="FAIL" signature="RenameOnedriveFolder()[pri:0, instance:IriiisDrive.VerifyFolderActivities@26653222]" name="RenameOnedriveFolder" duration-ms="18474" started-at="2017-08-08T13:05:29Z" finished-at="2017-08-08T13:05:48Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        </test-method> <!-- VerifyIriiisBatchFileTrash -->
+        <test-method status="PASS" signature="VerifyIgoogleBatchFileTrash()[pri:0, instance:IriiisDrive.VerifyBatchTrashAndUntrash@3532ec19]" name="VerifyIgoogleBatchFileTrash" duration-ms="32312" started-at="2017-08-08T16:03:14Z" finished-at="2017-08-08T16:03:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyIgoogleBatchFileTrash -->
+        <test-method status="PASS" signature="VerifyBoxdriveBatchFileTrash()[pri:0, instance:IriiisDrive.VerifyBatchTrashAndUntrash@3532ec19]" name="VerifyBoxdriveBatchFileTrash" duration-ms="32188" started-at="2017-08-08T16:03:46Z" finished-at="2017-08-08T16:04:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyBoxdriveBatchFileTrash -->
+        <test-method status="FAIL" signature="VerifyDropboxBatchFileTrash()[pri:0, instance:IriiisDrive.VerifyBatchTrashAndUntrash@3532ec19]" name="VerifyDropboxBatchFileTrash" duration-ms="15901" started-at="2017-08-08T16:04:18Z" finished-at="2017-08-08T16:04:34Z">
+          <exception class="java.lang.IndexOutOfBoundsException">
             <message>
-              <![CDATA[unknown error: Element <md-icon md-font-icon="remove_circle" class="ng-scope md-font material-icons remove_circle" role="img" aria-label="remove_circle">...</md-icon> is not clickable at point (1092, 105). Other element would receive the click: <div class="md-dialog-container ng-scope" tabindex="-1" md-theme="" style="top: 0px; height: 623px;">...</div>
-  (Session info: chrome=59.0.3071.115)
-  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 61 milliseconds
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'LAPTOP-S0NUHBFQ', ip: '192.168.0.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SAWOOD~1\AppData\Local\Temp\scoped_dir19676_25245}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: 5d5eb2c2773d0d7fb608099cb7ed746f]]>
+              <![CDATA[Index: 1, Size: 1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <md-icon md-font-icon="remove_circle" class="ng-scope md-font material-icons remove_circle" role="img" aria-label="remove_circle">...</md-icon> is not clickable at point (1092, 105). Other element would receive the click: <div class="md-dialog-container ng-scope" tabindex="-1" md-theme="" style="top: 0px; height: 623px;">...</div>
-  (Session info: chrome=59.0.3071.115)
-  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 61 milliseconds
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'LAPTOP-S0NUHBFQ', ip: '192.168.0.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SAWOOD~1\AppData\Local\Temp\scoped_dir19676_25245}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: 5d5eb2c2773d0d7fb608099cb7ed746f
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy7.click(Unknown Source)
-	at Pages.DocumentsPage.clickonCloseIcon(DocumentsPage.java:273)
-	at DocumentTestCases.VerifyFolder.RenameFolderName(VerifyFolder.java:76)
-	at IriiisDrive.VerifyFolderActivities.RenameOnedriveFolder(VerifyFolderActivities.java:79)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+	at com.sun.proxy.$Proxy9.get(Unknown Source)
+	at Pages.DocumentsPage.ClickSelectBacthfiles(DocumentsPage.java:156)
+	at DocumentTestCases.VerifyTrashandUntrashFile.BatchTrash(VerifyTrashandUntrashFile.java:146)
+	at IriiisDrive.VerifyBatchTrashAndUntrash.VerifyDropboxBatchFileTrash(VerifyBatchTrashAndUntrash.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -83,54 +66,311 @@ Session ID: 5d5eb2c2773d0d7fb608099cb7ed746f
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RenameOnedriveFolder -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:IriiisDrive.VerifyFolderActivities@26653222]" name="postCondition" is-config="true" duration-ms="6079" started-at="2017-08-08T13:05:48Z" finished-at="2017-08-08T13:05:54Z">
+        </test-method> <!-- VerifyDropboxBatchFileTrash -->
+        <test-method status="FAIL" signature="VerifyOIriiisBatchFileUnTrash()[pri:0, instance:IriiisDrive.VerifyBatchTrashAndUntrash@3532ec19]" name="VerifyOIriiisBatchFileUnTrash" duration-ms="10067" started-at="2017-08-08T16:04:34Z" finished-at="2017-08-08T16:04:44Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Document')]"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-S0NUHBFQ', ip: '192.168.0.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SAWOOD~1\AppData\Local\Temp\scoped_dir15404_2698}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: dc6addc8797a5584cb4ff101b6349ed6
+*** Element info: {Using=xpath, value=//div[contains(text(),'Document')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Document')]"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-S0NUHBFQ', ip: '192.168.0.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SAWOOD~1\AppData\Local\Temp\scoped_dir15404_2698}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: dc6addc8797a5584cb4ff101b6349ed6
+*** Element info: {Using=xpath, value=//div[contains(text(),'Document')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at Pages.DashboardPage.clickDocumentCard(DashboardPage.java:31)
+	at DocumentTestCases.VerifyTrashandUntrashFile.BatchUnTrash(VerifyTrashandUntrashFile.java:209)
+	at IriiisDrive.VerifyBatchTrashAndUntrash.VerifyOIriiisBatchFileUnTrash(VerifyBatchTrashAndUntrash.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyOIriiisBatchFileUnTrash -->
+        <test-method status="FAIL" signature="VerifygoogleBatchFileUnTrash()[pri:0, instance:IriiisDrive.VerifyBatchTrashAndUntrash@3532ec19]" name="VerifygoogleBatchFileUnTrash" duration-ms="10047" started-at="2017-08-08T16:04:44Z" finished-at="2017-08-08T16:04:54Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Document')]"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-S0NUHBFQ', ip: '192.168.0.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SAWOOD~1\AppData\Local\Temp\scoped_dir15404_2698}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: dc6addc8797a5584cb4ff101b6349ed6
+*** Element info: {Using=xpath, value=//div[contains(text(),'Document')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Document')]"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-S0NUHBFQ', ip: '192.168.0.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SAWOOD~1\AppData\Local\Temp\scoped_dir15404_2698}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: dc6addc8797a5584cb4ff101b6349ed6
+*** Element info: {Using=xpath, value=//div[contains(text(),'Document')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at Pages.DashboardPage.clickDocumentCard(DashboardPage.java:31)
+	at DocumentTestCases.VerifyTrashandUntrashFile.BatchUnTrash(VerifyTrashandUntrashFile.java:209)
+	at IriiisDrive.VerifyBatchTrashAndUntrash.VerifygoogleBatchFileUnTrash(VerifyBatchTrashAndUntrash.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifygoogleBatchFileUnTrash -->
+        <test-method status="FAIL" signature="VerifyboxBatchFileUnTrash()[pri:0, instance:IriiisDrive.VerifyBatchTrashAndUntrash@3532ec19]" name="VerifyboxBatchFileUnTrash" duration-ms="10048" started-at="2017-08-08T16:04:54Z" finished-at="2017-08-08T16:05:05Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Document')]"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-S0NUHBFQ', ip: '192.168.0.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SAWOOD~1\AppData\Local\Temp\scoped_dir15404_2698}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: dc6addc8797a5584cb4ff101b6349ed6
+*** Element info: {Using=xpath, value=//div[contains(text(),'Document')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Document')]"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-S0NUHBFQ', ip: '192.168.0.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SAWOOD~1\AppData\Local\Temp\scoped_dir15404_2698}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: dc6addc8797a5584cb4ff101b6349ed6
+*** Element info: {Using=xpath, value=//div[contains(text(),'Document')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at Pages.DashboardPage.clickDocumentCard(DashboardPage.java:31)
+	at DocumentTestCases.VerifyTrashandUntrashFile.BatchUnTrash(VerifyTrashandUntrashFile.java:209)
+	at IriiisDrive.VerifyBatchTrashAndUntrash.VerifyboxBatchFileUnTrash(VerifyBatchTrashAndUntrash.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyboxBatchFileUnTrash -->
+        <test-method status="FAIL" signature="VerifyBoxdriveBatchFileUnTrash()[pri:0, instance:IriiisDrive.VerifyBatchTrashAndUntrash@3532ec19]" name="VerifyBoxdriveBatchFileUnTrash" duration-ms="10023" started-at="2017-08-08T16:05:05Z" finished-at="2017-08-08T16:05:15Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Document')]"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.01 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-S0NUHBFQ', ip: '192.168.0.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SAWOOD~1\AppData\Local\Temp\scoped_dir15404_2698}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: dc6addc8797a5584cb4ff101b6349ed6
+*** Element info: {Using=xpath, value=//div[contains(text(),'Document')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Document')]"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.01 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-S0NUHBFQ', ip: '192.168.0.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SAWOOD~1\AppData\Local\Temp\scoped_dir15404_2698}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: dc6addc8797a5584cb4ff101b6349ed6
+*** Element info: {Using=xpath, value=//div[contains(text(),'Document')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at Pages.DashboardPage.clickDocumentCard(DashboardPage.java:31)
+	at DocumentTestCases.VerifyTrashandUntrashFile.BatchUnTrash(VerifyTrashandUntrashFile.java:209)
+	at IriiisDrive.VerifyBatchTrashAndUntrash.VerifyBoxdriveBatchFileUnTrash(VerifyBatchTrashAndUntrash.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyBoxdriveBatchFileUnTrash -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:IriiisDrive.VerifyBatchTrashAndUntrash@3532ec19]" name="postCondition" is-config="true" duration-ms="6028" started-at="2017-08-08T16:05:15Z" finished-at="2017-08-08T16:05:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-      </class> <!-- IriiisDrive.VerifyFolderActivities -->
-=======
-<testng-results skipped="0" failed="0" total="5" passed="5">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Default suite" duration-ms="89281" started-at="2017-08-03T06:00:11Z" finished-at="2017-08-03T06:01:41Z">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="89281" started-at="2017-08-03T06:00:11Z" finished-at="2017-08-03T06:01:41Z">
-      <class name="iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS">
-        <test-method status="PASS" signature="testBrowser()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@3532ec19]" name="testBrowser" is-config="true" duration-ms="22314" started-at="2017-08-03T11:30:11Z" finished-at="2017-08-03T11:30:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBrowser -->
-        <test-method status="PASS" signature="testVerifySendingEmailIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@3532ec19]" name="testVerifySendingEmailIRIIIS" duration-ms="35301" started-at="2017-08-03T11:30:34Z" finished-at="2017-08-03T11:31:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testVerifySendingEmailIRIIIS -->
-        <test-method status="PASS" signature="testProcessingEmailIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@3532ec19]" name="testProcessingEmailIRIIIS" duration-ms="6670" started-at="2017-08-03T11:31:09Z" finished-at="2017-08-03T11:31:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testProcessingEmailIRIIIS -->
-        <test-method status="PASS" signature="testUnProcessingEmailIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@3532ec19]" name="testUnProcessingEmailIRIIIS" duration-ms="4839" started-at="2017-08-03T11:31:16Z" finished-at="2017-08-03T11:31:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUnProcessingEmailIRIIIS -->
-        <test-method status="PASS" signature="testBatchProcessingEmailIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@3532ec19]" name="testBatchProcessingEmailIRIIIS" duration-ms="7308" started-at="2017-08-03T11:31:20Z" finished-at="2017-08-03T11:31:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBatchProcessingEmailIRIIIS -->
-        <test-method status="PASS" signature="testBatchUnProcessingEmailIRIIIS()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@3532ec19]" name="testBatchUnProcessingEmailIRIIIS" duration-ms="9758" started-at="2017-08-03T11:31:28Z" finished-at="2017-08-03T11:31:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBatchUnProcessingEmailIRIIIS -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS@3532ec19]" name="postCondition" is-config="true" duration-ms="3037" started-at="2017-08-03T11:31:38Z" finished-at="2017-08-03T11:31:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-      </class> <!-- iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS -->
->>>>>>> a1fe65bf0809b66f0960e2b8c2d5cfd3312d8d84
+      </class> <!-- IriiisDrive.VerifyBatchTrashAndUntrash -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

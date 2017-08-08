@@ -147,9 +147,10 @@ public class VerifyTrashandUntrashFile {
 		System.out.println("4 files are selected");
 		
 		List<WebElement> FilenNames=doc.GetAllFileNames();
+		//int numberoffiles=FilenNames.size();
 		
-		String[] myStringArray = new String[5];
-		for(int i=0;i<5;i++)
+		String[] myStringArray = new String[3];
+		for(int i=0;i<3;i++)
 		{
 			myStringArray[i]=FilenNames.get(i).getText();
 			

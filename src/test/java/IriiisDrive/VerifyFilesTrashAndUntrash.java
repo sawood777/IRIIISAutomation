@@ -35,7 +35,7 @@ public class VerifyFilesTrashAndUntrash extends BaseTest{
 		Trash.VerifyTrashFile("box");	
 	}
 	
-	@Test(priority=5)
+	//@Test(priority=5)
 	public void VerifyOnedriveFileTrash(){
 		
 		VerifyTrashandUntrashFile Trash=new VerifyTrashandUntrashFile(driver);

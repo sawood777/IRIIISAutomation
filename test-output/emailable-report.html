@@ -31,28 +31,29 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<<<<<<< HEAD
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">61.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi_attn">5</td><td class="numi">178.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr><th colspan="4">Default test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">IriiisDrive.VerifyFolderActivities</td><td><a href="#m1"><b>RenameOnedriveFolder</b>  </a></td><td class="numi">1</td><td>1502177729826</td><td class="numi">18474</td></tr>
+<tr class="failedodd"><td rowspan="5">IriiisDrive.VerifyBatchTrashAndUntrash</td><td><a href="#m1"><b>VerifyDropboxBatchFileTrash</b>  </a></td><td class="numi">1</td><td>1502188458950</td><td class="numi">15901</td></tr><tr class="failedodd"><td><a href="#m2"><b>VerifyOIriiisBatchFileUnTrash</b>  </a></td><td class="numi">1</td><td>1502188474853</td><td class="numi">10067</td></tr><tr class="failedodd"><td><a href="#m3"><b>VerifygoogleBatchFileUnTrash</b>  </a></td><td class="numi">1</td><td>1502188484929</td><td class="numi">10047</td></tr><tr class="failedodd"><td><a href="#m4"><b>VerifyboxBatchFileUnTrash</b>  </a></td><td class="numi">1</td><td>1502188494982</td><td class="numi">10048</td></tr><tr class="failedodd"><td><a href="#m5"><b>VerifyBoxdriveBatchFileUnTrash</b>  </a></td><td class="numi">1</td><td>1502188505034</td><td class="numi">10023</td></tr>
 <tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">IriiisDrive.VerifyFolderActivities</td><td><a href="#m2"><b>RenamedropboxFolder</b>  </a></td><td class="numi">1</td><td>1502177708407</td><td class="numi">21415</td></tr>
+<tr class="passedodd"><td rowspan="3">IriiisDrive.VerifyBatchTrashAndUntrash</td><td><a href="#m6"><b>VerifyIriiisBatchFileTrash</b>  </a></td><td class="numi">1</td><td>1502188360012</td><td class="numi">34434</td></tr><tr class="passedodd"><td><a href="#m7"><b>VerifyIgoogleBatchFileTrash</b>  </a></td><td class="numi">1</td><td>1502188394447</td><td class="numi">32312</td></tr><tr class="passedodd"><td><a href="#m8"><b>VerifyBoxdriveBatchFileTrash</b>  </a></td><td class="numi">1</td><td>1502188426761</td><td class="numi">32188</td></tr>
 </table>
 <h1>Default test</h1>
-<h2 id="m1">IriiisDrive.VerifyFolderActivities:RenameOnedriveFolder</h2>
+<h2 id="m1">IriiisDrive.VerifyBatchTrashAndUntrash:VerifyOIriiisBatchFileUnTrash</h2>
 <div style="padding-left:3em">
-<p>unknown error: Element &lt;md-icon md-font-icon=&quot;remove_circle&quot; class=&quot;ng-scope md-font material-icons remove_circle&quot; role=&quot;img&quot; aria-label=&quot;remove_circle&quot;&gt;...&lt;/md-icon&gt; is not clickable at point (1092, 105). Other element would receive the click: &lt;div class=&quot;md-dialog-container ng-scope&quot; tabindex=&quot;-1&quot; md-theme=&quot;&quot; style=&quot;top: 0px; height: 623px;&quot;&gt;...&lt;/div&gt;
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Document&apos;)]&quot;}
   (Session info: chrome=59.0.3071.115)
   (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 61 milliseconds
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
 System info: host: &apos;LAPTOP-S0NUHBFQ&apos;, ip: &apos;192.168.0.120&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SAWOOD~1\AppData\Local\Temp\scoped_dir19676_25245}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: 5d5eb2c2773d0d7fb608099cb7ed746f</p>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SAWOOD~1\AppData\Local\Temp\scoped_dir15404_2698}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: dc6addc8797a5584cb4ff101b6349ed6
+*** Element info: {Using=xpath, value=//div[contains(text(),&apos;Document&apos;)]}</p>
 sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 <br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 <br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -60,39 +61,138 @@ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 <br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
 <br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
 <br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
-<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
-<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-<br/>at java.lang.reflect.Method.invoke(Method.java:498)
-<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 <br/>at com.sun.proxy.$Proxy7.click(Unknown Source)
-<br/>at Pages.DocumentsPage.clickonCloseIcon(DocumentsPage.java:273)
-<br/>at DocumentTestCases.VerifyFolder.RenameFolderName(VerifyFolder.java:76)
-<br/>at IriiisDrive.VerifyFolderActivities.RenameOnedriveFolder(VerifyFolderActivities.java:79)
+<br/>at Pages.DashboardPage.clickDocumentCard(DashboardPage.java:31)
+<br/>at DocumentTestCases.VerifyTrashandUntrashFile.BatchUnTrash(VerifyTrashandUntrashFile.java:209)
+<br/>at IriiisDrive.VerifyBatchTrashAndUntrash.VerifyOIriiisBatchFileUnTrash(VerifyBatchTrashAndUntrash.java:49)
 <br/>25 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">IriiisDrive.VerifyFolderActivities:RenamedropboxFolder</h2>
-=======
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">5</td><td class="numi">5</td><td class="numi">0</td><td class="numi">0</td><td class="numi">89.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-</table>
-<table cellspacing="0" cellpadding="0" class="passed" id="summary">
-<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="5">iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS</td><td><a href="#m1"><b>testVerifySendingEmailIRIIIS</b>  </a></td><td class="numi">1</td><td>1501740034168</td><td class="numi">35301</td></tr><tr class="passedodd"><td><a href="#m2"><b>testProcessingEmailIRIIIS</b>  </a></td><td class="numi">1</td><td>1501740069469</td><td class="numi">6670</td></tr><tr class="passedodd"><td><a href="#m3"><b>testUnProcessingEmailIRIIIS</b>  </a></td><td class="numi">1</td><td>1501740076142</td><td class="numi">4839</td></tr><tr class="passedodd"><td><a href="#m4"><b>testBatchProcessingEmailIRIIIS</b>  </a></td><td class="numi">1</td><td>1501740080981</td><td class="numi">7308</td></tr><tr class="passedodd"><td><a href="#m5"><b>testBatchUnProcessingEmailIRIIIS</b>  </a></td><td class="numi">1</td><td>1501740088289</td><td class="numi">9758</td></tr>
-</table>
-<h1>Default test</h1>
-<h2 id="m1">iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS:testBatchUnProcessingEmailIRIIIS</h2>
+<h2 id="m2">IriiisDrive.VerifyBatchTrashAndUntrash:VerifyDropboxBatchFileTrash</h2>
+<div style="padding-left:3em">
+<p>Index: 1, Size: 1</p>
+java.util.ArrayList.rangeCheck(ArrayList.java:653)
+<br/>at java.util.ArrayList.get(ArrayList.java:429)
+<br/>at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:498)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+<br/>at com.sun.proxy.$Proxy9.get(Unknown Source)
+<br/>at Pages.DocumentsPage.ClickSelectBacthfiles(DocumentsPage.java:156)
+<br/>at DocumentTestCases.VerifyTrashandUntrashFile.BatchTrash(VerifyTrashandUntrashFile.java:146)
+<br/>at IriiisDrive.VerifyBatchTrashAndUntrash.VerifyDropboxBatchFileTrash(VerifyBatchTrashAndUntrash.java:35)
+<br/>25 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS:testUnProcessingEmailIRIIIS</h2>
+<h2 id="m3">IriiisDrive.VerifyBatchTrashAndUntrash:VerifygoogleBatchFileUnTrash</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Document&apos;)]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;LAPTOP-S0NUHBFQ&apos;, ip: &apos;192.168.0.120&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SAWOOD~1\AppData\Local\Temp\scoped_dir15404_2698}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: dc6addc8797a5584cb4ff101b6349ed6
+*** Element info: {Using=xpath, value=//div[contains(text(),&apos;Document&apos;)]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy7.click(Unknown Source)
+<br/>at Pages.DashboardPage.clickDocumentCard(DashboardPage.java:31)
+<br/>at DocumentTestCases.VerifyTrashandUntrashFile.BatchUnTrash(VerifyTrashandUntrashFile.java:209)
+<br/>at IriiisDrive.VerifyBatchTrashAndUntrash.VerifygoogleBatchFileUnTrash(VerifyBatchTrashAndUntrash.java:56)
+<br/>25 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS:testProcessingEmailIRIIIS</h2>
+<h2 id="m4">IriiisDrive.VerifyBatchTrashAndUntrash:VerifyboxBatchFileUnTrash</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Document&apos;)]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;LAPTOP-S0NUHBFQ&apos;, ip: &apos;192.168.0.120&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SAWOOD~1\AppData\Local\Temp\scoped_dir15404_2698}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: dc6addc8797a5584cb4ff101b6349ed6
+*** Element info: {Using=xpath, value=//div[contains(text(),&apos;Document&apos;)]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy7.click(Unknown Source)
+<br/>at Pages.DashboardPage.clickDocumentCard(DashboardPage.java:31)
+<br/>at DocumentTestCases.VerifyTrashandUntrashFile.BatchUnTrash(VerifyTrashandUntrashFile.java:209)
+<br/>at IriiisDrive.VerifyBatchTrashAndUntrash.VerifyboxBatchFileUnTrash(VerifyBatchTrashAndUntrash.java:63)
+<br/>25 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS:testVerifySendingEmailIRIIIS</h2>
+<h2 id="m5">IriiisDrive.VerifyBatchTrashAndUntrash:VerifyBoxdriveBatchFileUnTrash</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Document&apos;)]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.01 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;LAPTOP-S0NUHBFQ&apos;, ip: &apos;192.168.0.120&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SAWOOD~1\AppData\Local\Temp\scoped_dir15404_2698}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: dc6addc8797a5584cb4ff101b6349ed6
+*** Element info: {Using=xpath, value=//div[contains(text(),&apos;Document&apos;)]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy7.click(Unknown Source)
+<br/>at Pages.DashboardPage.clickDocumentCard(DashboardPage.java:31)
+<br/>at DocumentTestCases.VerifyTrashandUntrashFile.BatchUnTrash(VerifyTrashandUntrashFile.java:209)
+<br/>at IriiisDrive.VerifyBatchTrashAndUntrash.VerifyBoxdriveBatchFileUnTrash(VerifyBatchTrashAndUntrash.java:70)
+<br/>25 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">iriiisMailTestCases.VerifySendingEmailAndProcessingIRIIIS:testBatchProcessingEmailIRIIIS</h2>
->>>>>>> a1fe65bf0809b66f0960e2b8c2d5cfd3312d8d84
+<h2 id="m6">IriiisDrive.VerifyBatchTrashAndUntrash:VerifyIriiisBatchFileTrash</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">IriiisDrive.VerifyBatchTrashAndUntrash:VerifyBoxdriveBatchFileTrash</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">IriiisDrive.VerifyBatchTrashAndUntrash:VerifyIgoogleBatchFileTrash</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>
