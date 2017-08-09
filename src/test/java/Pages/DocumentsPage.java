@@ -35,14 +35,18 @@ public class DocumentsPage {
 	@FindBy(xpath="//md-menu[contains(@class,'accounts-dropdown md-menu ng-scope _md')]")private WebElement DriveDropdown;
 	@FindBy(xpath="//span[text()='Accounts']/following::md-menu-item/md-menu/button[@ng-click='$mdOpenMenu()']")private WebElement Allaccuntslink;
 	//@FindAll({@FindBy(xpath="//div[@class='file-list__item-cell']/div")})private List<WebElement> AllFileNames;
-	@FindAll({@FindBy(xpath="//div[contains(text(), 'KB')]/preceding::div[2]")})private List<WebElement> AllFileNames;
+	@FindAll({@FindBy(xpath="//div[contains(text(), 'KB') or contains(text(), 'MB')]/preceding::div[2]")})private List<WebElement> AllFileNames;
 	
 	@FindAll({@FindBy(xpath="//li[@class='topic-selector__list-item ng-scope']")}) private List<WebElement> topicListInTagToTopic;
 	//@FindBy(xpath="//i[@class='material-icons ng-scope']")private WebElement elipseIcon;
-	@FindBy(xpath="//div[contains(text(), 'KB')]/following::div/md-menu/button/i[@class='material-icons ng-scope']")private WebElement elipseIcon;
+	@FindBy(xpath="//div[contains(text(), 'KB') or contains(text(), 'MB')]/following::div/md-menu/button/i[@class='material-icons ng-scope']")private WebElement elipseIcon;
+	
+	@FindBy(xpath="//div[contains(text(), '-')]/following::div/md-menu/button/i[@class='material-icons ng-scope']")private WebElement FolderelipseIcon;
+	
+	
 	
 //	@FindBy(xpath="//div[@class='file-list__item-cell']/div")private WebElement FirstFileName;
-	@FindBy(xpath="//div[contains(text(), 'KB')]/preceding::div[2]")private WebElement FirstFileName;
+	@FindBy(xpath="//div[contains(text(), 'KB') or contains(text(), 'MB')]/preceding::div[2]")private WebElement FirstFileName;
 	
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[5]/button[text()='Tag topics']")private WebElement TagToTopic;
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[3]/button[text()='Share to Topics']")private WebElement ShareToTopic;
@@ -75,10 +79,10 @@ public class DocumentsPage {
 	@FindBy(xpath="//md-icon[@md-font-icon='delete_forever']")private WebElement DeleteForeverBtn;
 	
 	//@FindBy(xpath="//div[@class='file-list__item-cell ng-scope']")private WebElement BatchCheck;
-	@FindBy(xpath="//div[contains(text(), 'KB')]/preceding::div[4]")private WebElement BatchCheck;
+	@FindBy(xpath="//div[contains(text(), 'KB') or contains(text(), 'MB')]/preceding::div[4]")private WebElement BatchCheck;
 	
 	//@FindAll({@FindBy(xpath="//div[1]/md-checkbox")})private List<WebElement> DocBatchselection;
-	@FindAll({@FindBy(xpath="//div[contains(text(), 'KB')]/preceding::div[8]")})private List<WebElement> DocBatchselection;
+	@FindAll({@FindBy(xpath="//div[contains(text(), 'KB') or contains(text(), 'MB')]/preceding::div[8]")})private List<WebElement> DocBatchselection;
 	//div[contains(text(), 'KB')]/preceding::div[8]
 	
 	
@@ -232,10 +236,24 @@ public void ClickSelectBacthfiles(){
 		return FileName;
 	}
 	
+	public String FolderName(){
+		
+		String FileName=AllFolder.getText();
+		return FileName;
+	}
+	
+	
+	
 	
 	public void clickelipse(){
 		elipseIcon.click();
 	}
+	
+	public void clickFolderelipse(){
+		FolderelipseIcon.click();
+	}
+	
+	
 	
 	public void clickTagtoTopic(){
 		TagToTopic.click();

@@ -34,7 +34,8 @@ public class VerifyFolder {
 		doc.EnterFolderName(Foldername);
 		doc.ClickOnfolderCreateBtn();
 		doc.SleepThreeSec();
-		String Nameoffolder=doc.Filename();
+		
+		String Nameoffolder=doc.FolderName();
 		System.out.println("folder anme is "+ Nameoffolder);
 		
 		if(Nameoffolder.contains(Foldername)){
@@ -61,12 +62,12 @@ public class VerifyFolder {
 		doc.SleepThreeSec();
 		doc.ClickonRequiredAccount(drivername);
 		
-		doc.clickelipse();
+		doc.clickFolderelipse();
 		doc.ClickOnRename();
 		doc.EnterFileName(FolderRename);
 		doc.ClickOnFilesave();
 		doc.SleepFiveSec();
-		String Nameofrenamedfolder=doc.Filename();
+		String Nameofrenamedfolder=doc.FolderName();
 		System.out.println("folder anme is "+ Nameofrenamedfolder);
 		
 		if(Nameofrenamedfolder.contains(FolderRename)){

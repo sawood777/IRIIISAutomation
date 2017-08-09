@@ -31,20 +31,337 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">122.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">37</td><td class="numi">37</td><td class="numi">0</td><td class="numi_attn">10</td><td class="numi">1,288.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="4">IriiisDrive.VerifyTheFileUpdatedesc</td><td><a href="#m1"><b>VerifyIriiisFileUpdateDesc</b>  </a></td><td class="numi">1</td><td>1502189807707</td><td class="numi">24885</td></tr><tr class="passedodd"><td><a href="#m2"><b>VerifyboxdriveFileUpdateDesc</b>  </a></td><td class="numi">1</td><td>1502189832596</td><td class="numi">24712</td></tr><tr class="passedodd"><td><a href="#m3"><b>VerifyDropboxdriveFileUpdateDesc</b>  </a></td><td class="numi">1</td><td>1502189857310</td><td class="numi">24543</td></tr><tr class="passedodd"><td><a href="#m4"><b>VerifyOnedriveFileUpdateDesc</b>  </a></td><td class="numi">1</td><td>1502189881856</td><td class="numi">24706</td></tr>
+<tr><th colspan="4">Test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">IriiisDrive.VerifyRenamingTheFilesName</td><td><a href="#m1"><b>VerifyIriisFileRename</b>  </a></td><td class="numi">1</td><td>1502263629858</td><td class="numi">390</td></tr>
+<tr class="failedeven"><td rowspan="1">IriiisDrive.VerifyTheFileDeletes</td><td><a href="#m2"><b>VerifyIriiisFileDelete</b>  </a></td><td class="numi">1</td><td>1502263913710</td><td class="numi">25289</td></tr>
+<tr class="failedodd"><td rowspan="3">IriiisDrive.VerifyBatchFileDelete</td><td><a href="#m3"><b>VerifygoogleBatchDelete</b>  </a></td><td class="numi">1</td><td>1502264309562</td><td class="numi">21761</td></tr><tr class="failedodd"><td><a href="#m4"><b>VerifyIriiisBatchDelete</b>  </a></td><td class="numi">1</td><td>1502264331324</td><td class="numi">10044</td></tr><tr class="failedodd"><td><a href="#m5"><b>VerifyboxBatchDelete</b>  </a></td><td class="numi">1</td><td>1502264341372</td><td class="numi">10077</td></tr>
+<tr class="failedeven"><td rowspan="5">IriiisDrive.VerifyFolderActivities</td><td><a href="#m6"><b>RenameIriiisFolder</b>  </a></td><td class="numi">1</td><td>1502264461199</td><td class="numi">21469</td></tr><tr class="failedeven"><td><a href="#m7"><b>RenameGoogleFolder</b>  </a></td><td class="numi">1</td><td>1502264482671</td><td class="numi">21208</td></tr><tr class="failedeven"><td><a href="#m8"><b>RenameBoxFolder</b>  </a></td><td class="numi">1</td><td>1502264503882</td><td class="numi">21331</td></tr><tr class="failedeven"><td><a href="#m9"><b>RenamedropboxFolder</b>  </a></td><td class="numi">1</td><td>1502264525215</td><td class="numi">12404</td></tr><tr class="failedeven"><td><a href="#m10"><b>RenameOnedriveFolder</b>  </a></td><td class="numi">1</td><td>1502264537620</td><td class="numi">10055</td></tr>
+<tr><th colspan="4">Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="10">IriiisDrive.VerifyIriiisFileTagingAndSharing</td><td><a href="#m11"><b>VerifyIriiisTag</b>  </a></td><td class="numi">1</td><td>1502263279033</td><td class="numi">24841</td></tr><tr class="passedodd"><td><a href="#m12"><b>VerifgoogleTag</b>  </a></td><td class="numi">1</td><td>1502263303875</td><td class="numi">24480</td></tr><tr class="passedodd"><td><a href="#m13"><b>VerifboxdriveTag</b>  </a></td><td class="numi">1</td><td>1502263328356</td><td class="numi">24348</td></tr><tr class="passedodd"><td><a href="#m14"><b>VerifdropboxdriveTag</b>  </a></td><td class="numi">1</td><td>1502263352704</td><td class="numi">24318</td></tr><tr class="passedodd"><td><a href="#m15"><b>VerifonedriveTag</b>  </a></td><td class="numi">1</td><td>1502263377022</td><td class="numi">24573</td></tr><tr class="passedodd"><td><a href="#m16"><b>VerifyIriiisSharing</b>  </a></td><td class="numi">1</td><td>1502263401596</td><td class="numi">24953</td></tr><tr class="passedodd"><td><a href="#m17"><b>VerifyGoogleSharing</b>  </a></td><td class="numi">1</td><td>1502263426551</td><td class="numi">24151</td></tr><tr class="passedodd"><td><a href="#m18"><b>VerifyboxSharing</b>  </a></td><td class="numi">1</td><td>1502263450703</td><td class="numi">24343</td></tr><tr class="passedodd"><td><a href="#m19"><b>VerifyDropboxSharing</b>  </a></td><td class="numi">1</td><td>1502263475047</td><td class="numi">24079</td></tr><tr class="passedodd"><td><a href="#m20"><b>VerifyOnedriveSharing</b>  </a></td><td class="numi">1</td><td>1502263499127</td><td class="numi">24992</td></tr>
+<tr class="passedeven"><td rowspan="4">IriiisDrive.VerifyRenamingTheFilesName</td><td><a href="#m21"><b>VerifygoogleFileRename</b>  </a></td><td class="numi">1</td><td>1502263544065</td><td class="numi">21713</td></tr><tr class="passedeven"><td><a href="#m22"><b>VerifyBoxFileRename</b>  </a></td><td class="numi">1</td><td>1502263565779</td><td class="numi">21239</td></tr><tr class="passedeven"><td><a href="#m23"><b>VerifyBoxDriveFileRename</b>  </a></td><td class="numi">1</td><td>1502263587019</td><td class="numi">21470</td></tr><tr class="passedeven"><td><a href="#m24"><b>VerifyOneDriveFileRename</b>  </a></td><td class="numi">1</td><td>1502263608490</td><td class="numi">21367</td></tr>
+<tr class="passedodd"><td rowspan="4">IriiisDrive.VerifyTheFileUpdatedesc</td><td><a href="#m25"><b>VerifyIriiisFileUpdateDesc</b>  </a></td><td class="numi">1</td><td>1502263647247</td><td class="numi">25004</td></tr><tr class="passedodd"><td><a href="#m26"><b>VerifyboxdriveFileUpdateDesc</b>  </a></td><td class="numi">1</td><td>1502263672252</td><td class="numi">24865</td></tr><tr class="passedodd"><td><a href="#m27"><b>VerifyDropboxdriveFileUpdateDesc</b>  </a></td><td class="numi">1</td><td>1502263697118</td><td class="numi">24676</td></tr><tr class="passedodd"><td><a href="#m28"><b>VerifyOnedriveFileUpdateDesc</b>  </a></td><td class="numi">1</td><td>1502263721795</td><td class="numi">24672</td></tr>
+<tr class="passedeven"><td rowspan="4">IriiisDrive.VerifyFilesTrashAndUntrash</td><td><a href="#m29"><b>VerifyIriiisFileTrash</b>  </a></td><td class="numi">1</td><td>1502263763460</td><td class="numi">34057</td></tr><tr class="passedeven"><td><a href="#m30"><b>VerifyGoogleFileTrash</b>  </a></td><td class="numi">1</td><td>1502263797518</td><td class="numi">33161</td></tr><tr class="passedeven"><td><a href="#m31"><b>VerifyDropboxFileTrash</b>  </a></td><td class="numi">1</td><td>1502263830680</td><td class="numi">33087</td></tr><tr class="passedeven"><td><a href="#m32"><b>VerifyBoxFileTrash</b>  </a></td><td class="numi">1</td><td>1502263863768</td><td class="numi">32830</td></tr>
+<tr class="passedodd"><td rowspan="2">IriiisDrive.VerifyTheFileDeletes</td><td><a href="#m33"><b>VerifyBoxdriveFileDelete</b>  </a></td><td class="numi">1</td><td>1502263939000</td><td class="numi">18383</td></tr><tr class="passedodd"><td><a href="#m34"><b>VerifygoogleFileDelete</b>  </a></td><td class="numi">1</td><td>1502263957390</td><td class="numi">18276</td></tr>
+<tr class="passedeven"><td rowspan="8">IriiisDrive.VerifyBatchTrashAndUntrash</td><td><a href="#m35"><b>VerifyIriiisBatchFileTrash</b>  </a></td><td class="numi">1</td><td>1502263993005</td><td class="numi">33227</td></tr><tr class="passedeven"><td><a href="#m36"><b>VerifyIgoogleBatchFileTrash</b>  </a></td><td class="numi">1</td><td>1502264026233</td><td class="numi">32376</td></tr><tr class="passedeven"><td><a href="#m37"><b>VerifyBoxdriveBatchFileTrash</b>  </a></td><td class="numi">1</td><td>1502264058611</td><td class="numi">32290</td></tr><tr class="passedeven"><td><a href="#m38"><b>VerifyDropboxBatchFileTrash</b>  </a></td><td class="numi">1</td><td>1502264090902</td><td class="numi">32403</td></tr><tr class="passedeven"><td><a href="#m39"><b>VerifyOIriiisBatchFileUnTrash</b>  </a></td><td class="numi">1</td><td>1502264123306</td><td class="numi">42966</td></tr><tr class="passedeven"><td><a href="#m40"><b>VerifygoogleBatchFileUnTrash</b>  </a></td><td class="numi">1</td><td>1502264166273</td><td class="numi">41937</td></tr><tr class="passedeven"><td><a href="#m41"><b>VerifyboxBatchFileUnTrash</b>  </a></td><td class="numi">1</td><td>1502264208210</td><td class="numi">41714</td></tr><tr class="passedeven"><td><a href="#m42"><b>VerifyBoxdriveBatchFileUnTrash</b>  </a></td><td class="numi">1</td><td>1502264249925</td><td class="numi">42374</td></tr>
+<tr class="passedodd"><td rowspan="5">IriiisDrive.VerifyFolderActivities</td><td><a href="#m43"><b>CreateIriiisFolder</b>  </a></td><td class="numi">1</td><td>1502264365752</td><td class="numi">19375</td></tr><tr class="passedodd"><td><a href="#m44"><b>CreategoogleFolder</b>  </a></td><td class="numi">1</td><td>1502264385128</td><td class="numi">19068</td></tr><tr class="passedodd"><td><a href="#m45"><b>CreateBoxdriveFolder</b>  </a></td><td class="numi">1</td><td>1502264404200</td><td class="numi">18994</td></tr><tr class="passedodd"><td><a href="#m46"><b>CreatedropboxriveFolder</b>  </a></td><td class="numi">1</td><td>1502264423196</td><td class="numi">19056</td></tr><tr class="passedodd"><td><a href="#m47"><b>CreateonedriveFolder</b>  </a></td><td class="numi">1</td><td>1502264442254</td><td class="numi">18944</td></tr>
 </table>
-<h1>Default test</h1>
-<h2 id="m1">IriiisDrive.VerifyTheFileUpdatedesc:VerifyIriiisFileUpdateDesc</h2>
+<h1>Test</h1>
+<h2 id="m1">IriiisDrive.VerifyFolderActivities:RenameIriiisFolder</h2>
+<div style="padding-left:3em">
+<p>unable to create folder expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:286)
+<br/>at DocumentTestCases.VerifyFolder.RenameFolderName(VerifyFolder.java:80)
+<br/>at IriiisDrive.VerifyFolderActivities.RenameIriiisFolder(VerifyFolderActivities.java:51)
+<br/>25 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">IriiisDrive.VerifyTheFileUpdatedesc:VerifyOnedriveFileUpdateDesc</h2>
+<h2 id="m2">IriiisDrive.VerifyTheFileDeletes:VerifyIriiisFileDelete</h2>
+<div style="padding-left:3em">
+<p>File Remove got failed expected [false] but found [true]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:286)
+<br/>at DocumentTestCases.VerifyBasicFileActivity.VeryFileRemove(VerifyBasicFileActivity.java:156)
+<br/>at IriiisDrive.VerifyTheFileDeletes.VerifyIriiisFileDelete(VerifyTheFileDeletes.java:14)
+<br/>25 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">IriiisDrive.VerifyTheFileUpdatedesc:VerifyboxdriveFileUpdateDesc</h2>
+<h2 id="m3">IriiisDrive.VerifyBatchFileDelete:VerifyIriiisBatchDelete</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Document&apos;)]&quot;}
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;LAPTOP-S0NUHBFQ&apos;, ip: &apos;192.168.0.120&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SAWOOD~1\AppData\Local\Temp\scoped_dir5880_10688}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: d9d611222cf7283ec0326ba4b2cf0bb7
+*** Element info: {Using=xpath, value=//div[contains(text(),&apos;Document&apos;)]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy7.click(Unknown Source)
+<br/>at Pages.DashboardPage.clickDocumentCard(DashboardPage.java:31)
+<br/>at DocumentTestCases.VerifyBasicFileActivity.VeryBatchDelete(VerifyBasicFileActivity.java:199)
+<br/>at IriiisDrive.VerifyBatchFileDelete.VerifyIriiisBatchDelete(VerifyBatchFileDelete.java:21)
+<br/>25 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">IriiisDrive.VerifyTheFileUpdatedesc:VerifyDropboxdriveFileUpdateDesc</h2>
+<h2 id="m4">IriiisDrive.VerifyFolderActivities:RenameBoxFolder</h2>
+<div style="padding-left:3em">
+<p>unable to create folder expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:286)
+<br/>at DocumentTestCases.VerifyFolder.RenameFolderName(VerifyFolder.java:80)
+<br/>at IriiisDrive.VerifyFolderActivities.RenameBoxFolder(VerifyFolderActivities.java:65)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">IriiisDrive.VerifyFolderActivities:RenameOnedriveFolder</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Document&apos;)]&quot;}
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;LAPTOP-S0NUHBFQ&apos;, ip: &apos;192.168.0.120&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SAWOOD~1\AppData\Local\Temp\scoped_dir18192_24956}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: caed0290e7f86c8e47fe995b48c1cce6
+*** Element info: {Using=xpath, value=//div[contains(text(),&apos;Document&apos;)]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy7.click(Unknown Source)
+<br/>at Pages.DashboardPage.clickDocumentCard(DashboardPage.java:31)
+<br/>at DocumentTestCases.VerifyFolder.RenameFolderName(VerifyFolder.java:57)
+<br/>at IriiisDrive.VerifyFolderActivities.RenameOnedriveFolder(VerifyFolderActivities.java:79)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">IriiisDrive.VerifyRenamingTheFilesName:VerifyIriisFileRename</h2>
+<div style="padding-left:3em">
+<p>unknown error: Element &lt;md-menu class=&quot;accounts-dropdown md-menu ng-scope _md&quot; md-position-mode=&quot;left bottom&quot;&gt;...&lt;/md-menu&gt; is not clickable at point (303, 105). Other element would receive the click: &lt;div class=&quot;loader-overlay&quot; style=&quot;display: flex;&quot; aria-hidden=&quot;false&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 86 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;LAPTOP-S0NUHBFQ&apos;, ip: &apos;192.168.0.120&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SAWOOD~1\AppData\Local\Temp\scoped_dir7940_19133}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: f3709fff09a806f8d9475ce723cb767e</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+<br/>at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:498)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+<br/>at com.sun.proxy.$Proxy7.click(Unknown Source)
+<br/>at Pages.DocumentsPage.ClickonDrive(DocumentsPage.java:188)
+<br/>at DocumentTestCases.VerifyBasicFileActivity.RenameFile(VerifyBasicFileActivity.java:29)
+<br/>at IriiisDrive.VerifyRenamingTheFilesName.VerifyIriisFileRename(VerifyRenamingTheFilesName.java:42)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">IriiisDrive.VerifyBatchFileDelete:VerifygoogleBatchDelete</h2>
+<div style="padding-left:3em">
+<p>element not visible
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;LAPTOP-S0NUHBFQ&apos;, ip: &apos;192.168.0.120&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SAWOOD~1\AppData\Local\Temp\scoped_dir5880_10688}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: d9d611222cf7283ec0326ba4b2cf0bb7</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+<br/>at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:498)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+<br/>at com.sun.proxy.$Proxy7.click(Unknown Source)
+<br/>at Pages.DocumentsPage.ClickOnSelectAllBtn(DocumentsPage.java:164)
+<br/>at DocumentTestCases.VerifyBasicFileActivity.VeryBatchDelete(VerifyBasicFileActivity.java:225)
+<br/>at IriiisDrive.VerifyBatchFileDelete.VerifygoogleBatchDelete(VerifyBatchFileDelete.java:14)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">IriiisDrive.VerifyFolderActivities:RenameGoogleFolder</h2>
+<div style="padding-left:3em">
+<p>unable to create folder expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:286)
+<br/>at DocumentTestCases.VerifyFolder.RenameFolderName(VerifyFolder.java:80)
+<br/>at IriiisDrive.VerifyFolderActivities.RenameGoogleFolder(VerifyFolderActivities.java:58)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">IriiisDrive.VerifyFolderActivities:RenamedropboxFolder</h2>
+<div style="padding-left:3em">
+<p>unknown error: Element is not clickable at point (1128, 633)
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 67 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;LAPTOP-S0NUHBFQ&apos;, ip: &apos;192.168.0.120&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SAWOOD~1\AppData\Local\Temp\scoped_dir18192_24956}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: caed0290e7f86c8e47fe995b48c1cce6</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+<br/>at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:498)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+<br/>at com.sun.proxy.$Proxy7.click(Unknown Source)
+<br/>at Pages.DocumentsPage.ClickOnRename(DocumentsPage.java:305)
+<br/>at DocumentTestCases.VerifyFolder.RenameFolderName(VerifyFolder.java:66)
+<br/>at IriiisDrive.VerifyFolderActivities.RenamedropboxFolder(VerifyFolderActivities.java:72)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">IriiisDrive.VerifyBatchFileDelete:VerifyboxBatchDelete</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Document&apos;)]&quot;}
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;LAPTOP-S0NUHBFQ&apos;, ip: &apos;192.168.0.120&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\SAWOOD~1\AppData\Local\Temp\scoped_dir5880_10688}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: d9d611222cf7283ec0326ba4b2cf0bb7
+*** Element info: {Using=xpath, value=//div[contains(text(),&apos;Document&apos;)]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy7.click(Unknown Source)
+<br/>at Pages.DashboardPage.clickDocumentCard(DashboardPage.java:31)
+<br/>at DocumentTestCases.VerifyBasicFileActivity.VeryBatchDelete(VerifyBasicFileActivity.java:199)
+<br/>at IriiisDrive.VerifyBatchFileDelete.VerifyboxBatchDelete(VerifyBatchFileDelete.java:28)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">IriiisDrive.VerifyIriiisFileTagingAndSharing:VerifonedriveTag</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">IriiisDrive.VerifyBatchTrashAndUntrash:VerifyBoxdriveBatchFileTrash</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">IriiisDrive.VerifyFolderActivities:CreatedropboxriveFolder</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">IriiisDrive.VerifyRenamingTheFilesName:VerifyBoxFileRename</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">IriiisDrive.VerifyIriiisFileTagingAndSharing:VerifyGoogleSharing</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">IriiisDrive.VerifyFolderActivities:CreateonedriveFolder</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">IriiisDrive.VerifyBatchTrashAndUntrash:VerifyBoxdriveBatchFileUnTrash</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">IriiisDrive.VerifyFilesTrashAndUntrash:VerifyGoogleFileTrash</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">IriiisDrive.VerifyBatchTrashAndUntrash:VerifygoogleBatchFileUnTrash</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">IriiisDrive.VerifyIriiisFileTagingAndSharing:VerifdropboxdriveTag</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">IriiisDrive.VerifyRenamingTheFilesName:VerifygoogleFileRename</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">IriiisDrive.VerifyTheFileDeletes:VerifygoogleFileDelete</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">IriiisDrive.VerifyTheFileUpdatedesc:VerifyOnedriveFileUpdateDesc</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">IriiisDrive.VerifyBatchTrashAndUntrash:VerifyDropboxBatchFileTrash</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">IriiisDrive.VerifyRenamingTheFilesName:VerifyOneDriveFileRename</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">IriiisDrive.VerifyIriiisFileTagingAndSharing:VerifyIriiisTag</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">IriiisDrive.VerifyTheFileUpdatedesc:VerifyboxdriveFileUpdateDesc</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">IriiisDrive.VerifyRenamingTheFilesName:VerifyBoxDriveFileRename</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">IriiisDrive.VerifyTheFileDeletes:VerifyBoxdriveFileDelete</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">IriiisDrive.VerifyIriiisFileTagingAndSharing:VerifgoogleTag</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">IriiisDrive.VerifyTheFileUpdatedesc:VerifyDropboxdriveFileUpdateDesc</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m32">IriiisDrive.VerifyFilesTrashAndUntrash:VerifyBoxFileTrash</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m33">IriiisDrive.VerifyIriiisFileTagingAndSharing:VerifyDropboxSharing</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m34">IriiisDrive.VerifyBatchTrashAndUntrash:VerifyIriiisBatchFileTrash</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m35">IriiisDrive.VerifyIriiisFileTagingAndSharing:VerifboxdriveTag</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m36">IriiisDrive.VerifyIriiisFileTagingAndSharing:VerifyOnedriveSharing</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m37">IriiisDrive.VerifyFilesTrashAndUntrash:VerifyIriiisFileTrash</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m38">IriiisDrive.VerifyBatchTrashAndUntrash:VerifyOIriiisBatchFileUnTrash</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m39">IriiisDrive.VerifyIriiisFileTagingAndSharing:VerifyIriiisSharing</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m40">IriiisDrive.VerifyFolderActivities:CreateBoxdriveFolder</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m41">IriiisDrive.VerifyTheFileUpdatedesc:VerifyIriiisFileUpdateDesc</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m42">IriiisDrive.VerifyIriiisFileTagingAndSharing:VerifyboxSharing</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m43">IriiisDrive.VerifyBatchTrashAndUntrash:VerifyboxBatchFileUnTrash</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m44">IriiisDrive.VerifyFolderActivities:CreategoogleFolder</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m45">IriiisDrive.VerifyBatchTrashAndUntrash:VerifyIgoogleBatchFileTrash</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m46">IriiisDrive.VerifyFolderActivities:CreateIriiisFolder</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m47">IriiisDrive.VerifyFilesTrashAndUntrash:VerifyDropboxFileTrash</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

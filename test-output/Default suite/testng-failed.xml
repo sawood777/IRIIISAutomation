@@ -3,16 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="IriiisDrive.VerifyTheFileUpdatedesc">
+      <class name="IriiisDrive.VerifyFolderActivities">
         <methods>
-          <include name="VerifyDropboxdriveFileUpdateDesc"/>
-          <include name="VerifyOnedriveFileUpdateDesc"/>
+          <include name="CreateIriiisFolder"/>
           <include name="testBrowser"/>
-          <include name="VerifyIriiisFileUpdateDesc"/>
-          <include name="VerifyboxdriveFileUpdateDesc"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- IriiisDrive.VerifyTheFileUpdatedesc -->
+      </class> <!-- IriiisDrive.VerifyFolderActivities -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
