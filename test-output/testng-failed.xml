@@ -1,66 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="IriiisDrive.VerifyIriiisFileTagingAndSharing">
+      <class name="IriiisDrive.VerifyDragAndDropFile">
         <methods>
+          <include name="testt"/>
           <include name="testBrowser"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- IriiisDrive.VerifyIriiisFileTagingAndSharing -->
-      <class name="IriiisDrive.VerifyTheFileUpdatedesc">
-        <methods>
-          <include name="testBrowser"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- IriiisDrive.VerifyTheFileUpdatedesc -->
-      <class name="IriiisDrive.VerifyBatchTrashAndUntrash">
-        <methods>
-          <include name="testBrowser"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- IriiisDrive.VerifyBatchTrashAndUntrash -->
-      <class name="IriiisDrive.VerifyFolderActivities">
-        <methods>
-          <include name="RenameGoogleFolder"/>
-          <include name="RenameIriiisFolder"/>
-          <include name="RenameBoxFolder"/>
-          <include name="RenamedropboxFolder"/>
-          <include name="testBrowser"/>
-          <include name="RenameOnedriveFolder"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- IriiisDrive.VerifyFolderActivities -->
-      <class name="IriiisDrive.VerifyFilesTrashAndUntrash">
-        <methods>
-          <include name="testBrowser"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- IriiisDrive.VerifyFilesTrashAndUntrash -->
-      <class name="IriiisDrive.VerifyTheFileDeletes">
-        <methods>
-          <include name="VerifyIriiisFileDelete"/>
-          <include name="testBrowser"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- IriiisDrive.VerifyTheFileDeletes -->
-      <class name="IriiisDrive.VerifyBatchFileDelete">
-        <methods>
-          <include name="VerifyIriiisBatchDelete"/>
-          <include name="VerifyboxBatchDelete"/>
-          <include name="testBrowser"/>
-          <include name="VerifygoogleBatchDelete"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- IriiisDrive.VerifyBatchFileDelete -->
-      <class name="IriiisDrive.VerifyRenamingTheFilesName">
-        <methods>
-          <include name="VerifyIriisFileRename"/>
-          <include name="testBrowser"/>
-          <include name="postCondition"/>
-        </methods>
-      </class> <!-- IriiisDrive.VerifyRenamingTheFilesName -->
+      </class> <!-- IriiisDrive.VerifyDragAndDropFile -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

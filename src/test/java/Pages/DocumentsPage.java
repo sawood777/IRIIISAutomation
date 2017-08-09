@@ -55,6 +55,9 @@ public class DocumentsPage {
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item/button[text()='Rename']")private WebElement RenameFile;
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item/button[text()='Update Description']")private WebElement UpdateDesc;
 	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[1]/button[text()='View Details']")private WebElement ViewDetails;
+	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item[1]/button[text()='Move To']")private WebElement MoveTo;
+	@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item/button[text()='Copy To']")private WebElement CopyTo;
+	@FindAll({@FindBy(xpath="//div[@class='_md md-open-menu-container md-whiteframe-z2 md-active md-clickable']/md-menu-content/md-menu-item/button")})private List<WebElement> ListOfMenuContents;
 
 	@FindBy(xpath="//button[contains(text(),'Save')]")private WebElement topicSave;
 	
@@ -85,8 +88,6 @@ public class DocumentsPage {
 	@FindAll({@FindBy(xpath="//div[contains(text(), 'KB') or contains(text(), 'MB')]/preceding::div[8]")})private List<WebElement> DocBatchselection;
 	//div[contains(text(), 'KB')]/preceding::div[8]
 	
-	
-	
 	@FindBy(xpath="//button[text()=' Select All ']")private WebElement SelectAllBtn;
 	
 	@FindBy(xpath="//div/span[contains(text(),'No files')]")private WebElement TextAfterDelet;
@@ -96,7 +97,53 @@ public class DocumentsPage {
 	@FindBy(xpath="//div[contains(text(), 'KB')]/preceding::div[2]")private WebElement Files;
 	@FindBy(xpath="//div[@class='file-list__item-cell ng-binding'][contains(text(), '-')]/preceding::div[2]")private WebElement AllFolder;
 	
+	@FindAll({@FindBy(xpath="//md-list-item[@ng-repeat='folder in folders']/div[@ng-click='selectFolder(folder)']")})private List<WebElement> ListOfFolders;
 	
+	
+	public void draganddrop(){
+		Actions act=new Actions(driver);
+		act.dragAndDrop(FirstFileName, AllFolder).build().perform();
+	}
+	
+	
+	public List<WebElement> GetAllListOfMenuContents()
+	{
+		return (new WebDriverWait(driver, 20))
+		   .until(ExpectedConditions.visibilityOfAllElements(ListOfMenuContents));
+
+	}
+	
+	public void GetlisofcontentnameandClick(String ContentName){
+		int sizeofcontect=ListOfMenuContents.size();
+		
+		for(int i=0; i<=sizeofcontect; i++){
+			//System.out.println("Names are" + ListOfMenuContents.get(i).getText());
+			if(ListOfMenuContents.get(i).getText().equalsIgnoreCase(ContentName)){
+				System.out.println(ListOfMenuContents.get(i).getText());
+				ListOfMenuContents.get(i).click();
+				break;
+			}
+		
+		}
+	}
+	
+	
+	public List<WebElement> GetAllFolderNames()
+	{
+		return (new WebDriverWait(driver, 20))
+		   .until(ExpectedConditions.visibilityOfAllElements(ListOfFolders));
+		
+	}
+	
+	public void OpenFolder(){
+		Actions act=new Actions(driver);
+		act.doubleClick(AllFolder).build().perform();
+	}
+	
+	
+	public void scrolldownpage(){
+		//((JavascriptExecutor)driver).executeScript("scroll(0,400)");
+	}
 	
 	public void ClickOnfolderCreateBtn(){
 		FolderCreateButn.click();

@@ -11,6 +11,7 @@
       <class name="IriiisDrive.VerifyBatchTrashAndUntrash"/>
       <class name="IriiisDrive.VerifyBatchFileDelete"/>
       <class name="IriiisDrive.VerifyFolderActivities"/>
+      <class name="IriiisDrive.VerifyDragAndDropFile"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
